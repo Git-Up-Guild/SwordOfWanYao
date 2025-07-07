@@ -1,0 +1,8 @@
+		private void ON_RPC_#MessageID#(string message) //@ReceivHandler_#MessageType#
+		{
+			var dataReader = JsonDataReader.Get(message);
+
+            //Write your code here.
+
+            JsonDataReader.Release(dataReader);
+		}

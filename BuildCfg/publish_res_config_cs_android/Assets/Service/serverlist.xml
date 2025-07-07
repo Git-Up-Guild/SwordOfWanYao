@@ -1,0 +1,13 @@
+<Root>
+	<ChannelGroup>
+		<Channel id="1" name="公共" ver="0" openchannel="0,1,114,95,117,92,87,103,115,118,140,90,124,137,153,150,127,34,116,100,93,91,88,129,119,143,149,146,152,141,156,157,155,2107172,2107168,162,2107187,2107217,2107218,2107219,2107220,2107221,2107222,2107223,2107224,2107225,2107226,2107236,2117141,2117001"/>
+	</ChannelGroup>
+	<Services>
+		<Group id="5000" showname="宗门育徒档案" openchannel="1">
+			<Server sid="3" zid="10240001" name="玄天启航" id="103540" f="103540" ip="124.70.152.206" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="2" zid="10240002" name="灵峰初现" id="103540" f="103540" ip="124.70.152.206" port="9001" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="1" zid="10240003" name="云海问道" id="103540" f="103540" ip="124.70.152.206" port="9002" mainten="正常运行中" recommend="0" state="0"></Server>
+		</Group>
+		
+	</Services>
+</Root>

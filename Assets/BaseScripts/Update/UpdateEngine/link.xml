@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="ICSharpCode">
+      <type fullname="ICSharpCode.SharpZipLib.Zip" preserve="all"/>
+  </assembly>
+  <assembly fullname="System">
+	<type fullname="System.Text" preserve="all"/>
+  </assembly>
+</linker>

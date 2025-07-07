@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -615311963, guid: e83dc2686a984da488703a29d8085258, type: 3}
+  m_Name: SkinAnimationClipConfig
+  m_EditorClassIdentifier: 
+  skinID: 50000001
+  checkInterval: 1
+  forceCleanMaxCount: 10
+  arrClipConfig:
+  - stateName: Idle
+    clipName: Idle
+    assetPath: Art/Characters/Animations/Unarmed/Unarmed_Idle/Unarmed_Prone_Idle.anim
+    isReplayOnLoad: 1
+    isDontAutoUnload: 1
+    unloadTime: 0
+  - stateName: Move
+    clipName: Move
+    assetPath: Art/Characters/Animations/Unarmed/Unarmed_Locomotion/Unarmed_Stand_Run/Unarmed_Stand_Walk_F.fbx
+    isReplayOnLoad: 1
+    isDontAutoUnload: 1
+    unloadTime: 0
+  - stateName: Test1001
+    clipName: Test1001
+    assetPath: Art/Characters/Animations/Unarmed/Unarmed_Attack/Unarmed_Crouch_Attack_2.fbx
+    isReplayOnLoad: 1
+    isDontAutoUnload: 0
+    unloadTime: 5
+  - stateName: Idle
+    clipName: Idle2
+    assetPath: Art/Characters/Animations/Unarmed_Stand_Sprint_F.fbx
+    isReplayOnLoad: 1
+    isDontAutoUnload: 1
+    unloadTime: 5

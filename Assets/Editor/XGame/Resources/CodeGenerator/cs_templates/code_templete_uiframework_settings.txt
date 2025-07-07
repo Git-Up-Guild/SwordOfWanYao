@@ -1,0 +1,93 @@
+/**************************************************************************    
+文　　件：UIFrameworkSettings.cs
+作　　者：
+创建时间：#Date#
+描　　述：UI框架初始化脚本
+***************************************************************************/
+
+using UnityEngine;
+using XGame;
+using XGame.EventEngine;
+using XGame.Attr;
+using XGame.UI.Framework;
+using XGame.Utils;
+using XClient.Common;
+
+#NameSpace#
+{
+    public class UIFrameworkSettings : MonoBehaviour, IUIFrameworkSettings, IEventExecuteSink
+    {
+        [SerializeField, Label("配置脚本")]
+        private UIFrameworkSettingData m_Settings;
+
+        public UIFrameworkSettingData SettingData => m_Settings;
+
+        [SerializeField, Label("UI相机")]
+        private Camera m_UICamera;
+        public Camera UICamera => m_UICamera;
+
+        [SerializeField, Label("Screen Space - Camera 模式UI容器")]
+        private RectTransform m_CameraUIContainer;
+        public RectTransform CameraUIContainer => m_CameraUIContainer;
+
+        [SerializeField, Label("Screen Space - Overlay 模式UI容器")]
+        private RectTransform m_OverlayUIContainer;
+        public RectTransform OverlayUIContainer => m_OverlayUIContainer;
+
+        [SerializeField, ALabel("消息框预制体名称")]
+        private ResourceRef m_MessageBoxPrefabPath;
+        public string MessageBoxPrefabPath => m_MessageBoxPrefabPath.path;
+
+        [SerializeField, ALabel("提示框预制体名称")]
+        private ResourceRef m_SimpleTipsPrefabPath;
+        public string SimpleTipsPrefabPath => m_SimpleTipsPrefabPath.path;
+
+        /// <summary>
+        /// 输入框的预制体路径
+        /// </summary>
+        [SerializeField, ALabel("提示框预制体名称")]
+        private ResourceRef m_InputBoxPrefabPath;
+        public string InputBoxPrefabPath => m_InputBoxPrefabPath.path;
+
+        private void Awake()
+        {
+            SettingData.Build(true);
+            XGameComs.Get<IUIFramework>()?.SetSettgings(this);
+            DontDestroyOnLoad(this);
+			
+			//GameStateAssociateWindowsSetup.Setup();
+        }
+		
+		private void Start()
+        {
+            XGameComs.Get<IEventEngine>()?.Subscibe(this, DGlobalEvent.EVENT_GAME_STATE_AFTER_CHANGE,
+                DEventSourceType.SOURCE_TYPE_SYSTEM, 0, "UIModule");
+        }
+
+        private void OnDestroy()
+        {
+            XGameComs.Get<IEventEngine>()?.UnSubscibe(this, DGlobalEvent.EVENT_GAME_STATE_AFTER_CHANGE,
+                DEventSourceType.SOURCE_TYPE_SYSTEM, 0);
+        }
+
+        public void OnExecute(ushort wEventID, byte bSrcType, uint dwSrcID, object pContext)
+        {
+            switch (wEventID)
+            {
+                case DGlobalEvent.EVENT_GAME_STATE_AFTER_CHANGE:
+                    {
+                        var ctx = pContext as GameStateChangeEventContext;
+                        UIWindowManager.Instance?.OnLeaveState(ctx.nOldState);
+
+                        if (ctx.nNewState == (int)GameState.Login && ctx.nOldState != (int)GameState.None)
+                            UIWindowManager.Instance?.OnExitGame();
+                        
+                        UIWindowManager.Instance?.OnEnterState(ctx.nNewState);
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+}

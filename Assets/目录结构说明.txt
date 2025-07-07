@@ -1,0 +1,55 @@
+
+
+
+Assets
+	G_Artist			--美术设计目录
+	G_Resources			--游戏打包资源目录
+		App					--APP初始化用到的资源
+	
+	Plugins				--插件目录
+	
+	GameScripts			--Demo游戏脚本，命名空间：GameScripts.XXX
+		Extensions			--此目录是代码生成目录和几个游戏模块扩展类，为必须的几个文件。
+		
+	GameResources		--Demo游戏资源
+		
+	Editor				--其它的编辑器代码
+		XGame 				--XGame相关的编辑器资源
+		XXX					--其它编辑器相关代码 （这里好多脚本都是没什么用的，要整理删除掉）
+		
+	Scripts				--通用逻辑库
+	
+		AssetScripts	--一些可以共用的游戏脚本。 (后续考虑废弃掉，将代码挪到 XClient 或者 XGame 中）
+	
+		Lua				--Lua模块的脚本（此目录下的脚本只有在支持Lua的时候才会使用到）
+			ForXLua			--工具生成的一些适配XLua环境的脚本
+			
+		Update			--游戏更新相关（需要补充文档）
+		
+		XClient			--(程序集)XGame开发库的中间层，通过此工程对 XGame 进行初始化, 以及其他一些可能会用到的工具脚本
+						--命名空间：XClient.XXX
+		
+		XGame			--核心代码库					命名空间：XGame.XXX
+			Base				--(程序集)Base代码库
+			Engine				--(程序集)Engine代码库
+			Editor				--(程序集)XGame编辑器
+			
+			Plugins				--核心库使用到的插件（dll)
+			
+		XGameSDK		--(程序集)SDK管理器（非正式项目用不到）
+		
+		Utils			--工具类目录
+			Monitor			--游戏监控工具
+			ResTools		--资源工具
+			UGUIAnalyze		--UGUI分析工具
+		
+		Dll				--用到的一些库
+		
+	ThirdParty			--第三方代插件源码/Plugin 
+		Google
+		Bugly
+		XLua
+		
+		
+		
+		

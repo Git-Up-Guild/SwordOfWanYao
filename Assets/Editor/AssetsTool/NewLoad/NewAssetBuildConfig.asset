@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7390ddbcb3b3e2b4b8f6d41fbaea8720, type: 3}
+  m_Name: NewAssetBuildConfig
+  m_EditorClassIdentifier: 
+  mainResDirList:
+  - Assets/G_Resources
+  - Assets/G_Artist/Fonts
+  - Assets/Game
+  packGroupList:
+  - childDirName: 
+    mainResDirList: []
+  dynamicGroupList:
+  - suffixName: .atlas.txt
+    mainResDir: Assets/G_Artist/Spine
+    aloneDirAB: 1
+    beDependent: 0
+  - suffixName: .skel.bytes
+    mainResDir: Assets/G_Artist/Spine
+    aloneDirAB: 1
+    beDependent: 0
+  packTypeConfigList:
+  - path: Packages
+    packMode: 2
+  - path: Assets/Spine/Runtime/spine-unity
+    packMode: 2
+  - path: Assets/Game/ImmortalFamily/GameResources/Prefabs/UI
+    packMode: 1
+  - path: Assets/Game/ImmortalFamily/GameResources/Artist/UI/Misc_Common
+    packMode: 2
+  - path: Assets/Game/ImmortalFamily/GameResources/Artist/UI/Common
+    packMode: 2
+  - path: Assets/Game/ImmortalFamily/GameResources/Artist/UI
+    packMode: 0
+  - path: Assets/Game/ImmortalFamily/GameResources/Artist/Effect/Prefabs
+    packMode: 1
+  - path: Assets/Game/ImmortalFamily/GameResources/Artist/Creature
+    packMode: 1
+  - path: Assets/Game/ImmortalFamily/GameResources/Artist/Battle
+    packMode: 1
+  - path: Assets/Game/ImmortalFamily/GameResources
+    packMode: 0
+  - path: Assets/Game
+    packMode: 0
+  - path: Assets/G_Resources/Game/Prefab/Other
+    packMode: 1
+  - path: Assets/G_Resources/Game/Prefab/LuaUI/
+    packMode: 1
+  - path: Assets/G_Resources/Game/GameScp
+    packMode: 2
+  - path: Assets/G_Resources/Artist/Video
+    packMode: 2
+  - path: Assets/G_Resources/Artist/Audio/BGM
+    packMode: 1
+  - path: Assets/G_Resources/Artist/Audio
+    packMode: 1
+  - path: Assets/G_Resources
+    packMode: 0
+  - path: Assets/G_Artist/Spine/Heros_UI
+    packMode: 3
+  - path: Assets/G_Artist/Spine/Heros
+    packMode: 3
+  - path: Assets/G_Artist/Shader
+    packMode: 2
+  - path: Assets/G_Artist/Material
+    packMode: 2
+  - path: Assets/G_Artist/Fonts/TTF
+    packMode: 0
+  - path: Assets/G_Artist/Fonts/SDF4
+    packMode: 0
+  - path: Assets/Game/ImmortalFamily/GameResources/Artist/Icon/Zhujue
+    packMode: 2
+  mainResFilterDirList:
+  - Assets/G_Resources/Game/Lua/Sources
+  resInOnePackList:
+  - Assets/G_Resources/Game/Lua/Generate
+  - Assets/G_Resources/Game/GameScp
+  spriteAltasDirList:
+  - Assets/Game/ImmortalFamily/GameResources/Artist/UI
+  - Assets/Game/ImmortalFamily/GameResources/Artist/Icon
+  - Assets/G_Resources/Artist/UI
+  spriteAltasSubDirList:
+  - Assets/Game/ImmortalFamily/GameResources/Artist/UI/Common
+  - Assets/Game/ImmortalFamily/GameResources/Artist/UI/Misc_Common
+  - Assets/Game/ImmortalFamily/GameResources/Artist/Icon/Zhujue
+  dontExportDirList: []
+  needExportDirList: []
+  uncompresseedDirList:
+  - Assets/G_Resources/Artist/Video

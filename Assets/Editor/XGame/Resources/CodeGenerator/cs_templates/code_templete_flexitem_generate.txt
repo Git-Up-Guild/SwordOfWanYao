@@ -1,0 +1,27 @@
+﻿
+	partial class #FlexName#Item : FlexItem 
+	{
+		//@Begin_#FlexName#_Widget_Variables
+		//@End_#FlexName#_Widget_Variables
+		
+		protected override void InitWidgets() //@#FlexName#
+		{
+			OnInitWidgets();
+		} //@End_#FlexName#_InitWidgets
+		
+		protected override void ClearWidgets() //@#FlexName#
+		{
+			OnClearWidgets();
+		} //@End_#FlexName#_ClearWidgets
+		
+		protected override void SubscribeEvents() //@#FlexName#
+		{
+			OnSubscribeEvents();
+		} //@End_#FlexName#_SubscribeEvents
+		
+		protected override void UnsubscribeEvents() //@#FlexName#
+		{
+			OnUnsubscribeEvents();
+		} //@End_#FlexName#_UnsubscribeEvents
+		
+	}

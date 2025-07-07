@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9a45579453e8a34288fadc70eab47d3, type: 3}
+  m_Name: GameProjectSettins
+  m_EditorClassIdentifier: 
+  workSpace: Game
+  gameManagerPrefabRef:
+    path: G_Resources/App/GameManager.prefab
+    guid: bc10487d3b1eb5943a151709d199bca5
+  settings:
+  - name: 2DCardDemo
+    codeBaseDir: GameScripts
+    resBaseDir: GameResources
+    globalNameSpace: GameScripts
+    projectNameSpace: CardDemo
+    resolutionWidth: 1080
+    resolutionHeight: 2340
+    setupScenePath: 
+    gameInitConfig: {fileID: 11400000, guid: ed3b88792947aad4f82b7ee68ed539c5, type: 2}
+  - name: 3DTank
+    codeBaseDir: GameScripts
+    resBaseDir: GameResources
+    globalNameSpace: GameScripts
+    projectNameSpace: Tank
+    resolutionWidth: 1920
+    resolutionHeight: 1080
+    setupScenePath: Assets/Game/3DTank/GameResources/Tank/Complete/Scenes/CompleteMainScene.unity
+    gameInitConfig: {fileID: 11400000, guid: f7e86c1e75e48dd42aefe6be0fb9522b, type: 2}
+  - name: RogueLike
+    codeBaseDir: GameScripts
+    resBaseDir: GameResources
+    globalNameSpace: GameScripts
+    projectNameSpace: RogueLike
+    resolutionWidth: 1920
+    resolutionHeight: 1080
+    setupScenePath: Assets/Game/RogueLike/GameResources/Scene/RouguleScene.unity
+    gameInitConfig: {fileID: 11400000, guid: 442e74a78c8fd994e81bb9e95deeaabb, type: 2}
+  - name: TestDemo
+    codeBaseDir: GameScripts
+    resBaseDir: GameResources
+    globalNameSpace: GameScripts
+    projectNameSpace: TestDemo
+    resolutionWidth: 1080
+    resolutionHeight: 2340
+    setupScenePath: 
+    gameInitConfig: {fileID: 11400000, guid: b678ee66e550840c0996dde4d83eacc4, type: 2}
+  - name: ImmortalRecord
+    codeBaseDir: GameScripts
+    resBaseDir: GameResources
+    globalNameSpace: GameScripts
+    projectNameSpace: IR
+    resolutionWidth: 1080
+    resolutionHeight: 2340
+    setupScenePath: 
+    gameInitConfig: {fileID: 11400000, guid: a625f25a9be3248bfad0b31e251423c6, type: 2}
+  currentProjectName: ImmortalRecord

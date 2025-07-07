@@ -1,0 +1,9 @@
+		public void SEND_RPC_#MessageID#() //@SendHandler_#MessageType#
+        {
+			//Write your code here.
+			
+			//使用 shareRpcParams 来传递调用参数
+			//shareRpcParams.Add(p1);
+			
+            SendMessage(#MessageFullID#, shareRpcParams);
+        }

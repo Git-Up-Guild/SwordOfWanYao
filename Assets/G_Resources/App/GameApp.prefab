@@ -1,0 +1,276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &837495329504222811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 837495329504222808}
+  m_Layer: 0
+  m_Name: GameApp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &837495329504222808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837495329504222811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 837495330822855475}
+  - {fileID: 837495329931888280}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &837495329931888261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 837495329931888280}
+  - component: {fileID: 837495329931888283}
+  - component: {fileID: 837495329931888282}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &837495329931888280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837495329931888261}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 837495329504222808}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &837495329931888283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837495329931888261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &837495329931888282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837495329931888261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!1 &837495330822855484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 837495330822855475}
+  - component: {fileID: 837495330822855474}
+  - component: {fileID: 1362436766}
+  - component: {fileID: 1362436763}
+  - component: {fileID: 6900552398787859103}
+  m_Layer: 0
+  m_Name: GameAppBoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &837495330822855475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837495330822855484}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 837495329504222808}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &837495330822855474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837495330822855484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 039a698b4b880c842a143313864996f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runInPublish: 0
+  loadMode: 0
+  sysOptionConfig: {fileID: 11400000, guid: 0e4cce6ce738baa419143ad60f2acded, type: 2}
+  reddotSettings: {fileID: 11400000, guid: 3428418cb1a7aa148a851ddb79ae2c8f, type: 2}
+  guideSettings: {fileID: 11400000, guid: 63c7b7b50d8243c4185014f39bc1d644, type: 2}
+  sysOptionValGroupConfig: {fileID: 11400000, guid: a52321786299f9347b16e6e76292e68f,
+    type: 2}
+  audoLockScreenTime: 120
+  preloadConfig: {fileID: 11400000, guid: 558c8e6b36736094baa1c418b70716e0, type: 2}
+  screenTouchEffectConfig:
+    goEffect: {fileID: 0}
+    effectParent: {fileID: 0}
+    recycleInterval: 3
+    canvasWithCamera: {fileID: 0}
+  defaultPerformanceLevel: 4000
+  audioMixerSettings:
+    mixer: {fileID: 24100000, guid: 693fcc1a0a3a43c418be777a91802025, type: 2}
+    defaultMixGroupSetting:
+      mixerGroupType: 0
+      name: "\u9ED8\u8BA4\u6DF7\u5408\u7EC4"
+      mixerGroup: {fileID: 24300002, guid: 693fcc1a0a3a43c418be777a91802025, type: 2}
+      volumeParam: MasterVolume
+    audioMixGroupSettings:
+    - mixerGroupType: 0
+      name: "\u4E3B\u97F3\u91CF"
+      mixerGroup: {fileID: 24300002, guid: 693fcc1a0a3a43c418be777a91802025, type: 2}
+      volumeParam: MasterVolume
+    - mixerGroupType: 1
+      name: "\u80CC\u666F\u97F3\u4E50"
+      mixerGroup: {fileID: -2298329053609810048, guid: 693fcc1a0a3a43c418be777a91802025,
+        type: 2}
+      volumeParam: MusicVolume
+    - mixerGroupType: 2
+      name: "\u7279\u6548\u97F3\u4E50"
+      mixerGroup: {fileID: 5223457728251917016, guid: 693fcc1a0a3a43c418be777a91802025,
+        type: 2}
+      volumeParam: EfxMusicVolume
+    - mixerGroupType: 3
+      name: "\u7CFB\u7EDF\u97F3\u6548"
+      mixerGroup: {fileID: 6588493887418481406, guid: 693fcc1a0a3a43c418be777a91802025,
+        type: 2}
+      volumeParam: SystemVolume
+    - mixerGroupType: 4
+      name: "UI\u97F3\u6548"
+      mixerGroup: {fileID: 7071453783359561125, guid: 693fcc1a0a3a43c418be777a91802025,
+        type: 2}
+      volumeParam: UIVolume
+    - mixerGroupType: 5
+      name: "\u6218\u6597\u97F3\u6548"
+      mixerGroup: {fileID: 8958206573624415105, guid: 693fcc1a0a3a43c418be777a91802025,
+        type: 2}
+      volumeParam: BattleVolume
+    audioTypeSettingItems:
+    - audioType: 0
+      name: "\u9ED8\u8BA4\uFF08\u4E0D\u5206\u7C7B\uFF09"
+      mixerGroupType: 0
+    - audioType: 1
+      name: "\u80CC\u666F\u97F3\u4E50"
+      mixerGroupType: 1
+    - audioType: 2
+      name: "\u7CFB\u7EDF\u97F3\u6548"
+      mixerGroupType: 3
+    - audioType: 3
+      name: "UI\u97F3\u6548"
+      mixerGroupType: 4
+    - audioType: 4
+      name: "\u6218\u6597\u97F3\u6548"
+      mixerGroupType: 5
+  m_gameManagerPrefabPath:
+    path: G_Resources/App/GameManager.prefab
+    guid: bc10487d3b1eb5943a151709d199bca5
+  m_DefSprite: {fileID: 21300000, guid: 2a47dca42ba844b4b96d085f6ea02a7b, type: 3}
+  m_flowTextConfigs: {fileID: 11400000, guid: 8cb96b2d88ea8694ea81719f551272ea, type: 2}
+  windowexSetting: {fileID: 11400000, guid: 2e1a80be6e3d60b439b9939859b600c6, type: 2}
+  isShowUiLobby: 1
+  isShowTestButtons: 0
+  m_isEnableTransformDebug: 0
+  m_transformDebugMode: 0
+  m_transformDebugName: 
+  m_transformDebugTarget: {fileID: 0}
+  m_isEnablePoolableLog: 0
+  m_isEnableLightingEffectDebug: 0
+  isOpenMonitor: 0
+  isOpenEtaMonitor: 0
+  etaMonitorConfigs: []
+  isEnableManulLogin: 0
+--- !u!114 &1362436766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837495330822855484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2042912240, guid: a5d0450b15ab1d444b7430fbedc2e332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_printClickObjectPath: 0
+--- !u!114 &1362436763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837495330822855484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 313486524, guid: a5d0450b15ab1d444b7430fbedc2e332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6900552398787859103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837495330822855484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbd6eb258034efe43b6f4b0918e8e5c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shaderWarmUp:
+    path: G_Resources/Game/Shadervariant/ShaderCollectionWarmUp.asset
+    guid: 4a80a0173dfe9ef4895e3cb8e31a6b46

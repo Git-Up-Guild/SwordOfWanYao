@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<update_scheme>
+  <project name="内测版" alias="NeiCe" show_name="公测版">
+    <!--完整包下载链接,更新失败时提示玩家跳转到此链接，重新下载游戏-->
+    <remote_version url="https://aigirl.tj2016.com/immortalfamily/download/ImmortalFamily.q1.com.apk" />
+    <!--本地版本号-->
+    <local_version ver="2501231242" />
+    <!--是否有固件要下载，1为有固件，0为没固件-->
+    <is_has_fixed_item value="0" />
+    <!--是否开启HybridCLR，1为开启，0为未开启-->
+    <is_enable_hybridclr value="1" />
+    <!--远程版本资源根路径-->
+    <res_info url="https://aigirl.tj2016.com/immortalfamily/download/" />
+    <version_info url="https://aigirl.tj2016.com/immortalfamily/download/" />
+    <!--远程版本后备资源根路径-->
+    <version_info_backup url="https://aigirl.tj2016.com/immortalfamily/download/" />
+    <res_info_backup url="https://aigirl.tj2016.com/immortalfamily/download/" />
+    <!--更新资源最大值(单位KB),如果当前版本和最新版本的资源大小超过这个值，就提示玩家重新下载整包。设置为0，则不生效。-->
+    <file_size size="0" />
+    <!--该功能暂时废弃，在版本列表中都能一直更新-->
+    <max_ver_distance distance="0" />
+  </project>
+  <check_md5>
+    <item name="" value="" />
+    <item name="" value="" />
+  </check_md5>
+</update_scheme>

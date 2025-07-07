@@ -1,0 +1,1793 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -607509829, guid: 006aeba06c6f4854895fe0d7ef6c8c82, type: 3}
+  m_Name: GenerateNodeConfigs_cs
+  m_EditorClassIdentifier: 
+  CommonConfig:
+    preNameSpaces:
+    - using UnityEngine;
+    - using UnityEngine.UI;
+    - using XGame.UI.Framework;
+    widgetPrefix: Auto_
+    labelPrefix: --///<<<
+    labelBegin: Begin_
+    labelEnd: 'End_ '
+    functionEnd: end --///<<< function
+    widgetVarCreateCode: '#Indent##WidgetName# = Meta.Widgets.GetWidgetComponent<#WidgetType#>(#Index#);'
+    widgetVarDefineCode: '#Indent#private #WidgetType# #WidgetName# = null;'
+    widgetVarClearCode: '#Indent##WidgetName# = null;'
+    widgetCodeTempletes:
+    - widgetType: 18
+      defineCode: 
+      clearCode: 
+      createCode: '#Indent##WidgetVarName#?.Initialize();'
+      releaseCode: '#Indent##WidgetVarName#?.Reset();'
+    - widgetType: 5
+      defineCode: '#Indent#private #WidgetType# #WidgetName# = null;
+
+        #Indent#private
+        FlexItemManager #WidgetName#Inst = null;'
+      clearCode: '#Indent##WidgetName#Inst = null;
+
+        #Indent##WidgetName#
+        = null;'
+      createCode: '#Indent##WidgetVarName#Inst = UIFrameworkFactory.Instance.CreateFlexItemManager<#WidgetName#Item>(#WidgetVarName#);'
+      releaseCode: '#Indent#UIFrameworkFactory.Instance.ReleaseFlexItemManager(#WidgetVarName#Inst);'
+    - widgetType: 4
+      defineCode: '#Indent#private #WidgetType# #WidgetName# = null;
+
+        #Indent#private
+        EffectiveList #WidgetName#Inst = null;'
+      clearCode: '#Indent##WidgetName#Inst = null;
+
+        #Indent##WidgetName#
+        = null;'
+      createCode: '#Indent##WidgetVarName#Inst = UIFrameworkFactory.Instance.CreateEffectiveList<#WidgetName#Item>(#WidgetVarName#);'
+      releaseCode: '#Indent#UIFrameworkFactory.Instance.ReleaseEffectiveList(#WidgetVarName#Inst);'
+    executeEventSubcribCode: '#Indent#EventSubscriber?.AddHandler(DGlobalEventEx.#EventID#,
+      ON_#EventID#, "#WindowName#");'
+    executeEventUnsubcribCode: '#Indent#EventSubscriber?.RemoveHandler(DGlobalEventEx.#EventID#,
+      ON_#EventID#);'
+    btnSubcribeEventCode: '#Indent##WidgetVarName#?.onClick.AddListener(On#WidgetName#Clicked);'
+    tglBtnGroupSubscribeEventCode: '#Indent##WidgetVarName#?.AddChangeListener(On#WidgetName#Changed);'
+    btnUnsubcribeEventCode: '#Indent##WidgetVarName#?.onClick.RemoveAllListeners();'
+    tglBtnGroupUnsubscribeEventCode: '#Indent##WidgetVarName#.RemoveChangeListener(On#WidgetName#Changed);'
+    btnEventLinstenerCode: "#Indent#private void On#WidgetName#Clicked() //@#Owner#
+      \n#Indent#{\n#Indent#}\n"
+    tglBtnGroupEventListenerCode: "#Indent#private void On#WidgetName#Changed(int
+      idx, int val) //@#Owner# \n#Indent#{\n#Indent#}\n"
+    userCodeTemplete: '#Indent#//@Begin_User <Write You Code Here.>
+
+      #Indent#//@End_User'
+    windowExTempleteFile: code_templete_uiwindow_ex.txt
+    windowTempleteFile: code_templete_window.txt
+    windowTempleteFile_Generate: code_templete_window_generate.txt
+    windowInterfaceTempleteFile: 
+    flexTempleteFile: code_templete_flexitem.txt
+    flexTempleteFile_Generate: code_templete_flexitem_generate.txt
+    efflistTempleteFile: code_templete_list.txt
+    efflistTempleteFile_Generate: code_templete_list_generate.txt
+  NodeConfigs:
+  - nodeName: FileHead
+    annotation: 
+    indent: 0
+    tmplete: "/************* <<< UICodeGenerator Version #Version#.0 >>>  ***********************\nFile\uFF1A#FileName#.cs
+      <FileHead_AutoGenerate>\nAuthor\uFF1A#Author#\nDate\uFF1A#Date#\nDescription\uFF1A#Description#\n***************************************************************************/"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: 
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: RegisterMsg
+    annotation: ccc
+    indent: 0
+    tmplete: '#Desc##CallbackFunctions#MessageTable = {
+
+      #AutoGenrate##User#}
+      --///<<< End_MessageTable
+
+'
+    tmpleteFile: 
+    createOnly: 1
+    addNodeLabel: 0
+    beginRegx: MessageTable = {
+    endRegx: --///<<< End_MessageTable
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: '    {#MsgID#, #MsgCallback#},'
+      msgFunction: 'local function #MsgCallbackFunc#(msg)
+
+        end
+
+'
+      desc: "--------------------------------------------------------------------\n--
+        /// \u7F51\u7EDC\u6D88\u606F\u5904\u7406 <AutoGenerate>\n--------------------------------------------------------------------\n"
+      descKeyWords: "/// \u7F51\u7EDC\u6D88\u606F\u5904\u7406 <AutoGenerate>"
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: User
+    annotation: 
+    indent: 0
+    tmplete: "//@Begin_User <Write You Code Here.> \n//@End_User"
+    tmpleteFile: 
+    createOnly: 1
+    addNodeLabel: 0
+    beginRegx: //@Begin_User <Write You Code Here.>
+    endRegx: //@End_User
+    outputAddMatchLine: 1
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ModuleDeclare
+    annotation: 
+    indent: 0
+    tmplete: "//@Begin_VariablesDeclare <\u81EA\u52A8\u751F\u6210\uFF0C\u4E0D\u8981\u63D2\u5165\u4EE3\u7801>
+      \nlocal #PrefabName# = {}\nlocal Window = nil #Others#\n--///<<< End_VariablesDeclare\n "
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@Begin_VariablesDeclare
+    endRegx: //@End_VariablesDeclare
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: '
+
+        local MessageTable = nil'
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WindowCtor
+    annotation: 
+    indent: 0
+    tmplete: "function #PrefabName#:Initialize() \n    Window = self\nend\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: 
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 0
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WidgetTable
+    annotation: 
+    indent: 0
+    tmplete: 
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: 
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WindowInit
+    annotation: 
+    indent: 2
+    tmplete: "\t\tprotected override void OnInitialize() //@Window\n\t\t{\n#AutoGnerate##User#\t\t}
+      //@End_OnInitialize\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: override void OnInitialize\(\) //@Window
+    endRegx: //@End_OnInitialize
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: '    gNetModule:RegisterMessageTable(MessageTable)
+
+'
+      subscribeEventsFunc: '    self:SubscribeEvents()
+
+'
+      createScrollFunc: '    self:Create_#ScrollName#_Inst()'
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: '    self:Create_#FlexName#_Inst()'
+      releaseFlexFunc: 
+  - nodeName: WindowClose
+    annotation: 
+    indent: 2
+    tmplete: '#Indent#protected override void OnClose() //@Window
+
+      #Indent#{
+
+      #User##AutoGnerate##Indent#}
+      //@End_OnClose
+
+'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: protected override void OnClose\(\) //@Window
+    endRegx: //@End_OnClose
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: '    self:UnsubscribeEvents()'
+      codeFile: 
+      releaseScrollFunc: '    self:Release_#ScrollName#_Inst()'
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: '    self:Release_#FlexName#_Inst()'
+  - nodeName: WindowSubscribeEvents
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void SubscribeEvents() //@Window\n#Indent#{\n#Indent#\tUnsubscribeEvents();\n#AutoGenerate##Indent#\tOnSubscribeEvents();\n#Indent#}
+      //@End_SubscribeEvents\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void SubscribeEvents\(\) //@Window
+    endRegx: '} //@End_SubscribeEvents'
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: "\t\t\t#ButtonName#?.onClick.AddListener(On#ButtonName#Clicked);"
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: "\t\t\t#ToggleButtonGroupName#.AddChangeListener(On#ToggleButtonGroupName#Changed);"
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WindowUnsubscribeEvents
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void UnsubscribeEvents() //@Window\n#Indent#{\n#AutoGenerate##Indent#\tOnUnsubscribeEvents();\n#Indent#}
+      //@End_UnsubscribeEvents\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void UnsubscribeEvents\(\) //@Window
+    endRegx: //@End_UnsubscribeEvents
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: "\t\t\t#ButtonName#?.onClick.RemoveAllListeners();"
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: "\t\t\t#ToggleButtonGroupName#.RemoveChangeListener(On#ToggleButtonGroupName#Changed);"
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WindowCreateOnly
+    annotation: 
+    indent: 0
+    tmplete: '#Code#'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: 
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 0
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: ui_code_generator_wndfunc
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WindowBtnFunctions
+    annotation: 
+    indent: 2
+    tmplete: '#Indent#//@<<< ButtonFuncGenerator >>>
+
+      #AutoGenerate#'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< ButtonFuncGenerator >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: On#ButtonName#Clicked
+      buttonFunc: "\t\tprivate void On#ButtonName#Clicked()\n\t\t{\n\t\t}\n"
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ToggleButtonGroup
+    annotation: 
+    indent: 0
+    tmplete: "\t\t//@<<< ToggleButtonGroupFuncGenerator >>>#Funcs#"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< ToggleButtonGroupFuncGenerator >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: On#ToggleButtonGroupName#Changed
+      func: "\t\tprivate void On#ToggleButtonGroupName#Changed(int idx, int val)\n\t\t{\n\t\t}\n"
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: FlexItem
+    annotation: 
+    indent: 1
+    tmplete: '#Indent#//@<<< FlexItemGenerator >>>#Code#'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< FlexItemGenerator >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: ui_code_generator_flexitem_cs
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: FlexItemInitWidget
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void InitWidgets() //@#FlexName#\n#Indent#{\n#AutoGenerate##Indent#\tOnInitWidgets();\n#Indent#}
+      //@End_#FlexName#_InitWidgets\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void InitWidgets\(\) //@#FlexName#
+    endRegx: //@End_#FlexName#_InitWidgets
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: FlexItemBtnFunctions
+    annotation: 
+    indent: 2
+    tmplete: '#Indent#//@<<< #FlexName#_ButtonFuncGenerator >>>
+
+      #AutoGenerate#'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< #FlexName#_ButtonFuncGenerator >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: On#ButtonName#Clicked
+      buttonFunc: "\t\t\tprivate void On#ButtonName#Clicked()\n\t\t\t{\n\t\t\t}\n"
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ScrollItem
+    annotation: 
+    indent: 1
+    tmplete: '#Indent#//@<<< EffectiveListGenerator >>>#Code#'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< EffectiveListGenerator >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ScrollItemBtnFunctions
+    annotation: 
+    indent: 0
+    tmplete: '#Desc#//@<<< #ScrollName#_ItemBtnFuncGenerator <AutoGenerate> >>>
+
+      #ButtonFuncs#'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< #ScrollName#_ItemBtnFuncGenerator <AutoGenerate> >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: "//@#ScrollName#\u5217\u8868\u6309\u94AE\u4E8B\u4EF6\u5904\u7406
+        <AutoGenerate>"
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: '#ScrollName#_Item:On#ButtonName#Clicked'
+      buttonFunc: "function #ScrollName#_Item:On#ButtonName#Clicked() \nend\n\n"
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ListItemInit
+    annotation: 
+    indent: 3
+    tmplete: "#Indent#protected override void OnInit() //@#ListName# \n#Indent#{\n#AutoGenerate##User##Indent#}
+      //@End_#ListName#_OnInit\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void OnInit\(\) //@#ListName#
+    endRegx: //@End_#ListName#_OnInit
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ListItemReset
+    annotation: 
+    indent: 3
+    tmplete: "#Indent#protected override void OnReset() //@#ListName# \n#Indent#{\n#AutoGenerate##User##Indent#}
+      //@End_#ListName#_OnReset\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void OnReset\(\) //@#ListName#
+    endRegx: //@End_#ListName#_OnReset
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ListItemWidgetsInit
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void InitWidgets() //@#ListName# \n#Indent#{\n#AutoGenerate##Indent#\tOnInitWidgets();\n#Indent#}
+      //@End_#ListName#_InitWidgets\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void InitWidgets\(\) //@#ListName#
+    endRegx: //@End_#ListName#_InitWidgets
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: self.#WidgetName# = self:GetWidget(#Index##ButtonFunc#)
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: ', self.On#ButtonName#Clicked'
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ListItemWidgetsVariables
+    annotation: 
+    indent: 2
+    tmplete: '#Indent#//@Begin_#ListName#_Widget_Variables
+
+      #AutoGenerate##Indent#//@End_#ListName#_Widget_Variables
+
+'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@Begin_#ListName#_Widget_Variables
+    endRegx: //@End_#ListName#_Widget_Variables
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ListItemWidgetsClear
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void ClearWidgets() //@#ListName# \n#Indent#{\n#Indent#\tOnClearWidgets();\n#AutoGenerate##Indent#}
+      //@End_#ListName#_ClearWidgets\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void ClearWidgets\(\) //@#ListName#
+    endRegx: //@End_#ListName#_ClearWidgets
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: On#FlexName#_#ToggleButtonGroupName#Changed
+      func: "\t\t\tprivate void On#FlexName#_#ToggleButtonGroupName#Changed(int idx,
+        int val)\n\t\t\t{\n\t\t\t}\n"
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ListItemSubscribeEvents
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void SubscribeEvents() //@#ListName# \n#Indent#{\n#Indent#\tUnsubscribeEvents();\n#AutoGenerate##Indent#\tOnSubscribeEvents();\n#Indent#}
+      //@End_#ListName#_SubscribeEvents\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void SubscribeEvents\(\) //@#ListName#
+    endRegx: //@End_#ListName#_SubscribeEvents
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: On#FlexName#_#ToggleButtonGroupName#Changed
+      func: "\t\t\tprivate void On#FlexName#_#ToggleButtonGroupName#Changed(int idx,
+        int val)\n\t\t\t{\n\t\t\t}\n"
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ListItemUnsubscribeEvents
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void UnsubscribeEvents() //@#ListName# \n#Indent#{\n#Indent#\tOnUnsubscribeEvents();\n#AutoGenerate##Indent#}
+      //@End_#ListName#_UnsubscribeEvents\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void UnsubscribeEvents\(\) //@#ListName#
+    endRegx: /@End_#ListName#_UnsubscribeEvents
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: On#FlexName#_#ToggleButtonGroupName#Changed
+      func: "\t\t\tprivate void On#FlexName#_#ToggleButtonGroupName#Changed(int idx,
+        int val)\n\t\t\t{\n\t\t\t}\n"
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ListItemBtnFuncs
+    annotation: 
+    indent: 2
+    tmplete: '#Indent#//@<<< #ListName#_ButtonFuncGenerator >>>
+
+      #AutoGenerate#'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< #ListName#_ButtonFuncGenerator >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: On#FlexName#_#ToggleButtonGroupName#Changed
+      func: "\t\t\tprivate void On#FlexName#_#ToggleButtonGroupName#Changed(int idx,
+        int val)\n\t\t\t{\n\t\t\t}\n"
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ScrollItemCreate
+    annotation: 
+    indent: 0
+    tmplete: "function #ScrollName#_Item:Create(itemSkin)\n    #ScrollName#_Item.__super.Create(self,
+      itemSkin)\n#Code##User#end //@End_#ScrollName#_Item_Create\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: function #ScrollName#_Item:Create\(itemSkin\)
+    endRegx: end //@End_#ScrollName#_Item_Create
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: '    self:Create_#FlexName#_Inst()'
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ScrollItemReset
+    annotation: 
+    indent: 0
+    tmplete: 'function #ScrollName#_Item:Reset(--[[reserved]])
+
+      #User##Code#end
+      --///<<< End_#ScrollName#_Item_Reset
+
+'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: function #ScrollName#_Item:Reset\(--\[\[reserved\]\]
+    endRegx: end //@End_#ScrollName#_Item_Reset
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: '    self:Release_#FlexName#_Inst()'
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ScrollItemFlexItem
+    annotation: 
+    indent: 0
+    tmplete: '//@<<< #ScrollName#_FlexGenerator <AutoGenerate> >>>
+
+      #Code#'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< #ScrollName#_FlexGenerator <AutoGenerate> >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: ui_code_generator_scrollitem_flexitem
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ScrollItemFlexItemInitWidget
+    annotation: 
+    indent: 0
+    tmplete: "function #ScrollName#_#FlexName#_Item:InitWidgets() \n#AutoGenerate#end
+      //@End_#ScrollName#_#FlexName#_Item_InitWidgets\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: function #ScrollName#_#FlexName#_Item:InitWidgets\(\)
+    endRegx: //@End_#ScrollName#_#FlexName#_Item_InitWidgets
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: self.#WidgetName# = self:GetWidget(#Index##ButtonFunc#)
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: ', self.On#ButtonName#Clicked'
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: ScrollItemFlexItemBtnFuncs
+    annotation: 
+    indent: 0
+    tmplete: '//@<<< #ScrollName#_#FlexName#_ItemBtnFuncGenerator >>>
+
+      #ButtonFuncs#'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< #ScrollName#_#FlexName#_ItemBtnFuncGenerator >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: '#ScrollName#_#FlexName#_Item:On#ButtonName#Clicked'
+      buttonFunc: "function #ScrollName#_#FlexName#_Item:On#ButtonName#Clicked()
+        \nend\n\n"
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WindowInherited
+    annotation: 
+    indent: 0
+    tmplete: '#Code#'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: 
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 0
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: ui_code_generator_inherited
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: MessageGenerator
+    annotation: 
+    indent: 0
+    tmplete: //@<<< MessageGenerator >>>#Messages#
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< MessageGenerator >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WidgetInit
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void InitWidgets() //@Window \n#Indent#{\n#AutoGenerate##Indent#\tOnInitWidgets();\n#Indent#}
+      //@End_InitWidgets\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void InitWidgets\(\) //@Window
+    endRegx: //@End_InitWidgets
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: "\t\t\t#WidgetName# = Meta.GetWidgetComponent<#WidgetType#>(#Index#);"
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WidgetClear
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void ClearWidgets() //@Window \n#Indent#{\n#Indent#\tOnClearWidgets();\n#AutoGenerate#\n#Indent#}
+      //@End_ClearWidgets\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void ClearWidgets\(\) //@Window
+    endRegx: //@End_ClearWidgets
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: "\t\t\t#WidgetName# = null;"
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WidgetVariables
+    annotation: 
+    indent: 2
+    tmplete: "\t\t//@Begin_Widget_Variables\n#AutoGenerate#\t\t//@End_Widget_Variables\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@Begin_Widget_Variables
+    endRegx: //@End_Widget_Variables
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: "\t\tprivate #WidgetType# #WidgetName# = null;"
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: FlexItemVariables
+    annotation: 
+    indent: 2
+    tmplete: '#Indent#//@Begin_#FlexName#_Widget_Variables
+
+      #AutoGenerate##Indent#//@End_#FlexName#_Widget_Variables
+
+'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@Begin_#FlexName#_Widget_Variables
+    endRegx: //@End_#FlexName#_Widget_Variables
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: "\t\t\tprivate #WidgetType# #WidgetName# = null;"
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: FlexItemClearWidget
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void ClearWidgets() //@#FlexName# \n#Indent#{\n#Indent#\tOnClearWidgets();\n#AutoGenerate##Indent#}
+      //@End_#FlexName#_ClearWidgets\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void ClearWidgets\(\) //@#FlexName#
+    endRegx: //@End_#FlexName#_ClearWidgets
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: "\t\t\t\t#WidgetName# = null;"
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: FlexItemSubscribeEvents
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void SubscribeEvents() //@#FlexName#\n#Indent#{\n#Indent#\tOnUnsubscribeEvents();\n#AutoGenerate##Indent#\tOnSubscribeEvents();\n#Indent#}
+      //@End_#FlexName#_SubscribeEvents\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void SubscribeEvents\(\) //@#FlexName#
+    endRegx: //@End_#FlexName#_SubscribeEvents
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: "\t\t\t\t#ButtonName#?.onClick.AddListener(On#ButtonName#Clicked);"
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: "\t\t\t\t#ToggleButtonGroupName#.AddChangeListener(On#FlexName#_#ToggleButtonGroupName#Changed);"
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: FlexItemUnsubscribeEvents
+    annotation: 
+    indent: 2
+    tmplete: "#Indent#protected override void UnsubscribeEvents() //@#FlexName#\n#Indent#{\n#Indent#\tOnUnsubscribeEvents();\n#AutoGenerate##Indent#}
+      //@End_#FlexName#_UnsubscribeEvents\n"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: void UnsubscribeEvents\(\) //@#FlexName#
+    endRegx: //@End_#FlexName#_UnsubscribeEvents
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: "\t\t\t\t#ButtonName#?.onClick.RemoveAllListeners();"
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: "\t\t\t\t#ToggleButtonGroupName#.RemoveChangeListener(On#FlexName#_#ToggleButtonGroupName#Changed);"
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: FlexItemToggleButtonGroupFnc
+    annotation: 
+    indent: 0
+    tmplete: "\t\t\t//@<<< #FlexName#_ToggleButtonGroupFuncGenerator >>>\n#Funcs#"
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< #FlexName#_ToggleButtonGroupFuncGenerator >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: On#FlexName#_#ToggleButtonGroupName#Changed
+      func: "\t\t\tprivate void On#FlexName#_#ToggleButtonGroupName#Changed(int idx,
+        int val)\n\t\t\t{\n\t\t\t}\n"
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WindowNameSpace
+    annotation: 
+    indent: 0
+    tmplete: '//@Begin_NameSpace
+
+      #AutoGenerate#//@End_NameSpace
+
+'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@Begin_NameSpace
+    endRegx: //@End_NameSpace
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 0
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 
+  - nodeName: WindowExecuteEventHandlers
+    annotation: 
+    indent: 2
+    tmplete: '#Indent#//@<<< ExecuteEventHandlerGenerator >>>
+
+      #AutoGenerate#'
+    tmpleteFile: 
+    createOnly: 0
+    addNodeLabel: 0
+    beginRegx: //@<<< ExecuteEventHandlerGenerator >>>
+    endRegx: 
+    outputAddMatchLine: 0
+    updateEnable: 1
+    singleMatch: 1
+    extraConfigContext:
+      itemTmplete: 
+      msgFunction: 
+      desc: 
+      descKeyWords: 
+      messageTableVar: 
+      widgetDefine: 
+      registerMsgFunc: 
+      subscribeEventsFunc: 
+      createScrollFunc: 
+      btnSubscribeProxy: 
+      btnSubscribeFunc: 
+      btnUnsubscribeFunc: 
+      tglBtnGrpSubscribeProxy: 
+      tglBtnGrpSubscribeFunc: 
+      tglBtnGrpUnsubscribeFunc: 
+      unsubscribeEventsFunc: 
+      codeFile: 
+      releaseScrollFunc: 
+      buttonFuncName: 
+      buttonFunc: 
+      funcNameDefine: 
+      funcName: 
+      func: 
+      createFlexFunc: 
+      releaseFlexFunc: 

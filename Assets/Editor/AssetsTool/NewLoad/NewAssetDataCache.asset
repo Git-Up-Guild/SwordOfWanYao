@@ -1,0 +1,3749 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b675c0da004dcc64fb8fc05112f652d2, type: 3}
+  m_Name: NewAssetDataCache
+  m_EditorClassIdentifier: 
+  assetDataList:
+  - assetPath: Assets/G_Resources/App/GameApp.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Game/Config/PreloadConfig.asset
+    - Assets/G_Resources/Game/Config/SysSettingOptionValGroupConfig.asset
+    - Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    - Assets/G_Resources/Artist/ScriptableObject/GameAudioMixer.mixer
+    - Assets/G_Resources/Game/Config/SysSettingOptionConfig.asset
+    - Assets/G_Resources/Game/Config/FlowTextConfigAsset.asset
+    hash: 56aed5240a5e8f9465102ac6c25a69dc
+  - assetPath: Assets/G_Resources/Game/Config/PreloadConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c1b43e79ee219432d5593842f569f5c9
+  - assetPath: Assets/G_Resources/Game/Config/SysSettingOptionValGroupConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1102da37d009ae58824cbb82cdcdb10e
+  - assetPath: Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ecff9eed8e3eb3fb457fc34d0b53b6df
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/GameAudioMixer.mixer
+    isMainAsset: 1
+    dependAssetList: []
+    hash: be11df961ba19bb7575ea424c08e42a5
+  - assetPath: Assets/G_Resources/Game/Config/SysSettingOptionConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 35a91632df8017171f7aa25c15c6095f
+  - assetPath: Assets/G_Resources/Game/Config/FlowTextConfigAsset.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5593dd3f85056ab3ea80787bea57a31e
+  - assetPath: Assets/G_Resources/App/GameConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a2350b86ca8c62d9aadf1cbf5d001036
+  - assetPath: Assets/G_Resources/App/GameEntry.unity
+    isMainAsset: 1
+    dependAssetList: []
+    hash: bb40fdcf2d43e5e2466c4909df000857
+  - assetPath: Assets/G_Resources/App/GameManager.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/App/Materials/UIBlur.mat
+    - Assets/G_Artist/Material/UI/UIGray.mat
+    - Assets/G_Resources/Artist/MiscSprites/skillmask.png
+    - Assets/Game/3DTank/GameResources/Configs/GameInitConfig.asset
+    - Assets/G_Resources/App/GameConfig.asset
+    - Assets/Game/3DTank/GameResources/Configs/UIFrameworkSettingData.asset
+    - Assets/G_Resources/Game/Prefab/Other/Loading.prefab
+    - Assets/G_Artist/Material/UI/UIResearchActive.mat
+    hash: 8d188baf1d375fafed998fc11ebc5e69
+  - assetPath: Assets/G_Resources/App/Materials/UIBlur.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/App/Shaders/UI-Blur.shader
+    hash: 95bc2fb101cc643dc9284c4ec1976912
+  - assetPath: Assets/G_Resources/App/Shaders/UI-Blur.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 89636045a87b145242b5d43777d038b6
+  - assetPath: Assets/G_Artist/Material/UI/UIGray.mat
+    isMainAsset: 0
+    dependAssetList:
+    - Assets/G_Artist/Shader/UIGray.shader
+    hash: 094ede05a07245953ed9cb5dbeb9d3fb
+  - assetPath: Assets/G_Artist/Shader/UIGray.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 63565e4aa71f8bbddc0d56dc332d19bd
+  - assetPath: Assets/G_Resources/Artist/MiscSprites/skillmask.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3ea6fa9e909f7ee1e1c878422a2dbf47
+  - assetPath: Assets/Game/3DTank/GameResources/Configs/GameInitConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: af21edb00870d520de5f9915a62b60be
+  - assetPath: Assets/Game/3DTank/GameResources/Configs/UIFrameworkSettingData.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a4bdcb100b91be6d5e49b1db9c206a4f
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/Loading.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Resources/Artist/UI/Common/loading_wifi.png
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s4.mat
+    hash: e24bc2d39949789f7a2afa1887d37498
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/commonFallBack.asset
+    - Assets/G_Artist/Fonts/TTF/simhei.ttf
+    hash: 631a1328e4a34535a7c0ebafda97d6a8
+  - assetPath: Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 86378e735d40348b01bf97a4abe034d3
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/commonFallBack.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/TTF/simhei.ttf
+    hash: 5c64e5204d32685709e31ee956fb9a06
+  - assetPath: Assets/G_Artist/Fonts/TTF/simhei.ttf
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f5cfd04cec261c530381b72705f26c9c
+  - assetPath: Assets/G_Resources/Artist/UI/Common/loading_wifi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f34f2da19af095e39da6629dffda1322
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_def_s4.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 7ae56f4d3efed0e7ab908a8728525732
+  - assetPath: Assets/G_Artist/Material/UI/UIResearchActive.mat
+    isMainAsset: 0
+    dependAssetList:
+    - Assets/G_Artist/Shader/UISpriteLine.shader
+    hash: ad0221834976a772209fcfbbf317fbe5
+  - assetPath: Assets/G_Artist/Shader/UISpriteLine.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 9ab83421616ebb566b6ce6ae979ae7b0
+  - assetPath: Assets/G_Resources/App/Prefabs/Player/NetGameObject.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3aa6e480195ec0ee532f1fb91592b271
+  - assetPath: Assets/G_Resources/App/Prefabs/Player/Player.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 375763e5031194ddff4c706b36871ab7
+  - assetPath: Assets/G_Resources/App/Prefabs/Player/PlayerEmpty.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d9ec1c50116cddbef09e3c05fd8878d6
+  - assetPath: Assets/G_Resources/App/Prefabs/UI/UIInputBox.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s2.mat
+    - Assets/ThirdParty/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+    - Assets/G_Resources/App/Prefabs/Widgets/UIWindowFrame.prefab
+    hash: 4fb9b2c8601042b0a83b9ac285312c1e
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s2.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 22ace2a77c1497afb337d9256dbc56e1
+  - assetPath: Assets/ThirdParty/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF.asset
+    isMainAsset: 0
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+    - Assets/ThirdParty/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF
+      - Fallback.asset
+    - Assets/ThirdParty/TextMesh Pro/Fonts/LiberationSans.ttf
+    hash: 87bf99cc51a24a2dafb573e13d313625
+  - assetPath: Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: aa08d39d73523a77cba7b3fe234ba2c8
+  - assetPath: Assets/ThirdParty/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Fallback.asset
+    isMainAsset: 0
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+    - Assets/ThirdParty/TextMesh Pro/Fonts/LiberationSans.ttf
+    hash: 3f85c673e7d4783122bab75928a6c04d
+  - assetPath: Assets/ThirdParty/TextMesh Pro/Fonts/LiberationSans.ttf
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 111b8756e1326461082d85edd91dceed
+  - assetPath: Assets/G_Resources/App/Prefabs/Widgets/UIWindowFrame.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 9a88fbedd7b7e3ba2ba59f017075b971
+  - assetPath: Assets/G_Resources/App/Prefabs/UI/UIMessageBox.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s2.mat
+    - Assets/ThirdParty/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+    - Assets/G_Resources/App/Prefabs/Widgets/UIWindowFrame.prefab
+    hash: 0bd77647a7dba94bdaa5cd156d440279
+  - assetPath: Assets/G_Resources/App/Prefabs/UI/UISimpleTips.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    hash: 2ae6b2056ef0a04becfff489a4a32047
+  - assetPath: Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCYFallBack.asset
+    - Assets/G_Artist/Fonts/TTF/FZCY.TTF
+    hash: 234d2af7fc7f54d71f95f8ee91dbb49d
+  - assetPath: Assets/G_Artist/Fonts/SDF/FZCY/FZCYFallBack.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/TTF/FZCY.TTF
+    hash: 19c22ec368a4e9cb05cad32bae6c3b6b
+  - assetPath: Assets/G_Artist/Fonts/TTF/FZCY.TTF
+    isMainAsset: 1
+    dependAssetList: []
+    hash: dc6540ff28e2e6e3ddc3734115ecb29d
+  - assetPath: Assets/G_Resources/App/Prefabs/Widgets/BigYellowBtn.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    hash: d3e42720ed9a66ccdd38baae2b0d2789
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/TTF/ObelixProNum.ttf
+    - Assets/G_Artist/Fonts/SDF/Prop/propFallBack.asset
+    hash: 8aa50f94321a58fd86e8c245d3518107
+  - assetPath: Assets/G_Artist/Fonts/TTF/ObelixProNum.ttf
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9efd6de7c6c41a4184d33aa47f1fe0c1
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/propFallBack.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/TTF/ObelixProNum.ttf
+    hash: 8c73ba4290d02d845e0bb35ba4cb0ce9
+  - assetPath: Assets/G_Resources/App/Prefabs/Widgets/SmallYellowBtn.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    hash: a78115dce818a8bb15bc4c2853dfd109
+  - assetPath: Assets/G_Resources/App/Sprites/AppIcon.jpg
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 7b0f2ad3e57c4b5b5247a84473131b4c
+  - assetPath: Assets/G_Resources/App/Sprites/GM.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b435a319e5d34dd225055e94160ce06b
+  - assetPath: Assets/G_Resources/App/Sprites/Start.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4e553c03adbbd3af5397a23d0e576978
+  - assetPath: Assets/G_Resources/App/UIEditorCanvas.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9039b6edb8837c62e7521abd88527438
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/bg_battle.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 95c7e59d6ae562ecea5d20d9c2c9e41a
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/bg_main.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a673cad66a612e87d41a23f8603820c1
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/bgm_battle.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: fd8ea7d49b7bc067eebbab9919ee93c5
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/bgm_battle.wav
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 7c7cb30d1f941b16d6fa999117abaea7
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/bgm_dujie.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a5aecf8a44e1c306d5d37033c824379d
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/bgm_home.wav
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9c38b8204928fdadbfcea4936b9e1136
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/bgm_main.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f6ae9813bfdf4df15745de6cedff4d34
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/bgm_main.wav
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 53c8d93ff88dad73393b5462faa19e47
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/bgm_world.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 56277d6fe22b9da29935609131496603
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/login_01.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f9326eca72f2fd02b8bd2fe33780f31d
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/manhua_bgm.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9d845203c9fa1202e471d9d6d18b26a5
+  - assetPath: Assets/G_Resources/Artist/Audio/bgm/stage_bgm.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1ec0ec03deb3765fece35b404872f9b0
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/anniu.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: cf93865a73f67723bd1bf890c062d5c3
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/battle_caishen2.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 14acff3fb5ab844788efe14eea8c3982
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/battle_gong.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: dec918837a12989f8085d3a00fe4e40d
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/battle_jiguang.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e227075bf56dc40693447f67c61954a0
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/battle_jinzhan.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f306e14b15817605fa78fdd4f25db7a8
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/battle_shifa.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: fa49ccf15ed7025d6aa64be2b955ebfd
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/big_event.wav
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9fe847d399f8194f29025b76474a1e47
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/dig.wav
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 84acc58ad56ef6ea320ece4c0a0c2516
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/dujie_light01.MP3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3720db94b3a4d92b5bfc2c1ac36c1583
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/dujie_light02.MP3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b5e7aea2ffb085cd808a5ecbaa688bd8
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/dujie_light03.MP3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3e284003e29c8c860557db89ba441fa1
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/manhua_reward.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 680706af24d4d4abf616c1dc8f03004a
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/ui_boss_coming.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e6e165c716d124b18937d6212b7cb2bb
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/ui_click.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5a9e1bbdd192b35e07c48077dfeb624e
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/ui_reward_fly.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3db1e1617a79a618f285d4bb4caa00a4
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/ui_upgrade.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f22a2811edf78552bfa06edad085940e
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/ui_victory.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 089c4c2c8f4008a569c8dcd55477d8f1
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/ui_warning.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: eee6220262d16ea48a52b92baf919113
+  - assetPath: Assets/G_Resources/Artist/Audio/ui/zhuyao_baoxiang_open.mp3
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a8f342efe20be3cab8c9c2cd452333a1
+  - assetPath: Assets/G_Resources/Artist/Material/boxTest.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: fa402991b6deba8d443b0aab1368fcfd
+  - assetPath: Assets/G_Resources/Artist/Material/buff/FX_Du.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 522b2510eb9e7e68d8f8afea42e0c1b4
+  - assetPath: Assets/G_Resources/Artist/Material/buff/FX_Fire.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e4f08475e75508b11b3bf6509f677ba7
+  - assetPath: Assets/G_Resources/Artist/Material/buff/FX_Ghost.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 414ee01f366e874f2e19bef85087e80e
+  - assetPath: Assets/G_Resources/Artist/Material/buff/FX_Ice.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 36173f6d2da0a65cb47564a63d84c646
+  - assetPath: Assets/G_Resources/Artist/Material/buff/FX_Rock.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8f31de86d5d0bbd334c90effadb2f0a6
+  - assetPath: Assets/G_Resources/Artist/Material/buff/FX_Water.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d18122464609c2c2cb5eacd497523643
+  - assetPath: Assets/G_Resources/Artist/Material/buff/FX_Yello.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 53a3fcab27e1e74318102b9f377c9bdf
+  - assetPath: Assets/G_Resources/Artist/Material/CircleLine.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8dfff47020128cbbc0e768453a2e63a4
+  - assetPath: Assets/G_Resources/Artist/Material/SkyBox/test_Skybox_rain.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e2cd487fb0247484f5c24d77cb040d02
+  - assetPath: Assets/G_Resources/Artist/Material/SkyBox/test_Skybox_snow.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9b1d39667bfab68c9dd28606de110f9f
+  - assetPath: Assets/G_Resources/Artist/Material/Sprites_ClipWithAngle.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Shader/Sprites_ClipWithAngle.shader
+    hash: a0d854f3d139127d5b2a2b63c7b03c3d
+  - assetPath: Assets/G_Artist/Shader/Sprites_ClipWithAngle.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: b34914ee61a8d71fe65da2678576ed22
+  - assetPath: Assets/G_Resources/Artist/MiscSprites/CircleMask.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3aeaf09cf58ca27d64047648ff69d799
+  - assetPath: Assets/G_Resources/Artist/MiscSprites/default_icon.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3a3b997dad47216c800fa60ac4c840a4
+  - assetPath: Assets/G_Resources/Artist/MiscSprites/MiscSprites.spriteatlas
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Artist/MiscSprites/skillmask.png
+    - Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    - Assets/G_Resources/Artist/MiscSprites/default_icon.png
+    hash: 1adcda0f38b3042817678befe7ec67a6
+  - assetPath: Assets/G_Resources/Artist/MiscSprites/RectMask.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9430f4a2979b42aa025b7d243e9d74cb
+  - assetPath: Assets/G_Resources/Artist/Prefabs/Effect/UI/fx_fazhen.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 6798fadad27e2d5a1ed375caaa8e02fc
+  - assetPath: Assets/G_Resources/Artist/Prefabs/Effect/UI/huodejiangli.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/Spine/Runtime/spine-unity/Materials/SkeletonGraphicDefault.mat
+    hash: bc00d087a4d34495aaf43e89859559e3
+  - assetPath: Assets/ThirdParty/Spine/Runtime/spine-unity/Materials/SkeletonGraphicDefault.mat
+    isMainAsset: 0
+    dependAssetList:
+    - Assets/ThirdParty/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic.shader
+    hash: 5f6ed598122377b7933071ec2f6c9603
+  - assetPath: Assets/ThirdParty/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 9349b22389487dc2ff913f24688da7f1
+  - assetPath: Assets/G_Resources/Artist/Prefabs/Effect/UI/TestEffect.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Dust.mat
+    hash: 003816209f7c7f82bdad63dc02c5519a
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/Dust.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Sprites/Smoke.tif
+    hash: 03ccb2d52ecceb8a049ec79d6d788b49
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Sprites/Smoke.tif
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1c9bd6b027b5aaf66abf8967b8b14923
+  - assetPath: Assets/G_Resources/Artist/Prefabs/Effect/UI/UIGoldFlyEffect.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Material/UI/CommingGame_LightObjectMat.mat
+    hash: 4334814178a4da7f39d017b6dff46350
+  - assetPath: Assets/G_Artist/Material/UI/CommingGame_LightObjectMat.mat
+    isMainAsset: 0
+    dependAssetList: []
+    hash: fd65285510c1a32a90d01bce001a9377
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/AnimationClipConfig/AllSkinAnimationClipConfig.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Artist/ScriptableObject/AnimationClipConfig/SkinAnimationClipConfig.asset
+    hash: 9b9968b2c54b0bd2a9b168fb0c3aca42
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/AnimationClipConfig/SkinAnimationClipConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 82a79967ff94f902ad154509fdc8ef22
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/AnimationCurveCollection.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 00ab5f25b5752eddc5fee9823a121518
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Battle/BattleBulletBallisticAssets.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 79230509d18158bb56cfe5ec14f0c08f
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Camera/CameraCurveConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b1cf1f19e4d5b71742eabe38ea48eecb
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/DropConfig/DropCurveConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8e73efe3c794ed2ded76d194ba6c10e7
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 6232699b6a63d0105ce54bbe23674212
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_2.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4ca78964b961a5068c2cdf112d25617e
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_14.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 86bf2ef3a095a83e489dcfab68f7e55e
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_15.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d102cd0b1e4b7cdb6e070d282dd7ba90
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_16.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e0ab3c275ee07dae124b694851c456ef
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_17.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8c353a4b8c5aaadbcc749cbc0a2cf0cd
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_18.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 38fb7b0bad77919c80a2acf7455c475d
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_21.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 35992ffe6398c79cd6bd90333b77a62f
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_22.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 71c397bf6bebbf5e4d71d7c88298fed0
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_23.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2236ad0d4a2f8bc45c34e0c4b6c85de7
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_24.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 57296faeebeff097624cd783d045c8b2
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_25.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a8c4d26ed5266bb708f0cd25ad8dafbc
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_26.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 34a5ba6ebd8279d6088a278a55565d06
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_500.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 61033ab6ef72666887a29e6c32211447
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1001.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d3ca141fa9131a03ceac1bd960a0541e
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1002.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9ba6da5855d924268b777e6960a3850e
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1003.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c9d069606c49cdee29c80b987131c6a4
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1004.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ea47c6679ff0670eb22b0d89b7f340d7
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1005.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b990c46589222ec0774add9b8845ee5b
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1006.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 70d8cd50e06e21e3b134af45150b405a
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1007.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d9476321b992cc8703c3bff42e9eb855
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1008.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9d127949e15a2d8256e14b4972fcf577
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1009.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 72b7b16f62db79cf6b64345b7466c974
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1010.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 786ebc65fc952158720aa7a94fdd6347
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_8001.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a75d9bc159aa0f44505ab72dfd06679a
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_8002.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 86083219fb3cbc747becfc24656f8c97
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10001.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 81e199917f74b24d610d6f2805123068
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10002.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 17f1cbbc4f3e43b41a369db1c5cc7766
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10003.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: dd827c118e3c784b17f394a7f0e040dd
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10004.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 963f343d87c413fe3045aae9baa44903
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10005.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b9f11bf319acfb28e7ffa39679d906e9
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10006.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3529e4eaea8c31b9121a9a5af90ab6de
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10007.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2118c67a5b0fb86a754a978b3096e30c
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10008.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ed8a3ee35f6e77542d66d5d8f3beca7a
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10009.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5009d1c36c3c591c21113d5124d81dff
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10010.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 083e40dd1e8bb3b63116a0a722e12add
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10011.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e3ecede02a679863ba641c84f7b89b61
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10012.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 069496519159aec98c9fe949a7fdf331
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10013.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2ead3568bb188bf8e35ee80bbb0fbcbd
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10014.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 94e5c59f43faee4711fff46c15445a66
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10015.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 93ef8e9d8f2d3dc1ef7643c5daaea50c
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10016.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 0f161edb4be6710bb72bcbf774db50ab
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_12001.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2640bd4147dbe0a3896bae4ef09335bc
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_12002.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9f59d08a29dc1dc4d50f80548fc7de6e
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_12003.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3687b89dcb2859ab3937f98c17c19caa
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20001.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 427c194e994d6ac6d086e683434237f4
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20002.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2bc4b8d85c8e748b1303735887dedfeb
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20003.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 779a6b124e3fe1aef539cacc21c27dc7
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20004.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5c32352407fa80e6d8058380fa807f04
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20005.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ad03b892ffbb30bdf40c2be52926be4b
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20006.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3411a4100e3e73eb67b698f45ac268ca
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_UI_27.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 437a50dee5e5d4f0ae60943bb7641f02
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffect_UI_28.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 24ac5be2c69b59b7eede7d19a309f549
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffectHighLevelOptimizeConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ab2f217872eb83cc20abd0d3a7ef22b3
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffectRecords.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 43d6b71e0c99829b1119180b2ad19d76
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Effect/LightingEffectRecords.csv
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3d70158aa87c7503a53302f15d71ec95
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/MiscCurve/ModelShakeTypeObject.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3d6b451a297d93d2fc24a063534e76c6
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/ShaderRecord/ShaderRecord.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b87c275ed871a74d1423f52d7d8bf230
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/TextColorLibrary.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1e7094e1abcd78b99c69a1d5c98c3b5c
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/TextSettingConfig.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_styles.asset
+    - Assets/G_Resources/Artist/ScriptableObject/TextColorLibrary.asset
+    hash: f23a0f5bc89eaf41bd056a566db45bb2
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_styles.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 918aec5aafc6ad556e7579d53ce8241d
+  - assetPath: Assets/G_Resources/Artist/ScriptableObject/Vocation/VocationInfoData.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ee1c49f478e2f5bb9b3c40e677085ac5
+  - assetPath: Assets/G_Resources/Artist/UI/Common/Common.spriteatlas
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Artist/UI/Common/loading_wifi.png
+    hash: 2434e7ceebad942c1a5d110c24e47b4e
+  - assetPath: Assets/G_Resources/CodeUpdate/Assembly-CSharp.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c9fda069405fe937a15095c9b62d1565
+  - assetPath: Assets/G_Resources/CodeUpdate/DOTween-Scripts.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 81e9c714ed4eb9c40c3ad69e09581368
+  - assetPath: Assets/G_Resources/CodeUpdate/DOTween.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d4266f60f587a41ea638f8e50e73a62c
+  - assetPath: Assets/G_Resources/CodeUpdate/Google.Protobuf.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: bb5380a2dee4b39a1a88a16d703bca1b
+  - assetPath: Assets/G_Resources/CodeUpdate/mscorlib.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 26ea05cbeab1f1d3b69b2eceddd57bf7
+  - assetPath: Assets/G_Resources/CodeUpdate/Q1SDK.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1970aad6af0ab43a3e2ffd59bb605d56
+  - assetPath: Assets/G_Resources/CodeUpdate/spine-timeline.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d15875edd0905cba53438d4420f35562
+  - assetPath: Assets/G_Resources/CodeUpdate/spine-unity.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: dc413af70b974f000c0a404d45f22674
+  - assetPath: Assets/G_Resources/CodeUpdate/System.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: cf9cbd6bbcb83502c7d1a742dbd1b6aa
+  - assetPath: Assets/G_Resources/CodeUpdate/System.Core.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 44cff05ff4c75d614d200b4eaed00d2f
+  - assetPath: Assets/G_Resources/CodeUpdate/uhypertext-scrpits.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5d52f024e38ac5ab17f25058debbe6f7
+  - assetPath: Assets/G_Resources/CodeUpdate/UnityEngine.AndroidJNIModule.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 95d542c9831c7255fbfbfd601c8ebd7d
+  - assetPath: Assets/G_Resources/CodeUpdate/UnityEngine.AssetBundleModule.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 99670683c19f3094c1613c99109a02e4
+  - assetPath: Assets/G_Resources/CodeUpdate/UnityEngine.CoreModule.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 7fe6037cc0b9a00d40685d5472994a94
+  - assetPath: Assets/G_Resources/CodeUpdate/UpdateCode.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 89ae93c25d0204c6a4d5849f2ab37dab
+  - assetPath: Assets/G_Resources/CodeUpdate/XGameBase.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4e1ce199711ff2220d23df73a81b1f34
+  - assetPath: Assets/G_Resources/CodeUpdate/XGameEngine.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 22121306cb3b2372fc98eb243abce8ce
+  - assetPath: Assets/G_Resources/Game/Config/GameInitConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 53e441dfda609c91c03150b5184af3f8
+  - assetPath: Assets/G_Resources/Game/Config/I18NConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 49a5dbfef7215d9da3646650accd9dd1
+  - assetPath: Assets/G_Resources/Game/Config/I18NFontConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d7dcf8d129129d1b968d8a9b9be02b16
+  - assetPath: Assets/G_Resources/Game/Config/I18NFontResource_cn.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d200d3ab88deb54751b81bd266351833
+  - assetPath: Assets/G_Resources/Game/Config/I18NFontResource_en.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9d76fc3f942dbfc6bc455875b9df92c0
+  - assetPath: Assets/G_Resources/Game/Config/I18NFontResource_es.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f4b716630566f335ced33b27784a421d
+  - assetPath: Assets/G_Resources/Game/Config/I18NFontResource_hk.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: fff4b7fb6f4c85ca2576ac17d5f1bc01
+  - assetPath: Assets/G_Resources/Game/Config/I18NFontResource_po.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f3f92b0e94b98f0337f73971846aa6ca
+  - assetPath: Assets/G_Resources/Game/Config/I18NFontResource_title_en.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b3b1b62a4d7e7a639bd9f55fe8c458cb
+  - assetPath: Assets/G_Resources/Game/Config/UIAnimationTemplates.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f9b85b0a8d59ed02f92ac0207aa7efdb
+  - assetPath: Assets/G_Resources/Game/Config/UIFrameworkSettingData.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Game/Config/UIAnimationTemplates.asset
+    hash: 549e33777db84f1820687ba75aca41a5
+  - assetPath: Assets/G_Resources/Game/GameScp/AI.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 28b1d248b4e4c598cb4239e7d3d83b09
+  - assetPath: Assets/G_Resources/Game/GameScp/Attribute.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e79ff668c1acdc49ccb6dfea2f876e11
+  - assetPath: Assets/G_Resources/Game/GameScp/Audio.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 78b88a25a6933fbace5255452c95500d
+  - assetPath: Assets/G_Resources/Game/GameScp/BattleBuffA.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 903d7e661a4b63a61c75de7f0c8f976a
+  - assetPath: Assets/G_Resources/Game/GameScp/BattleEffectA.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d933a5e81e2fb4a67ef6e4ad12beb751
+  - assetPath: Assets/G_Resources/Game/GameScp/BattleFormation.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ce410cf8a18ccae6b18cbcf70b3a1763
+  - assetPath: Assets/G_Resources/Game/GameScp/Buff.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a83a840e0e2007bcb48f0a45ba3c4227
+  - assetPath: Assets/G_Resources/Game/GameScp/Bullet.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5327e3728724314d21bc971026cde27f
+  - assetPath: Assets/G_Resources/Game/GameScp/BulletGroup.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c418228623518fbfec8c67d4b42bb011
+  - assetPath: Assets/G_Resources/Game/GameScp/Card.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ea68f78e1562bb2a4c47f7f7d4015ecc
+  - assetPath: Assets/G_Resources/Game/GameScp/CardCompose.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1b1ce569b715a5812ee204675f7fa50b
+  - assetPath: Assets/G_Resources/Game/GameScp/CardGroup.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 65d3b2f929d890c9959f87f638cda498
+  - assetPath: Assets/G_Resources/Game/GameScp/CardShop.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b8ecafb885ffebfc9df8849226680a6a
+  - assetPath: Assets/G_Resources/Game/GameScp/Coin.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 630841e1ce23d00a4b504a9809e02745
+  - assetPath: Assets/G_Resources/Game/GameScp/Equip.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d8a200060603e5e4af28e831d4aa2eb4
+  - assetPath: Assets/G_Resources/Game/GameScp/Fetters.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 44c1cd513074b53f7685d28052168f55
+  - assetPath: Assets/G_Resources/Game/GameScp/gamescheme.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2a014e524f14a614a4bb3ae9cf2d9629
+  - assetPath: Assets/G_Resources/Game/GameScp/Goods.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8bd6fb5857c4667c484bd9f6c35978b0
+  - assetPath: Assets/G_Resources/Game/GameScp/GoodsUse.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5d45c631aefa6b11b80e1d75a72b7a97
+  - assetPath: Assets/G_Resources/Game/GameScp/Hero.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5702aaae522d7af93a86c302bf5b6432
+  - assetPath: Assets/G_Resources/Game/GameScp/HeroFusion.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 10701aa98e481ceb219a9deabe1bfc41
+  - assetPath: Assets/G_Resources/Game/GameScp/HeroGroup.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: de7886865074b262ee938b3316428687
+  - assetPath: Assets/G_Resources/Game/GameScp/I18N.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 48c4cb09bf3944fcc14e081645038509
+  - assetPath: Assets/G_Resources/Game/GameScp/I18NBrief.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4a76db18a6cf87f4ba289dbf6dabe4cf
+  - assetPath: Assets/G_Resources/Game/GameScp/Icon.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b627184d123acd9fbdf3c5286727f6ec
+  - assetPath: Assets/G_Resources/Game/GameScp/LifeSkill.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: aeb54ea71fa67390a82cd5d4883f9533
+  - assetPath: Assets/G_Resources/Game/GameScp/LightingEffect.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 289230ba9275044909691f2f1458c7f6
+  - assetPath: Assets/G_Resources/Game/GameScp/Misc.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 77ef5bc45b73438e18d605e38d029e38
+  - assetPath: Assets/G_Resources/Game/GameScp/Monster.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 7025b0df1f1d99d2cbaa9b0bea324f41
+  - assetPath: Assets/G_Resources/Game/GameScp/MonsterA.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e78d7ee9e93feff52df0ac6194ef5b25
+  - assetPath: Assets/G_Resources/Game/GameScp/MonsterPart.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4bf22646b76786bd25b2637840b78da7
+  - assetPath: Assets/G_Resources/Game/GameScp/PrizeGroup.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 531b51ee9b295dacdbb2bb21a8a6675d
+  - assetPath: Assets/G_Resources/Game/GameScp/PrizeMain.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2a8a845c66d8feae777c653fa8d6cbb5
+  - assetPath: Assets/G_Resources/Game/GameScp/Reddot.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 19d6e82c004b6a6ff8fd53de51e19b2d
+  - assetPath: Assets/G_Resources/Game/GameScp/RefreshLevelMonster.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b06f87365bba9177fafe474a6d1f3f35
+  - assetPath: Assets/G_Resources/Game/GameScp/Room.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e04fef22e25e7bb46d12dfda3609d89b
+  - assetPath: Assets/G_Resources/Game/GameScp/Shop.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 58fa239a38b78a965ba285d65e408b27
+  - assetPath: Assets/G_Resources/Game/GameScp/ShopGoods.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9022b3b4c7fad6c3b0a02912c0624b77
+  - assetPath: Assets/G_Resources/Game/GameScp/Skill.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 481ca0f53c6ed27f8273b2af978f8911
+  - assetPath: Assets/G_Resources/Game/GameScp/SkillA.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9ce0061d6516886042837b3d1063780b
+  - assetPath: Assets/G_Resources/Game/GameScp/SkillBulletA.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ee50b35062889813e5bbcfe16af2c8e2
+  - assetPath: Assets/G_Resources/Game/GameScp/SkillViewA.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9df7e6aca2b6cdd39b3cf60af0684337
+  - assetPath: Assets/G_Resources/Game/GameScp/SkinInfo.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 11aac7303dbd0a703c3f9f9ccb05e019
+  - assetPath: Assets/G_Resources/Game/GameScp/Summon.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1eec4d25e3669397beffe456dc944b8f
+  - assetPath: Assets/G_Resources/Game/GameScp/Talent.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 41afce7066f0f0c02c24390c868e6e8a
+  - assetPath: Assets/G_Resources/Game/GameScp/Task.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4689e5959a61d2237470ded511392406
+  - assetPath: Assets/G_Resources/Game/GameScp/TowerStage.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a1bb60422ed37638646c6a36d2e9e62d
+  - assetPath: Assets/G_Resources/Game/KeyworldFilter/KeyworldFilter.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f091e48001bee3e4f73f149e8921580a
+  - assetPath: Assets/G_Resources/Game/Lua/Generate/coms/game_scheme/gamescheme.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 065dc425f15ae50fc52146e3e6a1ddb7
+  - assetPath: Assets/G_Resources/Game/Lua/Generate/coms/game_scheme/gamescheme_d0.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5e9a95dfe1d0b09f7ead3f10596e3500
+  - assetPath: Assets/G_Resources/Game/Lua/Generate/coms/game_scheme/gamescheme_d1.bytes
+    isMainAsset: 1
+    dependAssetList: []
+    hash: bfc2d7e67263db77da8838193b6e070a
+  - assetPath: Assets/G_Resources/Game/Prefab/Boot/TestBugCanvas.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1330afbd443f151c4190462ecda6b5fa
+  - assetPath: Assets/G_Resources/Game/Prefab/Chains/ChainLighting_0.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5003a74b445a9b254fbec15713c52f82
+  - assetPath: Assets/G_Resources/Game/Prefab/Chains/ChainLighting_1.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e665698506433d009d74a41db7059de0
+  - assetPath: Assets/G_Resources/Game/Prefab/Chains/ChainLighting_2.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 50e46e77ab6edcaf29c05da5d96114a5
+  - assetPath: Assets/G_Resources/Game/Prefab/Chains/ChainLighting_3.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 64577bd1a49882d9305c076f4b6a8032
+  - assetPath: Assets/G_Resources/Game/Prefab/Chains/ChainLighting_4.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5927a09e76a2674a8b2c4300fd157f5e
+  - assetPath: Assets/G_Resources/Game/Prefab/Chains/ChainLighting_20.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a099bc6d5b2372b4f41c85a0d8dbd60b
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/AbsorbDamageText.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3b3d4442fe2165d07fd2433ac625d761
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/AbsorbHpText.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 608fef74a3d607359eedadabafdcc243
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleBuffTxt.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s6.mat
+    hash: 7fafa0f6f49ed99cbda98d5d98e4e6d3
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s6.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: af24773eb160c0acdc40aff3d5970fe9
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleCombo.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s12.mat
+    hash: 0d37cbb53c391aca9f0911e092eae18d
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s12.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 6bef3e4f08cb5ad54158418fc657138f
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleCounterAtk.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s13.mat
+    hash: 926f7c2234c06502faac4f5d58b2dcf9
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s13.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 5ee516485d309905da8de0b841473821
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleFatalText.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s2.mat
+    hash: c7cff80620fa0d18d3c8c643b93dcb2c
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_def_s2.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 29f3477c07a39716593256c2706e32d1
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleFlashDmgText.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s8.mat
+    hash: 522888d838c9aa5820beabe5ebfaf1b7
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s8.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: aba055cd6d9e7da29508ae7e142bbd83
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleFlashDmgText_Fatal.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s8.mat
+    hash: faf148f22f687807aef85572901dfe34
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleHeathText.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s3.mat
+    hash: fbe774a5fc4b20a97b65870a1a83f165
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s3.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 5289b9b03fd4635e7b9a6895fa407e63
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleMiss.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s10.mat
+    hash: 2a83843f91f16fb3115776ce85104c15
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s10.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 7308dce1d4a671a9ef03619e7c1be81e
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleNormalTxt.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s6.mat
+    hash: 0388d2cbeaf9dc434114c62675da3a28
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleNormalTxt_Fatal.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s6.mat
+    hash: 8460cee77caf64c77cf933c4d82bbfe3
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleNuqiji.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s6.mat
+    hash: 39597d07003cca6acc8ac8bacda2c964
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattlePosionDmgText.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s9.mat
+    hash: 44a2ab39803ef58c8566a3611b4b1b10
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s9.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 915f5173d6abc781f5be373daa9b8db3
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattlePosionDmgText_Fatal.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s9.mat
+    hash: 614d378447a7835ffe56b078bf57e599
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleStun.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s11.mat
+    hash: 7720048b625fa559982126ffaa1adcb7
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s11.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 6cd340ec88f9f090828baa76efc5669a
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleTrueDmgText.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s6.mat
+    hash: 4ee4f035eb425a2a78f7e7f43130fe63
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BattleTrueDmgText_Fatal.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s6.mat
+    hash: cdeffa71283e3422a02d5ccfba5cc303
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BufferEffect_2001.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b15adb93dbf5ca9a275af7408a083ed5
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BufferEffect_2002.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 36fe87f68a7b737e763a3c3c19411e7d
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BufferEffect_2003.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 57d8fee2a326e048d8ee264d253d4115
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BufferEffect_2004.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 6b91a8920cdc54180396527bf97c5392
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BufferEffect_2005.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a90c74fe4f3fea45665cacdc75e87330
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BufferEffect_2006.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1713b2cab5f997b8019216365de40cf0
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BufferEffect_2007.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 831ee35078707bfc6e0d1f08fd1201c6
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/BufferEffect_2008.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 63a1b634ff62660be390531dbe61e9c0
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/CanvasGroupFlowText.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 69bccdcb2639ebbbd8342422903db686
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/CustomFlowText.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f555763849177f02fcaa9dbc4b125a2e
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/HeroDailTipsText_add.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: f6cde119391c7c9401ce219193518498
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/HeroDailTipsText_down.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 285df13d4bb39f0f6d5be42d63c294b8
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/IconFlowText.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 321aa50c5487d043dbac3b24090b7155
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/NormalText.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ea9a1616027ab33be1577c88d39b70f3
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/OriginFlowText.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b408a2580fa7826dfac9c0eaf6fa31cd
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/PowerText.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 75bf16a1119ae7615f6efd8bba08f926
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/PowerValText.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 7c4efac058a06b6eea7fa3ec1271fa83
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/StageYieldAddFlowText.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c1f223118c7627b1be30470d1b3f1ecd
+  - assetPath: Assets/G_Resources/Game/Prefab/FlowText/SystemTipsText.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s2.mat
+    hash: 2e241445ff43e15af1508962146c27c2
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/BigButton_Blue.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3da54fa861aabf94140e8b64e2e36ea4
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/BigButton_Yellow.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 637aa84a8ef49032f61f9376ce636ed0
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/Common_SmallBlueButton.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d4713830403fe63ba6874c53e4003992
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/Common_SmallYellowButton.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1d8738cc8f21368354544216dd913270
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/CommonExitButton.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/icon_ty_fanhui.png
+    hash: 5d2c750bc92a83c33a637cd58ab0bc70
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/icon_ty_fanhui.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b06772aac152816533e5633d784435f8
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/CommonTaskListItem.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Resources/Game/Prefab/Other/PrizeIcon_v1.prefab
+    hash: 55c427bc45c2430cdf4b7726f78dd270
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PrizeIcon_v1.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b2160b13074f2209257375d47612d212
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/FaceFrameTitle.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a7968bc92d8ecee1f31a93b61704d2c3
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/GodWeaponStars_28_ForIcon.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 34fa5c9adc5f4d575e4bd80c0115f33e
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/GoodsIconItem_v1.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Material/UI/UIGray.mat
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s6.mat
+    hash: aeab9a62d48446a746d600b72fb1eab1
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/GoodsMaterialItem.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    - Assets/G_Resources/Artist/MiscSprites/default_icon.png
+    hash: cfde374d50d44bba1b4df1613703366e
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/GoodsMaterialItem_v3.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 752a05506feb972f9c9a9e51ff80284f
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/GoodsMaterialItem_v4.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s2.mat
+    - Assets/G_Resources/Artist/MiscSprites/default_icon.png
+    hash: b5e1c133d13e3d5a83b6a92699f02959
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/GoodsMaterialItem_v5.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Resources/Game/Prefab/Other/GoodsIconItem_v1.prefab
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s2.mat
+    hash: 6583f054beaf54fb07f007135939603c
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/GoodsName.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 3746e4a16207d65301b7ade52098b7a3
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/HeadInfo.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: af44716349dfb05b8030da9097b62049
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/HeadInfo1.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s3.mat
+    hash: 98393dcc0482ca4ab1b4509c6c2d8afe
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_def_s3.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 8b458e65be636c8e6e7a4317bba938d5
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/HeadInfo2.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s3.mat
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s4.mat
+    hash: 1ea0895dcc28f653b3126ccccf825e58
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/HeadInfo3.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s3.mat
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s4.mat
+    hash: fa30a813eb4638b032658413a8e76386
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/HeadInfo4.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 889d57ea3710a8c15063ea23a73ee7fd
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/HeroIconFightProps.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 376ac7061b1ef28d57df79d47711868a
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/HeroIconItem_v1.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    hash: ea8879a98ee1fa35ac6535ab9b11284e
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/HeroIconItemForBag.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 296a3c6e992a8e2f35e206d9c6f26468
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/heroSaying.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: f47637f9f76bede4c8a90d43c48ef51e
+  - assetPath: Assets/ThirdParty/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+    isMainAsset: 0
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Sprites/EmojiOne.png
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_Sprite.shader
+    hash: d13d5c457d36121ba94b210b84253e69
+  - assetPath: Assets/ThirdParty/TextMesh Pro/Sprites/EmojiOne.png
+    isMainAsset: 0
+    dependAssetList: []
+    hash: a60e2be75524ff64fff6c42e3a3bb72b
+  - assetPath: Assets/ThirdParty/TextMesh Pro/Shaders/TMP_Sprite.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 2869ce3a552852bf761365d22bf2e89a
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/HeroSelector.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Game/Prefab/Other/HeroSelectorFilter.prefab
+    - Assets/G_Resources/Game/Prefab/Other/HeroIconItem_v1.prefab
+    hash: 189ce7edb3ce96cf467e0b8e1d067661
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/HeroSelectorFilter.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 821a316a2a7add1b8b23a801027e4df7
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/HeroSelectorCustom.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Game/Prefab/Other/HeroSelectorFilter.prefab
+    hash: 2491d69f956dc905efc783d7e9b14d47
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/LotteryPoorProgress.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: b30411ef43abe235de3edbac17621367
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/ModelViewer.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b545bcc7f5864364f5b2f0f56cce38e2
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/NoneTips.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: de95610f8a303f46ea90ccb5fe8b3e1d
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/NumberSpriteSwicher.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3ded51f71af0995fb92295041d3dae43
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PanelSubTitle.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 6ac97f59005558685e0dd53dda8612af
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PanelSubTitle2.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 01551f7a1ef63d83637993ab8f2d730a
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PanelSubTitle3.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9bfc585f4183bab32ea033cf14285aff
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PanelSubTitle4.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 23d36088109005db21c3779f7085c83c
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame1.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Game/Prefab/Other/BigButton_Yellow.prefab
+    - Assets/G_Resources/Game/Prefab/Other/BigButton_Blue.prefab
+    - Assets/ThirdParty/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+    hash: 09509b6b8d587f4c1bba4be5dfcd9ead
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame1_NoButton.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 70f5b86452359f2e470fae8c27e719f6
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame1_NoButton_Lv2.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2eabc1154cbc107c4cd609e3292593e7
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame1_OneButton.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 70f65c51e40fdb110bf4e20874993479
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame2.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5219df69989bf2232204326853c16a35
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame3.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8733dd644b6350301ae21f8f6e685e33
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame3_NoButton.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 7b5b618771d2fd1143590bd8d44261e8
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame4.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b0b6b582df1ac4135b8c4134e26b3b2d
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame4_New.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    hash: aabde3af65557d4102825fc8da2e7e2b
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame5.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 90b97727ead80437c066d40be31a486f
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame_WithPic.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s3.mat
+    - Assets/G_Resources/Game/Prefab/Other/BigButton_Yellow.prefab
+    - Assets/G_Resources/Game/Prefab/Other/BigButton_Blue.prefab
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s2.mat
+    hash: 25f8eda689943dee456ef08d1109d937
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s3.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: a15d8000927860c69999fc1219c2f7a9
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrame_WithPic2.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d7c9cf4840a90595912446d80909cc0f
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrameBottomTab.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    hash: 1d9587f2b3b2569ba544073682132ed9
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PopupWindowFrameBottomTab2.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s3.mat
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    hash: 549069b4d286ca307db30e6517f2a535
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PrizeFreeNode.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s3.mat
+    hash: 976fbc2d8e25b7c7c019cbc10d80f40b
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/PrizeListItem.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4b50ae55e1145d73c685ddf38baf9550
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/ResearchItemIcon.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    hash: 8dba464019ea467935974de9efd33240
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/ResearchPropItem.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 35d806cb959f93350ec547ca2e3d6157
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/ResObtainAccessItem.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Game/Prefab/Other/Common_SmallBlueButton.prefab
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Resources/Game/Prefab/Other/Common_SmallYellowButton.prefab
+    - Assets/G_Resources/Game/Prefab/Other/YellowGoodsMaterialButton2.prefab
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s4.mat
+    - Assets/G_Resources/Game/Prefab/Other/GoodsIconItem_v1.prefab
+    hash: f466652882077eba8bd5c3164008a6b8
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/YellowGoodsMaterialButton2.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s2.mat
+    hash: d5940ef89526c67bfae25747931a5dbe
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/SceneTitle.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 6a9668c95ef5b0f9ff8a7bdbbef7fa9c
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/ShadowHunterDifficultyIcon.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_default.mat
+    hash: b08f574840fc4dcecd71405658cefcc4
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_default.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 609b1471ec1dce0e24ff22e0841cdf85
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/ShadowHunterMapBossItem.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Resources/Game/Prefab/Other/ShadowHunterDifficultyIcon.prefab
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s4.mat
+    hash: 4f863431c181cbb40e72d470cc2e6e9d
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/TipsIconItem_Goods.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8d280e664fcb8941606d01f3638cd27e
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/UIlkygogridGoods_16.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Game/Prefab/Other/YellowGoodsMaterialButton.prefab
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    - Assets/G_Resources/Game/Prefab/Other/GoodsMaterialItem.prefab
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s2.mat
+    - Assets/G_Resources/Game/Prefab/Other/PrizeIcon_v1.prefab
+    hash: 763914d8f9151eedfa2010fb798a794a
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/YellowGoodsMaterialButton.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s2.mat
+    hash: ffb8bbd002764a78209c35fe245b4111
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/UISlideViewBtn.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s4.mat
+    hash: 83e8fbed3cdb463a8ea035da17f2a15f
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/UISubAddPanel_v2.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 958725b6958103db489ae2337a1c0227
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/UISubAddPanel_v3.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_def_s4.mat
+    hash: 76bc675c1380deb48b11322f7236c14d
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/UIVSBar.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4a717dbbb6ac911f630d3ba47bc66cd8
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/UnionHegemonyBattleCenterItem.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    hash: b106603620a7f4c9595bc92d640bbb5b
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/UnionHegemonyBattleItem.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8d1a5c8645dd74da7512b51e366b490b
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/UnionTotem.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Artist/MiscSprites/default_icon.png
+    hash: 0fa9b6a06a3ba907a2ef2a04cf2feb0c
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/WanderEquipIconItem_v1.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s6.mat
+    hash: 641e2af472c4ce3aee0c3277459c8f6a
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/WhiteGoodsMaterialButton.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3cceaf54a871309167ed32326e356f51
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/WindowBackground.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 17553f9f1e6f7309461ae0e7136c2aeb
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/WindowBackground1.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 6b189fb33e95f8a5ee3bd4768c11276b
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/WindowBackground_Suc.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 07d81636c08176d7e559b7c631948a84
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/WindowBackground_Suc_2.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 55b59342acf2c2e77e81b4296c8d37ae
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/WindowTitle.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4df70550f0a4e5830f77c4241445ed5b
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/WindowTitle2.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 88b45e15764e8e4b83b03db580c55278
+  - assetPath: Assets/G_Resources/Game/Prefab/Other/WindowTitle3.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 99fba521a00df62697f938d03f31abfe
+  - assetPath: Assets/G_Resources/Game/Prefab/update/feixingxiaoren.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 701c39c81d945614395f00cc271a87a8
+  - assetPath: Assets/G_Resources/Game/Prefab/update/FZCY_Update.TTF
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 44e8b4d391de8be7f7f013a38271fe7a
+  - assetPath: Assets/G_Resources/Game/Prefab/update/jindutao.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f250d35819790adcea0f3b1e529737c2
+  - assetPath: Assets/G_Resources/Game/Prefab/update/jindutaodi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f63905199d713e3823ab1167ee77c404
+  - assetPath: Assets/G_Resources/Game/Prefab/update/kuangti.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b18edfedae1ae30c50d34b0da7137844
+  - assetPath: Assets/G_Resources/Game/Prefab/update/logo.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b3ecf9b285073a3bcc691c9efc6715cf
+  - assetPath: Assets/G_Resources/Game/Prefab/update/PopupWindowFrame5_Update.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Game/Prefab/update/ty_yellow.png
+    - Assets/G_Resources/Game/Prefab/update/FZCY_Update.TTF
+    - Assets/G_Resources/Game/Prefab/update/kuangti.png
+    - Assets/G_Resources/Game/Prefab/update/ty_lv.png
+    hash: 879e45aa54ef20ae9c89f948a8ae6f13
+  - assetPath: Assets/G_Resources/Game/Prefab/update/ty_yellow.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 622ba04e33accd812c1f935b36c98b51
+  - assetPath: Assets/G_Resources/Game/Prefab/update/ty_lv.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3039c22808349b4f3538532e38e76199
+  - assetPath: Assets/G_Resources/Game/Prefab/update/tanchuangerceng_update.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: bbe2a4e617d9abb915c3abb8b566ad62
+  - assetPath: Assets/G_Resources/Game/Prefab/update/ui_dl004_1.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 425945fa9c175b75f6a53fa563f91e50
+  - assetPath: Assets/G_Resources/Game/Prefab/update/UIMoviePlayer.prefab
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5603b2e89cab2c6d3ccabb7bf516f7df
+  - assetPath: Assets/G_Resources/Game/Prefab/update/UISystemService_Update.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Game/Prefab/update/PopupWindowFrame5_Update.prefab
+    - Assets/G_Resources/Game/Prefab/update/kuangti.png
+    hash: 99c66973546235c792ca6cdcf83994cd
+  - assetPath: Assets/G_Resources/Game/Prefab/update/update_bg.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 708f2adbc0343b184a406ee72fe656e5
+  - assetPath: Assets/G_Resources/Game/Prefab/update/UpdateI18NConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a8c2a580f44a2be12c09f1fafa01eeb1
+  - assetPath: Assets/G_Resources/Game/Prefab/update/updateui.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Resources/Game/Prefab/update/jindutaodi.png
+    - Assets/G_Resources/Game/Prefab/update/ui_dl004_1.png
+    - Assets/G_Resources/Game/Prefab/update/tanchuangerceng_update.png
+    - Assets/G_Resources/Game/Prefab/update/ty_yellow.png
+    - Assets/G_Resources/Game/Prefab/update/update_bg.png
+    - Assets/G_Resources/Game/Prefab/update/FZCY_Update.TTF
+    - Assets/G_Resources/Game/Prefab/update/logo.png
+    - Assets/G_Resources/Game/Prefab/update/kuangti.png
+    - Assets/G_Resources/Game/Prefab/update/UpdateI18NConfig.asset
+    - Assets/G_Resources/Game/Prefab/update/ty_lv.png
+    - Assets/BaseScripts/Update/UpdateTest.prefab
+    - Assets/G_Resources/Game/Prefab/update/UISystemService_Update.prefab
+    - Assets/G_Resources/Game/Prefab/update/jindutao.png
+    - Assets/G_Resources/Game/Prefab/update/feixingxiaoren.png
+    hash: e4bc96fc3c65b4c18e4502ac8215489e
+  - assetPath: Assets/BaseScripts/Update/UpdateTest.prefab
+    isMainAsset: 0
+    dependAssetList: []
+    hash: fa3a7af944143c240e6904570279dc4a
+  - assetPath: Assets/G_Resources/Game/RenderTexture/CaptureBlurRT.renderTexture
+    isMainAsset: 1
+    dependAssetList: []
+    hash: cbd9aa051ecbdc306655bb0917ed73c7
+  - assetPath: Assets/G_Resources/Game/RenderTexture/DefaultRenderTexture.renderTexture
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2be925e9db190ea425fce49f3bb453b3
+  - assetPath: Assets/G_Resources/Game/Shadervariant/GameShadervariant.shadervariants
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Shader/UIGray.shader
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Shader/UI-FogOfWarMaskEffectImge.shader
+    - Assets/G_Artist/Shader/UISpriteLine.shader
+    - Assets/G_Resources/App/Shaders/UI-Blur.shader
+    - Assets/G_Artist/Shader/URP/CaptureBlur.shader
+    - Assets/G_Artist/Shader/UI-HSB_Outline.shader
+    - Assets/G_Artist/Shader/UI-MaskEffectImge.shader
+    - Assets/G_Artist/Shader/UI-MaskLevel.shader
+    - Assets/G_Artist/Shader/UIGlow.shader
+    - Assets/G_Artist/Shader/Sprites_ClipWithAngle.shader
+    - Assets/G_Artist/Shader/UI-MaskBorderBlur.shader
+    hash: bbe243f9f84f8888fd3bd64b1a45e345
+  - assetPath: Assets/G_Artist/Shader/UI-FogOfWarMaskEffectImge.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 0b662ee6a4bb3d0b95da9426a13635c6
+  - assetPath: Assets/G_Artist/Shader/URP/CaptureBlur.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 961de23bbb3fe617e6963a33abfaed2c
+  - assetPath: Assets/G_Artist/Shader/UI-HSB_Outline.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 21d67c9b8f3b931a84f25fca674667aa
+  - assetPath: Assets/G_Artist/Shader/UI-MaskEffectImge.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 3927cb596d288f99eaa711c9eb4e2a22
+  - assetPath: Assets/G_Artist/Shader/UI-MaskLevel.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 216d8c6615f6dc494df416f2cffa1c00
+  - assetPath: Assets/G_Artist/Shader/UIGlow.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 9d5864956aa979dc124c46f061e0e433
+  - assetPath: Assets/G_Artist/Shader/UI-MaskBorderBlur.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 6a95f89354f2902ddf7c405fbd3acd1e
+  - assetPath: Assets/G_Resources/Game/Shadervariant/ShaderCollectionWarmUp.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Shader/A_VFX_distort_add.shader
+    - Assets/G_Artist/Shader/Effect_distortion_blend.shader
+    - Assets/G_Artist/Shader/UIGray.shader
+    - Assets/G_Artist/Shader/A_VFX_distort_blend_fgui_list.shader
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Shader/UI-FogOfWarMaskEffectImge.shader
+    - Assets/G_Artist/Shader/A_VFX_Dissolution_blend3.shader
+    - Assets/G_Artist/Shader/A_VFX_Dissolution_Blend_JZB.shader
+    - Assets/G_Artist/Shader/A_VFX_Niuqu.shader
+    - Assets/G_Artist/Shader/A_VFX_Additive_Mask_Sprite.shader
+    - Assets/G_Artist/Shader/A_VFX_Additive_Mask.shader
+    - Assets/G_Artist/Shader/UISpriteLine.shader
+    - Assets/G_Resources/App/Shaders/UI-Blur.shader
+    - Assets/G_Artist/Shader/Effect_distortion_add.shader
+    - Assets/G_Artist/Shader/URP/CaptureBlur.shader
+    - Assets/G_Artist/Shader/panda shader/PandaShaderSampleV1.0.shader
+    - Assets/G_Artist/Shader/AB_VFX_AB.shader
+    - Assets/G_Artist/Shader/A_VFX_AD.shader
+    - Assets/G_Artist/Shader/UI-HSB_Outline.shader
+    - Assets/G_Artist/Shader/A_VFX_AB.shader
+    - Assets/G_Artist/Shader/AB_VFX_AD.shader
+    - Assets/G_Artist/Shader/UI-MaskEffectImge.shader
+    - Assets/ThirdParty/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton.shader
+    - Assets/G_Artist/Shader/UI-MaskLevel.shader
+    - Assets/G_Artist/Shader/A_VFX_lizi_katong.shader
+    - Assets/G_Artist/Shader/PFX_Trail.shader
+    - Assets/G_Artist/Shader/UIGlow.shader
+    - Assets/G_Artist/Shader/A_VFX_Blend_Mask.shader
+    - Assets/G_Artist/Shader/Sprites_ClipWithAngle.shader
+    - Assets/G_Artist/Shader/A_VFX_Dissolution_Additvie_JZB.shader
+    - Assets/G_Artist/Shader/A_VFX_Additive.shader
+    - Assets/G_Artist/Shader/UI-MaskBorderBlur.shader
+    - Assets/ThirdParty/Spine/Runtime/spine-unity/Shaders/SkeletonGraphic/Spine-SkeletonGraphic.shader
+    - Assets/G_Artist/Shader/A_VFX_distort_blend.shader
+    - Assets/G_Resources/Game/Shadervariant/GameShadervariant.shadervariants
+    - Assets/G_Artist/Shader/A_VFX_Dissolution_blend.shader
+    - Assets/G_Artist/Shader/A_VFX_Additive_Mask_JZB.shader
+    hash: b1438ce710db8d759f591f82bf2d8743
+  - assetPath: Assets/G_Artist/Shader/A_VFX_distort_add.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: ddb1b69dd62c0d4d46367340fb97dbff
+  - assetPath: Assets/G_Artist/Shader/Effect_distortion_blend.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 4549b1f5b1b3a0fcd6972dcb69804453
+  - assetPath: Assets/G_Artist/Shader/A_VFX_distort_blend_fgui_list.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 5b95467e94e309ce9a7cceee5d709433
+  - assetPath: Assets/G_Artist/Shader/A_VFX_Dissolution_blend3.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: ed9e6aa555c2ff49f79ae7739791280c
+  - assetPath: Assets/G_Artist/Shader/A_VFX_Dissolution_Blend_JZB.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: f5b2124e14bb8dbbcf21012aa471b8ce
+  - assetPath: Assets/G_Artist/Shader/A_VFX_Niuqu.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: dd2a28e1d8ac7b55f922b643830acf9d
+  - assetPath: Assets/G_Artist/Shader/A_VFX_Additive_Mask_Sprite.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 2dc1b3360936a030556cd1e4d6ece077
+  - assetPath: Assets/G_Artist/Shader/A_VFX_Additive_Mask.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 6ef962fb7bff5985f6b5158d454f8279
+  - assetPath: Assets/G_Artist/Shader/Effect_distortion_add.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 7c22f9d48e5f662d52f70e93f85cd7b0
+  - assetPath: Assets/G_Artist/Shader/panda shader/PandaShaderSampleV1.0.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 6aa3dfcf6c4ce99cefa7ed057b743fdb
+  - assetPath: Assets/G_Artist/Shader/AB_VFX_AB.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 7a57e0e52cea90f6e00826641ec5813c
+  - assetPath: Assets/G_Artist/Shader/A_VFX_AD.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 70eefa3d3da7c9605750de0ecca98512
+  - assetPath: Assets/G_Artist/Shader/A_VFX_AB.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: ba899c286199df9ad0492411dbc744ff
+  - assetPath: Assets/G_Artist/Shader/AB_VFX_AD.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 0247a103df56531740350b8a98acf185
+  - assetPath: Assets/ThirdParty/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 613437c7323a897bc0855dce218e42b2
+  - assetPath: Assets/G_Artist/Shader/A_VFX_lizi_katong.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 8f59c08a18a0c80119dbe3729837829b
+  - assetPath: Assets/G_Artist/Shader/PFX_Trail.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 92bbe279d15564859d8d4213783a0e53
+  - assetPath: Assets/G_Artist/Shader/A_VFX_Blend_Mask.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 3aa4dd8a68199588fdbdfb0f01b43a12
+  - assetPath: Assets/G_Artist/Shader/A_VFX_Dissolution_Additvie_JZB.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: b18630b636c4959b9bcef5e7d68f533f
+  - assetPath: Assets/G_Artist/Shader/A_VFX_Additive.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 7e72f3c10ceb89317907b2bbe329e794
+  - assetPath: Assets/G_Artist/Shader/A_VFX_distort_blend.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 5c29a6ed4f554b6ab7983ad4f8942a64
+  - assetPath: Assets/G_Artist/Shader/A_VFX_Dissolution_blend.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 0ee8414d5c10fe50c4db1b2ee337cf4c
+  - assetPath: Assets/G_Artist/Shader/A_VFX_Additive_Mask_JZB.shader
+    isMainAsset: 0
+    dependAssetList: []
+    hash: db63682372d9ec5ceade39e1fc63a888
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s1.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: c6b47a32bca90084fcb6f304d3d55f96
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_def_s1.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 7a511088fd945bfdcef90890a75bb5eb
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_def_s5.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: e03b3d82200472a87612908325fa1f3d
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_def_s6.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 49ee13e7c0a6660b90c31e8bb5d5c3c1
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_def_s7.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: dfe92deba24bac3c98261d88556a4289
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_text_s1.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 5e6d8e472cf7ebfbabd760fe28d31a69
+  - assetPath: Assets/G_Artist/Fonts/SDF/COMMON/common_underlay.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    hash: 176596ce4d2649128d88c04e30d85886
+  - assetPath: Assets/G_Artist/Fonts/SDF/FZCY/fzcy_s1.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    hash: 9878adafdccf4a098d6a449aa9f89106
+  - assetPath: Assets/G_Artist/Fonts/SDF/FZCY/fzcy_s2.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    hash: 926e18c58d076e73e75e843fae033380
+  - assetPath: Assets/G_Artist/Fonts/SDF/FZCY/fzcy_s3.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    hash: b0fa168bf9f7f0052390ec811dd74f1e
+  - assetPath: Assets/G_Artist/Fonts/SDF/FZCY/fzcy_s4.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    hash: 6614eaa2bc1df98774ae4d1e716c2bc1
+  - assetPath: Assets/G_Artist/Fonts/SDF/FZCY/fzcy_s5.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    hash: 1dd038594f48c4da676701c7a8164db2
+  - assetPath: Assets/G_Artist/Fonts/SDF/FZCY/fzcy_s6.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    hash: 0723aec796e93d8a83e7850fa9d7761a
+  - assetPath: Assets/G_Artist/Fonts/SDF/FZCY/fzcy_s7.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    hash: c75b7d677dd60373e8fd25b60ba9bb74
+  - assetPath: Assets/G_Artist/Fonts/SDF/FZCY/fzcy_styles.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    hash: 133a7472167c5d338a6e1a742e94d3b7
+  - assetPath: Assets/G_Artist/Fonts/SDF/MainTitle/MainTitle.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/TTF/HYShangWeiShouShuW.ttf
+    hash: a6de3656f9f95dbc2674e9202302adad
+  - assetPath: Assets/G_Artist/Fonts/TTF/HYShangWeiShouShuW.ttf
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 926cd4c2ddc52f91881f808347640316
+  - assetPath: Assets/G_Artist/Fonts/SDF/MainTitle/MainTitle_s1.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/MainTitle/MainTitle.asset
+    hash: 31f3fadd8cd4e1e7b0eb492f6f43d1ff
+  - assetPath: Assets/G_Artist/Fonts/SDF/MainTitle/MainTitle_s2.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/G_Artist/Fonts/SDF/MainTitle/MainTitle.asset
+    hash: 21f960fb9560e174a83019f5b00edda5
+  - assetPath: Assets/G_Artist/Fonts/SDF/MainTitle/MainTitle_styles.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/MainTitle/MainTitle.asset
+    hash: cc3f1e2d2439fe94efa3b79e14dd37f9
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s1.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 7dea6229534bcfef05be90dd545c3475
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s2.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 5acb7d0a8dd0ab14fb46a868aef2d323
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s4.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 32fda6d62c8556691bc5dc2a3c12dcd5
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s5.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 4cd71b2c2e7cde2282c72b69762174a4
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s7.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 2f8c10dbecb917708721c70eb23c916d
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s14.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 75cc529ceafd8034c28402e96165691e
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s15.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 5c0b49596f3264699ff94b1165a718c3
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s16.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 09d0eed3e012cba54dfe16f937c6881b
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s17.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: eb529c3177fd55cf3549281bc87a55ac
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s18.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 8b5681b515d4ab916885c8da5a07d3a7
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s19.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 84c611d46b7cb6d147dff8cb18346e41
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s20_cheng.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 389182b6a446af461b697b1a1ad6ad8a
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s21_lan.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: a089f541fa2f62ad85cca3c30c5b279f
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s22_hong.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: a650e06bda96242a206d6367948b147d
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s23.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: f363669ca1fd67ade3686a49c7990570
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s24_zi.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 233653bc83615b5fde2856c50af50bf4
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s25.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: ad0a193dac65936ff6aef7277f020fc2
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s26.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: 261ad91c2c8e8e6021036cf5c59050e9
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s30.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: f4ba6690eb6f0dc38bc3ca121afa2117
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_s85_66_45.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/ThirdParty/TextMesh Pro/Shaders/TMP_SDF.shader
+    hash: a90585a1ca5c37f2d909f70c4af1734a
+  - assetPath: Assets/G_Artist/Fonts/SDF/Prop/prop_styles.asset
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    hash: c91ffcc4b1996ef39dc5b437648321cd
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/AllDisciple.spriteatlas
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/kuangti.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_lan.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_lv.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/icon_buzhen.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/yuandi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/ty_huang.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_chen.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/ty_xiangqing.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/floor_qiandi2.png
+    - "Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/ty_lv \u62F7\u8D1D.png"
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_hong.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_cai.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_zi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/wenzi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/bg.png
+    hash: d9d4e9e741a83742d193a39565bbe1ab
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/kuangti.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c317065468891d90565ee7b28cbb9a98
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_lan.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c5b7f2bea906f1c4531e1adb2d230963
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_lv.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b28082370f0a82cee413c0b77d866452
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/icon_buzhen.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 76ccf61a491d6d52fbe261ba881139b4
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/yuandi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 7a89b865074088b46694e8acd405df81
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/ty_huang.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2d1236f433ed732c90e6e5c7cb54e5a5
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_chen.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 43814cf55d4e16d6b0e4ab69b9fb625c
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/ty_xiangqing.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: efffefeeb323f2c723afe8637f91a6a4
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/floor_qiandi2.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 6cc6d9b912e7d2bd05aca3e22265aef4
+  - assetPath: "Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/ty_lv
+      \u62F7\u8D1D.png"
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ad4f9c2431f03291a43d46be9df009c4
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_hong.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3c397eb9208aed787ec13f641969d533
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_cai.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1044c248471dd3a2323596fa6f47f1c5
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_zi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f7f26c05c133897a20417a64bb8d46bb
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/wenzi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 81eab3306cabc8cb3e2183213f121aa3
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/bg.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ad0dce96659bb74b89b46420f6ba5837
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/01lv.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 0c3300737e76d029afe0b0fde105666a
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/02hong.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a84fcaf2e68dc192b2a05a652db83f17
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/03cheng.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8ee498032575bf43e7fabffea2d93d0a
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/backGround_001.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5cc22960846adb4d7faf39eb7be66bd3
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/BG_gonggao.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 42bf661e65553290ba26ebcd09d3dbbe
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/biaotidi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 0a0e61f8f64162ebe67ea16bd700e2d0
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/ddi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c3259bb364305476d8cbb376ccd124ec
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/ddi1.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f0babefd983c6e2f8d323e21718f9833
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor2_gonggao.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f0a194e490ae6c4092c3697175b5fcb1
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi00.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d6b22fe6d9a85ca63e0abbb933d9014b
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi3.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: eeb9e4f2d18bc089594dbc900498c1b7
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi111.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 469d9c9e76518327fb6e8ececfc707a8
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi122.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d926a9e9adfa72e306640d4af10cdba1
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi333.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9a2265a44b2258fe03f6c2024753f4ed
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi_xuanz.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 764b4f699f65b39a69b37f3665b0e8b8
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/gonggao.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 183242658051d24d94658be576a3ce02
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_denglu.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b0c63cd4926c05e1715688d6e2b24d19
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_gonggao.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 496b55c807d72bff46eef7543b5a1fbd
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_qufu.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a304bcf857d249c0841f6295eab800a8
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_zhanghao.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8ac82aa6eb832fb71f38810bc937c601
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Login.spriteatlas
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/ddi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_qufu.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/backGround_001.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/youjiandi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi3.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_gonggao.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/ddi1.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/gonggao.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/02hong.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi_xuanz.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi111.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_denglu.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/ui_dl004_1.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi122.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi00.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/03cheng.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor2_gonggao.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi333.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/BG_gonggao.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/01lv.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/tuijian.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/biaotidi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_zhanghao.png
+    hash: 6ca48fc49157f1f580de442925710523
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/youjiandi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: cc78ab71594de04670c27d8a7d2d3fc6
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/ui_dl004_1.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 711accaefc94ae8df9871212d3ff7f45
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/tuijian.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4573be2f34ff2468fce2375cbe3d8262
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/baitian.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 77e636221ccb59511d53de435ec3fd8d
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/diwen.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: bfd379e926e37082d1c6c352ed60930c
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/dizi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 267120cdc9717596a7c19bb130c9de20
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/floor_ty_dengji.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b889fafba9d6004093d3f0a8f44cb92e
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/floor_ty_ziyuandi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1da5c9f7cdf0e285899ceaa1d24d682c
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/floor_zjm_juanzhou.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3be3f7e51a1919e9e09e034a6a05dd0c
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/huobi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ef36b9a5e51093ee2374806a67e5232f
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/jia.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e78afcf5a0dae96979807ae2fc347420
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/jinjichang-icon.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: df229ee1411158c6c4add41dae0a44ed
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/MainNav.spriteatlas
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/tubiaodi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/shangcheng.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli09.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/jia.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/TaskNormal.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/tongtianta-icon - Copy.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/ui_zjm_btn_011.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli01.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli08.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli02.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli04.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/dizi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli05.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/renwu.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/floor_zjm_juanzhou.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/zhankai2.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youliyun.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/mingzidi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/huobi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/shezhi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/TaskFinish.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/jinjichang-icon.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli06.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/diwen.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli10.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/touxiang.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/touxiangdi.png
+    - "Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/ui_zjm_btn_01 \u62F7\u8D1D
+      3.png"
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli03.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/floor_ty_dengji.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youjian.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/baitian.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli07.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/floor_ty_ziyuandi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/zhucheng.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/touxiangyuan.png
+    hash: 31c82a3a5cce99f5f00a3496f721c404
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/tubiaodi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 0729a13a6039e3c556789926b0cca1b6
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/shangcheng.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9cc2f777bd28c3a9c776ce6aac5596a2
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli09.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1592f1aeb08b15530a1a5c24186eb2c9
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/TaskNormal.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: be4e8b2393dc0c080e2e98ef4ec5a00e
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/tongtianta-icon
+      - Copy.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 49b2ea903dfe74edf42dd710612e3e06
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/ui_zjm_btn_011.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 7740d52212b95ce376ae5fd6e428a437
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli01.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f799a6cc293e9bde373d12fa9a314c40
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli08.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 437f04db303e42b203a2df72cd5fffa9
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli02.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 18f4167556471056fbf3a340ea320fa6
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli04.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2aba84ef34c6a90f1365ba6e1e8e2fea
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli05.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2b897a39245c2c1b0e7e6f6e3c0af494
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/renwu.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a452d7bcc1a76972101f3656f4431705
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/zhankai2.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 427ef8a6d6202ebab14ce734b78adb1e
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youliyun.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3ee8f4998807d33f421fa38c86a6e64d
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/mingzidi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9ef5890f0da8803f93e93bcb49de4b3f
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/shezhi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ed9ae730d9d3b1b9537e01e3758256e2
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/TaskFinish.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: bdeadecac9c81dbbcdbb0822d4c0df08
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli06.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 640bd583d5cf87fe9f716a9b0a861e36
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli10.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 67e7bd49a4da115f3d41cdd89a7ebd1c
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/touxiang.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ec1e9dae51efea295b2c01fabb2ed44a
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/touxiangdi.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d771866338b8956f7e5a606fe9a735e9
+  - assetPath: "Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/ui_zjm_btn_01
+      \u62F7\u8D1D 3.png"
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1e0d96d5f1f0d8994debb9fcf3276b9d
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli03.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 67ae76b409874b6d342ebfe7005e9044
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youjian.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 61d83f1cf385277ffe436234a162cbee
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youli07.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8127c3355022f7fc8938b5fc46161622
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/zhucheng.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9d76af4b5e83cc374843ea6984d6fc72
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/touxiangyuan.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 78a0c439121f0d884c9fe8724911f842
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Configs/GameInitConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 6497efb8d7838d605389dcd77fdf288e
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Configs/UIFrameworkSettingData.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4f25db490fde1a5a3c9b7bb187816c52
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Prefabs/UI/UIAllDisciple.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_lv.png
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/icon_ty_fanhui.png
+    - Assets/G_Artist/Fonts/SDF/FZCY/fzcy_s2.mat
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_chen.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/ty_xiangqing.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/floor_qiandi2.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/floor_zjm_juanzhou.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_hong.png
+    - Assets/G_Resources/Artist/MiscSprites/default_sprite.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_cai.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/touxiang.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/pinzhi_zi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/wenzi.png
+    - Assets/ThirdParty/uHyperText/Res/Anim/anim_12_1.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/AllDisciple/bg.png
+    hash: 211a6e4f93912c66413a9193ddd919ff
+  - assetPath: Assets/ThirdParty/uHyperText/Res/Anim/anim_12_1.png
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 9abb2e3f930aa35cc5a0593ebda892fc
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Prefabs/UI/UILogin.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/ddi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_qufu.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/backGround_001.png
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s2.mat
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_gonggao.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/ddi1.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_denglu.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/ui_dl004_1.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi00.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/01lv.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_zhanghao.png
+    hash: 42254860193b367313bc02408baafea2
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Prefabs/UI/UIMain.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s30.mat
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/youjian.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/TaskNormal.png
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/ui_zjm_btn_011.png
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    - Assets/G_Artist/Fonts/SDF/FZCY/fzcy_s2.mat
+    - Assets/G_Artist/Fonts/SDF/COMMON/common_btn_s1.mat
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/renwu.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/zhankai2.png
+    - Assets/G_Artist/Fonts/SDF/COMMON/common.asset
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/shezhi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/TaskFinish.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/touxiangdi.png
+    - "Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/ui_zjm_btn_01 \u62F7\u8D1D
+      3.png"
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/touxiang.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/floor_ty_dengji.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/01lv.png
+    - Assets/G_Resources/Artist/MiscSprites/CircleMask.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/baitian.png
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s6.mat
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/touxiangyuan.png
+    hash: 284b82feea3d4d881b0865b55710241a
+  - assetPath: Assets/Game/2DCardDemo/GameResources/Prefabs/UI/UIMainNavs.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/shangcheng.png
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/tongtianta-icon - Copy.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/floor_zjm_juanzhou.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/mingzidi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/jinjichang-icon.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/diwen.png
+    - Assets/Arts/Icon/delete.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/zhucheng.png
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s4.mat
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s19.mat
+    hash: dddd65ead172b85851d9cf3a384d4e3f
+  - assetPath: Assets/Arts/Icon/delete.png
+    isMainAsset: 0
+    dependAssetList: []
+    hash: 46d14b85e5030f01a9a1c003258b02e3
+  - assetPath: Assets/Game/3DTank/GameResources/Prefabs/UI/UITankLogin.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/backGround_001.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/Icon_denglu.png
+    hash: ce4777a41743946add31d239dc315a7d
+  - assetPath: Assets/Game/3DTank/GameResources/Prefabs/UI/UITankNavs.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/shangcheng.png
+    - Assets/G_Artist/Fonts/SDF/Prop/prop.asset
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/tongtianta-icon - Copy.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/floor_zjm_juanzhou.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/mingzidi.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/jinjichang-icon.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/diwen.png
+    - Assets/Arts/Icon/delete.png
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/MainNav/zhucheng.png
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s4.mat
+    - Assets/G_Artist/Fonts/SDF/Prop/prop_s19.mat
+    hash: 46a2799077d230d0c92422ad766a71b6
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Animators/Pumpjack.controller
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Models/PumpJack.fbx
+    hash: 9e1ea77e7552fbebd7d3c88f3abd6558
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/PumpJack.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingStone.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/OilDrums.mat
+    hash: 325dc09dda74ccd336b9fa06dab21329
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/BuildingStone.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 745df0ead3e40f8433c1978c0fa38f2d
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/OilDrums.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 752ed52de6cbb65f46923b9991173453
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/AudioClips/BackgroundMusic.wav
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5a950d902b41c3d137bf4e4bbbceecd2
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/AudioClips/EngineDriving.aif
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b3ff80fa989edc2a0dca2f009a90d714
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/AudioClips/EngineIdle.aif
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d53ca9e12fd3098b788aa7e9b6682266
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/AudioClips/ShellExplosion.wav
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c170141b449c19f44871ab56ebb13b42
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/AudioClips/ShotCharging.wav
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2342a37c912bcb6bfdb630f71c905b3c
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/AudioClips/ShotFiring.wav
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b5c68d4521ce5d1b80318be5e258a699
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/AudioClips/TankExplosion.wav
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 58b30c4955a8c832515673155c20d30a
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/AudioMixer.mixer
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4b19608450cd4a4d05cba40acc42afbd
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Animators/CompletePumpjack.controller
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Models/PumpJack.fbx
+    hash: be2fb62cfa5df5994e31545bae785db4
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/AudioMixers/CompleteMainMix.mixer
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 195b2ec25e4c00cd6ca1ce96fe575c66
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteDustTrail.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Dust.mat
+    hash: ce15efcc8d675e243e32f963bcd679a7
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteLevelArt.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Models/Building01.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Terrain.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Building02.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Rocks02.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Green.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Cliff.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingWhite.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Column01.FBX
+    - Assets/Game/3DTank/GameResources/Tank/Models/Rocks03.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/PumpJack.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Animators/CompletePumpjack.controller
+    - Assets/Game/3DTank/GameResources/Tank/Models/OilStorage.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Dunes02.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Crater01.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowDark.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Radar.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Helipad.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Refinery.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/PalmTree.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Tree.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Brown.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Concrete.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Cow.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/BustedTank.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Cactus.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingStone.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowLight.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingMetal.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Dunes01.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGlass.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Rocks01.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/OilDrums.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Ruins01.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Column02.FBX
+    hash: 1ce5048a28b77eb0c97bbaec18e8c286
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Building01.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingWhite.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingStone.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingMetal.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGlass.mat
+    hash: 163098c598959d99e245104c981b89f1
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/BuildingWhite.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 0361252ebc862ec2648931691d12deb1
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGrey.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a49f40939a03d45086eae0f654be49ed
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/BuildingMetal.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1f636242f55638d57ae0cb720be09c9b
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGlass.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9eb604e88f32dfb660dc058d7f08ce49
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Terrain.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowLight.mat
+    hash: 81addcb0c364a7e45a33b2d0f61fcdd7
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/YellowLight.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8f3f46afaa18884735d8fa2d4c2d70bc
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Building02.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingWhite.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingStone.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingMetal.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGlass.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/OilDrums.mat
+    hash: e6945c964566a6919984fe633e54a7bd
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Rocks02.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowDark.mat
+    hash: 6dec5a61cdf9818c64ccfb0003749a16
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/YellowDark.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1158b25d54411bcf33e1874aee0f9151
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/Green.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c733bff3741ce042ee48c1b39ed9a0d7
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Cliff.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowDark.mat
+    hash: 4d783bbe6f537c820e5f7bf5c8dcae21
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Column01.FBX
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowDark.mat
+    hash: 3b8d1973da2a31dc662a31016b44a5b9
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Rocks03.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowDark.mat
+    hash: 9993f12f9b0f953617652b1923df5dbb
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/OilStorage.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingMetal.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/OilDrums.mat
+    hash: 65f5b098d5f4124ad226e18ac533b2af
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Dunes02.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowLight.mat
+    hash: 19c397c164c246bb8044ebde41588967
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Crater01.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowLight.mat
+    hash: b2bd5ce397891b41c60ce0df6262fa5c
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Radar.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingWhite.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingMetal.mat
+    hash: 6cdd18a73fc4bd65eee18bf6fa92341b
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Helipad.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingWhite.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowDark.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingStone.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/OilDrums.mat
+    hash: bf73caebde07e8a89469c87b533edd2e
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Refinery.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingWhite.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingMetal.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGlass.mat
+    hash: 29c538c6db7ca927a459cb6028b5486e
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/PalmTree.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Green.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Brown.mat
+    hash: ead977fa3ec251f57467ef8a9877f5a9
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/Brown.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3502d35fb34eaf3580e3a1c06d9c84fa
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Tree.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Brown.mat
+    hash: 16d30e449df6531eb609b662e6234e99
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Concrete.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingStone.mat
+    hash: 0e3530fd1917bce13410fef82a3e56a5
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Cow.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingWhite.mat
+    hash: fecab1c32690f6b0f8ecb34dbefa75a1
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/TankGrey.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 0f16961d1c8c1465807965d242614ad8
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/BustedTank.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankGrey.mat
+    hash: 02a0c1d552bcb4051c8c2b32b796ad83
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Cactus.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Green.mat
+    hash: e769699fcc26d2a1b5e60394215e3078
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Dunes01.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowLight.mat
+    hash: a99dd8b2db1acf8b3715216648d874f3
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Rocks01.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowDark.mat
+    hash: adb489e4e303e069d6e8631aae8d9699
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Ruins01.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingWhite.mat
+    hash: d50dd8629630e9e009d9d59d381e00c5
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Column02.FBX
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowDark.mat
+    hash: d3eca76840671b112a5e035ecf00133d
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompletePumpJack.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Models/PumpJack.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Animators/CompletePumpjack.controller
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingStone.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/OilDrums.mat
+    hash: 922eb7ad4da4b7306d67ec1b9f51e53c
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteShell.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/ShellExplosion.wav
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Gold.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Explosion.mat
+    - Assets/Game/3DTank/GameResources/Tank/Complete/AudioMixers/CompleteMainMix.mixer
+    - Assets/Game/3DTank/GameResources/Tank/Models/Shell.fbx
+    hash: 1572b7edecd85c7556877975b371233a
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/Gold.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8a99f67f8c8c5b5eb222ec6fac5afa0c
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/Explosion.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Sprites/Smoke.tif
+    hash: 594e53104a9d3de73b9b8183b2db950d
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Shell.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Gold.mat
+    hash: 411687550db8a7e243491094b326cc22
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteShellExplosion.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Explosion.mat
+    hash: b3b57ee01d7a674784fae569ae2a172d
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteTank.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/ShotFiring.wav
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankLights.mat
+    - Assets/Game/3DTank/GameResources/Tank/Sprites/Aim Arrow.png
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteTankExplosion.prefab
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/EngineDriving.aif
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Dust.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankColour.mat
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteShell.prefab
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Sprites/Health Wheel.png
+    - Assets/Game/3DTank/GameResources/Tank/Complete/AudioMixers/CompleteMainMix.mixer
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/ShotCharging.wav
+    - Assets/Game/3DTank/GameResources/Tank/Models/Tank.fbx
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/EngineIdle.aif
+    hash: bd09015f91d92b161145801226598ff5
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/TankLights.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ddbaf075a3327a34f12bb992fe6f18c0
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Sprites/Aim Arrow.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 984789c604a2405036782c7396431cd3
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteTankExplosion.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/TankExplosion.wav
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Complete/AudioMixers/CompleteMainMix.mixer
+    hash: 903aabb21004af60ef344a1d3378c570
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/TankColour.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9a312b0ddc56a7e8fec2274d77bdf570
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Sprites/Health Wheel.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4385faaf3a848649c4e6cf54c884ec8f
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Models/Tank.fbx
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankLights.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankColour.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankGrey.mat
+    hash: 1a10260df15c037e94a5abf287c48c80
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Scenes/CompleteMainScene/ReflectionProbe-0.exr
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 6f38a91d3d5ce47ed513ca8030ea85ab
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Scenes/CompleteMainScene.unity
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BrightPassFilter2.shader
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/BackgroundMusic.wav
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteTank.prefab
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/SSAOShader.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ChromaticAberrationShader.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/LensFlareCreate.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionCurves.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/SeparableBlur.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/VignettingShader.shader
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteLevelArt.prefab
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlendForBloom.shader
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Scenes/CompleteMainSceneSettings.lighting
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionSelective.shader
+    - Assets/Game/3DTank/GameResources/Tank/Complete/AudioMixers/CompleteMainMix.mixer
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlurAndFlares.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/VignetteMask.png
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/TiltShiftHdrLensBlur.shader
+    - Assets/Game/3DTank/GameResources/Tank/Fonts/Bowlby_One/BowlbyOne-Regular.ttf
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/RandomVectors.png
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionCurvesSimple.shader
+    hash: b7152d08379fe40d22889a3eaff2717d
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BrightPassFilter2.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a1c0e0e1084383d54ec439fcccc73548
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/SSAOShader.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 67ce1d02cbdfd12bbf70c111bd78b235
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ChromaticAberrationShader.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 540980692e77ee4fbb1a8d5a8283845b
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/LensFlareCreate.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 7cc9caceb52a032e3190b24391d563ad
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionCurves.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2e571ee63572406c61070a20a33fa628
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/SeparableBlur.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 800677a42f125cd62af643ebcfc60eb8
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/VignettingShader.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: fca8c8ce78ef07606ed59c8664c562e1
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlendForBloom.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3eac1302c3b53867253d425828be0fd0
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Scenes/CompleteMainSceneSettings.lighting
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 884f11f952a29fb2ca5f91b1e4f359ca
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionSelective.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ffef083b7c61479b21ad383b882f834e
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlurAndFlares.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ba9243204ed5a6222f9742eb9dac28da
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/VignetteMask.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: cb4433b1451946f2da31d33740613554
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/TiltShiftHdrLensBlur.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5a71711f2756070e5711eda38720b7f4
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Fonts/Bowlby_One/BowlbyOne-Regular.ttf
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d3d57a736a1850d6bbbe8030b321e38b
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/RandomVectors.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a047eee0cc7536badcd3f4be5932e6d5
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionCurvesSimple.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 03bc6cec30794ec3e4c28a1be2d87236
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Complete/Scenes/Tank.unity
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Prefabs/LevelArt.prefab
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/BackgroundMusic.wav
+    - Assets/Game/3DTank/GameResources/Tank/AudioMixer.mixer
+    - Assets/Game/3DTank/GameResources/Tank/Prefabs/Tank.prefab
+    - Assets/Game/3DTank/GameResources/Tank/Fonts/Bowlby_One/BowlbyOne-Regular.ttf
+    hash: cf41c5f569848672d8c1317e92874c3c
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Prefabs/LevelArt.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Models/Building01.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Terrain.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Building02.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Rocks02.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Green.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Cliff.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingWhite.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Column01.FBX
+    - Assets/Game/3DTank/GameResources/Tank/Models/Rocks03.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/PumpJack.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Animators/CompletePumpjack.controller
+    - Assets/Game/3DTank/GameResources/Tank/Models/OilStorage.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Dunes02.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Crater01.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowDark.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Radar.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Helipad.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Refinery.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/PalmTree.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Tree.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Brown.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Concrete.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Cow.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/BustedTank.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Cactus.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingStone.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/YellowLight.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingMetal.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Dunes01.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingGlass.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Rocks01.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Materials/OilDrums.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Ruins01.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Models/Column02.FBX
+    hash: 920df83f6f52dc80e033c70406834148
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Prefabs/Tank.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankLights.mat
+    - Assets/Game/3DTank/GameResources/Tank/Sprites/Aim Arrow.png
+    - Assets/Game/3DTank/GameResources/Tank/Prefabs/Shell.prefab
+    - Assets/Game/3DTank/GameResources/Tank/AudioMixer.mixer
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/EngineDriving.aif
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Dust.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankColour.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Sprites/Health Wheel.png
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/ShotFiring.wav
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/ShotCharging.wav
+    - Assets/Game/3DTank/GameResources/Tank/Models/Tank.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Prefabs/TankExplosion.prefab
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/EngineIdle.aif
+    hash: bc666204139fd9af32fe2e9081039827
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Prefabs/Shell.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/ShellExplosion.wav
+    - Assets/Game/3DTank/GameResources/Tank/AudioMixer.mixer
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Gold.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Explosion.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Shell.fbx
+    hash: bd6bc906a430b719244be0e28c6f67ac
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Prefabs/TankExplosion.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/AudioMixer.mixer
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/TankExplosion.wav
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankGrey.mat
+    hash: 6a866fd24cf1c527b7b483b7530ed679
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Fonts/Bowlby_One/OFL.txt
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 027cde5b7ec551a8eb6e40b03c81e496
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/Blue.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 1714e8e78034eb27b237fb31660890d5
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/Grey.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 0511475c6f8580f1abe11cec9a25bd61
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/Red.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 401bdaa4bcda738351a69af4f6dd9afd
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/Smoke.mat
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Sprites/Smoke.tif
+    hash: 2e8223876fcaddab554bbb0a863e98a5
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Materials/White.mat
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 730e40d8cc45a76a84b60f7511582e37
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Prefabs/DustTrail.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Dust.mat
+    hash: 0cd729f82d7ec033c715e117bf2bb8d0
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Prefabs/PumpJack.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Models/PumpJack.fbx
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Animators/CompletePumpjack.controller
+    - Assets/Game/3DTank/GameResources/Tank/Materials/BuildingStone.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/OilDrums.mat
+    hash: f107f24d671b33300747c7adffb72c35
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Prefabs/ShellExplosion.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Explosion.mat
+    hash: 456c34daf18ea13635a09f5e9e91ac6c
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/DLAA.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 6e7b02fbe6fff8881d6e57a9071b8c80
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAA2.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 625a2c83378fddf438e427e181deb448
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAA3Console.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3cfce40a40fc021d32a2c139e8e187b0
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAAPreset2.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: db5d96b3262f1a805a7bbc58a2b77418
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAAPreset3.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ec0dca1c4ab8777b60d962db9bfa48c3
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/NFAA.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 074e02008238ab1f36a3033d4ef8e8e4
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/SSAA.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: be926ffbe1366b7703deea0cc2addbe5
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/Blend.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9cdd52685e1aff7d080ce0df6825f4db
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlendOneOne.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: cf28b8db3af7ebfb2e31e3e29ce38e0f
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BrightPassFilter.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9564aec23b3545dae35650cc62905ec4
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/MobileBloom.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3a6fd305e30d8c645cfb4d1db50072d0
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/MobileBlur.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c1b079fcbb1ab5b2e1800f6f098dd94c
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/MultiPassHollywoodFlares.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 0c86bf44feb4df392d47d472ed99c593
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/SeparableBlurPlus.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: aca8acc31058cc8c55c01c7543275dca
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/VignetteShader.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: bb41df6980a32b48869fb4f5252c0a5b
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/Bokeh34.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9df9fa718e94ca002c8acf0a22bfb4e6
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfField34.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 48a099471adb28d31d05f5f74b4912c5
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfFieldDX11.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: d3e2a29d5852e4af742dc8c998c87cd3
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfFieldScatter.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: a66665157ebbc25c593971221b2b5119
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/SeparableWeightedBlurDof34.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4f2fae6a5d646904aca7aa825ee9b854
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/BlendModesOverlay.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: ae4e664a2423a8bc28e88c3bd9f33c39
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/BlurEffectConeTaps.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 7d42159ec2d7cf86a98fe27b323d9ed2
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/CameraMotionBlur.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 912622014b6523c77ea4aed68a2ea948
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/CameraMotionBlurDX11.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: fd52131cc1a19783b4e10e6851c04674
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrection3DLut.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 557d5d2bb4c98d10561d94ab190b1717
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionEffect.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 10211e8a1ab0f323b8681d935e8a4174
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/Contrast
+      Stretch/Adaptation.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: b49cb01758461c36843f3abf52555db1
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/Contrast
+      Stretch/Apply.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f9a25a57f6d115f14f0d4909401583cb
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/Contrast
+      Stretch/Luminance.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 5a7d9426f79dfd0fa9a013e88ba7bf59
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/Contrast
+      Stretch/MinMaxReduction.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 875b13a75614a390f66507cc86fcfd31
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ContrastComposite.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 4c5086da5d5fcec20690bf566b000366
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ConvertDepth.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 95d375958b352fa1014fd5bf557039a4
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/CreaseApply.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 15fa1bdb620a839166239a0fa3149541
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/EdgeDetectNormals.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 6aa8772c9a697f0412ef8fbadb58cf00
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/FisheyeShader.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 27fa674eeed2cb68283da1275ef1688f
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/frag_ao.cginc
+    isMainAsset: 1
+    dependAssetList: []
+    hash: fe8986f35fff7d06c36d9aaae388bb6e
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/GlobalFog.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2cc843965c9948337565a3ca4074d6f4
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/GrayscaleEffect.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 100a66318eb79a6ff261f772d73bcdc4
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/MotionBlur.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 554e60c8395bb20077415f1556d9808b
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/MotionBlurClear.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 3a143625ca730eb0fee33c816758d05e
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/NoiseAndGrain.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 623e8ed10a99adb0d8a7e046f662f271
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/NoiseAndGrainDX11.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 16cf113043ecb421ffa73b6fca4754eb
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/NoiseEffectShaderRGB.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2ba71b5c61c74126fd486593bf1bdf5b
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/NoiseEffectShaderYUV.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8045575e56f3beaeeee306f45f3cfd21
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/PrepareSunShaftsBlur.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f96394ee3ebfae02354bcb55c673312c
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/RadialBlur.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 50b0850e8a23d5145dc8bfe549bbbe7d
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ScreenSpaceAmbientObscurance.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 634fe98b936adc43c38c4decc2bf729b
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/SepiaToneEffect.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c8ee2faea3582bef5c95001dfd58f994
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ShowAlphaChannel.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 53cb450117c38efd8f5f0faf9df52331
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/SimpleClear.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 2ca623e5f0633be25e1545f29301d82c
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/SunShaftsComposite.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 60cb9bcfcf02b788df3e51aea77d0a8a
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/Tonemapper.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 621e00ee7d54c1ebc328762c02c899db
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/TwirlEffect.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: fb098cf087f846f0efaf56f396368e0e
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/VortexEffect.shader
+    isMainAsset: 1
+    dependAssetList: []
+    hash: bb85e22536f7c6238c44205c96b0f4ab
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/color
+      correction ramp.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8816977348c4e51bf2b8e641ddc0361b
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/ContrastEnhanced3D16.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 8aea7262385e0358fd199388c10e24b7
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/grayscale
+      ramp.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f0a2a5741fcf0cd65d4acaaaf4a1d68a
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/HexShape.psd
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 662285767ccbd1d9d07f6d5ce33b6479
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/MotionBlurJitter.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 86c954dadce3be7c7a8f7c02cbccc7d8
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/Neutral3D16.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 72a0e7331c260306dda84a5bbb6d4480
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/Noise.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: f5d76a9326db1b3fdb9c5db04fe68cd3
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/NoiseAndGrain.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: c9e2d8dfbd14f57d0ac04168621bf22f
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/NoiseEffectGrain.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 379f094bc9d15c2533c78893f25c41e7
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/NoiseEffectScratch.png
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 9f576950f479e871feaba3e3be1fc4f2
+  - assetPath: Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/SphereShape.psd
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 7cde7e9c4aa99ec68bc83783143929b1
+  - assetPath: Assets/Game/RogueLike/GameResources/Configs/GameInitConfig.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: e833abbd603613745a9dd860cf801de1
+  - assetPath: Assets/Game/RogueLike/GameResources/Configs/UIFrameworkSettingData.asset
+    isMainAsset: 1
+    dependAssetList: []
+    hash: 57be21de063cfe46fd4aee27069b4478
+  - assetPath: Assets/Game/RogueLike/GameResources/Prefabs/tank/Bullet.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/ShellExplosion.wav
+    - Assets/Game/3DTank/GameResources/Tank/AudioMixer.mixer
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Gold.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Explosion.mat
+    - Assets/Game/3DTank/GameResources/Tank/Models/Shell.fbx
+    hash: c70754be617cee621f976e516f840668
+  - assetPath: Assets/Game/RogueLike/GameResources/Prefabs/tank/BulletExplosion.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Explosion.mat
+    hash: fbc9b762a03e4f96b19fc301462b9b0b
+  - assetPath: Assets/Game/RogueLike/GameResources/Prefabs/tank/TankGreen.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankLights.mat
+    - Assets/Game/3DTank/GameResources/Tank/Sprites/Aim Arrow.png
+    - Assets/Game/3DTank/GameResources/Tank/Prefabs/Shell.prefab
+    - Assets/Game/3DTank/GameResources/Tank/AudioMixer.mixer
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/EngineDriving.aif
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Dust.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankColour.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Sprites/Health Wheel.png
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/ShotFiring.wav
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/ShotCharging.wav
+    - Assets/Game/3DTank/GameResources/Tank/Prefabs/TankExplosion.prefab
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/EngineIdle.aif
+    - Assets/Game/3DTank/GameResources/Tank/Models/Tank.fbx
+    hash: 04acf0cd0ed8dc9271cfeb57f5acd987
+  - assetPath: Assets/Game/RogueLike/GameResources/Prefabs/tank/TankRed.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankLights.mat
+    - Assets/Game/3DTank/GameResources/Tank/Sprites/Aim Arrow.png
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Red.mat
+    - Assets/Game/3DTank/GameResources/Tank/Prefabs/Shell.prefab
+    - Assets/Game/3DTank/GameResources/Tank/AudioMixer.mixer
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/EngineDriving.aif
+    - Assets/Game/3DTank/GameResources/Tank/Materials/Dust.mat
+    - Assets/Game/3DTank/GameResources/Tank/Materials/TankGrey.mat
+    - Assets/Game/3DTank/GameResources/Tank/Sprites/Health Wheel.png
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/ShotFiring.wav
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/ShotCharging.wav
+    - Assets/Game/3DTank/GameResources/Tank/Prefabs/TankExplosion.prefab
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/EngineIdle.aif
+    - Assets/Game/3DTank/GameResources/Tank/Models/Tank.fbx
+    hash: d0c10d2459fcecb0c65d614c3124356a
+  - assetPath: Assets/Game/RogueLike/GameResources/Prefabs/UI/UIRogueLogin.prefab
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/backGround_001.png
+    - Assets/G_Artist/Fonts/SDF/FZCY/FZCY.asset
+    - Assets/Game/2DCardDemo/GameResources/Artist/UI/Login/floor_qiandi122.png
+    hash: 541ab5b5fbf6bfe793ac27fb0b692b30
+  - assetPath: Assets/Game/RogueLike/GameResources/Scene/RouguleScene.unity
+    isMainAsset: 1
+    dependAssetList:
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BrightPassFilter2.shader
+    - Assets/Game/3DTank/GameResources/Tank/AudioClips/BackgroundMusic.wav
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteTank.prefab
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/SSAOShader.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ChromaticAberrationShader.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/LensFlareCreate.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionCurves.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/SeparableBlur.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/VignettingShader.shader
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Prefabs/CompleteLevelArt.prefab
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlendForBloom.shader
+    - Assets/Game/3DTank/GameResources/Tank/Complete/Scenes/CompleteMainSceneSettings.lighting
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionSelective.shader
+    - Assets/Game/3DTank/GameResources/Tank/Complete/AudioMixers/CompleteMainMix.mixer
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlurAndFlares.shader
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/VignetteMask.png
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/TiltShiftHdrLensBlur.shader
+    - Assets/Game/3DTank/GameResources/Tank/Fonts/Bowlby_One/BowlbyOne-Regular.ttf
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Textures/RandomVectors.png
+    - Assets/Game/3DTank/GameResources/Tank/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionCurvesSimple.shader
+    hash: df464ac3f1bb1ec3f9152be526f3345e

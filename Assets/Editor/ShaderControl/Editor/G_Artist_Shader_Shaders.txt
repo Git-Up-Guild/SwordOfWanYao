@@ -1,0 +1,711 @@
+Shader#0 Add_CenterGlow (7 keywords, 7 used, 1 variants)
+　　Keyword#0 _MASK_B
+　　Keyword#1 _MASK_R
+　　Keyword#2 _TEX_A
+　　Keyword#3 _TEX_B
+　　Keyword#4 _USEDEPTH_ON
+　　Keyword#5 _USEMASK_ON
+　　Keyword#6 _USEUVANI_ON
+　　Material#0 MaskForShader_01(Use 1 keywords.)
+　　Material#1 sfx_dw13(Use 4 keywords.)
+　　Material#2 smoke002_01(Use 1 keywords.)
+　　Material#3 Trail_005_zhiliao(Use 4 keywords.)
+
+Shader#1 Additive_Scroll01 (2 keywords, 2 used, 1 variants)
+　　Keyword#0 _DISTORTMAINTEXTURE_ON
+　　Keyword#1 _EMISSION
+　　Material#0 sfx_cirl(Use 2 keywords.)
+
+Shader#2 AddMul (6 keywords, 6 used, 2 variants)
+　　Keyword#0 _EMISSION
+　　Keyword#1 _HASEMISSIVEDEPTH_ON
+　　Keyword#2 _HASNOISEEMISSIVE_ON
+　　Keyword#3 _HASNOISEOPACITY_ON
+　　Keyword#4 _HASOPACITYDEPTH_ON
+　　Keyword#5 _IS_SCREENSPACE_ON
+　　Material#0 Flash_Activation(Use 4 keywords.)
+　　Material#1 PortalInterferencesSuckIn_1(Use 4 keywords.)
+
+Shader#3 Blend_CenterGlow (10 keywords, 10 used, 1 variants)
+　　Keyword#0 _EMISSION
+　　Keyword#1 _HASNOISEEMISSIVE_ON
+　　Keyword#2 _HASNOISEOPACITY_ON
+　　Keyword#3 _IS_SCREENSPACE_ON
+　　Keyword#4 _USEDEPTH_ON
+　　Keyword#5 _USEDISSOLVE_ON
+　　Keyword#6 _USEMASK_ON
+　　Keyword#7 _USEUVANI_ON
+　　Keyword#8 _USEUVDISTORTION_ON
+　　Keyword#9 EFFECT_BUMP
+　　Material#0 c01_01(Use 2 keywords.)
+　　Material#1 Debris2bcg(Use 1 keywords.)
+　　Material#2 Flash21bcg(Use 1 keywords.)
+　　Material#3 Glow1bcg(Use 0 keywords.)
+　　Material#4 MagicText6bcg(Use 1 keywords.)
+　　Material#5 Noise69bcg(Use 0 keywords.)
+　　Material#6 Noise69bcg2(Use 0 keywords.)
+　　Material#7 Point19bcg(Use 0 keywords.)
+　　Material#8 Shockwave_zz(Use 6 keywords.)
+　　Material#9 Smoke24bcg(Use 1 keywords.)
+　　Material#10 zz_dimian(Use 0 keywords.)
+
+Shader#4 Dostortion (3 keywords, 3 used, 1 variants)
+　　Keyword#0 _USEDISSOLVE_ON
+　　Keyword#1 _UVOFFSETOPEN_ON
+　　Keyword#2 EFFECT_BUMP
+　　Material#0 nomal_zhuzhi(Use 2 keywords.)
+　　Material#1 zz_yinbo_raodong(Use 2 keywords.)
+
+Shader#5 Highlight_Animated (6 keywords, 6 used, 1 variants)
+　　Keyword#0 _EmissiveEffect
+　　Keyword#1 _EnableEmissive
+　　Keyword#2 _MarmosetGGX
+　　Keyword#3 _UseMaterialMap
+　　Keyword#4 EFFECT_BUMP
+　　Keyword#5 UNITY_PASS_SHADOWCASTER
+　　Material#0 Temp_PVE_Object_03_Mat(Use 5 keywords.)
+
+Shader#6 RFX4_Ice (5 keywords, 5 used, 2 variants)
+　　Keyword#0 _EnableEmissive
+　　Keyword#1 _MarmosetGGX
+　　Keyword#2 _SplitSum
+　　Keyword#3 DISTORT_OFF
+　　Keyword#4 DISTORT_ON
+　　Material#0 Ice3_01(Use 0 keywords.)
+　　Material#1 Temp_water_01_Mat(Use 0 keywords.)
+　　Material#2 Temp_PVE_08(Use 3 keywords.)
+
+Shader#7 sfx add_move (20 keywords, 20 used, 9 variants)
+　　Keyword#0 _DISSLOVESON_ON
+　　Keyword#1 _EMISSION
+　　Keyword#2 _HASNOISEEMISSIVE_ON
+　　Keyword#3 _HASNOISEOPACITY_ON
+　　Keyword#4 _IS_SCREENSPACE_ON
+　　Keyword#5 _MASK_A
+　　Keyword#6 _MASK_B
+　　Keyword#7 _MASK_G
+　　Keyword#8 _MASK_R
+　　Keyword#9 _MASKUV_ON
+　　Keyword#10 _TEX_A
+　　Keyword#11 _TEX_B
+　　Keyword#12 _TEX_G
+　　Keyword#13 _TEX_R
+　　Keyword#14 _TEX_RGBA
+　　Keyword#15 _USEDISSOLVE_ON
+　　Keyword#16 _USEMASK_ON
+　　Keyword#17 _USEUVANI_ON
+　　Keyword#18 _USEUVDISTORTION_ON
+　　Keyword#19 _UVON_ON
+　　Material#0 attack_wave 1(Use 7 keywords.)
+　　Material#1 chang1_01(Use 2 keywords.)
+　　Material#2 fashi_ice_xi(Use 3 keywords.)
+　　Material#3 fashi_icewind(Use 3 keywords.)
+　　Material#4 light_move 1(Use 7 keywords.)
+　　Material#5 light_move(Use 7 keywords.)
+　　Material#6 mana_trail_textu(Use 5 keywords.)
+　　Material#7 niuqiu_c1(Use 4 keywords.)
+　　Material#8 s21e_zhizhu(Use 3 keywords.)
+　　Material#9 sfx_flash02_xiaozhu(Use 2 keywords.)
+　　Material#10 sfx_glow_21_dan(Use 2 keywords.)
+　　Material#11 sfx_Grow_xiaozhuzhi(Use 2 keywords.)
+　　Material#12 sfx_liudong_levelup(Use 6 keywords.)
+　　Material#13 sfx_noise_zhiliao(Use 5 keywords.)
+　　Material#14 sfx_x_xiaozhu(Use 2 keywords.)
+　　Material#15 sfx_xulieq(Use 4 keywords.)
+　　Material#16 wind_yz(Use 3 keywords.)
+　　Material#17 WorldSparks_Triangles(Use 6 keywords.)
+　　Material#18 zhanshi_skill01_liuguang(Use 3 keywords.)
+　　Material#19 zhanshi_skill01_liuguang2(Use 4 keywords.)
+
+Shader#8 sfx Additive (22 keywords, 22 used, 1 variants)
+　　Keyword#0 _DISSLOVESON_ON
+　　Keyword#1 _DISTORTMAINTEXTURE_ON
+　　Keyword#2 _EMISSION
+　　Keyword#3 _HASNOISEEMISSIVE_ON
+　　Keyword#4 _HASNOISEOPACITY_ON
+　　Keyword#5 _HASOPACITYDEPTH_ON
+　　Keyword#6 _IS_SCREENSPACE_ON
+　　Keyword#7 _MASK_R
+　　Keyword#8 _TEX_A
+　　Keyword#9 _TEX_B
+　　Keyword#10 _TEX_G
+　　Keyword#11 _TEX_R
+　　Keyword#12 _TEX_RGBA
+　　Keyword#13 _USEDEPTH_ON
+　　Keyword#14 _USEDISSOLVE_ON
+　　Keyword#15 _USEMASK_ON
+　　Keyword#16 _USEUIMASKCLIP_ON
+　　Keyword#17 _USEUVANI_ON
+　　Keyword#18 _USEUVDISTORTION_ON
+　　Keyword#19 _USEUVTRAIL_ON
+　　Keyword#20 _UVON_ON
+　　Keyword#21 EFFECT_BUMP
+　　Material#0 1(Use 2 keywords.)
+　　Material#1 12(Use 3 keywords.)
+　　Material#2 14(Use 2 keywords.)
+　　Material#3 21(Use 2 keywords.)
+　　Material#4 22(Use 3 keywords.)
+　　Material#5 36(Use 0 keywords.)
+　　Material#6 112(Use 0 keywords.)
+　　Material#7 122(Use 3 keywords.)
+　　Material#8 214(Use 6 keywords.)
+　　Material#9 215(Use 2 keywords.)
+　　Material#10 221(Use 2 keywords.)
+　　Material#11 222(Use 1 keywords.)
+　　Material#12 232(Use 3 keywords.)
+　　Material#13 1001_attack_dp(Use 2 keywords.)
+　　Material#14 1001_skill02_trail_add(Use 3 keywords.)
+　　Material#15 2213(Use 3 keywords.)
+　　Material#16 12314(Use 2 keywords.)
+　　Material#17 aixin002(Use 2 keywords.)
+　　Material#18 AnticipationShockwave_Activation(Use 4 keywords.)
+　　Material#19 attack_01_hand(Use 3 keywords.)
+　　Material#20 attack_wave(Use 6 keywords.)
+　　Material#21 b_fire_piont(Use 0 keywords.)
+　　Material#22 banyuan_glow(Use 0 keywords.)
+　　Material#23 baodian_glow(Use 0 keywords.)
+　　Material#24 barbarian_leapAttack_bloom_runes_01(Use 0 keywords.)
+　　Material#25 BorderLight 1(Use 4 keywords.)
+　　Material#26 BorderLight(Use 4 keywords.)
+　　Material#27 BrokenMirror(Use 7 keywords.)
+　　Material#28 changjing_liuguang_line(Use 3 keywords.)
+　　Material#29 changjing_suishi(Use 3 keywords.)
+　　Material#30 changjing_zhu_add 1(Use 3 keywords.)
+　　Material#31 changjing_zhu_add 2(Use 3 keywords.)
+　　Material#32 chipa 1(Use 3 keywords.)
+　　Material#33 ci_w(Use 1 keywords.)
+　　Material#34 cici(Use 1 keywords.)
+　　Material#35 circle_jiqiren_zhishi_wenli(Use 3 keywords.)
+　　Material#36 cj_Glow02_R(Use 0 keywords.)
+　　Material#37 cj_Glow03_R(Use 0 keywords.)
+　　Material#38 cj_Lighting01_R(Use 0 keywords.)
+　　Material#39 cj_Lighting02_R(Use 0 keywords.)
+　　Material#40 cj_Lighting03_R(Use 0 keywords.)
+　　Material#41 cj_ramp10_R(Use 2 keywords.)
+　　Material#42 cj_ring03_R(Use 1 keywords.)
+　　Material#43 cj_ring04_R(Use 1 keywords.)
+　　Material#44 cj_Trail001_R(Use 5 keywords.)
+　　Material#45 cj_Trail003_R(Use 5 keywords.)
+　　Material#46 cj_trail05_R(Use 3 keywords.)
+　　Material#47 cj_ui01_R(Use 2 keywords.)
+　　Material#48 cj_ui03_R(Use 2 keywords.)
+　　Material#49 cj_ui04_R(Use 5 keywords.)
+　　Material#50 cj_wenli01_R(Use 2 keywords.)
+　　Material#51 cj_wenli04_R(Use 2 keywords.)
+　　Material#52 cj_wenli05_R(Use 2 keywords.)
+　　Material#53 cj_wenli06_R(Use 3 keywords.)
+　　Material#54 CleanBorder(Use 4 keywords.)
+　　Material#55 d1guang_1c1(Use 1 keywords.)
+　　Material#56 demer_markedForDeath_rune_glow 1_01(Use 0 keywords.)
+　　Material#57 di02_c1(Use 2 keywords.)
+　　Material#58 dilie_add(Use 6 keywords.)
+　　Material#59 dimian_star 1(Use 4 keywords.)
+　　Material#60 dimian_star 2(Use 2 keywords.)
+　　Material#61 dimian_star(Use 4 keywords.)
+　　Material#62 dp_dark(Use 3 keywords.)
+　　Material#63 dp_wenli(Use 2 keywords.)
+　　Material#64 E3D-Ring40_01(Use 0 keywords.)
+　　Material#65 eff_sun_01(Use 3 keywords.)
+　　Material#66 et_flare0030(Use 0 keywords.)
+　　Material#67 fashi-bullet_trail 1(Use 3 keywords.)
+　　Material#68 fashi-bullet_trail(Use 3 keywords.)
+　　Material#69 fashi_bingwind 1(Use 2 keywords.)
+　　Material#70 fashi_fire_add(Use 4 keywords.)
+　　Material#71 fashi_hit(Use 3 keywords.)
+　　Material#72 fashi_huozhu_add 1(Use 3 keywords.)
+　　Material#73 fashi_huozhu_add(Use 3 keywords.)
+　　Material#74 fashi_jinlun(Use 3 keywords.)
+　　Material#75 fashi_rune(Use 1 keywords.)
+　　Material#76 fashi_shifa_baodian(Use 2 keywords.)
+　　Material#77 fashi_skill02_hfire(Use 3 keywords.)
+　　Material#78 fashi_skill02_zhudifire(Use 2 keywords.)
+　　Material#79 Feather3bcg(Use 0 keywords.)
+　　Material#80 fire_w(Use 0 keywords.)
+　　Material#81 Flare4cg(Use 1 keywords.)
+　　Material#82 Flare24_01(Use 0 keywords.)
+　　Material#83 Flash7bcg(Use 1 keywords.)
+　　Material#84 Flash75(Use 1 keywords.)
+　　Material#85 fuwen_chang01(Use 4 keywords.)
+　　Material#86 fuwen_chaong01(Use 3 keywords.)
+　　Material#87 fuwen_skil03_01(Use 1 keywords.)
+　　Material#88 fx_a_fluid_008_01(Use 0 keywords.)
+　　Material#89 fx_d_atypical_037_01(Use 2 keywords.)
+　　Material#90 fx_e_fluid_021_01(Use 2 keywords.)
+　　Material#91 fx_e_fluid_037_01(Use 4 keywords.)
+　　Material#92 fx_f_aura_004_1_01(Use 2 keywords.)
+　　Material#93 fx_i_spiderweb_02_01(Use 2 keywords.)
+　　Material#94 fx_runes_portal_charging_01(Use 1 keywords.)
+　　Material#95 gel(Use 2 keywords.)
+　　Material#96 Glow1cg(Use 0 keywords.)
+　　Material#97 Glow_11(Use 0 keywords.)
+　　Material#98 Glow_13(Use 0 keywords.)
+　　Material#99 Glow_14(Use 0 keywords.)
+　　Material#100 Glow_15(Use 1 keywords.)
+　　Material#101 gouhuo_fire_aiji(Use 2 keywords.)
+　　Material#102 gr(Use 0 keywords.)
+　　Material#103 grow02(Use 0 keywords.)
+　　Material#104 grow_skil_023(Use 0 keywords.)
+　　Material#105 grow_skill41(Use 0 keywords.)
+　　Material#106 guang1(Use 0 keywords.)
+　　Material#107 guang_zhiliao_01(Use 0 keywords.)
+　　Material#108 guangbanqiu(Use 3 keywords.)
+　　Material#109 guangbanqiu_light(Use 4 keywords.)
+　　Material#110 hudun_liuguang(Use 4 keywords.)
+　　Material#111 Ice_height_01(Use 3 keywords.)
+　　Material#112 jiqiren_charge003_R(Use 5 keywords.)
+　　Material#113 jiqiren_Electro_R(Use 2 keywords.)
+　　Material#114 jiqiren_glow01_R(Use 2 keywords.)
+　　Material#115 jiqiren_glow02_R(Use 2 keywords.)
+　　Material#116 jiqiren_glow2_R(Use 2 keywords.)
+　　Material#117 jiqiren_glow03_R(Use 2 keywords.)
+　　Material#118 jiqiren_glow05_R(Use 2 keywords.)
+　　Material#119 jiqiren_glow11_R(Use 2 keywords.)
+　　Material#120 jiqiren_heibai_07_R(Use 3 keywords.)
+　　Material#121 jiqiren_mask12_R(Use 3 keywords.)
+　　Material#122 jiqiren_mask13_R(Use 3 keywords.)
+　　Material#123 jiqiren_smoke01_R(Use 2 keywords.)
+　　Material#124 jiqiren_trail01_R(Use 2 keywords.)
+　　Material#125 jiqiren_trail02_R(Use 3 keywords.)
+　　Material#126 jiqiren_trail03_ci_R(Use 4 keywords.)
+　　Material#127 jiqiren_trail03_tw_R(Use 3 keywords.)
+　　Material#128 jiqiren_trail04_R(Use 3 keywords.)
+　　Material#129 jiqiren_trail06_R(Use 3 keywords.)
+　　Material#130 jiqiren_trail07_R(Use 5 keywords.)
+　　Material#131 juqi_add(Use 2 keywords.)
+　　Material#132 kuo02_ci(Use 0 keywords.)
+　　Material#133 laguang_c1(Use 1 keywords.)
+　　Material#134 lanzhu01(Use 1 keywords.)
+　　Material#135 laSI_C1(Use 3 keywords.)
+　　Material#136 LensFlare_Deactivation(Use 4 keywords.)
+　　Material#137 levelup_guangban(Use 2 keywords.)
+　　Material#138 light s(Use 4 keywords.)
+　　Material#139 light(Use 1 keywords.)
+　　Material#140 light_lizi(Use 1 keywords.)
+　　Material#141 light_xiao(Use 1 keywords.)
+　　Material#142 line 1(Use 2 keywords.)
+　　Material#143 line(Use 1 keywords.)
+　　Material#144 Line008(Use 0 keywords.)
+　　Material#145 liu_skill04_01(Use 2 keywords.)
+　　Material#146 liudong_c1(Use 3 keywords.)
+　　Material#147 lizi_chaong01(Use 0 keywords.)
+　　Material#148 magic_circle(Use 0 keywords.)
+　　Material#149 Mask23cg(Use 1 keywords.)
+　　Material#150 Noise69cg 1(Use 4 keywords.)
+　　Material#151 Noise69cg(Use 3 keywords.)
+　　Material#152 NoiseCaustic03_01(Use 2 keywords.)
+　　Material#153 NoiseCaustic03_021(Use 3 keywords.)
+　　Material#154 Particles 1(Use 1 keywords.)
+　　Material#155 Particles_009(Use 0 keywords.)
+　　Material#156 Particles_012(Use 0 keywords.)
+　　Material#157 ParticlesIn(Use 4 keywords.)
+　　Material#158 ParticlesTrail_01(Use 7 keywords.)
+　　Material#159 Point5cg(Use 1 keywords.)
+　　Material#160 Point12cg(Use 2 keywords.)
+　　Material#161 Projectile_Comet_AddScroll_Mobile 1(Use 5 keywords.)
+　　Material#162 Projectile_Comet_AddScroll_Mobile(Use 4 keywords.)
+　　Material#163 Runes_001_tex_01(Use 1 keywords.)
+　　Material#164 Runes_017_skill03_01(Use 2 keywords.)
+　　Material#165 Runes_017_skill03_02(Use 2 keywords.)
+　　Material#166 Runes_017_skill03_03(Use 2 keywords.)
+　　Material#167 Runes_032_skil03_01(Use 1 keywords.)
+　　Material#168 RunesActivated(Use 8 keywords.)
+　　Material#169 sfx-kuang_02(Use 4 keywords.)
+　　Material#170 sfx_12(Use 0 keywords.)
+　　Material#171 sfx_baodin_xue_01(Use 0 keywords.)
+　　Material#172 sfx_baoza(Use 2 keywords.)
+　　Material#173 sfx_chang01_shang02(Use 2 keywords.)
+　　Material#174 sfx_fazhe(Use 0 keywords.)
+　　Material#175 sfx_fazhe033(Use 0 keywords.)
+　　Material#176 sfx_fazhe_skill03(Use 0 keywords.)
+　　Material#177 sfx_feishui_zhizhu_01(Use 3 keywords.)
+　　Material#178 sfx_flare(Use 1 keywords.)
+　　Material#179 sfx_flare_001_01(Use 2 keywords.)
+　　Material#180 sfx_flare_08_01(Use 0 keywords.)
+　　Material#181 sfx_flare_10_01(Use 0 keywords.)
+　　Material#182 sfx_flare_50_01(Use 0 keywords.)
+　　Material#183 sfx_flare_69_01(Use 1 keywords.)
+　　Material#184 sfx_flare_96_01(Use 0 keywords.)
+　　Material#185 sfx_flare_skill03(Use 0 keywords.)
+　　Material#186 sfx_flas_skill04(Use 0 keywords.)
+　　Material#187 sfx_flash05_skill04_01(Use 0 keywords.)
+　　Material#188 sfx_glow01_skil03_01(Use 0 keywords.)
+　　Material#189 sfx_glow2wq_01(Use 2 keywords.)
+　　Material#190 sfx_glow_01_01(Use 0 keywords.)
+　　Material#191 sfx_glow_1xs_01(Use 0 keywords.)
+　　Material#192 sfx_glow_10_01(Use 1 keywords.)
+　　Material#193 sfx_glow_11_01(Use 0 keywords.)
+　　Material#194 sfx_glow_12_01(Use 0 keywords.)
+　　Material#195 sfx_glow_13_01(Use 0 keywords.)
+　　Material#196 sfx_glow_13_skill03(Use 0 keywords.)
+　　Material#197 sfx_glow_14_01(Use 0 keywords.)
+　　Material#198 sfx_grow(Use 2 keywords.)
+　　Material#199 sfx_grow025_skill04(Use 0 keywords.)
+　　Material#200 sfx_grow_3skill4(Use 0 keywords.)
+　　Material#201 sfx_grow_16_01(Use 2 keywords.)
+　　Material#202 sfx_grow_shuijing(Use 0 keywords.)
+　　Material#203 sfx_guangzhu_skill04(Use 0 keywords.)
+　　Material#204 sfx_hudie_skill03(Use 2 keywords.)
+　　Material#205 sfx_kuang_03(Use 3 keywords.)
+　　Material#206 sfx_kuang_skill03(Use 0 keywords.)
+　　Material#207 sfx_liu033(Use 2 keywords.)
+　　Material#208 sfx_liudong02_shuijing(Use 3 keywords.)
+　　Material#209 sfx_liudong03_chang02(Use 3 keywords.)
+　　Material#210 sfx_liudong_chang02(Use 3 keywords.)
+　　Material#211 sfx_liudong_shuijing(Use 3 keywords.)
+　　Material#212 sfx_liuti_01(Use 4 keywords.)
+　　Material#213 sfx_liuxing(Use 2 keywords.)
+　　Material#214 sfx_lizi_skill_01(Use 0 keywords.)
+　　Material#215 sfx_mask_006_01(Use 0 keywords.)
+　　Material#216 sfx_niose_skill03(Use 2 keywords.)
+　　Material#217 sfx_noise02_skill03(Use 2 keywords.)
+　　Material#218 sfx_noise_04(Use 3 keywords.)
+　　Material#219 sfx_noise_12_01(Use 2 keywords.)
+　　Material#220 sfx_path_10_01(Use 0 keywords.)
+　　Material#221 sfx_path_14_01(Use 2 keywords.)
+　　Material#222 sfx_path_15_01(Use 4 keywords.)
+　　Material#223 sfx_ramp_14_01(Use 1 keywords.)
+　　Material#224 sfx_ramp_14_02(Use 1 keywords.)
+　　Material#225 sfx_ramp_23_01(Use 0 keywords.)
+　　Material#226 sfx_ramp_zhiliao(Use 0 keywords.)
+　　Material#227 sfx_ring_05_01(Use 3 keywords.)
+　　Material#228 sfx_role02_skill02_hit(Use 2 keywords.)
+　　Material#229 sfx_shui_xiaozhiz_01(Use 3 keywords.)
+　　Material#230 sfx_shuizhu22_01(Use 2 keywords.)
+　　Material#231 sfx_smoke_chang02(Use 0 keywords.)
+　　Material#232 sfx_SmokeTile(Use 2 keywords.)
+　　Material#233 sfx_tail_01(Use 0 keywords.)
+　　Material#234 sfx_trail_01_01(Use 2 keywords.)
+　　Material#235 sfx_trail_01_02(Use 2 keywords.)
+　　Material#236 sfx_wangzhu_01_01(Use 0 keywords.)
+　　Material#237 sfx_wen055(Use 3 keywords.)
+　　Material#238 sfx_wqw(Use 3 keywords.)
+　　Material#239 sfx_xiaozhe01(Use 1 keywords.)
+　　Material#240 sfx_xiaozhe_02(Use 1 keywords.)
+　　Material#241 sfx_xulie_02_01(Use 0 keywords.)
+　　Material#242 sfxbian_03(Use 5 keywords.)
+　　Material#243 shanxing(Use 1 keywords.)
+　　Material#244 sheng03_chang01(Use 2 keywords.)
+　　Material#245 sheng03_chang02(Use 2 keywords.)
+　　Material#246 shengguang_chang01(Use 2 keywords.)
+　　Material#247 shitpu_shuijing(Use 0 keywords.)
+　　Material#248 Shockwave_Activation(Use 4 keywords.)
+　　Material#249 shuo13_zhizhu(Use 4 keywords.)
+　　Material#250 smoke(Use 0 keywords.)
+　　Material#251 Smoke17cg(Use 1 keywords.)
+　　Material#252 SmokeTile1_01(Use 4 keywords.)
+　　Material#253 SmokeTile1_skil03(Use 4 keywords.)
+　　Material#254 SmokeTile1_skill04(Use 2 keywords.)
+　　Material#255 Snow4cg(Use 1 keywords.)
+　　Material#256 Snow_blue(Use 1 keywords.)
+　　Material#257 snow_ground(Use 4 keywords.)
+　　Material#258 snow_smoke(Use 1 keywords.)
+　　Material#259 sx_kuang(Use 3 keywords.)
+　　Material#260 tail01_skill03(Use 2 keywords.)
+　　Material#261 tali_skill04(Use 2 keywords.)
+　　Material#262 Tile_098_skill03_01(Use 3 keywords.)
+　　Material#263 Trail_005_01(Use 2 keywords.)
+　　Material#264 Trail_011(Use 1 keywords.)
+　　Material#265 Trail_012(Use 2 keywords.)
+　　Material#266 Trail_013(Use 2 keywords.)
+　　Material#267 Trail_014(Use 2 keywords.)
+　　Material#268 Trail_015(Use 2 keywords.)
+　　Material#269 Trail_016(Use 2 keywords.)
+　　Material#270 Trail_fashi(Use 1 keywords.)
+　　Material#271 Trail_fashi02(Use 2 keywords.)
+　　Material#272 trail_test(Use 3 keywords.)
+　　Material#273 WaterSquence_016_01(Use 2 keywords.)
+　　Material#274 wenli_liudong(Use 3 keywords.)
+　　Material#275 WorldSparks_RuneCircle(Use 4 keywords.)
+　　Material#276 yanzhu_add(Use 2 keywords.)
+　　Material#277 yuan001(Use 0 keywords.)
+　　Material#278 zhanshi_skill01_dplg(Use 6 keywords.)
+　　Material#279 zhishi(Use 2 keywords.)
+　　Material#280 zhizhu_attackadd(Use 4 keywords.)
+　　Material#281 zz_baodianci(Use 3 keywords.)
+　　Material#282 zz_dilie_add(Use 6 keywords.)
+　　Material#283 zz_yinbo(Use 1 keywords.)
+　　Material#284 zz_zhiliao_glow(Use 2 keywords.)
+　　Material#285 zz_zhua(Use 3 keywords.)
+　　Material#286 shanxing(Use 1 keywords.)
+　　Material#287 zhishi(Use 2 keywords.)
+
+Shader#9 sfx AlphaBlend (6 keywords, 6 used, 1 variants)
+　　Keyword#0 _USEMASK_ON
+　　Keyword#1 _USEUVTRAIL_ON
+　　Keyword#2 _USEUVANI_ON
+　　Keyword#3 _USEUVDISTORTION_ON
+　　Keyword#4 _USEDISSOLVE_ON
+　　Keyword#5 _USEUIMASKCLIP_ON
+　　Material#0 1001_attack_dp_dark(Use 1 keywords.)
+　　Material#1 1001_hit03_stone(Use 0 keywords.)
+　　Material#2 1001_skill01_chongjibo_dark(Use 4 keywords.)
+　　Material#3 1001_skill02_trail(Use 3 keywords.)
+　　Material#4 attack_01_hand_dark(Use 3 keywords.)
+　　Material#5 blood 1(Use 1 keywords.)
+　　Material#6 blood(Use 1 keywords.)
+　　Material#7 chuizi_dark(Use 1 keywords.)
+　　Material#8 cloud1_w(Use 1 keywords.)
+　　Material#9 cloud1_w2(Use 1 keywords.)
+　　Material#10 dust_3pian(Use 2 keywords.)
+　　Material#11 dust_ci(Use 2 keywords.)
+　　Material#12 dust_circle(Use 3 keywords.)
+　　Material#13 grow03(Use 0 keywords.)
+　　Material#14 hit_01_ground_dark(Use 2 keywords.)
+　　Material#15 hit_light_ground_dark(Use 4 keywords.)
+　　Material#16 juqi_dark(Use 2 keywords.)
+　　Material#17 light_dark_ground(Use 1 keywords.)
+　　Material#18 shazi_12(Use 1 keywords.)
+　　Material#19 skin_particle(Use 2 keywords.)
+　　Material#20 snow_smoke1(Use 0 keywords.)
+　　Material#21 yanzhu(Use 2 keywords.)
+　　Material#22 glow-xian-al(Use 1 keywords.)
+
+Shader#10 sfx AlphaBlend (20 keywords, 20 used, 1 variants)
+　　Keyword#0 _ALPHABLEND_ON
+　　Keyword#1 _EMISSION
+　　Keyword#2 _HASNOISEEMISSIVE_ON
+　　Keyword#3 _HASNOISEOPACITY_ON
+　　Keyword#4 _HASOPACITYDEPTH_ON
+　　Keyword#5 _IS_SCREENSPACE_ON
+　　Keyword#6 _MASK_A
+　　Keyword#7 _MASK_R
+　　Keyword#8 _MASKUV_ON
+　　Keyword#9 _TEX_A
+　　Keyword#10 _TEX_R
+　　Keyword#11 _TEX_RGBA
+　　Keyword#12 _USEDEPTH_ON
+　　Keyword#13 _USEDISSOLVE_ON
+　　Keyword#14 _USEMASK_ON
+　　Keyword#15 _USEUIMASKCLIP_ON
+　　Keyword#16 _USEUVANI_ON
+　　Keyword#17 _USEUVDISTORTION_ON
+　　Keyword#18 _USEUVTRAIL_ON
+　　Keyword#19 _UVON_ON
+　　Material#0 3(Use 6 keywords.)
+　　Material#1 26(Use 4 keywords.)
+　　Material#2 30(Use 3 keywords.)
+　　Material#3 32(Use 2 keywords.)
+　　Material#4 35(Use 4 keywords.)
+　　Material#5 213(Use 0 keywords.)
+　　Material#6 225(Use 0 keywords.)
+　　Material#7 2222(Use 4 keywords.)
+　　Material#8 23344(Use 5 keywords.)
+　　Material#9 aixin001(Use 2 keywords.)
+　　Material#10 andi_chang01(Use 2 keywords.)
+　　Material#11 changjing_suishi_02(Use 3 keywords.)
+　　Material#12 changjing_zhu_alpha(Use 1 keywords.)
+　　Material#13 circle_jiqiren_zhishi(Use 5 keywords.)
+　　Material#14 cj_glow01_R(Use 0 keywords.)
+　　Material#15 cj_Glow05_R(Use 0 keywords.)
+　　Material#16 cj_mask11_R(Use 1 keywords.)
+　　Material#17 cj_ring01_R(Use 1 keywords.)
+　　Material#18 cj_ring02_R(Use 1 keywords.)
+　　Material#19 cj_Smoke01_R(Use 0 keywords.)
+　　Material#20 cj_smoke02_R(Use 0 keywords.)
+　　Material#21 cj_Trail005_R(Use 5 keywords.)
+　　Material#22 cj_wenli02_R(Use 3 keywords.)
+　　Material#23 CraterDecal4_01(Use 1 keywords.)
+　　Material#24 dilie_dark(Use 3 keywords.)
+　　Material#25 du01(Use 4 keywords.)
+　　Material#26 fashi_bullet_trail_dark(Use 0 keywords.)
+　　Material#27 fashi_fire_dark(Use 3 keywords.)
+　　Material#28 fashi_fire_di_dark(Use 2 keywords.)
+　　Material#29 fashi_fire_fazhen(Use 6 keywords.)
+　　Material#30 fashi_firesmoke_dark(Use 3 keywords.)
+　　Material#31 fashi_huozhu 1(Use 2 keywords.)
+　　Material#32 fashi_huozhu 2(Use 3 keywords.)
+　　Material#33 fashi_huozhu(Use 2 keywords.)
+　　Material#34 fashi_icewind_dark(Use 4 keywords.)
+　　Material#35 fashi_skill02_hfire_dark(Use 1 keywords.)
+　　Material#36 fashi_xi_dark(Use 2 keywords.)
+　　Material#37 fazhen_fire_di(Use 4 keywords.)
+　　Material#38 fire_w_dark(Use 3 keywords.)
+　　Material#39 fx_a_decal_006_01(Use 2 keywords.)
+　　Material#40 guang01(Use 1 keywords.)
+　　Material#41 huaban(Use 0 keywords.)
+　　Material#42 huopend_di(Use 3 keywords.)
+　　Material#43 huopend_smoke(Use 1 keywords.)
+　　Material#44 ICE_01(Use 1 keywords.)
+　　Material#45 ICE_02(Use 2 keywords.)
+　　Material#46 jiqiren_E3D-Ring40_R(Use 2 keywords.)
+　　Material#47 jiqiren_glow04_R(Use 2 keywords.)
+　　Material#48 jiqiren_smoke05_R(Use 2 keywords.)
+　　Material#49 jiqiren_trail08_R(Use 2 keywords.)
+　　Material#50 jiqiren_trail010_R(Use 4 keywords.)
+　　Material#51 line_circle(Use 2 keywords.)
+　　Material#52 MaskPoint1(Use 0 keywords.)
+　　Material#53 monk_dashingStrike_blurDiff_01(Use 6 keywords.)
+　　Material#54 New Material 1(Use 2 keywords.)
+　　Material#55 New Material 2(Use 2 keywords.)
+　　Material#56 Particles_013(Use 0 keywords.)
+　　Material#57 Portal_1b(Use 7 keywords.)
+　　Material#58 PortalInterferencesSuckIn_2(Use 8 keywords.)
+　　Material#59 sfx_andi_skill03_01(Use 1 keywords.)
+　　Material#60 sfx_diangrow(Use 1 keywords.)
+　　Material#61 sfx_dimian_01(Use 1 keywords.)
+　　Material#62 sfx_dmian_zjuz(Use 2 keywords.)
+　　Material#63 sfx_few_skill04(Use 0 keywords.)
+　　Material#64 sfx_flare_29_01(Use 1 keywords.)
+　　Material#65 sfx_grow_03(Use 0 keywords.)
+　　Material#66 sfx_grow_05(Use 3 keywords.)
+　　Material#67 sfx_mask_chang021(Use 1 keywords.)
+　　Material#68 sfx_mask_grow(Use 0 keywords.)
+　　Material#69 sfx_nomal_01(Use 4 keywords.)
+　　Material#70 sfx_nomal_05(Use 3 keywords.)
+　　Material#71 sfx_quad_01(Use 4 keywords.)
+　　Material#72 sfx_shuizhu02_01(Use 2 keywords.)
+　　Material#73 sfx_smoke_01(Use 0 keywords.)
+　　Material#74 sfx_smoke_04_01(Use 1 keywords.)
+　　Material#75 sfx_smoke_xulie033(Use 0 keywords.)
+　　Material#76 sfx_xl_01(Use 1 keywords.)
+　　Material#77 sfx_xugrow_skill04_01(Use 0 keywords.)
+　　Material#78 sfx_xuhuang03(Use 5 keywords.)
+　　Material#79 sfx_zi(Use 0 keywords.)
+　　Material#80 sfxbian_01(Use 4 keywords.)
+　　Material#81 shuidI_zhizhudi(Use 5 keywords.)
+　　Material#82 SmokeTile2_01(Use 3 keywords.)
+　　Material#83 SmokeTile2_skil03(Use 3 keywords.)
+　　Material#84 snow_ground 1(Use 4 keywords.)
+　　Material#85 xingzuo_skill04(Use 1 keywords.)
+　　Material#86 zhizhu_attackdark(Use 4 keywords.)
+　　Material#87 zz_dilie(Use 3 keywords.)
+　　Material#88 zz_wind(Use 5 keywords.)
+　　Material#89 fx_zhe(Use 0 keywords.)
+
+Shader#11 sfx AlphaBlend_move (15 keywords, 15 used, 4 variants)
+　　Keyword#0 _DISSLOVESON_ON
+　　Keyword#1 _MASK_A
+　　Keyword#2 _MASK_B
+　　Keyword#3 _MASK_G
+　　Keyword#4 _MASK_R
+　　Keyword#5 _MASKUV_ON
+　　Keyword#6 _TEX_A
+　　Keyword#7 _TEX_B
+　　Keyword#8 _TEX_G
+　　Keyword#9 _TEX_R
+　　Keyword#10 _TEX_RGBA
+　　Keyword#11 _USEDEPTH_ON
+　　Keyword#12 _USEMASK_ON
+　　Keyword#13 _USEUVANI_ON
+　　Keyword#14 _UVON_ON
+　　Material#0 cj_Trail001_R_01(Use 3 keywords.)
+　　Material#1 dark_light_s(Use 3 keywords.)
+　　Material#2 fashi_jinlun_dark(Use 2 keywords.)
+　　Material#3 fazhe_zhili(Use 2 keywords.)
+　　Material#4 fian(Use 2 keywords.)
+　　Material#5 sfx_saq2(Use 3 keywords.)
+　　Material#6 sfx_Wang_012(Use 3 keywords.)
+　　Material#7 sfx_wangh1(Use 3 keywords.)
+　　Material#8 sfx_xulie_shuibiaao(Use 2 keywords.)
+　　Material#9 tas_dazhizhu(Use 2 keywords.)
+　　Material#10 wang_zhuzhi(Use 2 keywords.)
+　　Material#11 yan(Use 5 keywords.)
+　　Material#12 zhuwang02(Use 3 keywords.)
+　　Material#13 zz_dimiansmoke(Use 5 keywords.)
+　　Material#14 zz_dimiansmoke_quan(Use 5 keywords.)
+
+Shader#12 sfx NormalDistortion (4 keywords, 4 used, 1 variants)
+　　Keyword#0 _DISTORTMAINTEXTURE_ON
+　　Keyword#1 _USEMASK_ON
+　　Keyword#2 _USEUVANI_ON
+　　Keyword#3 _USEUVDISTORTION_ON
+　　Material#0 SmokeTile1_02(Use 4 keywords.)
+
+Shader#13 sfx_addfresnel (12 keywords, 12 used, 1 variants)
+　　Keyword#0 _TEX_RGBA
+　　Keyword#1 _TEX_R
+　　Keyword#2 _TEX_G
+　　Keyword#3 _TEX_B
+　　Keyword#4 _TEX_A
+　　Keyword#5 _UVON_ON
+　　Keyword#6 _DISSLOVESON_ON
+　　Keyword#7 _MASK_R
+　　Keyword#8 _MASK_G
+　　Keyword#9 _MASK_B
+　　Keyword#10 _MASK_A
+　　Keyword#11 _MASKUV_ON
+
+Shader#14 sfx_addzwrite (15 keywords, 15 used, 6 variants)
+　　Keyword#0 _DISSLOVESON_ON
+　　Keyword#1 _MASK_A
+　　Keyword#2 _MASK_B
+　　Keyword#3 _MASK_G
+　　Keyword#4 _MASK_R
+　　Keyword#5 _MASKUV_ON
+　　Keyword#6 _TEX_A
+　　Keyword#7 _TEX_B
+　　Keyword#8 _TEX_G
+　　Keyword#9 _TEX_R
+　　Keyword#10 _TEX_RGBA
+　　Keyword#11 _USEMASK_ON
+　　Keyword#12 _USEUVANI_ON
+　　Keyword#13 _USEUVDISTORTION_ON
+　　Keyword#14 _UVON_ON
+　　Material#0 36_36_trail_alpha.Out_01(Use 3 keywords.)
+　　Material#1 AbyssalScepter01_01(Use 2 keywords.)
+　　Material#2 levelup_zhuadd(Use 6 keywords.)
+　　Material#3 liudong(Use 5 keywords.)
+　　Material#4 sfx-faliu_skill04(Use 5 keywords.)
+　　Material#5 sfx_mask_grow 1(Use 2 keywords.)
+　　Material#6 sju0_buff(Use 3 keywords.)
+　　Material#7 T_BoilBubble_D_01(Use 2 keywords.)
+
+Shader#15 sfx_addzwrite_Blend (13 keywords, 13 used, 1 variants)
+　　Keyword#0 _DISSLOVESON_ON
+　　Keyword#1 _MASK_A
+　　Keyword#2 _MASK_B
+　　Keyword#3 _MASK_G
+　　Keyword#4 _MASK_R
+　　Keyword#5 _MASKUV_ON
+　　Keyword#6 _TEX_A
+　　Keyword#7 _TEX_B
+　　Keyword#8 _TEX_G
+　　Keyword#9 _TEX_R
+　　Keyword#10 _TEX_RGBA
+　　Keyword#11 _USEDEPTH_ON
+　　Keyword#12 _UVON_ON
+　　Material#0 Fog1_01(Use 3 keywords.)
+
+Shader#16 sfx_Alhatest (3 keywords, 3 used, 3 variants)
+　　Keyword#0 _MAIN_LIGHT_SHADOWS
+　　Keyword#1 _ALPHATEST_ON
+　　Keyword#2 _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+　　Material#0 Temp_PVE_segment_02_Mat(Use 0 keywords.)
+
+Shader#17 sfx_fresnse (6 keywords, 6 used, 1 variants)
+　　Keyword#0 _DISSLOVESON_ON
+　　Keyword#1 _MASK_R
+　　Keyword#2 _TEX_R
+　　Keyword#3 _TEX_RGBA
+　　Keyword#4 _USEUVANI_ON
+　　Keyword#5 _USEUVDISTORTION_ON
+　　Material#0 1001_dp_3(Use 4 keywords.)
+　　Material#1 1001_skill02_dun(Use 3 keywords.)
+　　Material#2 1001_skill04_hammer(Use 3 keywords.)
+
+Shader#18 sfx_fresnsel (4 keywords, 4 used, 1 variants)
+　　Keyword#0 _USEMASK_ON
+　　Keyword#1 _USEUVANI_ON
+　　Keyword#2 _USEUVDISTORTION_ON
+　　Keyword#3 EFFECT_BUMP
+　　Material#0 frensl_c1(Use 3 keywords.)
+　　Material#1 sfx_fre(Use 0 keywords.)
+　　Material#2 sfx_frensel1(Use 1 keywords.)
+
+Shader#19 SH_SubTexture (4 keywords, 4 used, 2 variants)
+　　Keyword#0 _EMISSION
+　　Keyword#1 _HASNOISEEMISSIVE_ON
+　　Keyword#2 _HASNOISEOPACITY_ON
+　　Keyword#3 _IS_SCREENSPACE_ON
+　　Material#0 DarknessInside(Use 4 keywords.)
+
+Shader#20 UIAdditive (3 keywords, 3 used, 2 variants)
+　　Keyword#0 _USEMASK_ON
+　　Keyword#1 _USEUVANI_ON
+　　Keyword#2 EFFECT_BUMP
+　　Material#0 glow(Use 2 keywords.)
+　　Material#1 glow02(Use 0 keywords.)
+　　Material#2 glow_ui(Use 1 keywords.)
+　　Material#3 quan 1(Use 0 keywords.)
+　　Material#4 SF4_dds_0298(Use 0 keywords.)
+

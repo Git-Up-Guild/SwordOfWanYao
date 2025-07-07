@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1691146024, guid: e83dc2686a984da488703a29d8085258, type: 3}
+  m_Name: LightingEffect_bind_17
+  m_EditorClassIdentifier: 
+  nID: 17
+  strDesc: 
+  DelayDestroyTick: 0
+  effectPrefabPath: G_Resources/Game/Prefab/Effect/MonsterSkill/monster_05_02/jiqiren_rest_walk_huichen_jiao_
+    17.prefab
+  effectPrefb: {fileID: 0}
+  scale: 1
+  LightEffectType: Bind
+  effectStartTick: 0
+  effectLiveTick: 1699
+  effectTotalTick: 3000
+  posBindBone: Bip001 L Toe0
+  posOffset: {x: 0, y: 0, z: 0}
+  rotationBindBone: Bip001 L Toe0
+  rotationOffset: {x: 0, y: 0, z: 0}
+  disableRotate: 0
+  faceToCamera: 0
+  faceAganistTarget: 0
+  bindType: 1
+  bindTargetBone: 
+  rebindWhenRootChanged: 1
+  oriPrefabGUIDLow: 5690c7acd82a99943aa6eaccb240f450
+  OriPrefabGUIDLow: Assets/G_Resources/Artist/Effect/Prefab/MonsterSkill/monster_05_02/jiqiren_rest_walk_huichen_jiao.prefab
+  oriPrefabGUIDMiddle: 5690c7acd82a99943aa6eaccb240f450
+  OriPrefabGUIDMiddle: Assets/G_Resources/Artist/Effect/Prefab/MonsterSkill/monster_05_02/jiqiren_rest_walk_huichen_jiao.prefab
+  oriPrefabGUIDHigh: 5690c7acd82a99943aa6eaccb240f450
+  OriPrefabGUIDHigh: Assets/G_Resources/Artist/Effect/Prefab/MonsterSkill/monster_05_02/jiqiren_rest_walk_huichen_jiao.prefab

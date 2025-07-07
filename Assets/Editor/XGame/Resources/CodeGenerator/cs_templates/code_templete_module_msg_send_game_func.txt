@@ -1,0 +1,9 @@
+        public void SEND_#MessageID#() //@SendHandler_#MessageType#
+        {
+            TGameMessage msg = GameGlobal.NetTransfer.GetGameMsg(TGameMessage.#MessageID#);
+            T#MessageID# msgBody = msg.stT#MessageID#; 
+
+            //Write your code here.
+
+            GameGlobal.NetTransfer.SendMessage(msg, false);
+        }

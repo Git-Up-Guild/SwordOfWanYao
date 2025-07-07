@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d199c10832a49e4ba11273d042575dc, type: 3}
+  m_Name: ReferenceFinderConfig
+  m_EditorClassIdentifier: 
+  focusMode: 0
+  isDepend: 1
+  selectedAssetGuid: []
+  typeFilter:
+  - key: 
+    isFilter: 1
+  - key: .ModuleCompilationTrigger
+    isFilter: 1
+  - key: .XML
+    isFilter: 1
+  - key: .a
+    isFilter: 1
+  - key: .anim
+    isFilter: 1
+  - key: .asmdef
+    isFilter: 1
+  - key: .asset
+    isFilter: 1
+  - key: .bat
+    isFilter: 1
+  - key: .bp
+    isFilter: 1
+  - key: .bytes
+    isFilter: 1
+  - key: .cginc
+    isFilter: 1
+  - key: .compute
+    isFilter: 1
+  - key: .cpp
+    isFilter: 1
+  - key: .cs
+    isFilter: 1
+  - key: .csproj
+    isFilter: 1
+  - key: .cube
+    isFilter: 1
+  - key: .dll
+    isFilter: 1
+  - key: .doc
+    isFilter: 1
+  - key: .docx
+    isFilter: 1
+  - key: .exe
+    isFilter: 1
+  - key: .guiskin
+    isFilter: 1
+  - key: .hlsl
+    isFilter: 1
+  - key: .in
+    isFilter: 1
+  - key: .inputactions
+    isFilter: 1
+  - key: .jpg
+    isFilter: 1
+  - key: .js
+    isFilter: 1
+  - key: .json
+    isFilter: 1
+  - key: .lighting
+    isFilter: 1
+  - key: .lua
+    isFilter: 1
+  - key: .mat
+    isFilter: 1
+  - key: .md
+    isFilter: 1
+  - key: .mdb
+    isFilter: 1
+  - key: .plist
+    isFilter: 1
+  - key: .png
+    isFilter: 1
+  - key: .prefab
+    isFilter: 1
+  - key: .prefs
+    isFilter: 1
+  - key: .preset
+    isFilter: 1
+  - key: .psd
+    isFilter: 1
+  - key: .pub
+    isFilter: 1
+  - key: .sgsubgraphdb
+    isFilter: 1
+  - key: .shader
+    isFilter: 1
+  - key: .shadergraph
+    isFilter: 1
+  - key: .so
+    isFilter: 1
+  - key: .template
+    isFilter: 1
+  - key: .tga
+    isFilter: 1
+  - key: .ts
+    isFilter: 1
+  - key: .ttf
+    isFilter: 1
+  - key: .txt
+    isFilter: 1
+  - key: .unity
+    isFilter: 1
+  - key: .unitypackage
+    isFilter: 1
+  - key: .uss
+    isFilter: 1
+  - key: .uxml
+    isFilter: 1
+  - key: .xml
+    isFilter: 1
+  - key: .zip
+    isFilter: 1
+  folderFilter:
+  - key: Assets/
+    isFilter: 1
+  - key: Library/
+    isFilter: 1
+  - key: Packages/
+    isFilter: 0
+  - key: ProjectSettings/
+    isFilter: 1
+  stateFilter:
+  - state: 0
+    isFilter: 1
+  - state: 1
+    isFilter: 1
+  - state: 2
+    isFilter: 1
+  - state: 3
+    isFilter: 1

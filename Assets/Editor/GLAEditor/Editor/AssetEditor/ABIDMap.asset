@@ -1,0 +1,473 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -997166421, guid: c665918d072625e4c98fded2b10d72a9, type: 3}
+  m_Name: ABIDMap
+  m_EditorClassIdentifier: 
+  stringIndexMap:
+    indexDataList:
+    - data: assets/artist/common/texture/ui/version1/selectrole/atlas_selectrole
+      index: 100
+    - data: assets/artist/gresources/ui/common/atlas_common
+      index: 101
+    - data: assets/artist/common/texture/ui/version1/dummy/atlas_dummy
+      index: 102
+    - data: assets/artist/gresources/ui/pageicon/atlas_pageicon_res1
+      index: 103
+    - data: assets/artist/gresources/ui/skill/atlas_newskill
+      index: 104
+    - data: assets/artist/common/texture/ui/version1/lauglory/atlas_lauglory
+      index: 105
+    - data: assets/artist/common/texture/ui/version1/mainhud/atlas_unused_version1_mainhud
+      index: 106
+    - data: assets/artist/gresources/ui/growup/atlas_growup_res
+      index: 107
+    - data: assets/artist/gresources/ui/common/commonico/atlas_5
+      index: 108
+    - data: assets/artist/common/texture/ui/version1/chat/atlas_unused_version1_chat
+      index: 109
+    - data: assets/artist/gresources/ui/tongtt/atlas_tongtt
+      index: 110
+    - data: assets/artist/gresources/ui/title/atlas_common_title
+      index: 111
+    - data: assets/artist/common/texture/ui/version1/mainhud/atlas_mainhud
+      index: 112
+    - data: assets/artist/common/texture/ui/version1/common/atlas_common
+      index: 113
+    - data: assets/artist/common/texture/ui/version1/login/login/atlas_login
+      index: 114
+    - data: assets/artist/gresources/ui/mainhud/atlas_mainhud
+      index: 115
+    - data: assets/artist/common/texture/ui/version1/login/atlas_makeface_old
+      index: 116
+    - data: assets/artist/common/texture/effect/_combineskill/add_combined/combinedtexture/atlas_effect_combined_add_combined
+      index: 117
+    - data: assets/ui/commom/atlas_ui.commom
+      index: 118
+    - data: assets/artist/gresources/ui/pageicon/atlas_pageicon_res
+      index: 119
+    - data: assets/artist/gresources/ui/skill/atlas_skill
+      index: 120
+    - data: assets/artist/gresources/ui/mainhud/atlas_mainhud_popup
+      index: 121
+    - data: assets/artist/common/texture/ui/version1/common/common_country/atlas_common_country
+      index: 122
+    - data: assets/artist/gresources/ui/mainhud/atlas_mainhud_hudong
+      index: 123
+    - data: assets/artist/gresources/ui/tongtt/atlas_unused_gres_tongtt
+      index: 124
+    - data: assets/artist/gresources/ui/skill/atlas_mainhud
+      index: 125
+    - data: assets/artist/gresources/ui/team/atlas_team
+      index: 126
+    - data: assets/artist/gresources/ui/map/atlas_map8x
+      index: 127
+    - data: assets/artist/common/texture/ui/version1/lianhun/atlas_lianhun
+      index: 128
+    - data: assets/artist/common/texture/effect/classify textures/low/scene low/items/atlas_caijiwu_diaoluo
+      index: 129
+    - data: assets/artist/gresources/ui/map/atlas_map
+      index: 130
+    - data: assets/artist/common/texture/ui/version1/ectypedemon/atlas_meishuzi
+      index: 131
+    - data: assets/artist/gresources/ui/tipsicon/atlas_unused_gres_tipsicon
+      index: 132
+    - data: assets/artist/gresources/ui/mainhud/atlas_unused_gres_mainhud
+      index: 133
+    - data: assets/artist/gresources/ui/map/atlas_map403
+      index: 134
+    - data: assets/artist/common/texture/effect/ui/low/chenghao low/atlas_chenghao_usedless
+      index: 135
+    - data: assets/artist/common/texture/effect/ui/low/chenghao low/atlas_chenghao
+      index: 136
+    - data: assets/artist/common/texture/effect/_combineskill/alpha_blend_combined/combinedtexture/atlas_effect_combined_alpha_blend_combined
+      index: 137
+    - data: assets/artist/common/texture/ui/version1/common/atlas_unused_version1_common
+      index: 138
+    - data: assets/artist/common/texture/ui/version1/map/atlas_map
+      index: 139
+    - data: assets/artist/common/texture/ui/version1/wuzhuzhidi/atlas_wuzhuzhidi
+      index: 140
+    - data: assets/artist/common/texture/ui/version1/fadsuit/atlas_unused_version1_fadsuit
+      index: 141
+    - data: assets/artist/gresources/ui/common/commonico/atlas_7
+      index: 142
+    - data: assets/artist/gresources/ui/mainhud/atlas_mainhud_boci_meishuzi
+      index: 143
+    - data: assets/artist/common/texture/ui/version1/soul/atlas_unused_version1_soul
+      index: 144
+    - data: assets/artist/gresources/ui/map/atlas_unused_gres_map
+      index: 145
+    - data: assets/artist/common/texture/ui/version1/login/atlas_login
+      index: 146
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_meishutu_sxhongbao
+      index: 147
+    - data: assets/artist/gresources/ui/skill/atlas_skill_neiweifu
+      index: 148
+    - data: assets/artist/gresources/ui/map/atlas_unused_gres_map_detail
+      index: 149
+    - data: assets/artist/gresources/ui/pageicon/atlas_unused_gres_pageicon_res
+      index: 150
+    - data: assets/artist/common/texture/ui/version1/chat/atlas_chat
+      index: 151
+    - data: assets/artist/common/texture/ui/version1/skill/atlas_skill1
+      index: 152
+    - data: assets/artist/common/texture/ui/version1/login/atlas_makeface1
+      index: 153
+    - data: assets/artist/gresources/ui/map/atlas_map405x
+      index: 154
+    - data: assets/artist/gresources/ui/critday/atlas_critday
+      index: 155
+    - data: assets/artist/gresources/ui/map/atlas_map803
+      index: 156
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_kuangshi
+      index: 157
+    - data: assets/artist/gresources/ui/map/atlas_map202x
+      index: 158
+    - data: assets/artist/common/texture/ui/version1/huadong/atlas_huadong
+      index: 159
+    - data: assets/artist/common/texture/ui/version1/map/atlas_map_1
+      index: 160
+    - data: assets/artist/common/texture/ui/version1/loading/atlas_loading
+      index: 161
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_xiaoguotu_zdzd
+      index: 162
+    - data: assets/artist/gresources/ui/map/atlas_map_detail
+      index: 163
+    - data: assets/artist/common/texture/ui/version1/skinshow/atlas_skinshow
+      index: 164
+    - data: assets/artist/common/texture/ui/version1/skill/atlas_skill2
+      index: 165
+    - data: assets/artist/common/texture/ui/version1/base/atlas_opentips_none
+      index: 166
+    - data: assets/artist/common/texture/ui/version1/base/atlas_opentips
+      index: 167
+    - data: assets/artist/common/texture/ui/version1/login/atlas_unused_version1_makeface1
+      index: 168
+    - data: assets/artist/gresources/ui/map/atlas_map402x
+      index: 169
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_diaoluoguishu
+      index: 170
+    - data: assets/artist/gresources/ui/mainhud/atlas_mainhud_functiontip
+      index: 171
+    - data: assets/artist/common/texture/ui/version1/dummy/atlas_unused_version1_dummy
+      index: 172
+    - data: assets/artist/common/texture/ui/version1/rank/atlas_unused_version1_rank
+      index: 173
+    - data: assets/artist/gresources/ui/skill/atlas_skill_yulinjun
+      index: 174
+    - data: assets/artist/gresources/ui/makeface/male/atlas_makeface
+      index: 175
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_juewei
+      index: 176
+    - data: assets/artist/common/texture/ui/version1/achievetitle/atlas_achievetitle
+      index: 177
+    - data: assets/artist/gresources/ui/chat/atlas_chatchannel
+      index: 178
+    - data: assets/artist/common/texture/effect/ui/low/element/atlas_meishutu_shengxing
+      index: 179
+    - data: assets/artist/gresources/ui/title/atlas_common_title_star
+      index: 180
+    - data: assets/artist/gresources/ui/map/atlas_map105x
+      index: 181
+    - data: assets/artist/common/texture/ui/version1/loading/atlas_loading_jz_bg_jdt_02
+      index: 182
+    - data: assets/artist/gresources/ui/common/atlas_common_vip
+      index: 183
+    - data: assets/artist/gresources/ui/title/atlas_marry
+      index: 184
+    - data: assets/artist/gresources/ui/map/atlas_map402
+      index: 185
+    - data: assets/artist/gresources/ui/map/atlas_map601x
+      index: 186
+    - data: assets/ui/mail/atlas_ui.mail
+      index: 187
+    - data: assets/artist/common/texture/ui/version1/team/atlas_team2
+      index: 188
+    - data: assets/artist/gresources/ui/mainhud/atlas_2
+      index: 189
+    - data: assets/artist/gresources/ui/map/atlas_map905x
+      index: 190
+    - data: assets/artist/gresources/ui/mainhud/atlas_1
+      index: 191
+    - data: assets/artist/common/texture/ui/version1/skill/atlas_skill_linebg
+      index: 192
+    - data: assets/artist/common/texture/ui/version1/achievetitle/atlas_title
+      index: 193
+    - data: assets/artist/gresources/ui/map/atlas_map103x
+      index: 194
+    - data: assets/artist/gresources/ui/skill/atlas_skill_baiqisi
+      index: 195
+    - data: assets/artist/common/texture/ui/version1/rank/atlas_rank
+      index: 196
+    - data: assets/artist/gresources/ui/chat/atlas_chat_number
+      index: 197
+    - data: assets/artist/gresources/ui/map/atlas_map405
+      index: 198
+    - data: assets/artist/common/texture/ui/version1/common/atlas_common_com_bg_swbg
+      index: 199
+    - data: assets/artist/common/texture/ui/version1/loading/atlas_unused_version1_loading
+      index: 200
+    - data: assets/artist/gresources/ui/map/atlas_map106
+      index: 201
+    - data: assets/artist/gresources/ui/selectrole/atlas_unused_gres_selectrole
+      index: 202
+    - data: assets/artist/gresources/ui/pack/atlas_pack
+      index: 203
+    - data: assets/artist/gresources/ui/mainhud/atlas_unused_gres_mainhud_tip
+      index: 204
+    - data: assets/artist/gresources/ui/common/mozunicon/atlas_common_mozun
+      index: 205
+    - data: assets/artist/common/texture/ui/version1/team/atlas_unused_version1_team2
+      index: 206
+    - data: assets/artist/gresources/ui/map/atlas_map102
+      index: 207
+    - data: assets/artist/common/texture/ui/version1/login/logo/atlas_logo
+      index: 208
+    - data: assets/artist/gresources/ui/vip/atlas_vip_res
+      index: 209
+    - data: assets/artist/gresources/ui/common/commonico/atlas_8
+      index: 210
+    - data: assets/artist/gresources/ui/map/atlas_map403x
+      index: 211
+    - data: assets/artist/gresources/ui/map/atlas_map304
+      index: 212
+    - data: assets/artist/gresources/ui/common/commonico/atlas_3
+      index: 213
+    - data: assets/artist/common/texture/ui/version1/fadsuit/atlas_fadsuit_windowex
+      index: 214
+    - data: assets/artist/common/texture/ui/version1/soul/atlas_soul
+      index: 215
+    - data: assets/artist/common/texture/ui/version1/common/common_bg/atlas_common_bg
+      index: 216
+    - data: assets/artist/gresources/ui/map/atlas_map202
+      index: 217
+    - data: assets/artist/gresources/ui/common/commonico/atlas_4
+      index: 218
+    - data: assets/artist/gresources/ui/common/commonico/atlas_6
+      index: 219
+    - data: assets/artist/gresources/ui/map/atlas_map804
+      index: 220
+    - data: assets/artist/gresources/ui/pageicon/atlas_mainhud
+      index: 221
+    - data: assets/artist/gresources/ui/map/atlas_map101
+      index: 222
+    - data: assets/artist/gresources/ui/common/commonico/atlas_0
+      index: 223
+    - data: assets/artist/common/texture/ui/version1/revive/atlas_revive
+      index: 224
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_xiaoguotu_daojutubiao
+      index: 225
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_qitiandenglu
+      index: 226
+    - data: assets/artist/gresources/ui/map/atlas_map903x
+      index: 227
+    - data: assets/artist/gresources/ui/makeface/female/atlas_makeface
+      index: 228
+    - data: assets/artist/gresources/ui/common/atlas_unused_gres_common
+      index: 229
+    - data: assets/artist/common/texture/ui/version1/skill/atlas_unused_version1_skill1
+      index: 230
+    - data: assets/artist/common/texture/ui/version1/wuzhuzhidi/atlas_wuzhuzhidi_wzzd_bg_ditu_01
+      index: 231
+    - data: assets/artist/common/texture/ui/version1/map/atlas_unused_version1_map
+      index: 232
+    - data: assets/artist/gresources/ui/map/atlas_map104x
+      index: 233
+    - data: assets/artist/gresources/ui/common/atlas_unused_gres_westtradehelper
+      index: 234
+    - data: assets/artist/gresources/ui/mainhud/atlas_mainhud_finhuodongnpc
+      index: 235
+    - data: assets/artist/gresources/ui/map/atlas_unused_gres_map5
+      index: 236
+    - data: assets/artist/gresources/ui/common/commonico/atlas_1
+      index: 237
+    - data: assets/artist/common/texture/ui/version1/chat/atlas_caht
+      index: 238
+    - data: assets/artist/gresources/ui/map/atlas_map105
+      index: 239
+    - data: assets/artist/common/texture/ui/version1/loading/atlas_loading_jz_bg_di
+      index: 240
+    - data: assets/artist/gresources/ui/map/atlas_map104
+      index: 241
+    - data: assets/artist/gresources/ui/critday/atlas_unused_gres_critday
+      index: 242
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_xiaoguotu_wenzi
+      index: 243
+    - data: assets/artist/common/texture/ui/version1/login/login/atlas_unused_version1_login
+      index: 244
+    - data: assets/artist/gresources/ui/common/commonico/atlas_9
+      index: 245
+    - data: assets/artist/common/texture/ui/version1/skill/atlas_skill2_bg
+      index: 246
+    - data: assets/artist/common/texture/ui/version1/revive/atlas_unused_version1_revive
+      index: 247
+    - data: assets/artist/common/texture/ui/version1/base/atlas_unused_version1_baseicon
+      index: 248
+    - data: assets/artist/common/texture/ui/version1/loading/atlas_loading_jz_bg_jdt_03
+      index: 249
+    - data: assets/artist/gresources/ui/map/atlas_map304x
+      index: 250
+    - data: assets/artist/gresources/ui/map/atlas_map3x
+      index: 251
+    - data: assets/artist/gresources/ui/vip/vip1/atlas_privilege
+      index: 252
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_meishutu-tubiao_2
+      index: 253
+    - data: assets/artist/gresources/ui/map/atlas_map201x
+      index: 254
+    - data: assets/artist/gresources/ui/common/atlas_westtrade
+      index: 255
+    - data: assets/artist/gresources/ui/map/atlas_map601
+      index: 256
+    - data: assets/artist/gresources/ui/map/atlas_map905x_1
+      index: 257
+    - data: assets/artist/gresources/ui/map/atlas_map801x
+      index: 258
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_meishuzi_zidong
+      index: 259
+    - data: assets/artist/common/texture/ui/version1/common/atlas_rotaryorder
+      index: 260
+    - data: assets/artist/common/texture/ui/version1/skinshow/atlas_rotaryresult
+      index: 261
+    - data: assets/artist/gresources/ui/map/atlas_map106x
+      index: 262
+    - data: assets/artist/common/texture/ui/version1/base/atlas_baselogin
+      index: 263
+    - data: assets/artist/gresources/ui/map/atlas_unused_gres_map5x
+      index: 264
+    - data: assets/artist/common/texture/ui/version1/lauglory/atlas_lauglory_kfhd_bg
+      index: 265
+    - data: assets/artist/gresources/ui/map/atlas_map9
+      index: 266
+    - data: assets/artist/gresources/ui/common/commonico/atlas_2
+      index: 267
+    - data: assets/artist/gresources/ui/mainhud/atlas_12
+      index: 268
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_xiaoguotu_zdxl
+      index: 269
+    - data: assets/artist/common/texture/ui/version1/login/atlas_unused_version1_login
+      index: 270
+    - data: assets/artist/gresources/ui/selectrole/atlas_selectrole
+      index: 271
+    - data: assets/artist/gresources/ui/map/atlas_map904
+      index: 272
+    - data: assets/artist/gresources/ui/map/atlas_map3
+      index: 273
+    - data: assets/artist/gresources/ui/mainhud/atlas_20
+      index: 274
+    - data: assets/artist/gresources/ui/map/atlas_map803x
+      index: 275
+    - data: assets/artist/gresources/ui/map/atlas_map401
+      index: 276
+    - data: assets/artist/gresources/ui/map/atlas_map103
+      index: 277
+    - data: assets/artist/common/texture/ui/version1/team/atlas_unused_version1_team
+      index: 278
+    - data: assets/artist/common/texture/ui/version1/common/atlas_unused_version1_common_b
+      index: 279
+    - data: assets/artist/gresources/ui/map/atlas_map6
+      index: 280
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_qirilibao
+      index: 281
+    - data: assets/ui/eliminategame/atlas_ui.eliminategame
+      index: 282
+    - data: assets/artist/gresources/ui/map/atlas_map4
+      index: 283
+    - data: assets/artist/gresources/ui/common/commonico/atlas_common
+      index: 284
+    - data: assets/artist/gresources/ui/vip/atlas_privilege
+      index: 285
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_meishuzi
+      index: 286
+    - data: assets/artist/gresources/ui/map/atlas_map2x
+      index: 287
+    - data: assets/artist/gresources/ui/map/atlas_map406
+      index: 288
+    - data: assets/artist/gresources/ui/map/atlas_map901
+      index: 289
+    - data: assets/artist/common/texture/ui/version1/achievetitle/atlas_unused_version1_achievetitle
+      index: 290
+    - data: assets/artist/gresources/ui/map/atlas_map4x
+      index: 291
+    - data: assets/artist/gresources/ui/mainhud/atlas_mainhud_tip
+      index: 292
+    - data: assets/artist/gresources/ui/map/atlas_map802
+      index: 293
+    - data: assets/artist/gresources/ui/map/atlas_map401x
+      index: 294
+    - data: assets/artist/gresources/ui/map/atlas_map402s
+      index: 295
+    - data: assets/artist/gresources/ui/map/atlas_map203x
+      index: 296
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_ef_qingyu
+      index: 297
+    - data: assets/artist/gresources/ui/map/atlas_map203
+      index: 298
+    - data: assets/artist/gresources/ui/map/atlas_map901x
+      index: 299
+    - data: assets/artist/gresources/ui/map/atlas_map903
+      index: 300
+    - data: assets/artist/gresources/ui/title/atlas_title
+      index: 301
+    - data: assets/artist/gresources/ui/map/atlas_map102x
+      index: 302
+    - data: assets/artist/gresources/ui/map/atlas_map2
+      index: 303
+    - data: assets/artist/gresources/ui/map/atlas_map404x
+      index: 304
+    - data: assets/artist/gresources/ui/map/atlas_map801
+      index: 305
+    - data: assets/artist/gresources/ui/map/atlas_map906x
+      index: 306
+    - data: assets/ui/achievement/atlas_ui.achievement
+      index: 307
+    - data: assets/artist/gresources/ui/map/atlas_map9x
+      index: 308
+    - data: assets/artist/gresources/ui/map/atlas_map6x
+      index: 309
+    - data: assets/artist/gresources/ui/map/atlas_map101x
+      index: 310
+    - data: assets/artist/gresources/ui/map/atlas_map8
+      index: 311
+    - data: assets/artist/gresources/ui/map/atlas_map802x
+      index: 312
+    - data: assets/artist/gresources/ui/map/atlas_map906
+      index: 313
+    - data: assets/artist/gresources/ui/map/atlas_map201
+      index: 314
+    - data: assets/artist/gresources/ui/map/atlas_map406x
+      index: 315
+    - data: assets/artist/gresources/ui/map/atlas_map904x
+      index: 316
+    - data: assets/artist/common/texture/effect/ui/low/xiaoguotu/atlas_meishutu_hongbao
+      index: 317
+    - data: assets/artist/common/texture/ui/version1/mainhud/atlas_fabao
+      index: 318
+    - data: assets/artist/gresources/ui/map/atlas_map804x
+      index: 319
+    - data: assets/artist/common/texture/ui/version1/skill/atlas_skill
+      index: 320
+    - data: assets/artist/gresources/ui/task/atlas_unused_version1_task
+      index: 321
+    - data: assets/artist/gresources/ui/task/atlas_dialogmodel
+      index: 322
+    - data: assets/artist/gresources/ui/map/atlas_mainhud
+      index: 323
+    - data: assets/artist/gresources/ui/task/atlas_task
+      index: 324
+    - data: assets/artist/common/texture/ui/version1/mainhud/atlas_mainhud_func_icon
+      index: 325
+    - data: assets/artist/common/texture/effect/combineskill/add_combined/combinedtexture/atlas_effect_combined_add_combined
+      index: 326
+    - data: assets/artist/common/texture/effect/combineskill/alpha_blend_combined/combinedtexture/atlas_effect_combined_alpha_blend_combined
+      index: 327
+    indexStart: 100

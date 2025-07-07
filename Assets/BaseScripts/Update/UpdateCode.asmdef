@@ -1,0 +1,17 @@
+{
+    "name": "UpdateCode",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0a554dde072ff8f46b510a726e200ad2",
+        "GUID:13ba8ce62aa80c74598530029cb2d649"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

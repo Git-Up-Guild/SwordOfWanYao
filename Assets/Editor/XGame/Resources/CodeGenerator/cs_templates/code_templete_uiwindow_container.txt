@@ -1,0 +1,21 @@
+/************* <<< UICodeGenerator Version #Version#.0 >>>  ***********************
+File：UIWindowContainerEx.cs <FileHead_AutoGenerate>
+Author：#Author#
+Date：#Date#
+Description：窗口容器类
+***************************************************************************/
+
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using XGame.EventEngine;
+using XGame.Poolable;
+using XGame.UI.Framework;
+
+#NameSpace#
+{
+    public abstract partial class UIWindowContainerEx : UIWindowContainer
+    {
+    }
+}
+

@@ -1,0 +1,266 @@
+Keyword#0 _USEUVANI_ON found in 12 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 sfx AlphaBlend_move
+　　Shader#4 sfx_addzwrite
+　　Shader#5 sfx AlphaBlend
+　　Shader#6 sfx_fresnse
+　　Shader#7 Blend_CenterGlow
+　　Shader#8 sfx_fresnsel
+　　Shader#9 Add_CenterGlow
+　　Shader#10 sfx NormalDistortion
+　　Shader#11 UIAdditive
+
+Keyword#1 _USEMASK_ON found in 11 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 sfx AlphaBlend_move
+　　Shader#4 sfx_addzwrite
+　　Shader#5 sfx AlphaBlend
+　　Shader#6 Blend_CenterGlow
+　　Shader#7 sfx_fresnsel
+　　Shader#8 Add_CenterGlow
+　　Shader#9 sfx NormalDistortion
+　　Shader#10 UIAdditive
+
+Keyword#2 _MASK_R found in 9 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 sfx AlphaBlend_move
+　　Shader#4 sfx_addfresnel
+　　Shader#5 sfx_addzwrite
+　　Shader#6 sfx_addzwrite_Blend
+　　Shader#7 sfx_fresnse
+　　Shader#8 Add_CenterGlow
+
+Keyword#3 _USEUVDISTORTION_ON found in 9 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 sfx_addzwrite
+　　Shader#4 sfx AlphaBlend
+　　Shader#5 sfx_fresnse
+　　Shader#6 Blend_CenterGlow
+　　Shader#7 sfx_fresnsel
+　　Shader#8 sfx NormalDistortion
+
+Keyword#4 _TEX_RGBA found in 8 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 sfx AlphaBlend_move
+　　Shader#4 sfx_addfresnel
+　　Shader#5 sfx_addzwrite
+　　Shader#6 sfx_addzwrite_Blend
+　　Shader#7 sfx_fresnse
+
+Keyword#5 _TEX_R found in 8 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 sfx AlphaBlend_move
+　　Shader#4 sfx_addfresnel
+　　Shader#5 sfx_addzwrite
+　　Shader#6 sfx_addzwrite_Blend
+　　Shader#7 sfx_fresnse
+
+Keyword#6 _TEX_A found in 8 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 sfx AlphaBlend_move
+　　Shader#4 sfx_addfresnel
+　　Shader#5 sfx_addzwrite
+　　Shader#6 sfx_addzwrite_Blend
+　　Shader#7 Add_CenterGlow
+
+Keyword#7 _TEX_B found in 7 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend_move
+　　Shader#3 sfx_addfresnel
+　　Shader#4 sfx_addzwrite
+　　Shader#5 sfx_addzwrite_Blend
+　　Shader#6 Add_CenterGlow
+
+Keyword#8 _UVON_ON found in 7 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 sfx AlphaBlend_move
+　　Shader#4 sfx_addfresnel
+　　Shader#5 sfx_addzwrite
+　　Shader#6 sfx_addzwrite_Blend
+
+Keyword#9 _DISSLOVESON_ON found in 7 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend_move
+　　Shader#3 sfx_addfresnel
+　　Shader#4 sfx_addzwrite
+　　Shader#5 sfx_addzwrite_Blend
+　　Shader#6 sfx_fresnse
+
+Keyword#10 _EMISSION found in 7 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 Blend_CenterGlow
+　　Shader#4 SH_SubTexture
+　　Shader#5 AddMul
+　　Shader#6 Additive_Scroll01
+
+Keyword#11 _TEX_G found in 6 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend_move
+　　Shader#3 sfx_addfresnel
+　　Shader#4 sfx_addzwrite
+　　Shader#5 sfx_addzwrite_Blend
+
+Keyword#12 _MASKUV_ON found in 6 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx AlphaBlend
+　　Shader#2 sfx AlphaBlend_move
+　　Shader#3 sfx_addfresnel
+　　Shader#4 sfx_addzwrite
+　　Shader#5 sfx_addzwrite_Blend
+
+Keyword#13 _MASK_B found in 6 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx AlphaBlend_move
+　　Shader#2 sfx_addfresnel
+　　Shader#3 sfx_addzwrite
+　　Shader#4 sfx_addzwrite_Blend
+　　Shader#5 Add_CenterGlow
+
+Keyword#14 _MASK_A found in 6 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx AlphaBlend
+　　Shader#2 sfx AlphaBlend_move
+　　Shader#3 sfx_addfresnel
+　　Shader#4 sfx_addzwrite
+　　Shader#5 sfx_addzwrite_Blend
+
+Keyword#15 _IS_SCREENSPACE_ON found in 6 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 Blend_CenterGlow
+　　Shader#4 SH_SubTexture
+　　Shader#5 AddMul
+
+Keyword#16 _HASNOISEEMISSIVE_ON found in 6 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 Blend_CenterGlow
+　　Shader#4 SH_SubTexture
+　　Shader#5 AddMul
+
+Keyword#17 _USEDISSOLVE_ON found in 6 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 sfx AlphaBlend
+　　Shader#4 Blend_CenterGlow
+　　Shader#5 Dostortion
+
+Keyword#18 EFFECT_BUMP found in 6 shader(s)
+　　Shader#0 Highlight_Animated
+　　Shader#1 sfx Additive
+　　Shader#2 Blend_CenterGlow
+　　Shader#3 sfx_fresnsel
+　　Shader#4 Dostortion
+　　Shader#5 UIAdditive
+
+Keyword#19 _USEDEPTH_ON found in 6 shader(s)
+　　Shader#0 sfx Additive
+　　Shader#1 sfx AlphaBlend
+　　Shader#2 sfx AlphaBlend_move
+　　Shader#3 sfx_addzwrite_Blend
+　　Shader#4 Blend_CenterGlow
+　　Shader#5 Add_CenterGlow
+
+Keyword#20 _HASNOISEOPACITY_ON found in 6 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx Additive
+　　Shader#2 sfx AlphaBlend
+　　Shader#3 Blend_CenterGlow
+　　Shader#4 SH_SubTexture
+　　Shader#5 AddMul
+
+Keyword#21 _MASK_G found in 5 shader(s)
+　　Shader#0 sfx add_move
+　　Shader#1 sfx AlphaBlend_move
+　　Shader#2 sfx_addfresnel
+　　Shader#3 sfx_addzwrite
+　　Shader#4 sfx_addzwrite_Blend
+
+Keyword#22 _DISTORTMAINTEXTURE_ON found in 3 shader(s)
+　　Shader#0 sfx Additive
+　　Shader#1 Additive_Scroll01
+　　Shader#2 sfx NormalDistortion
+
+Keyword#23 _HASOPACITYDEPTH_ON found in 3 shader(s)
+　　Shader#0 sfx Additive
+　　Shader#1 sfx AlphaBlend
+　　Shader#2 AddMul
+
+Keyword#24 _USEUIMASKCLIP_ON found in 3 shader(s)
+　　Shader#0 sfx Additive
+　　Shader#1 sfx AlphaBlend
+　　Shader#2 sfx AlphaBlend
+
+Keyword#25 _USEUVTRAIL_ON found in 3 shader(s)
+　　Shader#0 sfx Additive
+　　Shader#1 sfx AlphaBlend
+　　Shader#2 sfx AlphaBlend
+
+Keyword#26 _MarmosetGGX found in 2 shader(s)
+　　Shader#0 Highlight_Animated
+　　Shader#1 RFX4_Ice
+
+Keyword#27 _EnableEmissive found in 2 shader(s)
+　　Shader#0 Highlight_Animated
+　　Shader#1 RFX4_Ice
+
+Keyword#28 _ALPHABLEND_ON found in 1 shader(s)
+　　Shader#0 sfx AlphaBlend
+
+Keyword#29 _MAIN_LIGHT_SHADOWS found in 1 shader(s)
+　　Shader#0 sfx_Alhatest
+
+Keyword#30 DISTORT_ON found in 1 shader(s)
+　　Shader#0 RFX4_Ice
+
+Keyword#31 DISTORT_OFF found in 1 shader(s)
+　　Shader#0 RFX4_Ice
+
+Keyword#32 _SplitSum found in 1 shader(s)
+　　Shader#0 RFX4_Ice
+
+Keyword#33 UNITY_PASS_SHADOWCASTER found in 1 shader(s)
+　　Shader#0 Highlight_Animated
+
+Keyword#34 _UseMaterialMap found in 1 shader(s)
+　　Shader#0 Highlight_Animated
+
+Keyword#35 _EmissiveEffect found in 1 shader(s)
+　　Shader#0 Highlight_Animated
+
+Keyword#36 _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A found in 1 shader(s)
+　　Shader#0 sfx_Alhatest
+
+Keyword#37 _ALPHATEST_ON found in 1 shader(s)
+　　Shader#0 sfx_Alhatest
+
+Keyword#38 _HASEMISSIVEDEPTH_ON found in 1 shader(s)
+　　Shader#0 AddMul
+
+Keyword#39 _UVOFFSETOPEN_ON found in 1 shader(s)
+　　Shader#0 Dostortion
+

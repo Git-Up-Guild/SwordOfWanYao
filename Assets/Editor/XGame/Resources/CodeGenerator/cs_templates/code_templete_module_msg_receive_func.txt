@@ -1,0 +1,7 @@
+		private void ON_RECEIVE_#MessageID#(#MessageClassType# msg) //@ReceivHandler_#MessageType#
+		{
+			var msgBody = msg.stT#MessageID#;
+			
+            //Write your code here.
+
+		}

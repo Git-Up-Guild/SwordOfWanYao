@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1292398333, guid: 287e5a8b2cb0f634ba2330fe9103fa17, type: 3}
+  m_Name: VocationInfoData
+  m_EditorClassIdentifier: 
+  Roles:
+  - voc: 0
+    sex: 0
+    modelName: role_01_01__Create
+    camPathName: pam_cam
+    lightEffect1: 5503000
+    lightEffect2: 2001
+    lightEffect3: 0
+    CameraRotPos: {x: 0.128, y: 0.768, z: 0}
+    roleBgMusic: 2001
+  - voc: 1
+    sex: 0
+    modelName: role_01_01__Create
+    camPathName: pam_cam
+    lightEffect1: 5503000
+    lightEffect2: 2001
+    lightEffect3: 0
+    CameraRotPos: {x: 0.128, y: 0.768, z: 0}
+    roleBgMusic: 2001
+  - voc: 2
+    sex: 0
+    modelName: role_02_01__Create
+    camPathName: pbm_cam
+    lightEffect1: 5501000
+    lightEffect2: 2002
+    lightEffect3: 0
+    CameraRotPos: {x: 0.014, y: 0.637, z: 0}
+    roleBgMusic: 2007
+  - voc: 3
+    sex: 1
+    modelName: role_03_01__Create
+    camPathName: pcw_cam
+    lightEffect1: 5502000
+    lightEffect2: 2006
+    lightEffect3: 2009
+    CameraRotPos: {x: -0.026, y: 1.418, z: -0.065}
+    roleBgMusic: 2004

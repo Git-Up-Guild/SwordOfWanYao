@@ -1,0 +1,36 @@
+G_Artist	-静态目录
+	原始资源目录，有美术提供，按照引擎部提供的目录结构处理。
+	
+G_Resources	-动态目录
+	Artist	-美术输出目录
+		AnimationClip -动画片段
+		Material -材质
+		Scenes	-场景资源输出目录 
+			1	-1号场景目录 1.unity
+			2	-2号场景目录 2.unity
+		ScriptableObject	-配置脚本目录
+		UI	-UI贴出目录
+			Login	-登陆窗口资源目录
+		Icon -图标目录
+		TimeStory	-TimeStory目录
+		Prefab	-预制体目录
+			Scene -场景预制体
+			Avatar -皮肤
+			Character -角色
+				Player -玩家预制体
+				Mount -坐骑预制体
+				Monster -怪物预制体
+				...		-其他预制体
+			Effect
+				UIEfc -光效目录
+				SceneEfc -场景光效目录
+			
+	Game	-非美术资源输出目录
+		GameScp		-配置文件输出目录
+		Configs		-配置参数目录（通常为编辑工具生成）
+			System		-系统配置
+		Lua			-Lua脚本
+		Prefab		-预制体目录
+			UI		-UI窗口预制体
+		
+		

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1997133246, guid: c665918d072625e4c98fded2b10d72a9, type: 3}
+  m_Name: AssetBuildConfig
+  m_EditorClassIdentifier: 
+  buildMode: 0
+  compressionType: 256
+  outputRootDir: 
+  encyptKey: Test Key
+  delManifestFiles: 0
+  dirsNeedBeLoadedManually:
+  - Assets/Artist/GResources
+  - Assets/GResources/Prefab/LuaUI
+  - Assets/CRes/ConfigProvider
+  - Assets/GResources
+  dirsNeedBeEncrypted: []
+  packTypeConfigs:
+  - path: Assets/Artist/Common/sound/BGM
+    packMode: 1
+  - path: Assets/GResources/Prefab/LuaUI
+    packMode: 1
+  - path: Assets/Artist/Common/Shader
+    packMode: 2
+  - path: Assets/CRes/ConfigProvider
+    packMode: 1

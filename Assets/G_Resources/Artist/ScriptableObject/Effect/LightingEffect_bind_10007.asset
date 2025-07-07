@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1691146024, guid: e83dc2686a984da488703a29d8085258, type: 3}
+  m_Name: LightingEffect_bind_10007
+  m_EditorClassIdentifier: 
+  nID: 10007
+  strDesc: "buff20004\u6CD5\u5E08\u707C\u70E7"
+  DelayDestroyTick: 0
+  effectPrefabPath: G_Resources/Game/Prefab/Effect/Buff/zhuoshao_loop_ 10007.prefab
+  effectPrefb: {fileID: 0}
+  scale: 1
+  LightEffectType: Bind
+  effectStartTick: 0
+  effectLiveTick: -1
+  effectTotalTick: -1
+  posBindBone: Middle
+  posOffset: {x: 0, y: 0, z: 0}
+  rotationBindBone: 
+  rotationOffset: {x: 0, y: 0, z: 0}
+  disableRotate: 0
+  faceToCamera: 0
+  faceAganistTarget: 0
+  bindType: 1
+  bindTargetBone: 
+  rebindWhenRootChanged: 0
+  oriPrefabGUIDLow: 5dd4311d3ebd6014292ef328cfa9ebcf
+  OriPrefabGUIDLow: Assets/G_Resources/Artist/Effect/Prefab/Buff/zhuoshao_loop.prefab
+  oriPrefabGUIDMiddle: 5dd4311d3ebd6014292ef328cfa9ebcf
+  OriPrefabGUIDMiddle: Assets/G_Resources/Artist/Effect/Prefab/Buff/zhuoshao_loop.prefab
+  oriPrefabGUIDHigh: 5dd4311d3ebd6014292ef328cfa9ebcf
+  OriPrefabGUIDHigh: Assets/G_Resources/Artist/Effect/Prefab/Buff/zhuoshao_loop.prefab

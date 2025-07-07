@@ -1,0 +1,20 @@
+/**************************************************************************    
+文　　件：UIStateAssociateWindows.cs
+作　　者：
+创建时间：#Date#
+描　　述：UI状态关联窗口
+***************************************************************************/
+
+using UnityEngine;
+using XGame.UI.Framework;
+
+#NameSpace#
+{
+	public class GameStateAssociateWindowsSetup : MonoBehaviour, IStateAssociateWindowsSetup
+    {
+        public void SetupStateAssociateWindows()
+        {
+#AutoGenerate#
+        }
+    }
+}

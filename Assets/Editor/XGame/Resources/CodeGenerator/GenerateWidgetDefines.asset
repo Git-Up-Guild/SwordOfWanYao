@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -306249490, guid: 006aeba06c6f4854895fe0d7ef6c8c82, type: 3}
+  m_Name: GenerateWidgetDefines
+  m_EditorClassIdentifier: 
+  prefixs:
+    wndWidgetPrefix: auto_
+    listWidgetPrefix: iauto_
+    flexWidgetPrefix: xauto_
+    wndNoTypeWidgetPrefix: auto_notype_
+    listNoTypeWidgetPrefix: iauto_notype_
+    flexNoTypeWidgetPrefix: xauto_notype_
+  defines:
+  - name: FunctionButton
+    widgetType: 1
+    typeName: FunctionButton
+    typePath: XGame.FunctionOpen.FunctionButton
+    varPrefix: Btn_
+    description: 
+  - name: FunctionElement
+    widgetType: 16
+    typeName: FunctionElement
+    typePath: XGame.FunctionOpen.FunctionElement
+    varPrefix: Func_
+    description: 
+  - name: FunctionToggleButton
+    widgetType: 15
+    typeName: FunctionToggleButton
+    typePath: XGame.FunctionOpen.FunctionToggleButton
+    varPrefix: Tog_
+    description: 
+  - name: Button
+    widgetType: 1
+    typeName: Button
+    typePath: UnityEngine.UI.Button
+    varPrefix: Btn_
+    description: 
+  - name: LongPressEventTrigger
+    widgetType: 16
+    typeName: LongPressEventTrigger
+    typePath: XGame.UI.LongPressEventTrigger
+    varPrefix: LngPres_
+    description: 
+  - name: PressButton
+    widgetType: 1
+    typeName: PressButton
+    typePath: XGame.UI.PressButton
+    varPrefix: Btn_
+    description: 
+  - name: Text
+    widgetType: 2
+    typeName: Text
+    typePath: UnityEngine.UI.Text
+    varPrefix: Text_
+    description: 
+  - name: TextMeshProUGUI
+    widgetType: 14
+    typeName: TextMeshProUGUI
+    typePath: TMPro.TextMeshProUGUI
+    varPrefix: Text_
+    description: 
+  - name: Dropdown
+    widgetType: 17
+    typeName: Dropdown
+    typePath: UnityEngine.UI.Dropdown
+    varPrefix: Dropdown_
+    description: 
+  - name: DropdownEx
+    widgetType: 17
+    typeName: DropdownEx
+    typePath: XGame.UI.DropdownEx
+    varPrefix: Dropdown_
+    description: 
+  - name: TMPDropdownEx
+    widgetType: 17
+    typeName: TMPDropdownEx
+    typePath: XGame.UI.TMPDropdownEx
+    varPrefix: Dropdown_
+    description: 
+  - name: EffectiveListView
+    widgetType: 4
+    typeName: EffectiveListView
+    typePath: XGame.UI.Framework.EffList.EffectiveListView
+    varPrefix: EffList_
+    description: 
+  - name: FlexItemManagerView
+    widgetType: 5
+    typeName: FlexItemManagerView
+    typePath: XGame.UI.Framework.Flex.FlexItemManagerView
+    varPrefix: Flex_
+    description: 
+  - name: SpriteSwitcher
+    widgetType: 13
+    typeName: SpriteSwitcher
+    typePath: XGame.UI.SpriteSwitcher
+    varPrefix: ImgSwt_
+    description: 
+  - name: UITextColorSwitcher
+    widgetType: 16
+    typeName: UITextColorSwitcher
+    typePath: XGame.UI.State.UITextColorSwitcher
+    varPrefix: TextColorSwt_
+    description: 
+  - name: UISpriteSwitcher
+    widgetType: 16
+    typeName: UISpriteSwitcher
+    typePath: XGame.UI.State.UISpriteSwitcher
+    varPrefix: ImgStateSwt_
+    description: 
+  - name: UIStateSwitcherManager
+    widgetType: 16
+    typeName: UIStateSwitcherManager
+    typePath: XGame.UI.State.UIStateSwitcherManager
+    varPrefix: stateSwtMgr_
+    description: 
+  - name: ToggleButtonGroup
+    widgetType: 12
+    typeName: ToggleButtonGroup
+    typePath: XGame.UI.TglBtn.ToggleButtonGroup
+    varPrefix: TglBtnGroup_
+    description: 
+  - name: ToggleButton
+    widgetType: 15
+    typeName: ToggleButton
+    typePath: XGame.UI.TglBtn.ToggleButton
+    varPrefix: TglBtn_
+    description: 
+  - name: LOPObjectComponents
+    widgetType: 9
+    typeName: LOPObjectComponents
+    typePath: XGame.LOP.LOPObjectComponents
+    varPrefix: LopObjComs_
+    description: 
+  - name: GameObjectCollection
+    widgetType: 16
+    typeName: GameObjectCollection
+    typePath: XGame.Utils.GameObjectCollection
+    varPrefix: Coll_
+    description: 
+  - name: DragSources
+    widgetType: 16
+    typeName: DragSources
+    typePath: XGame.UI.DD.DragSources
+    varPrefix: Drags_
+    description: 
+  - name: DropTarget
+    widgetType: 16
+    typeName: DropTarget
+    typePath: XGame.UI.DD.DropTarget
+    varPrefix: Dropt_
+    description: 
+  - name: UIElementVisitor
+    widgetType: 16
+    typeName: UIElementVisitor
+    typePath: XGame.UI.UIElementVisitor
+    varPrefix: EleVist_
+    description: 
+  - name: ScrollRect
+    widgetType: 3
+    typeName: ScrollRect
+    typePath: UnityEngine.UI.ScrollRect
+    varPrefix: Scroll_
+    description: 
+  - name: Toggle
+    widgetType: 10
+    typeName: Toggle
+    typePath: UnityEngine.UI.Toggle
+    varPrefix: Tog_
+    description: 
+  - name: InputField
+    widgetType: 11
+    typeName: InputField
+    typePath: UnityEngine.UI.InputField
+    varPrefix: Input_
+    description: 
+  - name: TMP_InputField
+    widgetType: 11
+    typeName: TMP_InputField
+    typePath: TMPro.TMP_InputField
+    varPrefix: Input_
+    description: 
+  - name: Image
+    widgetType: 6
+    typeName: Image
+    typePath: UnityEngine.UI.Image
+    varPrefix: Img_
+    description: 
+  - name: Slider
+    widgetType: 7
+    typeName: Slider
+    typePath: UnityEngine.UI.Slider
+    varPrefix: Slider_
+    description: 
+  - name: Drag
+    widgetType: 16
+    typeName: Drag
+    typePath: XGame.UI.Drag
+    varPrefix: Drg_
+    description: 
+  - name: RectTransform
+    widgetType: 8
+    typeName: RectTransform
+    typePath: UnityEngine.RectTransform
+    varPrefix: Tran_
+    description: 

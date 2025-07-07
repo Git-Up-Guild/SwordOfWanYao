@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1691146024, guid: e83dc2686a984da488703a29d8085258, type: 3}
+  m_Name: LightingEffect_bind_10003
+  m_EditorClassIdentifier: 
+  nID: 10003
+  strDesc: "buff20002\u6CD5\u5E08\u51CF\u901F"
+  DelayDestroyTick: 0
+  effectPrefabPath: G_Resources/Game/Prefab/Effect/Buff/jiansu_loop_ 10003.prefab
+  effectPrefb: {fileID: 0}
+  scale: 1
+  LightEffectType: Bind
+  effectStartTick: 0
+  effectLiveTick: -1
+  effectTotalTick: -1
+  posBindBone: Foot
+  posOffset: {x: 0, y: 0, z: 0}
+  rotationBindBone: 
+  rotationOffset: {x: 0, y: 0, z: 0}
+  disableRotate: 0
+  faceToCamera: 0
+  faceAganistTarget: 0
+  bindType: 1
+  bindTargetBone: 
+  rebindWhenRootChanged: 0
+  oriPrefabGUIDLow: fb2889c47c9b72f488f0a5bd78d59082
+  OriPrefabGUIDLow: Assets/G_Resources/Artist/Effect/Prefab/Buff/jiansu_loop.prefab
+  oriPrefabGUIDMiddle: fb2889c47c9b72f488f0a5bd78d59082
+  OriPrefabGUIDMiddle: Assets/G_Resources/Artist/Effect/Prefab/Buff/jiansu_loop.prefab
+  oriPrefabGUIDHigh: fb2889c47c9b72f488f0a5bd78d59082
+  OriPrefabGUIDHigh: Assets/G_Resources/Artist/Effect/Prefab/Buff/jiansu_loop.prefab

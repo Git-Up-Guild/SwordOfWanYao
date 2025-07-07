@@ -1,0 +1,38 @@
+fileFormatVersion: 2
+guid: a5d0450b15ab1d444b7430fbedc2e332
+PluginImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  iconMap: {}
+  executionOrder:
+    XGame.Effect.Effect_SmokePlume: 1000
+    XGame.Effect.Effect_SmokeTrail: 1000
+    XGame.Effect.Effect_SmoothTrail: 1000
+    XGame.Effect.Effect_Trail: 1000
+    XGame.Effect.Effect_TrailRenderer_Base: 1000
+  defineConstraints: []
+  isPreloaded: 0
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
+  platformData:
+  - first:
+      Any: 
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+  - first:
+      Windows Store Apps: WindowsStoreApps
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

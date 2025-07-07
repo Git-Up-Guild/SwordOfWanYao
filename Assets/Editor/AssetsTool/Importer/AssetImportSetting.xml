@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--	模板使用说明
+		<Prop name="" value="true" type="bool"></Prop>
+		<EnumFile>UnityEditor.ModelImporterMeshCompression,UnityEditor</EnumFile>
+		
+		前置判断,最外层只能有一个 (return:返回值（类型同prop），logic：判断逻辑与或，前置条件通过才判断赋值条件，否则跳过处理)
+		<PreCheck return="xxx" logic="and">
+			<Condition name="xxx" value="xxx" param="xxx">Funcxx</Condition>
+			<PreCheck></PreCheck>
+			<PreCheck></PreCheck>
+			...
+		</PreCheck>
+		
+		赋值判断，最外层可以有多个，逻辑或的关系 (return:判断通过返回的值，logic：判断逻辑与或)
+		<Check return="true" logic="and">
+			<Condition name="xxx" value="xxx" param="xxx">Funcxx</Condition>
+			<Check></Check>
+			<Check></Check>
+			...
+		</Check>
+		
+		重定向设置（即此属性不在Importer下设置，要去重定向的类设置）
+		<Redirect name="方法名" param="参数1;参数2...">
+			表示需要覆盖重定向设置，参数列表中的this代表重定向类
+			<Override name="方法名" param="参数1;参数2..."></Override>
+		</Redirect>
+		
+		//具体单个条件判断
+		<Condition name="属性名" value="目标值">
+		
+		EnumFile: 表示枚举类的完整路径（命名空间.类名,程序集名）
+		contain：表示包含路径
+		less：表示小于给定值
+		equal: 表示等于给定值
+		greater: 表示大于给定值
+		
+		路径规范：Scene-场景，Character-角色，Effect-特效，UI-ui路径，Animation-动画
+		Check：附加判断条件(可嵌套,最外层并列Check是或的关系,内层Check只能返回bool，外层返回需要的类型的值)，return：表示满足条件后设置的值，logic：表示逻辑与或
+-->
+
+<Root> 
+	<!--模型设置-->
+  <Node name="FBX" postfix=".fbx"> 
+    <Model>
+		<Prop name="globalScale" value="1" type="float"></Prop>
+		<Prop name="useFileScale" value="true" type="bool"></Prop>
+		<Prop name="meshCompression" value="High" type="enum">
+			<EnumFile>UnityEditor.ModelImporterMeshCompression,UnityEditor</EnumFile>
+		</Prop>
+		<Prop name="isReadable" value="false" type="bool">
+			<Check return="true" logic="and">
+				<Condition name="contain" value="TestAssetsImpoeterUI/Scene">CheckPath</Condition>
+				<Check return="true" logic="or">
+					<Condition name="less" value="1000">CheckVertex</Condition>
+					<Condition name="equal" value="1000">CheckVertex</Condition>
+					<Condition name="equal" value="true">CheckCollider</Condition>
+				</Check>
+			</Check>
+		</Prop>
+		<Prop name="optimizeMesh" value="true" type="bool"></Prop>
+		<Prop name="optimizeMeshPolygons" value="true" type="bool"></Prop>
+		<Prop name="optimizeMeshVertices" value="true" type="bool"></Prop>
+		<Prop name="importBlendShapes" value="false" type="bool"></Prop>
+		<Prop name="keepQuads" value="false" type="bool"></Prop>
+		<Prop name="indexFormat" value="UInt16" type="enum">
+			<EnumFile>UnityEditor.ModelImporterIndexFormat,UnityEditor</EnumFile>
+		</Prop>
+		<Prop name="weldVertices" value="true" type="bool"></Prop>
+		<Prop name="importVisibility" value="false" type="bool"></Prop>
+		<Prop name="importCameras" value="false" type="bool"></Prop>
+		<Prop name="importLights" value="false" type="bool"></Prop>
+		<Prop name="preserveHierarchy" value="false" type="bool"></Prop>
+		<Prop name="swapUVChannels" value="false" type="bool"></Prop>
+		<Prop name="generateSecondaryUV" value="false" type="bool">
+			<Check return="true" logic="and">
+				<Condition name="contain" value="TestAssetsImpoeterUI/Scene">CheckPath</Condition>
+				<Condition name="equal" value="true">CheckJoinBakeAndSystemUv</Condition>
+			</Check>
+		</Prop>
+		<Prop name="importNormals" value="Import" type="enum">
+			<EnumFile>UnityEditor.ModelImporterNormals,UnityEditor</EnumFile>
+			<Check return="None" logic="or">
+				<Condition name="contain" value="TestAssetsImpoeterUI/Effect">CheckPath</Condition>
+				<Condition name="contain" value="TestAssetsImpoeterUI/UI">CheckPath</Condition>
+			</Check>
+		</Prop>
+		<Prop name="importTangents" value="CalculateMikk" type="enum">
+			<EnumFile>UnityEditor.ModelImporterTangents,UnityEditor</EnumFile>
+			<Check return="None" logic="or">
+				<Check return="true" logic="or">
+					<Condition name="contain" value="TestAssetsImpoeterUI/Effect">CheckPath</Condition>
+					<Condition name="contain" value="TestAssetsImpoeterUI/UI">CheckPath</Condition>
+				</Check>
+				<Check return="true" logic="and">
+					<Check return="true" logic="or">
+						<Condition name="contain" value="TestAssetsImpoeterUI/Scene">CheckPath</Condition>
+						<Condition name="contain" value="TestAssetsImpoeterUI/Character">CheckPath</Condition>
+					</Check>
+					<Condition name="equal" value="false">CheckUseNormals</Condition>
+				</Check>
+			</Check>
+		</Prop>
+	</Model>
+	
+    <Rig>
+		<Prop name="animationType" value="None" type="enum">
+			<EnumFile>UnityEditor.ModelImporterAnimationType,UnityEditor</EnumFile>
+			<Check return="Generic" logic="or">
+				<Check return="true" logic="and">
+					<Condition name="contain" value="TestAssetsImpoeterUI/Character">CheckPath</Condition>
+					<Condition name="equal" value="true">CheckHasSkinnedMesh</Condition>
+				</Check>
+				<Condition name="contain" value="TestAssetsImpoeterUI/Animation">CheckPath</Condition>
+			</Check>
+		</Prop>
+		<Prop name="avatarSetup" value="NoAvatar" type="enum">
+			<EnumFile>UnityEditor.ModelImporterAvatarSetup,UnityEditor</EnumFile>
+			<Check return="CreateFromThisModel" logic="and">
+				<Check return="true" logic="and">
+					<Condition name="contain" value="TestAssetsImpoeterUI/Character">CheckPath</Condition>
+					<Condition name="equal" value="true">CheckHasSkinnedMesh</Condition>
+				</Check>
+				<Condition name="equal" value="true">CheckSelfBone</Condition>
+			</Check>
+			<!--
+			<Check return="CopyFromOther" logic="or">
+				<Condition name="contain" value="TestAssetsImpoeterUI/Animation">CheckPath</Condition>
+				<Check return="true" logic="and">
+					<Condition name="contain" value="TestAssetsImpoeterUI/Character">CheckPath</Condition>
+					<Condition name="equal" value="true">CheckHasSkinnedMesh</Condition>
+					<Condition name="equal" value="true">CheckUseCommonBone</Condition>
+				</Check>
+			</Check>
+			-->
+		</Prop>
+		<!--此项属于人性化配置，不做自动配置
+		<Prop name="optimizeGameObjects" value="false" type="bool">
+			<Check return="true" logic="and">
+				<Check return="true" logic="and">
+					<Condition name="contain" value="TestAssetsImpoeterUI/Character">CheckPath</Condition>
+					<Condition name="equal" value="true">CheckHasSkinnedMesh</Condition>
+				</Check>
+				<Condition name="equal" value="true">CheckSelfBone</Condition>
+			</Check>
+		</Prop>
+		-->
+	</Rig>  
+	
+    <Animation>
+		<Prop name="importConstraints" value="false" type="bool"></Prop>
+		<Prop name="importAnimation" value="false" type="bool">
+			<Check return="true" logic="and">
+				<Condition name="equal" value="true">CheckFbxHasAni</Condition>
+			</Check>
+		</Prop>
+		<Prop name="resampleCurves" value="true" type="bool">
+			<PreCheck return="true" logic="and">
+				<Condition name="equal" value="true" param="importAnimation">CommonCheckProperty</Condition>
+			</PreCheck>
+		</Prop>
+		<Prop name="animationCompression" value="Optimal" type="enum">
+			<EnumFile>UnityEditor.ModelImporterAnimationCompression,UnityEditor</EnumFile>
+			<PreCheck return="Optimal" logic="and">
+				<Condition name="equal" value="true" param="importAnimation">CommonCheckProperty</Condition>
+			</PreCheck>
+		</Prop>
+		<Prop name="importAnimatedCustomProperties" value="false" type="bool">
+			<PreCheck return="false" logic="and">
+				<Condition name="equal" value="true" param="importAnimation">CommonCheckProperty</Condition>
+			</PreCheck>
+		</Prop>
+	</Animation>  
+	
+    <Materials>
+		<Prop name="materialImportMode" value="None" type="enum">
+			<EnumFile>UnityEditor.ModelImporterMaterialImportMode,UnityEditor</EnumFile>
+		</Prop>
+	</Materials> 
+  </Node>  
+  
+  <!--贴图设置-->
+  <Node name="Texture" postfix=".png/.jpg">
+		<Prop name="textureType" value="Default" type="enum">
+			<EnumFile>UnityEditor.TextureImporterType,UnityEditor</EnumFile>
+			<!--常规UI贴图-->
+			<Check return="Sprite" logic="or">
+				<Condition name="contain" value="TestAssetsImpoeterUI/UI">CheckPath</Condition>
+			</Check>
+			
+			<!--法线贴图-->
+			<Check return="NormalMap" logic="or">
+				<Condition name="contain" value="TestAssetsImpoeterUI/NormalMap">CheckPath</Condition>
+			</Check>
+			
+			<!--光照贴图-->
+			<Check return="Lightmap" logic="or">
+				<Condition name="contain" value="TestAssetsImpoeterUI/LightMap">CheckPath</Condition>
+			</Check>
+		</Prop>
+		
+		<Prop name="spriteImportMode" value="Single" type="enum">
+			<EnumFile>UnityEditor.SpriteImportMode,UnityEditor</EnumFile>
+			<PreCheck return="Single" logic="and">
+				<Condition name="equal" value="Sprite" param="textureType">CommonCheckProperty</Condition>
+			</PreCheck>
+		</Prop>
+		
+		<Prop name="spritePixelsPerUnit" value="100" type="float">
+			<PreCheck return="100" logic="and">
+				<Condition name="equal" value="Sprite" param="textureType">CommonCheckProperty</Condition>
+			</PreCheck>
+		</Prop>
+		
+		<Prop name="textureShape" value="Texture2D" type="enum">
+			<EnumFile>UnityEditor.TextureImporterShape,UnityEditor</EnumFile>
+			<PreCheck return="Texture2D" logic="and">
+				<Condition name="equal" value="Default" param="textureType">CommonCheckProperty</Condition>
+			</PreCheck>
+			
+			<Check return="Texture2D" logic="or">
+				<Condition name="contain" value="TestAssetsImpoeterUI/Common">CheckPath</Condition>
+				<Condition name="contain" value="TestAssetsImpoeterUI/NormalMap">CheckPath</Condition>
+			</Check>
+			
+			<Check return="TextureCube" logic="or">
+				<Condition name="contain" value="TestAssetsImpoeterUI/Cube">CheckPath</Condition>
+			</Check>
+		</Prop>
+		
+		<Prop name="sRGBTexture" value="true" type="bool">
+			<PreCheck return="true" logic="and">
+				<Condition name="equal" value="Default" param="textureType">CommonCheckProperty</Condition>
+				<Condition name="equal" value="Texture2D" param="textureShape">CommonCheckProperty</Condition>
+			</PreCheck>
+			
+			<!--颜色贴图-->
+			<Check return="true" logic="or">
+				<Condition name="contain" value="TestAssetsImpoeterUI/ColorTexture">CheckPath</Condition>
+			</Check>
+			
+			<!--通道贴图-->
+			<Check return="false" logic="or">
+				<Condition name="contain" value="TestAssetsImpoeterUI/ChannelTexture">CheckPath</Condition>
+			</Check>
+		</Prop>
+		
+		<Prop name="alphaSource" value="FromInput" type="enum">
+			<EnumFile>UnityEditor.TextureImporterAlphaSource,UnityEditor</EnumFile>
+			<PreCheck return="FromInput" logic="and">
+				<Condition name="equal" value="Default" param="textureType">CommonCheckProperty</Condition>
+				<Condition name="equal" value="Texture2D" param="textureShape">CommonCheckProperty</Condition>
+			</PreCheck>
+			
+			<!--带Alpha通道贴图-->
+			<Check return="FromInput" logic="or">
+				<Condition name="equal" value="true">CheckHasAlphaChannel</Condition>
+			</Check>
+			
+			<!--不带Alpha通道贴图-->
+			<Check return="None" logic="or">
+				<Condition name="equal" value="false">CheckHasAlphaChannel</Condition>
+			</Check>
+		</Prop>
+		
+		<Prop name="alphaIsTransparency" value="false" type="bool">
+			<PreCheck return="false" logic="and">
+				<Condition name="equal" value="Default" param="textureType">CommonCheckProperty</Condition>
+				<Condition name="equal" value="Texture2D" param="textureShape">CommonCheckProperty</Condition>
+				<Condition name="equal" value="FromInput" param="alphaSource">CommonCheckProperty</Condition>
+			</PreCheck>
+			
+			<!--Alpha通道表示透明程度-->
+			<Check return="true" logic="or">
+				<Condition name="equal" value="true">CheckAlphaIsTransparency</Condition>
+			</Check>
+		</Prop>
+		
+		<Prop name="isReadable" value="false" type="bool"></Prop>
+		
+		<Prop name="streamingMipmaps" value="false" type="bool">
+			<Check return="true" logic="or">
+				<Condition name="contain" value="TestAssetsImpoeterUI/Scene">CheckPath</Condition>
+				<Condition name="contain" value="TestAssetsImpoeterUI/Effect">CheckPath</Condition>
+				<Condition name="contain" value="TestAssetsImpoeterUI/Character">CheckPath</Condition>
+			</Check>
+		</Prop>
+		
+		<Prop name="borderMipmap" value="false" type="bool">
+			<PreCheck return="false" logic="and">
+				<Condition name="equal" value="true" param="streamingMipmaps">CommonCheckProperty</Condition>
+				<Condition name="contain" value="TestAssetsImpoeterUI/Scene">CheckPath</Condition>
+				<Condition name="contain" value="TestAssetsImpoeterUI/Effect">CheckPath</Condition>
+				<Condition name="contain" value="TestAssetsImpoeterUI/Character">CheckPath</Condition>
+			</PreCheck>
+		</Prop>
+		
+		<Prop name="mipmapFilter" value="KaiserFilter" type="enum">
+			<EnumFile>UnityEditor.TextureImporterMipFilter,UnityEditor</EnumFile>
+			<PreCheck return="KaiserFilter" logic="and">
+				<Condition name="equal" value="true" param="streamingMipmaps">CommonCheckProperty</Condition>
+				<Condition name="contain" value="TestAssetsImpoeterUI/Scene">CheckPath</Condition>
+				<Condition name="contain" value="TestAssetsImpoeterUI/Effect">CheckPath</Condition>
+				<Condition name="contain" value="TestAssetsImpoeterUI/Character">CheckPath</Condition>
+			</PreCheck>
+		</Prop>
+		
+		<Prop name="fadeout" value="false" type="bool"></Prop>
+		<Prop name="wrapMode" value="Clamp" type="enum">
+			<EnumFile>UnityEngine.TextureWrapMode,UnityEngine</EnumFile>
+		</Prop>
+		<Prop name="filterMode" value="Bilinear" type="enum">
+			<EnumFile>UnityEngine.FilterMode,UnityEngine</EnumFile>
+		</Prop>
+		
+		<Prop name="anisoLevel" value="1" type="int">
+			<Check return="2" logic="or">
+				<!--场景地面铺装相关贴图-->
+				<Condition name="contain" value="TestAssetsImpoeterUI/Scene/FloorTexture">CheckPath</Condition>
+			</Check>
+		</Prop>
+		
+		<!--平台图片压缩设置-->
+		<Prop name="overridden" value="true" type="bool">
+			<Redirect name="GetPlatformTextureSettings" param="Android">
+				<Override name="SetPlatformTextureSettings" param="this"></Override>
+			</Redirect>
+			<Redirect name="GetPlatformTextureSettings" param="iPhone">
+				<Override name="SetPlatformTextureSettings" param="this"></Override>
+			</Redirect>
+		</Prop>
+		
+		<Prop name="resizeAlgorithm" value="Mitchell" type="enum">
+			<EnumFile>UnityEditor.TextureResizeAlgorithm,UnityEditor</EnumFile>
+			<Redirect name="GetPlatformTextureSettings" param="Android">
+				<Override name="SetPlatformTextureSettings" param="this"></Override>
+			</Redirect>
+			<Redirect name="GetPlatformTextureSettings" param="iPhone">
+				<Override name="SetPlatformTextureSettings" param="this"></Override>
+			</Redirect>
+		</Prop>
+		
+		<Prop name="textureCompression" value="CompressedLQ" type="enum">
+			<EnumFile>UnityEditor.TextureImporterCompression,UnityEditor</EnumFile>
+			<Redirect name="GetPlatformTextureSettings" param="Android">
+				<Override name="SetPlatformTextureSettings" param="this"></Override>
+			</Redirect>
+			<Redirect name="GetPlatformTextureSettings" param="iPhone">
+				<Override name="SetPlatformTextureSettings" param="this"></Override>
+			</Redirect>
+			<Check return="CompressedHQ" logic="or">
+				<!--param：是否是测试模式-->
+				<Condition name="equal" value="true" param="false">CheckParam</Condition>
+			</Check>
+		</Prop>
+		
+		<Prop name="format" value="RGB24" type="enum">
+			<EnumFile>UnityEditor.TextureImporterFormat,UnityEditor</EnumFile>
+			<Redirect name="GetPlatformTextureSettings" param="Android">
+				<Override name="SetPlatformTextureSettings" param="this"></Override>
+			</Redirect>
+			<Check return="ETC2_RGBA8" logic="or">
+				<!--带透明通道-->
+				<Condition name="equal" value="true">CheckHasAlphaChannel</Condition>
+			</Check>
+			<Check return="ETC2_RGB4" logic="or">
+				<!--不带透明通道-->
+				<Condition name="equal" value="false">CheckHasAlphaChannel</Condition>
+			</Check>
+		</Prop>
+		
+		<Prop name="format" value="RGB24" type="enum">
+			<EnumFile>UnityEditor.TextureImporterFormat,UnityEditor</EnumFile>
+			<Redirect name="GetPlatformTextureSettings" param="iPhone">
+				<Override name="SetPlatformTextureSettings" param="this"></Override>
+			</Redirect>
+			<Check return="ASTC_4x4" logic="or">
+				<!--带透明通道-->
+				<Condition name="equal" value="true">CheckHasAlphaChannel</Condition>
+			</Check>
+			<Check return="PVRTC_RGB4" logic="or">
+				<!--不带透明通道-->
+				<Condition name="equal" value="false">CheckHasAlphaChannel</Condition>
+			</Check>
+		</Prop>
+		
+		<Prop name="androidETC2FallbackOverride" value="UseBuildSettings" type="enum">
+			<EnumFile>UnityEditor.AndroidETC2FallbackOverride,UnityEditor</EnumFile>
+			<Redirect name="GetPlatformTextureSettings" param="Android">
+				<Override name="SetPlatformTextureSettings" param="this"></Override>
+			</Redirect>
+		</Prop>
+  </Node>  
+  
+  <!--声音设置-->
+  <Node name="Audio" postfix=".mp3/.wav/.ogg">
+		<Prop name="forceToMono" value="false" type="bool">
+			<Check return="true" logic="or">
+				<!--UI音效-->
+				<Condition name="contain" value="TestAssetsImpoeterUI/UI">CheckPath</Condition>
+			</Check>
+			
+			<Check return="false" logic="or">
+				<!--背景音乐、技能特效-->
+				<Condition name="contain" value="TestAssetsImpoeterUI/BGM">CheckPath</Condition>
+				<Condition name="contain" value="TestAssetsImpoeterUI/Skill">CheckPath</Condition>
+			</Check>
+		</Prop>
+		
+		<Prop name="loadInBackground" value="true" type="bool"></Prop>
+		<Prop name="loadType" value="DecompressOnLoad" type="enum">
+			<EnumFile>UnityEngine.AudioClipLoadType,UnityEngine</EnumFile>
+			<Redirect name="GetOverrideSampleSettings" param="Android">
+				<Override name="SetOverrideSampleSettings" param="Android;this"></Override>
+			</Redirect>
+			<Redirect name="GetOverrideSampleSettings" param="iPhone">
+				<Override name="SetOverrideSampleSettings" param="iPhone;this"></Override>
+			</Redirect>
+			<Check return="Streaming" logic="or">
+				<Condition name="greater" value="60">CheckAudioLength</Condition>
+				<Condition name="equal" value="60">CheckAudioLength</Condition>
+			</Check>
+		</Prop>
+		
+		<Prop name="preloadAudioData" value="false" type="bool"></Prop>
+		
+		<Prop name="compressionFormat" value="Vorbis" type="enum">
+			<EnumFile>UnityEngine.AudioCompressionFormat,UnityEngine</EnumFile>
+			<Redirect name="GetOverrideSampleSettings" param="Android">
+				<Override name="SetOverrideSampleSettings" param="Android;this"></Override>
+			</Redirect>
+		</Prop>
+		
+		<Prop name="compressionFormat" value="MP3" type="enum">
+			<EnumFile>UnityEngine.AudioCompressionFormat,UnityEngine</EnumFile>
+			<Redirect name="GetOverrideSampleSettings" param="iPhone">
+				<Override name="SetOverrideSampleSettings" param="iPhone;this"></Override>
+			</Redirect>
+		</Prop>
+		
+		<!--音质[0-1.0]-->
+		<Prop name="quality" value="0.5" type="float">
+			<Redirect name="GetOverrideSampleSettings" param="Android">
+				<Override name="SetOverrideSampleSettings" param="Android;this"></Override>
+			</Redirect>
+			<Redirect name="GetOverrideSampleSettings" param="iPhone">
+				<Override name="SetOverrideSampleSettings" param="iPhone;this"></Override>
+			</Redirect>
+		</Prop>
+		
+		<Prop name="sampleRateSetting" value="OverrideSampleRate" type="enum">
+			<EnumFile>UnityEditor.AudioSampleRateSetting,UnityEditor</EnumFile>
+			<Redirect name="GetOverrideSampleSettings" param="Android">
+				<Override name="SetOverrideSampleSettings" param="Android;this"></Override>
+			</Redirect>
+			<Redirect name="GetOverrideSampleSettings" param="iPhone">
+				<Override name="SetOverrideSampleSettings" param="iPhone;this"></Override>
+			</Redirect>
+		</Prop>
+  </Node> 
+</Root>

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1691146024, guid: e83dc2686a984da488703a29d8085258, type: 3}
+  m_Name: LightingEffect_bind_12003
+  m_EditorClassIdentifier: 
+  nID: 12003
+  strDesc: "buff12001\u7267\u5E08\u65BD\u6CD5"
+  DelayDestroyTick: 0
+  effectPrefabPath: G_Resources/Game/Prefab/Effect/RoleSkill/Role2/role02_skill06_attack_
+    12003.prefab
+  effectPrefb: {fileID: 0}
+  scale: 1
+  LightEffectType: Bind
+  effectStartTick: 0
+  effectLiveTick: -1
+  effectTotalTick: -1
+  posBindBone: Foot
+  posOffset: {x: 0, y: 0, z: 0}
+  rotationBindBone: 
+  rotationOffset: {x: 0, y: 0, z: 0}
+  disableRotate: 0
+  faceToCamera: 0
+  faceAganistTarget: 0
+  bindType: 1
+  bindTargetBone: 
+  rebindWhenRootChanged: 0
+  oriPrefabGUIDLow: adc69e53cb9dda641ac61e28299e56e7
+  OriPrefabGUIDLow: Assets/G_Resources/Artist/Effect/Prefab/RoleSkill/Role2/role02_skill06_attack.prefab
+  oriPrefabGUIDMiddle: adc69e53cb9dda641ac61e28299e56e7
+  OriPrefabGUIDMiddle: Assets/G_Resources/Artist/Effect/Prefab/RoleSkill/Role2/role02_skill06_attack.prefab
+  oriPrefabGUIDHigh: adc69e53cb9dda641ac61e28299e56e7
+  OriPrefabGUIDHigh: Assets/G_Resources/Artist/Effect/Prefab/RoleSkill/Role2/role02_skill06_attack.prefab

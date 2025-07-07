@@ -1,0 +1,27 @@
+﻿	
+	partial class #ListName#Item : EffectiveListItem
+	{
+		//@Begin_#ListName#_Widget_Variables
+		//@End_#ListName#_Widget_Variables
+		
+		protected override void InitWidgets() //@#ListName#
+		{
+			OnInitWidgets();
+		} //@End_#ListName#_InitWidgets
+
+		protected override void ClearWidgets() //@#ListName#
+		{
+			OnClearWidgets();
+		} //@End_#ListName#_ClearWidgets
+					
+		protected override void SubscribeEvents() //@#ListName#
+		{
+			OnSubscribeEvents();
+		} //@End_#ListName#_SubscribeEvents
+		
+		protected override void UnsubscribeEvents() //@#ListName#
+		{
+			OnUnsubscribeEvents();
+		} //@End_#ListName#_UnsubscribeEvents
+		
+	}

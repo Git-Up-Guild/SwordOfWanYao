@@ -1,0 +1,59 @@
+Shader#0 ParticlesUnlit (13 keywords, 13 used, 1 variants)
+　　Keyword#0 _ALPHAMODULATE_ON
+　　Keyword#1 _ALPHAPREMULTIPLY_ON
+　　Keyword#2 _ALPHATEST_ON
+　　Keyword#3 _COLORADDSUBDIFF_ON
+　　Keyword#4 _COLORCOLOR_ON
+　　Keyword#5 _COLOROVERLAY_ON
+　　Keyword#6 _DISTORTION_ON
+　　Keyword#7 _EMISSION
+　　Keyword#8 _FADING_ON
+　　Keyword#9 _FLIPBOOKBLENDING_ON
+　　Keyword#10 _NORMALMAP
+　　Keyword#11 _RECEIVE_SHADOWS_OFF
+　　Keyword#12 _SOFTPARTICLES_ON
+　　Material#0 ParticlesLit(Use 1 keywords.)
+
+Shader#1 SimpleLit (17 keywords, 17 used, 772 variants)
+　　Keyword#0 _ALPHATEST_ON
+　　Keyword#1 _ALPHAPREMULTIPLY_ON
+　　Keyword#2 _SPECGLOSSMAP
+　　Keyword#3 _SPECULAR_COLOR
+　　Keyword#4 _GLOSSINESS_FROM_BASE_ALPHA
+　　Keyword#5 _NORMALMAP
+　　Keyword#6 _EMISSION
+　　Keyword#7 _RECEIVE_SHADOWS_OFF
+　　Keyword#8 _MAIN_LIGHT_SHADOWS
+　　Keyword#9 _MAIN_LIGHT_SHADOWS_CASCADE
+　　Keyword#10 _ADDITIONAL_LIGHTS_VERTEX
+　　Keyword#11 _ADDITIONAL_LIGHTS
+　　Keyword#12 _ADDITIONAL_LIGHT_SHADOWS
+　　Keyword#13 _SHADOWS_SOFT
+　　Keyword#14 _MIXED_LIGHTING_SUBTRACTIVE
+　　Keyword#15 DIRLIGHTMAP_COMBINED
+　　Keyword#16 LIGHTMAP_ON
+　　Material#0 SimpleLit(Use 2 keywords.)
+
+Shader#2 Sprite-Lit-Default (5 keywords, 5 used, 18 variants)
+　　Keyword#0 ETC1_EXTERNAL_ALPHA
+　　Keyword#1 USE_SHAPE_LIGHT_TYPE_0
+　　Keyword#2 USE_SHAPE_LIGHT_TYPE_1
+　　Keyword#3 USE_SHAPE_LIGHT_TYPE_2
+　　Keyword#4 USE_SHAPE_LIGHT_TYPE_3
+　　Material#0 Sprite-Lit-Default(Use 1 keywords.)
+
+Shader#3 TerrainLit (11 keywords, 11 used, 774 variants)
+　　Keyword#0 _ADDITIONAL_LIGHT_SHADOWS
+　　Keyword#1 _ADDITIONAL_LIGHTS
+　　Keyword#2 _ADDITIONAL_LIGHTS_VERTEX
+　　Keyword#3 _ALPHATEST_ON
+　　Keyword#4 _MAIN_LIGHT_SHADOWS
+　　Keyword#5 _MAIN_LIGHT_SHADOWS_CASCADE
+　　Keyword#6 _MIXED_LIGHTING_SUBTRACTIVE
+　　Keyword#7 _SHADOWS_SOFT
+　　Keyword#8 _TERRAIN_INSTANCED_PERPIXEL_NORMAL
+　　Keyword#9 DIRLIGHTMAP_COMBINED
+　　Keyword#10 LIGHTMAP_ON
+　　Material#0 Terrain_URP(Use 1 keywords.)
+　　Material#1 TerrainLit(Use 1 keywords.)
+

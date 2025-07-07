@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 15284f2ecfca3f348a1e945a70ddaa9f
+timeCreated: 18446744011573954816
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Dissolve: {fileID: 2800000, guid: 8d2b4ecf056cd6648972451d78ac6c4f, type: 3}
+  userData: 
+  assetBundleName: shaders_for_warmup
+  assetBundleVariant: 

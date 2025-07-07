@@ -1,0 +1,1664 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NewShaderVariants
+  m_Shaders:
+  - first: {fileID: 64, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: SHADOWS_SPLIT_SPHERES
+        passType: 0
+      - keywords: SHADOWS_SINGLE_CASCADE SHADOWS_SPLIT_SPHERES
+        passType: 0
+  - first: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT
+        passType: 0
+      - keywords: UNITY_UI_ALPHACLIP
+        passType: 0
+  - first: {fileID: 66, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING
+          SHADOWS_SHADOWMASK
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING
+          SHADOWS_SCREEN SHADOWS_SHADOWMASK
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHATEST_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DETAIL_MULX2
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHATEST_ON _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _ALPHATEST_ON _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHATEST_ON _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _ALPHATEST_ON _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: POINT
+        passType: 5
+      - keywords: FOG_LINEAR POINT
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHATEST_ON
+        passType: 5
+      - keywords: DIRECTIONAL _DETAIL_MULX2
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHATEST_ON _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHATEST_ON
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHATEST_ON _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 8
+  - first: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DETAIL_MULX2
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DETAIL_MULX2 _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: POINT
+        passType: 5
+      - keywords: DIRECTIONAL FOG_LINEAR
+        passType: 5
+      - keywords: FOG_LINEAR POINT
+        passType: 5
+      - keywords: DIRECTIONAL _NORMALMAP
+        passType: 5
+      - keywords: POINT _NORMALMAP
+        passType: 5
+      - keywords: FOG_LINEAR POINT _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL FOG_LINEAR _ALPHAPREMULTIPLY_ON
+        passType: 5
+      - keywords: DIRECTIONAL _DETAIL_MULX2
+        passType: 5
+      - keywords: DIRECTIONAL _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHAPREMULTIPLY_ON
+        passType: 8
+  - first: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: FOG_LINEAR POINT
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 51, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 103, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 104, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: _SUNDISK_NONE
+        passType: 0
+      - keywords: _SUNDISK_SIMPLE
+        passType: 0
+      - keywords: _SUNDISK_HIGH_QUALITY
+        passType: 0
+  - first: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+  - first: {fileID: 202, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 203, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+  - first: {fileID: 207, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 211, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 4
+      - keywords: _ALPHABLEND_ON
+        passType: 4
+      - keywords: FOG_LINEAR _ALPHABLEND_ON
+        passType: 4
+      - keywords: PROCEDURAL_INSTANCING_ON SHADOWS_DEPTH
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON SHADOWS_DEPTH _ALPHABLEND_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+  - first: {fileID: 10501, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 10502, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 9000, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9001, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9002, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9003, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9004, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9006, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9007, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 10620, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 10625, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 10626, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 10623, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: POINT
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: INSTANCING_ON SHADOWS_DEPTH
+        passType: 8
+      - keywords: 
+        passType: 13
+  - first: {fileID: 10703, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING
+          SHADOWS_SHADOWMASK
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING
+          SHADOWS_SCREEN SHADOWS_SHADOWMASK
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          VERTEXLIGHT_ON
+        passType: 4
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 10704, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+  - first: {fileID: 10720, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+  - first: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: ETC1_EXTERNAL_ALPHA
+        passType: 0
+  - first: {fileID: 10755, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 14000, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL GEOM_TYPE_BRANCH LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL GEOM_TYPE_BRANCH LIGHTPROBE_SH LOD_FADE_PERCENTAGE
+        passType: 4
+      - keywords: DIRECTIONAL EFFECT_HUE_VARIATION GEOM_TYPE_LEAF LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL EFFECT_HUE_VARIATION GEOM_TYPE_LEAF LIGHTPROBE_SH LOD_FADE_PERCENTAGE
+        passType: 4
+      - keywords: DIRECTIONAL GEOM_TYPE_BRANCH
+        passType: 5
+      - keywords: DIRECTIONAL GEOM_TYPE_BRANCH LOD_FADE_PERCENTAGE
+        passType: 5
+      - keywords: DIRECTIONAL EFFECT_HUE_VARIATION GEOM_TYPE_LEAF
+        passType: 5
+      - keywords: DIRECTIONAL EFFECT_HUE_VARIATION GEOM_TYPE_LEAF LOD_FADE_PERCENTAGE
+        passType: 5
+      - keywords: GEOM_TYPE_BRANCH SHADOWS_DEPTH
+        passType: 8
+      - keywords: GEOM_TYPE_BRANCH LOD_FADE_PERCENTAGE SHADOWS_DEPTH
+        passType: 8
+      - keywords: GEOM_TYPE_LEAF SHADOWS_DEPTH
+        passType: 8
+      - keywords: GEOM_TYPE_LEAF LOD_FADE_PERCENTAGE SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 20fb5fa09d4675a4e94314a228763c23, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 80a01a94e9fdb445a9e6dff54db02fa9, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: a0084739dcdf4b348bdbcf39f8c60cd8, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 4110494e95e126649875e6060b17e8b5, type: 3}
+    second:
+      variants:
+      - keywords: COLOR_R USEUV1
+        passType: 0
+  - first: {fileID: 4800000, guid: 41e1bbde225a468409b906282be719e5, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _NORMALMAP
+        passType: 4
+      - keywords: POINT _NORMALMAP
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 41dfefbc390fc41cc8e1b421c43e52f5, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: a136a964a17c188419e81175c0d7b35b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: a16859f14873144e2b41f2bd03a84bbc, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: a16aad31287fc524e8d514b4874710ae, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: a14faa061156b6342a4076e8d8935e79, type: 3}
+    second:
+      variants:
+      - keywords: LIGHTPROBE_SH _SplitSum
+        passType: 4
+      - keywords: LIGHTPROBE_SH _EMISSION _VIEWERLIGHT
+        passType: 4
+      - keywords: LIGHTPROBE_SH SHADOWS_SCREEN _EMISSION _VIEWERLIGHT
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH _EMISSION _VIEWERLIGHT
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN _EMISSION _VIEWERLIGHT
+        passType: 4
+      - keywords: LIGHTPROBE_SH _MarmosetGGX _SplitSum _VIEWERLIGHT
+        passType: 4
+      - keywords: LIGHTPROBE_SH _EMISSION _MarmosetGGX _SplitSum _VIEWERLIGHT
+        passType: 4
+      - keywords: LIGHTPROBE_SH SHADOWS_SCREEN _EMISSION _MarmosetGGX _SplitSum _VIEWERLIGHT
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH _EMISSION _MarmosetGGX _SplitSum _VIEWERLIGHT
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN _EMISSION _MarmosetGGX
+          _SplitSum _VIEWERLIGHT
+        passType: 4
+      - keywords: LIGHTPROBE_SH _ALPHABLEND_ON _EMISSION _MarmosetGGX _SplitSum _VIEWERLIGHT
+        passType: 4
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: c1e1d3119c6fd4646aea0b4b74cacc1a, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: f1e8a3cfd9c7b1f4f8d9ddb081829462, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 723f22acc2e0449e3b06e1171df4613e, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: b2bd16719f708d74b8639a5fe12b2049, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableEmissive
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EnableEmissive
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableEmissive _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnvironmentSpecularBlend _MarmosetGGX
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _EnvironmentSpecularBlend
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _EnvironmentSpecularBlend _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EnvironmentSpecularBlend
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN _EnvironmentSpecularBlend
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _EnvironmentSpecularBlend _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: POINT
+        passType: 5
+      - keywords: DIRECTIONAL FOG_LINEAR
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: c2f3bc4ee98639d4da6f25e83805361a, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 24c934b7f8c3c994190d0539d5b02289, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 64abeb11f05377946bf118a6df507797, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 8419d6136ce17104fa6eec99ff281533, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 4
+      - keywords: DIRECTIONAL INSTANCING_ON LIGHTPROBE_SH
+        passType: 4
+  - first: {fileID: 4800000, guid: 94e819b7f2be9524a9a78fb568734122, type: 3}
+    second:
+      variants:
+      - keywords: LIGHTPROBE_SH _CRYSTAL _VIEWERLIGHT
+        passType: 4
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: e4d9fb9a36092da42811cc3002ee208d, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: e42f08975cab7514fb24478ccd159c42, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: f4194041abd381f4ba74b44b2399e3ac, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 65bd715cd693dbb488a8a94bb1934871, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+  - first: {fileID: 4800000, guid: 85dcb9535da9c437e9b477abb1d96b6c, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 4800000, guid: a51c5b0051f912d49bd9e2aae6e3705d, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: d53d456432492604db113fef750b7956, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: f56d4dea708622749969da5cccf8ea38, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 065059817f5b8774e91af59126863bf0, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON _MarmosetGGX
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING
+          SHADOWS_SHADOWMASK _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING
+          SHADOWS_SCREEN SHADOWS_SHADOWMASK _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN _MarmosetGGX
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON _MarmosetGGX
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+          _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+          VERTEXLIGHT_ON _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          LIGHTMAP_SHADOW_MIXING SHADOWS_SCREEN SHADOWS_SHADOWMASK _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableAlphaTest _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON _EnableAlphaTest
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EnableAlphaTest _MarmosetGGX
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON _EnableAlphaTest
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          _EnableAlphaTest _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK _EnableAlphaTest _MarmosetGGX
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          LIGHTMAP_SHADOW_MIXING SHADOWS_SCREEN SHADOWS_SHADOWMASK _EnableAlphaTest
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH _EnableAlphaTest
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableEmissive
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableEmissive _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EnableEmissive _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableEmissive _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _EnableEmissive _MarmosetGGX
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON _EnableEmissive
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EnableEmissive _MarmosetGGX
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN _EnableEmissive
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON _EnableEmissive
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          _EnableEmissive _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK _EnableEmissive _MarmosetGGX
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          LIGHTMAP_SHADOW_MIXING SHADOWS_SCREEN SHADOWS_SHADOWMASK _EnableEmissive
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH _EnableEmissive
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableAlphaTest _EnableEmissive _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH _EnableAlphaTest
+          _EnableEmissive _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+          _EnableAlphaTest _EnableEmissive _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_SHADOW_MIXING
+          LIGHTPROBE_SH SHADOWS_SCREEN _EnableAlphaTest _EnableEmissive _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _MarmosetGGX _NORMALMAP _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON _MarmosetGGX
+          _NORMALMAP _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _MarmosetGGX _NORMALMAP _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON _MarmosetGGX
+          _NORMALMAP _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableEmissive _MarmosetGGX _NORMALMAP
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnvironmentSpecularBlend _MarmosetGGX
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _EnvironmentSpecularBlend
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _EnvironmentSpecularBlend _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EnvironmentSpecularBlend
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _IsRoughness _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON _IsRoughness
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _IsRoughness _MarmosetGGX
+          _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON _IsRoughness
+          _MarmosetGGX _SplitSum
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _MarmosetGGX _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _MarmosetGGX _SplitSum
+          _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON _MarmosetGGX
+          _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH _MarmosetGGX
+          _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+          _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableEmissive _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableEmissive _MarmosetGGX _SplitSum
+          _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _EnableEmissive _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON _EnableEmissive
+          _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          _EnableEmissive _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableAlphaTest _EnableEmissive _MarmosetGGX
+          _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+          _EnableAlphaTest _EnableEmissive _MarmosetGGX _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnvironmentSpecularBlend _MarmosetGGX
+          _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _EnvironmentSpecularBlend
+          _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _EnvironmentSpecularBlend _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EnvironmentSpecularBlend
+          _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH _EnvironmentSpecularBlend
+          _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+          _EnvironmentSpecularBlend _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON
+          _EnvironmentSpecularBlend _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EmissiveEffect _EnableEmissive _MarmosetGGX
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EmissiveEffect _EnableAlphaTest _EnableEmissive
+          _MarmosetGGX _SplitSum _UseMaterialMap
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: POINT
+        passType: 5
+      - keywords: FOG_LINEAR POINT
+        passType: 5
+      - keywords: FOG_LINEAR HEIGHT_FOG_LINEAR POINT
+        passType: 5
+      - keywords: DIRECTIONAL _NORMALMAP
+        passType: 5
+      - keywords: FOG_LINEAR POINT _NORMALMAP
+        passType: 5
+      - keywords: 
+        passType: 8
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: _EnableAlphaTest
+        passType: 8
+      - keywords: _ALPHATEST_ON _EnableAlphaTest
+        passType: 8
+  - first: {fileID: 4800000, guid: 96ab2acdcf10fcd48af1e682b766c599, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: f667dd333ac88440587339a2a1ac0027, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 272f189c9e3c1eb4ab9fd70db9ca8fce, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 570bb35ed3390814285879bee85aac33, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 382151503e2a43a4ebb7366d1632731d, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FINALPASS
+        passType: 0
+      - keywords: BLOOM COLOR_GRADING_HDR_2D FINALPASS
+        passType: 0
+  - first: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: d96d19fd0d1f72c4fb8912573ae2ee7b, type: 3}
+    second:
+      variants:
+      - keywords: LIGHTPROBE_SH _SplitSum _VIEWERLIGHT
+        passType: 4
+      - keywords: LIGHTPROBE_SH _ALPHATEST_ON _SplitSum _VIEWERLIGHT
+        passType: 4
+      - keywords: LIGHTPROBE_SH _ALPHABLEND_ON _SplitSum _VIEWERLIGHT
+        passType: 4
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 4a688b536a1428a43bc1cf5543fa3406, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _Single_Color_Diffuse _Single_Color_Specular
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _Single_Color_Diffuse
+          _Single_Color_Specular
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _Single_Color_Diffuse _Single_Color_Specular
+        passType: 4
+      - keywords: POINT
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 4af888db2d1f85f4b9d3ee9ecbf892c9, type: 3}
+    second:
+      variants:
+      - keywords: EnableGlobaUIScale
+        passType: 0
+  - first: {fileID: 4800000, guid: 7ad194cbe7d006f4bace915156972026, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: TONEMAPPING_CUSTOM
+        passType: 0
+  - first: {fileID: 4800000, guid: 8ac1d97d106a2c9498471fa0c40f63dd, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL INSTANCING_ON LIGHTPROBE_SH _ADVANCED_LIGHTING
+        passType: 4
+  - first: {fileID: 4800000, guid: ba9731159b10bbb4996a8becb50b9ba1, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: fa1a94c34bd8abb469c4463d441f0e79, type: 3}
+    second:
+      variants:
+      - keywords: EnableGlobaUIScale
+        passType: 0
+  - first: {fileID: 4800000, guid: 3b1e662779079cf479a066af9f509a8e, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHATEST_ON
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING
+          SHADOWS_SHADOWMASK _ALPHATEST_ON
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING
+          SHADOWS_SCREEN SHADOWS_SHADOWMASK _ALPHATEST_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHATEST_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN _ALPHATEST_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADOWS_SCREEN
+          _ALPHATEST_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHATEST_ON _SPECULAR
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHATEST_ON _SPECULAR
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN _ALPHATEST_ON
+          _SPECULAR
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHATEST_ON _SCATTERING
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHATEST_ON _ENABLE_WIND_Detail _REFLECTION
+          _SCATTERING
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHATEST_ON _ENABLE_WIND_Detail
+          _REFLECTION _SCATTERING
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHATEST_ON
+        passType: 5
+      - keywords: DIRECTIONAL FOG_LINEAR _ALPHATEST_ON
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHATEST_ON _SPECULAR
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHATEST_ON _SCATTERING
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHATEST_ON _ENABLE_WIND_Detail _REFLECTION _SCATTERING
+        passType: 5
+      - keywords: DIRECTIONAL FOG_LINEAR _ALPHATEST_ON _ENABLE_WIND_Detail _REFLECTION
+          _SCATTERING
+        passType: 5
+      - keywords: 
+        passType: 8
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: _ALPHATEST_ON
+        passType: 8
+  - first: {fileID: 4800000, guid: 4bf4cff0d0bac3d43894e2e8839feb40, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 7b8771403f2deb34eb0127bbbb785800, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR HEIGHT_FOG_LINEAR LIGHTMAP_ON
+          SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: FOG_LINEAR POINT
+        passType: 5
+      - keywords: HEIGHT_FOG_LINEAR POINT
+        passType: 5
+      - keywords: DIRECTIONAL HEIGHT_FOG_LINEAR LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK
+        passType: 5
+      - keywords: DIRECTIONAL HEIGHT_FOG_LINEAR LIGHTMAP_SHADOW_MIXING SHADOWS_SCREEN
+          SHADOWS_SHADOWMASK
+        passType: 5
+      - keywords: 
+        passType: 8
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: db632c41e81a3f645b90c37b4e8e5b17, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 5c7b40327c557bc459a3e2cc0c77e5c8, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 6c5238efba9c89f429107dcd0d60f7b7, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 4
+  - first: {fileID: 4800000, guid: 6c4fefbb8bd3e1a40ba743963b3b7211, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EnableAlphaTest
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: FOG_LINEAR POINT
+        passType: 5
+      - keywords: DIRECTIONAL _EnableAlphaTest
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: SHADOWS_DEPTH _EnableAlphaTest
+        passType: 8
+  - first: {fileID: 4800000, guid: 0d44533e0c85b4444afbd74c70fd4a09, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 4df20739bef92a148af238c9aec938fe, type: 3}
+    second:
+      variants:
+      - keywords: ETC1_EXTERNAL_ALPHA
+        passType: 0
+  - first: {fileID: 4800000, guid: 5dbc727425c09534ea65ed2dec61ee8d, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 9daf02a2663c4be46ab5a9cf57556533, type: 3}
+    second:
+      variants:
+      - keywords: EnableCaustic EnableFresnel EnableInnerLight EnableLayer1 EnableSpecular
+          _USENORMALMAP
+        passType: 4
+      - keywords: EnableFresnel EnableLayer0 EnableSpecular EnableSurfaceMask
+        passType: 4
+      - keywords: EnableCaustic EnableFresnel EnableInnerLight EnableLayer0 EnableLayer1
+          EnableSpecular EnableSurfaceMask
+        passType: 4
+      - keywords: EnableCaustic EnableFresnel EnableInnerLight EnableLayer0 EnableLayer1
+          EnableLayer2 EnableSpecular EnableSurfaceMask
+        passType: 4
+  - first: {fileID: 4800000, guid: bd44c04ba5cba914189e55face13d11c, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: fe393ace9b354375a9cb14cdbbc28be4, type: 3}
+    second:
+      variants:
+      - keywords: OUTLINE_ON
+        passType: 0
+      - keywords: OUTLINE_ON UNDERLAY_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: 5f434f56399d8e549a27af6402532316, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _USEDISSOLVE_ON
+        passType: 0
+      - keywords: _USEMASK_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEMASK_ON
+        passType: 0
+      - keywords: _USEUVANI_ON
+        passType: 0
+      - keywords: _USEMASK_ON _USEUVANI_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEMASK_ON _USEUVANI_ON
+        passType: 0
+      - keywords: _USEMASK_ON _USEUVANI_ON _USEUVDISTORTION_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEMASK_ON _USEUVANI_ON _USEUVDISTORTION_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: 9f6c8f1850313b343a8a432b0b38f9a2, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: af4e668f91f749345a5500d1aefe419b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: cfddb5a237bf97d4486bc3174fd39d6e, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: df74f624f2f53054abeddb90be2e0a09, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: b68b99c2e57cef4419465c63c527201b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+  - first: {fileID: 4800000, guid: e451d45053f05a04883e7c440ea1b964, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 4800000, guid: eef13f6703ba2d54bb721395c5b1c13f, type: 3}
+    second:
+      variants:
+      - keywords: LIGHTMAP_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: 60ec2dfa19167834fbf25b2bced33360, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: d07d6d0a86d4865468e58eacf94364ae, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: b3ceb26205c43c94e95f75d80c0868e1, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+  - first: {fileID: 4800000, guid: 7439add42f7e65b4dbc36568299dde17, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 76840267cd7c0e64292ec296b1769b24, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 179c22242d881384a9a9b7abd22a944b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 27aa926a717dbfe44b4b79e7d91fa71d, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 09d92980be5e5784abdd803fac1a30e4, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 7da55032bc1723749a4a351ea0d98969, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: edb905ac1dd1f8d4688248976976eae3, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+  - first: {fileID: 4800000, guid: efdd1bbe3db07e5479bb07143c5d0c47, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH LOCAL_SPACE
+        passType: 4
+      - keywords: DIRECTIONAL LOCAL_SPACE
+        passType: 5
+      - keywords: LOCAL_SPACE SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: e48138cf02ac1684286ffb9aa2a8557b, type: 3}
+    second:
+      variants:
+      - keywords: _SUNDISK_HIGH_QUALITY
+        passType: 0
+  - first: {fileID: 4800000, guid: c183104a0d06f5c4780d2ec95079ab3f, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 4
+      - keywords: FOG_LINEAR
+        passType: 4
+  - first: {fileID: 4800000, guid: 833910dfff1963e4c86781418ffc2f91, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _USEDISSOLVE_ON
+        passType: 0
+      - keywords: _USEMASK_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEMASK_ON
+        passType: 0
+      - keywords: _USEMASK_ON _USEUVANI_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEMASK_ON _USEUVANI_ON
+        passType: 0
+      - keywords: _USEUVDISTORTION_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEMASK_ON _USEUVDISTORTION_ON
+        passType: 0
+      - keywords: _USEMASK_ON _USEUVANI_ON _USEUVDISTORTION_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEMASK_ON _USEUVANI_ON _USEUVDISTORTION_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: a7420023393b5ff4e9ab801fde705fd5, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: POINT
+        passType: 5
+      - keywords: FOG_LINEAR POINT
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: ff0a79147402c80449344754d3d4821a, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 4
+  - first: {fileID: 4800000, guid: e44218b18a8e51c42af9e6f8e4f87000, type: 3}
+    second:
+      variants:
+      - keywords: _MASK_R _TEX_A
+        passType: 4
+      - keywords: _MASK_R _TEX_R
+        passType: 4
+      - keywords: _MASK_A _TEX_A
+        passType: 4
+      - keywords: _MASK_R _TEX_RGBA
+        passType: 4
+      - keywords: _MASK_R _TEX_R _UVON_ON
+        passType: 4
+      - keywords: _MASK_R _TEX_RGBA _UVON_ON
+        passType: 4
+      - keywords: _DISSLOVESON_ON _MASK_R _TEX_R
+        passType: 4
+      - keywords: _DISSLOVESON_ON _MASK_R _TEX_A _UVON_ON
+        passType: 4
+      - keywords: _DISSLOVESON_ON _MASK_R _TEX_R _UVON_ON
+        passType: 4
+      - keywords: _DISSLOVESON_ON _MASK_R _TEX_RGBA _UVON_ON
+        passType: 4
+      - keywords: _MASK_G _TEX_R
+        passType: 4
+  - first: {fileID: 4800000, guid: 78ace83ff5c103c468dfe26ba55b4bde, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 4
+  - first: {fileID: 4800000, guid: fd695aac4db8de24c85be6d57edac961, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 997ab14ac6b4098438056491181d7ee7, type: 3}
+    second:
+      variants:
+      - keywords: DISTORT_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: e0dfa3707a57103479a4fcbdc2780f9e, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _USEDISSOLVE_ON
+        passType: 0
+      - keywords: _USEMASK_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEMASK_ON
+        passType: 0
+      - keywords: _USEMASK_ON _USEUVTRAIL_ON
+        passType: 0
+      - keywords: _USEUVANI_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEUVANI_ON
+        passType: 0
+      - keywords: _USEMASK_ON _USEUVANI_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEMASK_ON _USEUVANI_ON
+        passType: 0
+      - keywords: _USEUVDISTORTION_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEUVDISTORTION_ON
+        passType: 0
+      - keywords: _USEMASK_ON _USEUVDISTORTION_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEMASK_ON _USEUVDISTORTION_ON
+        passType: 0
+      - keywords: _USEUVANI_ON _USEUVDISTORTION_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEUVANI_ON _USEUVDISTORTION_ON
+        passType: 0
+      - keywords: _USEMASK_ON _USEUVANI_ON _USEUVDISTORTION_ON
+        passType: 0
+      - keywords: _USEDISSOLVE_ON _USEMASK_ON _USEUVANI_ON _USEUVDISTORTION_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: 5d2a2a3756e7f494eb852ecf51a99f22, type: 3}
+    second:
+      variants:
+      - keywords: _MASK_R _TEX_A
+        passType: 4
+      - keywords: _MASK_R _TEX_R
+        passType: 4
+      - keywords: _MASK_A _TEX_A
+        passType: 4
+      - keywords: _MASK_R _TEX_R _UVON_ON
+        passType: 4
+      - keywords: _MASK_A _TEX_A _UVON_ON
+        passType: 4
+      - keywords: _MASK_A _TEX_R _UVON_ON
+        passType: 4
+      - keywords: _DISSLOVESON_ON _MASK_R _TEX_R
+        passType: 4
+      - keywords: _DISSLOVESON_ON _MASK_R _TEX_RGBA _UVON_ON
+        passType: 4
+  - first: {fileID: 4800000, guid: 031fe13e192f7aa4d90c2d8579df4040, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+  - first: {fileID: 4800000, guid: 7112372d481e58b48943e6cb8b387957, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: a1fbaec9197aa164bbd4849d3f9a71f1, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 620d4e6c824f4924b9027b3fa70b9272, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 284a0237a0e48914b8d2cc1c36fc0a6f, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 4f274251644bbfc45a8eb803a0dda554, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 44da7b593b73532448743f597a05ae08, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON
+        passType: 4
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 659bfa9ebfadf6447b7fefa5c85ea481, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON
+        passType: 4
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 09be94aa0d098994e87af6b3e4eb9441, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON
+        passType: 4
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 5d1c9b47097c0e541b436a529ebba399, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON
+        passType: 4
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 69c1f799e772cb6438f56c23efccb782, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+  - first: {fileID: 4800000, guid: 33725ddebc3eb014294a3536aa2fbf98, type: 3}
+    second:
+      variants:
+      - keywords: _MASK_R _TEX_A
+        passType: 4
+      - keywords: _MASK_R _TEX_R
+        passType: 4
+      - keywords: _MASK_R _TEX_RGBA
+        passType: 4
+      - keywords: _MASK_R _TEX_A _UVON_ON
+        passType: 4
+      - keywords: _MASK_R _TEX_R _UVON_ON
+        passType: 4
+      - keywords: _MASK_R _TEX_RGBA _UVON_ON
+        passType: 4
+      - keywords: _MASK_R _TEX_G
+        passType: 4
+      - keywords: _DISSLOVESON_ON _MASK_R _TEX_R
+        passType: 4
+      - keywords: _DISSLOVESON_ON _MASK_R _TEX_G
+        passType: 4
+  - first: {fileID: 4800000, guid: 040df5903d077d94584f02baef683411, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 4800000, guid: deb4e6e85a476374dab6661338783087, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 5a51338defda1f74fb4e3a8e6c35b84a, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: 
+        passType: 8
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 6c8355f191636ba49ac8525581315a36, type: 3}
+    second:
+      variants:
+      - keywords: ETC1_EXTERNAL_ALPHA
+        passType: 0
+  - first: {fileID: 4800000, guid: 34fdba77388f7fc4cbde7c494bad4f48, type: 3}
+    second:
+      variants:
+      - keywords: _MASK_R _TEX_A
+        passType: 4
+  - first: {fileID: 4800000, guid: 6b4b5122253cbda45b4f1d4247a5f6e6, type: 3}
+    second:
+      variants:
+      - keywords: _UVOFFSETOPEN_ON
+        passType: 4
+  - first: {fileID: 4800000, guid: 3557cd101d32cc8419cbad44772a654d, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+  - first: {fileID: 4800000, guid: c062748a062af724fb94a1cf9df55fd7, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+  - first: {fileID: 4800000, guid: 4a24d50604bb94a418b910a4e2dbcd8d, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: efe4be306a5e17a44ac9237c41dab0e9, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+  - first: {fileID: 4800000, guid: 234769cff7e997e419de6ad533c9c011, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 644d4419f6d30214892dd65158332ba7, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _USEINTERSECTIONFOAM_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LIGHTING_ON _USEINTERSECTIONFOAM_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LIGHTING_ON _NORMAL_MAP_ON _USEINTERSECTIONFOAM_ON
+        passType: 4
+  - first: {fileID: 4800000, guid: 4bcc0b68579a5c740ad31644411ffb54, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LIGHTING_ON _USEINTERSECTIONFOAM_ON
+        passType: 4
+  - first: {fileID: 4800000, guid: fb9db3fd8f0fbd84cad1abfced8e7040, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 5d0378c55db450245a13f89ef2a3fbf8, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 4
+  - first: {fileID: 4800000, guid: 4eaa0a0d50c52f748be15614eef105c3, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: f38e0c59e6c205e438e2d460ed85dbc5, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 448d21c0ef9e4f648b0510d40ccf833b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 56bfc2d8a96d44a4a89ed49cccb321f7, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: b760f5fef9a99b549be1391be4988cfa, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: d32de3ccd69914daf97f0c26770ec1e0, type: 3}
+    second:
+      variants:
+      - keywords: _USEINTERSECTIONFOAM_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: 80817d080e70d424e9d0878650e75367, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH UNITY_PASS_SHADOWCASTER
+        passType: 8
+  - first: {fileID: 4800000, guid: 891eb51f15c42ac47ae10bf5476e399a, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: 
+        passType: 8

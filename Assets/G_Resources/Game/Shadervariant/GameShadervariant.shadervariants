@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GameShadervariant
+  m_Shaders:
+  - first: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+      - keywords: GLOW_ON
+        passType: 13
+      - keywords: UNDERLAY_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: 2e8f6596d5e505c47af8c22f53906912, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: c2b4e1e10de1bd441993b2665d4afed1, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+      - keywords: PIXELSNAP_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: 0e0e4816808992f468fc1359f83509e2, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: 335767507f6a75c44b7dbbb7f43f6c44, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: 5b57c170239ba67439ab8f5b0ea49bc3, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: 90bb8f6c1c5f2634b8ebe1c11b277e8f, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: d17029e3a76a9984d9d85bb34ad14d6d, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: 735406eff56e34a459b6d424a6ec7787, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: a3b1632224ea4fc418833b2ed48122d1, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: 6c8355f191636ba49ac8525581315a36, type: 3}
+    second:
+      variants:
+      - keywords: ETC1_EXTERNAL_ALPHA
+        passType: 13
+  - first: {fileID: 4800000, guid: 1e11b8bb2fd60cc4c9657f9d76ee67e2, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13

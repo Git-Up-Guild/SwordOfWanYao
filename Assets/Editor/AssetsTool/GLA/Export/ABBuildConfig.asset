@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5334f8ab6de8b34ea97f81ded4e8514, type: 3}
+  m_Name: ABBuildConfig
+  m_EditorClassIdentifier: 
+  buildPlatformMode: 0
+  compressionType: 256
+  outputRootDir: D:/AssetBundle
+  dryRunBuild: 0
+  buildPlatforms: 
+  enableEncypt: 1
+  encyptKey: Test Key
+  encryptDirs:
+  - dir: {fileID: 102900000, guid: 73ab8e0842e26c7498fe8e67c7ea04d7, type: 3}
+    pathString: Assets/GResources/scp
+  includDlls: 0
+  includedDllDirs: []
+  packDirs:
+  - dir: {fileID: 102900000, guid: 5330c613a345136449f633ff65d1cd34, type: 3}
+    pathString: Assets/Artist/Common/Shader
+    allInOne: 1
+  - dir: {fileID: 102900000, guid: 73ab8e0842e26c7498fe8e67c7ea04d7, type: 3}
+    pathString: Assets/GResources/scp
+    allInOne: 1
+  - dir: {fileID: 102900000, guid: 00000000000000001000000000000000, type: 3}
+    pathString: Assets
+    allInOne: 0
+  - dir: {fileID: 102900000, guid: eeb5b87b0f588b749ba1c685c4bea228, type: 3}
+    pathString: Assets/CRes/Font
+    allInOne: 0
+  packAloneDirs: []
+  packByDependenciesDirs:
+  - dir: {fileID: 102900000, guid: 4c8269b929ff8a94586b9e34267ffcb5, type: 3}
+    pathString: Assets/Artist/GResources/Prefab/Character
+  - dir: {fileID: 102900000, guid: 5028e6e26dffe2c4ebc2e93921a49e5c, type: 3}
+    pathString: Assets/GResources/Prefab/UI/Windows
+  - dir: {fileID: 102900000, guid: 177f142a83867b041ab9ca7bcc64afa0, type: 3}
+    pathString: Assets/Artist/GResources/ScriptableObject/Audio
+  ignoreDependencyDirs:
+  - dir: {fileID: 102900000, guid: 69725c0e0ef1e92488f569c58d2ddbf6, type: 3}
+    pathString: Assets/Artist/Common/AnimationClip/Character/Common
+  - dir: {fileID: 102900000, guid: a4fe7ab564f077d41bf480792522233c, type: 3}
+    pathString: Assets/Artist/Common/AnimatorController/Character/Common
+  - dir: {fileID: 102900000, guid: d66791c0099fb2a4a9dfa4396fa2a035, type: 3}
+    pathString: Assets/Artist/Common/Texture/Character/Common
+  - dir: {fileID: 102900000, guid: 3293802cef95c16448fa0624a34801da, type: 3}
+    pathString: Assets/Artist/Common/Material/Character/Common
+  - dir: {fileID: 102900000, guid: 88ce9c816e71dc84db17f4239a6860b2, type: 3}
+    pathString: Assets/Artist/GResources/UI/Common
+  - dir: {fileID: 102900000, guid: 64c0ad228d30a4b47bd855f33f7b3b10, type: 3}
+    pathString: Assets/Artist/Common/Texture/UI/Version1/Common
+  - dir: {fileID: 102900000, guid: 4ff1040202847c749a110e23ec3a4976, type: 3}
+    pathString: Assets/CRes/Prefabs/UI/Common
+  - dir: {fileID: 102900000, guid: c93bad215637c644ea4475b4d973870e, type: 3}
+    pathString: Assets/Artist/GResources/Prefab/Character/CreateRole
+  - dir: {fileID: 102900000, guid: d5f56190616b73c469858eff5a9dbcd8, type: 3}
+    pathString: Assets/Artist/Common/Material/Effect
+  - dir: {fileID: 102900000, guid: 3924a860d242e19409d72a2d98ce9a38, type: 3}
+    pathString: Assets/Artist/Common/Texture/Effect
+  - dir: {fileID: 102900000, guid: 534085423b4cdfa4096bcdbcc50fc15d, type: 3}
+    pathString: Assets/Artist/Common/Model/Effect
+  - dir: {fileID: 102900000, guid: d5f56190616b73c469858eff5a9dbcd8, type: 3}
+    pathString: Assets/Artist/Common/Material/Effect
+  - dir: {fileID: 102900000, guid: 5330c613a345136449f633ff65d1cd34, type: 3}
+    pathString: Assets/Artist/Common/Shader
+  - dir: {fileID: 102900000, guid: 9d02a5749579cdf469b2ea0ef2d2698c, type: 3}
+    pathString: Assets/Artist/Common/Model/Character/Avatar
+  - dir: {fileID: 102900000, guid: eeb5b87b0f588b749ba1c685c4bea228, type: 3}
+    pathString: Assets/CRes/Font
+  - dir: {fileID: 102900000, guid: d1be132c8230bd948978d98b04be9204, type: 3}
+    pathString: Assets/CRes/Shader/UI
+  - dir: {fileID: 102900000, guid: db8c34ea43ee9cb4991bcf56f5b2357c, type: 3}
+    pathString: Assets/CRes/Material/UI
+  - dir: {fileID: 102900000, guid: feab037c10b22894196ac09dc0a0e56e, type: 3}
+    pathString: Assets/Artist/GResources/UI
+  - dir: {fileID: 102900000, guid: e2c21aa812b020f4fa50db270701cdd1, type: 3}
+    pathString: Assets/Artist/Common/Texture/UI
+  - dir: {fileID: 102900000, guid: c7799fc22d0ef1f41bb39418d8665916, type: 3}
+    pathString: Assets/GResources/Config/UI/HyperText_Style
+  spriteDirs:
+  - dir: {fileID: 102900000, guid: e2c21aa812b020f4fa50db270701cdd1, type: 3}
+    pathString: Assets/Artist/Common/Texture/UI
+  - dir: {fileID: 102900000, guid: feab037c10b22894196ac09dc0a0e56e, type: 3}
+    pathString: Assets/Artist/GResources/UI
+  needPostProgressWithOutPutFiles: 1
+  outputFileSuffix: 
+  delManifestFiles: 1
+  delCsvFiles: 0

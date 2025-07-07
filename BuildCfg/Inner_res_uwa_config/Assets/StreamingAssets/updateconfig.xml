@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<update_scheme>
+  <project name="内测版" alias="NeiCe" show_name="公测版">
+    <!--完整包下载链接,更新失败时提示玩家跳转到此链接，重新下载游戏-->
+    <remote_version url="http://192.168.2.33:8080/download/com.vilitown.vfight.apk" />
+    <!--本地版本号-->
+    <local_version ver="2111182048" />
+    <!--是否有固件要下载，1为有固件，0为没固件-->
+    <is_has_fixed_item value="0" />
+    <!--远程版本资源根路径-->
+	<res_info url="http://192.168.2.33:8080/download/" />
+    <version_info url="http://192.168.2.33:8080/download/" />
+    <!--更新资源最大值(单位KB),如果当前版本和最新版本的资源大小超过这个值，就提示玩家重新下载整包。设置为0，则不生效。-->
+    <file_size size="0" />
+    <!--该功能暂时废弃，在版本列表中都能一直更新-->
+    <max_ver_distance distance="0" />
+  </project>
+  <check_md5>
+    <item name="" value="" />
+    <item name="" value="" />
+  </check_md5>
+</update_scheme>

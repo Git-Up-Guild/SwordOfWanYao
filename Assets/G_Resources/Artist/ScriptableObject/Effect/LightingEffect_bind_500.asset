@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1691146024, guid: e83dc2686a984da488703a29d8085258, type: 3}
+  m_Name: LightingEffect_bind_500
+  m_EditorClassIdentifier: 
+  nID: 500
+  strDesc: "PVP\u673A\u5668\u4EBA\u80FD\u91CF\u7F50\u98DE\u51FA\u7279\u6548"
+  DelayDestroyTick: 0
+  effectPrefabPath: G_Resources/Game/Prefab/Effect/MonsterSkill/monster_05_02/nengliangguan_born_
+    500.prefab
+  effectPrefb: {fileID: 0}
+  scale: 1
+  LightEffectType: Bind
+  effectStartTick: 0
+  effectLiveTick: -1
+  effectTotalTick: -1
+  posBindBone: 
+  posOffset: {x: 0, y: 0, z: 0}
+  rotationBindBone: 
+  rotationOffset: {x: 0, y: 0, z: 0}
+  disableRotate: 0
+  faceToCamera: 0
+  faceAganistTarget: 0
+  bindType: 1
+  bindTargetBone: 
+  rebindWhenRootChanged: 0
+  oriPrefabGUIDLow: 072e2eddc60002d42968f65026c78e49
+  OriPrefabGUIDLow: Assets/G_Resources/Artist/Effect/Prefab/MonsterSkill/monster_05_02/nengliangguan_born.prefab
+  oriPrefabGUIDMiddle: 072e2eddc60002d42968f65026c78e49
+  OriPrefabGUIDMiddle: Assets/G_Resources/Artist/Effect/Prefab/MonsterSkill/monster_05_02/nengliangguan_born.prefab
+  oriPrefabGUIDHigh: 072e2eddc60002d42968f65026c78e49
+  OriPrefabGUIDHigh: Assets/G_Resources/Artist/Effect/Prefab/MonsterSkill/monster_05_02/nengliangguan_born.prefab

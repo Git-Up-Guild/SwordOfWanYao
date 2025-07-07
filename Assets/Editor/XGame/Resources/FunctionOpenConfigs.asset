@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1714603026, guid: 006aeba06c6f4854895fe0d7ef6c8c82, type: 3}
+  m_Name: FunctionOpenConfigs
+  m_EditorClassIdentifier: 
+  Items:
+  - Desc: "1#\u3010\u5B97\u95E8\u5927\u9635\u3011#(Ref-0)"
+    ID: 1
+    Name: "\u5B97\u95E8\u5927\u9635"
+    resRefs: []
+  - Desc: "2#\u3010\u529F\u6CD5\u7CFB\u7EDF\u3011#(Ref-0)"
+    ID: 2
+    Name: "\u529F\u6CD5\u7CFB\u7EDF"
+    resRefs: []
+  - Desc: "3#\u3010\u53E4\u5B9D\u7CFB\u7EDF\u3011#(Ref-0)"
+    ID: 3
+    Name: "\u53E4\u5B9D\u7CFB\u7EDF"
+    resRefs: []
+  - Desc: "4#\u3010\u5B97\u95E8\u7CFB\u7EDF\u3011#(Ref-0)"
+    ID: 4
+    Name: "\u5B97\u95E8\u7CFB\u7EDF"
+    resRefs: []
+  - Desc: "5#\u3010\u56FE\u9274\u7CFB\u7EDF\u3011#(Ref-0)"
+    ID: 5
+    Name: "\u56FE\u9274\u7CFB\u7EDF"
+    resRefs: []
+  - Desc: "6#\u3010\u5B9D\u7BB1\u7CFB\u7EDF\u3011#(Ref-0)"
+    ID: 6
+    Name: "\u5B9D\u7BB1\u7CFB\u7EDF"
+    resRefs: []
+  - Desc: "7#\u3010\u7ADE\u6280\u573A\u7CFB\u7EDF\u3011#(Ref-0)"
+    ID: 7
+    Name: "\u7ADE\u6280\u573A\u7CFB\u7EDF"
+    resRefs: []
+  - Desc: "8#\u3010\u901A\u5929\u5854\u7CFB\u7EDF\u3011#(Ref-0)"
+    ID: 8
+    Name: "\u901A\u5929\u5854\u7CFB\u7EDF"
+    resRefs: []
+  - Desc: "9#\u3010\u4E03\u5929\u767B\u5F55\u7B7E\u5230\u7CFB\u7EDF\u3011#(Ref-0)"
+    ID: 9
+    Name: "\u4E03\u5929\u767B\u5F55\u7B7E\u5230\u7CFB\u7EDF"
+    resRefs: []
+  PrefabPath: Assets/Game//GameResources/Prefabs/UI

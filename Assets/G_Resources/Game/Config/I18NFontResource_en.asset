@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1747451500, guid: 134f23d0f9cc6ee478dad2e6d134278e, type: 3}
+  m_Name: I18NFontResource_en
+  m_EditorClassIdentifier: 
+  tmpFont: {fileID: 11400000, guid: 0b66e0c38c5ab37408f1eb97b952142d, type: 2}
+  extTmpFonts: []
+  tmpFontLine: 50
+  tmpFontCharacterSpacing: -5
+  normalFont: {fileID: 12800000, guid: 23cbee8bc477e5049849ff9f4470d8b6, type: 3}

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1691146024, guid: e83dc2686a984da488703a29d8085258, type: 3}
+  m_Name: LightingEffect_bind_10006
+  m_EditorClassIdentifier: 
+  nID: 10006
+  strDesc: "buff20003\u6CD5\u5E08\u51B0\u51BB\u7ED3\u675F"
+  DelayDestroyTick: 0
+  effectPrefabPath: G_Resources/Game/Prefab/Effect/Buff/ice_end_ 10006.prefab
+  effectPrefb: {fileID: 0}
+  scale: 1
+  LightEffectType: Bind
+  effectStartTick: 0
+  effectLiveTick: 1150
+  effectTotalTick: 1000
+  posBindBone: Foot
+  posOffset: {x: 0, y: 0, z: 0}
+  rotationBindBone: 
+  rotationOffset: {x: 0, y: 0, z: 0}
+  disableRotate: 0
+  faceToCamera: 0
+  faceAganistTarget: 0
+  bindType: 1
+  bindTargetBone: 
+  rebindWhenRootChanged: 0
+  oriPrefabGUIDLow: f395bb27aea515d48b02eb5994f03b5f
+  OriPrefabGUIDLow: Assets/G_Resources/Artist/Effect/Prefab/Buff/ice_end.prefab
+  oriPrefabGUIDMiddle: f395bb27aea515d48b02eb5994f03b5f
+  OriPrefabGUIDMiddle: Assets/G_Resources/Artist/Effect/Prefab/Buff/ice_end.prefab
+  oriPrefabGUIDHigh: f395bb27aea515d48b02eb5994f03b5f
+  OriPrefabGUIDHigh: Assets/G_Resources/Artist/Effect/Prefab/Buff/ice_end.prefab

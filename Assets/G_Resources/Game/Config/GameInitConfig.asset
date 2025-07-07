@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9073bee64fb635429b2dd6737cb9977, type: 3}
+  m_Name: GameInitConfig
+  m_EditorClassIdentifier: 
+  serverConfig:
+    servers:
+    - ID: 1002
+      serverAddr: 172.16.127.118
+      serverPort: 8000
+    serverID: 1002
+    isRoomMode: 1
+    roomID: 41
+  playerInitData:
+    goldNum: 10000
+    diamondNum: 10000
+    playerPrefab:
+      path: G_Resources/App/Prefabs/Player/PlayerEmpty.prefab
+      guid: ab3cf4d6962585442bb7b412e60eb223
+    name: 
+    level: 0
+  enablePlayerControl: 1
+  playerControlInputMode: 0
+  playerrPathfindingMode: 0
+  cameraFollowSettings:
+    isEnable: 0
+    camreaFollowMode: 2
+    positionOffset: {x: 0, y: 20, z: -20}
+  gameStateBuildinSceneIndex: 1

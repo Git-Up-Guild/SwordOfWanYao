@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19f79d9a6c9a73478c9286d02bd2fd7, type: 3}
+  m_Name: PSDSetting
+  m_EditorClassIdentifier: 
+  PsdPath: "\\bcfs2\\\u5171\u4EAB\u6587\u4EF6\u5939\\\u4E34\u65F6\u5B58\u653E\u5904\\\u4FEE\u4ED9\u5F0F\u5BB6\u957F\\00\u8F93\u51FA00\\UI\\21.\u53E4\u5B9D\u7CFB\u7EDF"
+  m_DefaultImportPath: GameResources\Artist\UI\Temp
+  fontDir: Assets\G_Artist\Fonts\TTF
+  importBaseDir: Game/ImmortalFamily/GameResources/Artist/UI
+  exportCommResDir: "F:/Projects/artist/UI/\u7B2C\u4E8C\u7248/Unity\u5BFC\u51FA\u7684\u516C\u5171\u8D44\u6E90"
+  txtStyles:
+  - name: s1
+    enableOut: 1
+    outX: 1
+    outY: -1
+    outColor: {r: 0, g: 0.007843138, b: 0.20392157, a: 0.19607843}
+    outWidth: 0.5
+    enableShadow: 0
+    shadowX: 3.49
+    shadowY: -1.3
+    shadowColor: {r: 1, g: 0, b: 0.16016197, a: 0.16862746}
+  - name: s2
+    enableOut: 1
+    outX: 0
+    outY: 0
+    outColor: {r: 0, g: 0, b: 0, a: 0}
+    outWidth: 0
+    enableShadow: 1
+    shadowX: 0
+    shadowY: 0
+    shadowColor: {r: 0, g: 0, b: 0, a: 0}
+  - name: s3
+    enableOut: 0
+    outX: 0
+    outY: 0
+    outColor: {r: 0, g: 0, b: 0, a: 0}
+    outWidth: 0
+    enableShadow: 0
+    shadowX: 0
+    shadowY: 0
+    shadowColor: {r: 0, g: 0, b: 0, a: 0}
+  - name: s4
+    enableOut: 0
+    outX: 0
+    outY: 0
+    outColor: {r: 0, g: 0, b: 0, a: 0}
+    outWidth: 0
+    enableShadow: 0
+    shadowX: 0
+    shadowY: 0
+    shadowColor: {r: 0, g: 0, b: 0, a: 0}
+  - name: s5
+    enableOut: 0
+    outX: 0
+    outY: 0
+    outColor: {r: 0, g: 0, b: 0, a: 0}
+    outWidth: 0
+    enableShadow: 0
+    shadowX: 0
+    shadowY: 0
+    shadowColor: {r: 0, g: 0, b: 0, a: 0}
+  - name: s6
+    enableOut: 0
+    outX: 0
+    outY: 0
+    outColor: {r: 0, g: 0, b: 0, a: 0}
+    outWidth: 0
+    enableShadow: 0
+    shadowX: 0
+    shadowY: 0
+    shadowColor: {r: 0, g: 0, b: 0, a: 0}
+  - name: s7
+    enableOut: 0
+    outX: 0
+    outY: 0
+    outColor: {r: 0, g: 0, b: 0, a: 0}
+    outWidth: 0
+    enableShadow: 0
+    shadowX: 0
+    shadowY: 0
+    shadowColor: {r: 0, g: 0, b: 0, a: 0}
+  - name: s8
+    enableOut: 0
+    outX: 0
+    outY: 0
+    outColor: {r: 0, g: 0, b: 0, a: 0}
+    outWidth: 0
+    enableShadow: 0
+    shadowX: 0
+    shadowY: 0
+    shadowColor: {r: 0, g: 0, b: 0, a: 0}
+  - name: s9
+    enableOut: 0
+    outX: 0
+    outY: 0
+    outColor: {r: 0, g: 0, b: 0, a: 0}
+    outWidth: 0
+    enableShadow: 0
+    shadowX: 0
+    shadowY: 0
+    shadowColor: {r: 0, g: 0, b: 0, a: 0}
+  - name: s10
+    enableOut: 0
+    outX: 0
+    outY: 0
+    outColor: {r: 0, g: 0, b: 0, a: 0}
+    outWidth: 0
+    enableShadow: 0
+    shadowX: 0
+    shadowY: 0
+    shadowColor: {r: 0, g: 0, b: 0, a: 0}
+  fontsMap:
+  - desc: "\u901A\u7528\u5B57\u4F53"
+    sourceName: SimHei
+    mapName: 
+    mapSDFName: common
+    sdfStyleSettings: {fileID: 11400000, guid: cfef0cad5dbe26142b11461e8166fa17, type: 2}
+  - desc: "\u5C5E\u6027\u5B57\u4F53"
+    sourceName: JYiHei
+    mapName: 
+    mapSDFName: prop
+    sdfStyleSettings: {fileID: 11400000, guid: 38956fee67f2d544fb07a9834cf06866, type: 2}
+  - desc: "\u4E3B\u754C\u9762\u6807\u9898"
+    sourceName: HYShangWeiShouShuW-Regular
+    mapName: 
+    mapSDFName: MainTitle
+    sdfStyleSettings: {fileID: 11400000, guid: 6d1b4175429417444975ce56e001c4d2, type: 2}
+  - desc: "\u65B9\u6B63\u7C97\u5706"
+    sourceName: FZY4JW--GB1-0
+    mapName: 
+    mapSDFName: FZCY
+    sdfStyleSettings: {fileID: 11400000, guid: 95e8e4fb62a3aca4aa10a65d0f571537, type: 2}
+  skipFlag: skip_
+  dsdFlag: dsd
+  updateFlag: upd
+  pathMap:
+  - matchName: can
+    DirectoryName: AnNiu
+  - matchName: cct
+    DirectoryName: ChuangTi
+  - matchName: cjd
+    DirectoryName: JinDu
+  - matchName: ck
+    DirectoryName: Kuang
+  - matchName: ctb
+    DirectoryName: TuBiao
+  - matchName: ctd
+    DirectoryName: TuDi
+  - matchName: ctt
+    DirectoryName: TuTi
+  - matchName: ctw
+    DirectoryName: TuWu
+  propertyMap:
+  - desc: "\u6309\u94AE"
+    matchName: btn
+    propType: 1
+  - desc: "\u6ED1\u52A8\u6761"
+    matchName: sld
+    propType: 2
+  - desc: "\u56FE\u7247"
+    matchName: img
+    propType: 3
+  - desc: "\u6587\u672C"
+    matchName: txt
+    propType: 4
+  - desc: "\u8F93\u51FA\u6846"
+    matchName: ipt
+    propType: 5
+  - desc: "\u5207\u6362\u9875"
+    matchName: tab
+    propType: 3
+  funcMarkMap:
+  - desc: "\u4E5D\u5BAB\u683C"
+    matchName: sl
+    funcType: 1
+  - desc: "\u7F29\u653E"
+    matchName: zo
+    funcType: 2
+  - desc: "\u900F\u660E\u5EA6\u8C03\u6574"
+    matchName: al
+    funcType: 4

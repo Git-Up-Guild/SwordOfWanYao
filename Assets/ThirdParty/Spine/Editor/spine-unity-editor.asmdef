@@ -1,0 +1,19 @@
+{
+    "name": "spine-unity-editor",
+    "rootNamespace": "",
+    "references": [
+        "spine-unity",
+        "XGame-Base"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

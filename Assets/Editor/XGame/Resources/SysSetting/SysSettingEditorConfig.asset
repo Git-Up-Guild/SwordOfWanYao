@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1295137547, guid: 006aeba06c6f4854895fe0d7ef6c8c82, type: 3}
+  m_Name: SysSettingEditorConfig
+  m_EditorClassIdentifier: 
+  optionConfig: {fileID: 11400000, guid: 0e4cce6ce738baa419143ad60f2acded, type: 2}
+  optionValGroupConfig: {fileID: 11400000, guid: a52321786299f9347b16e6e76292e68f,
+    type: 2}

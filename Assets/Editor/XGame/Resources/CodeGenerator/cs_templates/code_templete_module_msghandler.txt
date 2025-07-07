@@ -1,0 +1,29 @@
+﻿/************* <<< ModuleCodeGenerator Version 1.0 >>>  *************************
+File：#FileName#.cs 
+Author：#Author#
+Date：#Date#
+Description：#Desc#
+***************************************************************************/
+
+using minigame;
+using gamepol;
+using XClient.Common;
+using XClient.Net;
+using XClient.RPC;
+using XGame.LitJson;
+
+namespace #ProjectNameSpace#.#ModuleName#
+{
+    public class #ModuleName#ModuleMessageHandler :  ModuleMessageHandler<#ModuleName#Module>
+    {
+        protected override void OnSetupHandlers()
+        {
+			var desc = GetType().Name;
+			//@SetupMessageHandlerGenerator
+        }
+		
+        //@ReceiveMessageHandlerGenerator
+
+        //@SendMessageHandlerGenerator
+    }
+}

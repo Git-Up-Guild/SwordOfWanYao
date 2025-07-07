@@ -1,0 +1,16 @@
+{
+    "name": "spine-unity",
+    "rootNamespace": "",
+    "references": [
+        "GUID:db85490cec7bb9c4fa2181ecf5b983a7"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

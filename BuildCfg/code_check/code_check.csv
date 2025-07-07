@@ -1,0 +1,7 @@
+相对目录(base 是 Assets),监控文件,过滤文件,过滤的目录
+../../../../srcClient,*.cs,,../../../../srcClient/Client/obj
+../Packages,*.dll,,../../../../srcClient/XGame/Output
+../Packages,*.cs,,
+./BaseScripts/Update,*.cs,,
+./BaseScripts/HybridCLR,*.cs,,./BaseScripts/HybridCLR/HybridCLRGenerate
+./Plugins,*.*,,

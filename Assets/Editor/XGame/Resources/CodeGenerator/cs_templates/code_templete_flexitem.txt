@@ -1,0 +1,13 @@
+﻿
+	partial class #FlexName#Item : FlexItem 
+	{		
+		protected override void OnClear()
+		{
+		}
+		
+		protected override void OnUpdateUI() 
+		{
+		}
+		
+		//@<<< #FlexName#_ButtonFuncGenerator >>>
+	}

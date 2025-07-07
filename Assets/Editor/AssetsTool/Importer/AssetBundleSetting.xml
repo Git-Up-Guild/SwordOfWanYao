@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 
+AssetBundle一个配置选项 name只是这里的标签
+AssetPath	为资源路径
+PostFix		为资源后缀,允许识别多个后缀，用","分隔
+Strategy	为打AssetBundle的策略
+	path	路径下的单个资源打包AssetBundle，按路径名作为AB的名字
+	dir		路径下的所有资源打包为AssetBundle，按路径名作为AB的名字
+	tag		按照预先设置的packingtag打包AssetBundle
+	customer打包的AssetBundle用这里配置的name属性值作为名字
+  remain fix 名字有歧义 
+-->
+<AssetBundleConfig>
+
+<!-- 程序脚本 --><!--
+<AssetBundle name="luascript">
+  <AssetPath>Assets/GResources/Lua</AssetPath>
+  <PostFix>.bytes</PostFix>
+  <Strategy>customer</Strategy>
+</AssetBundle>-->
+  
+<!-- 程序脚本 -->
+<AssetBundle name="GResources">
+  <AssetPath>Assets/GResources</AssetPath>
+  <PostFix>.asset,.prefab,.bin,.mat,.png,.tga,.unity</PostFix>
+  <Strategy>path</Strategy>
+</AssetBundle>
+<!-- 程序脚本 -->
+<AssetBundle name="Skill">
+  <AssetPath>Assets/Skill</AssetPath>
+  <PostFix>.bytes</PostFix>
+  <Strategy>path</Strategy>
+</AssetBundle>
+<!-- 程序脚本 -->
+<AssetBundle name="GameScp">
+  <AssetPath>Assets/GResources/GameScp</AssetPath>
+  <PostFix>.bytes,</PostFix>
+  <Strategy>path</Strategy>
+</AssetBundle>
+<!-- 程序脚本 -->
+<AssetBundle name="Guide">
+  <AssetPath>Assets/GResources/Config/Guide</AssetPath>
+  <PostFix>.bytes,</PostFix>
+  <Strategy>path</Strategy>
+</AssetBundle>
+  
+<!-- 程序脚本 -->
+<AssetBundle name="Art">
+  <AssetPath>Assets/Artist</AssetPath>
+  <PostFix>.asset,.prefab,.bytes,.mat,.png,.tga,.unity</PostFix>
+  <Strategy>path</Strategy>
+</AssetBundle>
+
+<!-- 策划数据文件 --><!--
+<AssetBundle name="configs">
+	<AssetPath>Assets/Configs</AssetPath>
+	<PostFix>.bytes</PostFix>
+	<Strategy>customer</Strategy>
+</AssetBundle>
+
+--><!-- 场景 --><!--
+<AssetBundle name="scene">
+	<AssetPath>Assets/Scene</AssetPath>
+	<PostFix>.unity</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+  
+<AssetBundle name="mapPrefabs">
+	<AssetPath>Assets/Art/Maps/Prefabs</AssetPath>
+	<PostFix>.prefab</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="mapTerrainTex">
+	<AssetPath>Assets/Art/Maps/Terrains/Textures</AssetPath>
+	<PostFix>.png,.tga</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="mapTex">
+	<AssetPath>Assets/Art/Maps/Textures</AssetPath>
+	<PostFix>.png,.tga</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="mapWater">
+	<AssetPath>Assets/Art/Maps/Water/Textures</AssetPath>
+	<PostFix>.png,.tga</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="mapGrass">
+	<AssetPath>Assets/Art/Maps/Grass</AssetPath>
+	<PostFix>.png,.tga</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="mapSky">
+	<AssetPath>Assets/Art/Maps/Sky</AssetPath>
+	<PostFix>.png,.tga</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="mapModels">
+	<AssetPath>Assets/Art/Maps/Models</AssetPath>
+	<PostFix>.fbx</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="mapMaterials">
+	<AssetPath>Assets/Art/Maps/Materials</AssetPath>
+	<PostFix>.mat</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="map004Lod">
+	<AssetPath>Assets/Art/Maps/Terrains/004Lod1</AssetPath>
+	<PostFix>.mat</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+--><!-- 人物 --><!--
+<AssetBundle name="CharacterTextures">
+	<AssetPath>Assets/Art/Characters</AssetPath>
+	<PostFix>.tga,.png</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="Character">
+	<AssetPath>Assets/Art/Characters/002</AssetPath>
+	<PostFix>.prefab</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+--><!-- 武器 --><!--
+<AssetBundle name="WeaponTextures">
+	<AssetPath>Assets/Art/Weapons</AssetPath>
+	<PostFix>.tga,.png</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="Weapons">
+	<AssetPath>Assets/Art/Weapons/Prefabs</AssetPath>
+	<PostFix>.prefab</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+--><!-- 特效 --><!--
+<AssetBundle name="EffectTextures">
+	<AssetPath>Assets/Art/Effects</AssetPath>
+	<PostFix>.tga,.png</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+--><!-- 物品 --><!--
+<AssetBundle name="Accessories">
+	<AssetPath>Assets/Art/DropItems/Accessories/Prefabs</AssetPath>
+	<PostFix>.prefab</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="Clothes">
+	<AssetPath>Assets/Art/DropItems/Clothes/Prefabs</AssetPath>
+	<PostFix>.prefab</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="Others">
+	<AssetPath>Assets/Art/DropItems/Others/Prefabs</AssetPath>
+	<PostFix>.prefab</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+<AssetBundle name="Weapons">
+	<AssetPath>Assets/Art/DropItems/Weapons/Prefabs</AssetPath>
+	<PostFix>.prefab</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+--><!-- 载具 --><!--
+<AssetBundle name="Vehicles">
+	<AssetPath>Assets/Art/Vehicles/Prefabs</AssetPath>
+	<PostFix>.prefab</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+
+--><!-- 特效 --><!--
+<AssetBundle name="Effects">
+	<AssetPath>Assets/Art/Effects/Prefabs</AssetPath>
+	<PostFix>.prefab</PostFix>
+	<Strategy>path</Strategy>
+</AssetBundle>
+
+--><!-- UI --><!--
+<AssetBundle name="UIActor">
+	<AssetPath>Assets/UI</AssetPath>
+	<PostFix>.png</PostFix>
+	<Strategy>tag</Strategy>
+</AssetBundle>-->
+</AssetBundleConfig>

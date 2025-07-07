@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1766461258, guid: 006aeba06c6f4854895fe0d7ef6c8c82, type: 3}
+  m_Name: CodeGeneratorTempletes
+  m_EditorClassIdentifier: 
+  gameExtensionsTempleteFile: code_templete_game_extensions.txt
+  moduleGenerateConfigTempleteFile: code_templete_module_config.txt
+  moduleInterfaceTempleteFile: code_templete_module_interface.txt
+  moduleImplementTempleteFile: code_templete_module.txt
+  moduleMessageHandlerTempleteFile: code_templete_module_msghandler.txt
+  moduleNetMessageCodeTempleteFile:
+  - messageType: 0
+    recvFunc: code_templete_module_msg_receive_func.txt
+    sendFunc: code_templete_module_msg_send_cs_func.txt
+  - messageType: 1
+    recvFunc: code_templete_module_msg_receive_func.txt
+    sendFunc: code_templete_module_msg_send_game_func.txt
+  - messageType: 2
+    recvFunc: code_templete_module_msg_receive_rpc_func.txt
+    sendFunc: code_templete_module_msg_send_rpc_func.txt
+  uiFrameworkSettingTempleteFile: code_templete_uiframework_settings.txt
+  uiStateAssociateWindowsTempleteFile: code_templete_state_associate_windows.txt
+  uiWindowContainerTempleteFile: code_templete_uiwindow_container.txt
+  windowExecuteEventHandlerTempleteFile: code_templete_window_exe_event_handler.txt

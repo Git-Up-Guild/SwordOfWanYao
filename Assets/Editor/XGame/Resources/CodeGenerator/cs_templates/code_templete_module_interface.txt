@@ -1,0 +1,16 @@
+/************* <<< ModuleCodeGenerator Version 1.0 >>>  *************************
+File: I#ModuleName#Module.cs 
+Module: #ModuleName#
+Author: #Author#
+Date: #Date#
+Description: #Desc#
+***************************************************************************/
+
+using XClient.Common;
+
+namespace #ProjectNameSpace#.#ModuleName#
+{
+    public interface I#ModuleName#Module : IModule
+    {
+    }
+}

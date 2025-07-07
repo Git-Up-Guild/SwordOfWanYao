@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 421941959, guid: 006aeba06c6f4854895fe0d7ef6c8c82, type: 3}
+  m_Name: GuideElementAssets
+  m_EditorClassIdentifier: 
+  PrefabPath: Assets/Game/ImmortalFamily/GameResources/Prefabs/UI
+  Elements:
+  - Desc: "1#\u3010\u4E3B\u754C\u9762->\u6536\u5F92\u6309\u94AE\u3011#(Ref-1)"
+    ID: 1
+    Name: "\u4E3B\u754C\u9762->\u6536\u5F92\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIMain.prefab
+        guid: 
+      goPath: UIMain/Auto_GameScene/Auto_NoType_Map/Viewport/Auto_Content/Auto_Scene/Auto_Layer_Buildings/Auto_Buildings/Auto_WanderD/auto_WanderDBtn
+  - Desc: "2#\u3010\u5165\u5B66\u6863\u6848\u52A0\u70B9\u9762\u677F\u3011#(Ref-1)"
+    ID: 2
+    Name: "\u5165\u5B66\u6863\u6848\u52A0\u70B9\u9762\u677F"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIDiscipleBirth.prefab
+        guid: 
+      goPath: UIDiscipleBirth/Auto_Info/Point/Viewport/Auto_Point
+  - Desc: "3#\u3010\u5165\u5B66\u6863\u6848\u52A0\u70B9\u9762\u677F-\u7B2C\u4E00\u6761\u5C5E\u6027\u3011#(Ref-1)"
+    ID: 3
+    Name: "\u5165\u5B66\u6863\u6848\u52A0\u70B9\u9762\u677F-\u7B2C\u4E00\u6761\u5C5E\u6027"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIDiscipleBirth.prefab
+        guid: 
+      goPath: UIDiscipleBirth/Auto_Info/Point/Viewport/Auto_Point/ListItem
+  - Desc: "4#\u3010\u5165\u5B66\u6863\u6848\u52A0\u70B9\u9762\u677F-\u7B2C\u4E00\u6761\u5C5E\u6027-\u52A0\u53F7\u6309\u94AE\u3011#(Ref-1)"
+    ID: 4
+    Name: "\u5165\u5B66\u6863\u6848\u52A0\u70B9\u9762\u677F-\u7B2C\u4E00\u6761\u5C5E\u6027-\u52A0\u53F7\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIDiscipleBirth.prefab
+        guid: 
+      goPath: UIDiscipleBirth/Auto_Info/Point/Viewport/Auto_Point/ListItem/root/xauto_Add
+  - Desc: "5#\u3010\u5165\u5B66\u6863\u6848\u52A0\u70B9\u9762\u677F-\u5F55\u53D6\u6309\u94AE\u3011#(Ref-1)"
+    ID: 5
+    Name: "\u5165\u5B66\u6863\u6848\u52A0\u70B9\u9762\u677F-\u5F55\u53D6\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIDiscipleBirth.prefab
+        guid: 
+      goPath: UIDiscipleBirth/Auto_Info/Auto_Confirm
+  - Desc: "6#\u3010\u9009\u62E9\u529F\u6CD5\u754C\u9762->\u7684\u529F\u6CD5\u5217\u8868\u3011#(Ref-1)"
+    ID: 6
+    Name: "\u9009\u62E9\u529F\u6CD5\u754C\u9762->\u7684\u529F\u6CD5\u5217\u8868"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UISelectSeedling.prefab
+        guid: 
+      goPath: UISelectSeedling/Auto_Seedling
+  - Desc: "7#\u3010\u9009\u62E9\u529F\u6CD5\u7A97\u53E3->\u786E\u5B9A\u6309\u94AE\u3011#(Ref-1)"
+    ID: 7
+    Name: "\u9009\u62E9\u529F\u6CD5\u7A97\u53E3->\u786E\u5B9A\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UISelectSeedling.prefab
+        guid: 
+      goPath: UISelectSeedling/Down/Auto_Confirm
+  - Desc: "8#\u3010\u6E38\u5386\u7A97\u53E3->\u7EE7\u7EED\u6309\u94AE\u3011#(Ref-1)"
+    ID: 8
+    Name: "\u6E38\u5386\u7A97\u53E3->\u7EE7\u7EED\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIWanderMain.prefab
+        guid: 
+      goPath: UIWanderMain/Down/Auto_Next
+  - Desc: "9#\u3010\u6289\u62E9\u7A97\u53E3->\u9009\u9879\u5217\u8868\u3011#(Ref-1)"
+    ID: 9
+    Name: "\u6289\u62E9\u7A97\u53E3->\u9009\u9879\u5217\u8868"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIEventMessageBox.prefab
+        guid: 
+      goPath: UIEventMessageBox/tanchuang-diban/Scroll View/Viewport/Auto_Btns
+  - Desc: "10#\u3010\u8BCD\u6761\u7A97\u53E3->\u9009\u9879\u5217\u8868\u3011#(Ref-1)"
+    ID: 10
+    Name: "\u8BCD\u6761\u7A97\u53E3->\u9009\u9879\u5217\u8868"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UISelectAbility.prefab
+        guid: 
+      goPath: UISelectAbility/Auto_Options
+  - Desc: "11#\u3010\u9009\u62E9\u88C5\u5907\u7A97\u53E3->\u88C5\u5907\u9009\u62E9\u7A97\u53E3\u3011#(Ref-1)"
+    ID: 11
+    Name: "\u9009\u62E9\u88C5\u5907\u7A97\u53E3->\u88C5\u5907\u9009\u62E9\u7A97\u53E3"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UISelectEquip.prefab
+        guid: 
+      goPath: UISelectEquip/GuideArea
+  - Desc: "12#\u3010\u6E38\u5386\u7ED3\u7B97\u80CC\u5305->\u7ED3\u675F\u6E38\u5386\u6309\u94AE\u3011#(Ref-1)"
+    ID: 12
+    Name: "\u6E38\u5386\u7ED3\u7B97\u80CC\u5305->\u7ED3\u675F\u6E38\u5386\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIDiscipleInfo.prefab
+        guid: 
+      goPath: UIDiscipleInfo/Auto_Confirm
+  - Desc: "13#\u3010\u4E3B\u754C\u9762->\u5B97\u95E8\u6309\u94AE\u3011#(Ref-2)"
+    ID: 13
+    Name: "\u4E3B\u754C\u9762->\u5B97\u95E8\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIGameScene.prefab
+        guid: 
+      goPath: UIGameScene/Auto_NoType_Map/Viewport/Auto_Content/Auto_Scene/Auto_Layer_Buildings/Auto_Buildings/Auto_Clan/auto_ClanBtn
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIMain.prefab
+        guid: 
+      goPath: UIMain/Auto_GameScene/Auto_NoType_Map/Viewport/Auto_Content/Auto_Scene/Auto_Layer_Buildings/Auto_Buildings/Auto_Clan/auto_ClanBtn
+  - Desc: "14#\u3010\u5B97\u95E8\u7A97\u53E3->\u4E00\u952E\u5347\u7EA7\u6309\u94AE\u3011#(Ref-1)"
+    ID: 14
+    Name: "\u5B97\u95E8\u7A97\u53E3->\u4E00\u952E\u5347\u7EA7\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIClan.prefab
+        guid: 
+      goPath: UIClan/xia/auto_yijianshengjiroot/auto_yijianshengji
+  - Desc: "15#\u3010\u4E3B\u754C\u9762->\u901A\u5929\u5854\u6309\u94AE\u3011#(Ref-1)"
+    ID: 15
+    Name: "\u4E3B\u754C\u9762->\u901A\u5929\u5854\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIMainNavs.prefab
+        guid: 
+      goPath: UIMainNavs/xia/auto_NavButtons/ToggleButton (4)
+  - Desc: "16#\u3010\u901A\u5929\u5854\u754C\u9762->\u6311\u6218\u6309\u94AE\u3011#(Ref-1)"
+    ID: 16
+    Name: "\u901A\u5929\u5854\u754C\u9762->\u6311\u6218\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UITowerStage.prefab
+        guid: 
+      goPath: UITowerStage/Bottem/Auto_Challenge
+  - Desc: "17#\u3010\u901A\u5929\u5854\u5173\u5361\u754C\u9762->\u5F1F\u5B50\u5217\u8868\u3011#(Ref-1)"
+    ID: 17
+    Name: "\u901A\u5929\u5854\u5173\u5361\u754C\u9762->\u5F1F\u5B50\u5217\u8868"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UITowerStageSelect.prefab
+        guid: 
+      goPath: UITowerStageSelect/Bottem/ListRoot/Auto_Hero
+  - Desc: "18#\u3010\u62DB\u751F\u7A97\u53E3->\u62DB\u751F\u6309\u94AE\u3011#(Ref-1)"
+    ID: 18
+    Name: "\u62DB\u751F\u7A97\u53E3->\u62DB\u751F\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIDiscipleBirth.prefab
+        guid: 
+      goPath: UIDiscipleBirth/Auto_EffRoot/Auto_Open
+  - Desc: "19#\u3010\u62DB\u751F\u7A97\u53E3->\u5F1F\u5B50\u4FE1\u606F\u3011#(Ref-1)"
+    ID: 19
+    Name: "\u62DB\u751F\u7A97\u53E3->\u5F1F\u5B50\u4FE1\u606F"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIDiscipleBirth.prefab
+        guid: 
+      goPath: UIDiscipleBirth/Auto_Info/Top/bg
+  - Desc: "20#\u3010\u4E3B\u9875\u9762->\u4EFB\u52A1\u6309\u94AE\uFF08\u529F\u6CD5\u7528\uFF09\u3011#(Ref-1)"
+    ID: 20
+    Name: "\u4E3B\u9875\u9762->\u4EFB\u52A1\u6309\u94AE\uFF08\u529F\u6CD5\u7528\uFF09"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIMain.prefab
+        guid: 
+      goPath: UIMain/xia/zhong (1)/auto_MainTaskEntry/TaskJump
+  - Desc: "21#\u3010\u529F\u6CD5\u754C\u9762->\u53EF\u5347\u7EA7\u529F\u6CD5\u3011#(Ref-1)"
+    ID: 21
+    Name: "\u529F\u6CD5\u754C\u9762->\u53EF\u5347\u7EA7\u529F\u6CD5"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIAllSeedling.prefab
+        guid: 
+      goPath: UIAllSeedling/ListRoot/Auto_Seedling
+  - Desc: "27#\u3010\u53E4\u5B9D\u8BE6\u60C5\u9875->\u5347\u7EA7\u6309\u94AE\u3011#(Ref-1)"
+    ID: 27
+    Name: "\u53E4\u5B9D\u8BE6\u60C5\u9875->\u5347\u7EA7\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIAntiqueUpgrade.prefab
+        guid: 
+      goPath: UIAntiqueUpgrade/auto_upgradeConsume/auto_upgradeButton
+  - Desc: "29#\u3010\u7ADE\u6280\u573A\u754C\u9762->\u6311\u6218\u6309\u94AE\u3011#(Ref-1)"
+    ID: 29
+    Name: "\u7ADE\u6280\u573A\u754C\u9762->\u6311\u6218\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIArenaEntry.prefab
+        guid: 
+      goPath: UIArenaEntry/Auto_Challenge
+  - Desc: "25#\u3010\u4E3B\u754C\u9762->\u53E4\u5B9D\u6309\u94AE\u3011#(Ref-1)"
+    ID: 25
+    Name: "\u4E3B\u754C\u9762->\u53E4\u5B9D\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIMain.prefab
+        guid: 
+      goPath: UIMain/Auto_GameScene/Auto_NoType_Map/Viewport/Auto_Content/Auto_Scene/Auto_Layer_Buildings/Auto_Buildings/Auto_wenwu/auto_wenwuBtn
+  - Desc: "30#\u3010\u4E3B\u754C\u9762->\u529F\u6CD5\u6309\u94AE\u3011#(Ref-1)"
+    ID: 30
+    Name: "\u4E3B\u754C\u9762->\u529F\u6CD5\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIMain.prefab
+        guid: 
+      goPath: UIMain/Auto_GameScene/Auto_NoType_Map/Viewport/Auto_Content/Auto_Scene/Auto_Layer_Buildings/Auto_Buildings/Auto_Seeding/auto_SeedingBtn
+  - Desc: "23#\u3010\u4E3B\u9875\u9762->\u5B97\u95E8\u5927\u9635\u6309\u94AE\u3011#(Ref-1)"
+    ID: 23
+    Name: "\u4E3B\u9875\u9762->\u5B97\u95E8\u5927\u9635\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIMain.prefab
+        guid: 
+      goPath: UIMain/Auto_GameScene/Auto_NoType_Map/Viewport/Auto_Content/Auto_Scene/Auto_Layer_Buildings/Auto_Buildings/Auto_SectFormation/auto_SectFormation
+  - Desc: "28#\u3010\u4E3B\u754C\u9762->\u7ADE\u6280\u573A\u6309\u94AE\u3011#(Ref-1)"
+    ID: 28
+    Name: "\u4E3B\u754C\u9762->\u7ADE\u6280\u573A\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIMainNavs.prefab
+        guid: 
+      goPath: UIMainNavs/xia/auto_NavButtons/ToggleButton (3)
+  - Desc: "24#\u3010\u5B97\u95E8\u5927\u9635\u754C\u9762->\u4E00\u952E\u4E0A\u9635\u3011#(Ref-1)"
+    ID: 24
+    Name: "\u5B97\u95E8\u5927\u9635\u754C\u9762->\u4E00\u952E\u4E0A\u9635"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UISectFormation.prefab
+        guid: 
+      goPath: UISectFormation/Auto_OneForm/Auto_OneClickPos
+  - Desc: "22#\u3010\u529F\u6CD5\u8BE6\u60C5\u754C\u9762->\u5347\u7EA7\u6309\u94AE\u3011#(Ref-1)"
+    ID: 22
+    Name: "\u529F\u6CD5\u8BE6\u60C5\u754C\u9762->\u5347\u7EA7\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UISeedlingUpgrade.prefab
+        guid: 
+      goPath: UISeedlingUpgrade/Bg/Auto_Upgrade/GameObject/Auto_UpgradeBtn
+  - Desc: "31#\u3010\u5927\u9635\u589E\u76CA\u8BE6\u60C5\u3011#(Ref-1)"
+    ID: 31
+    Name: "\u5927\u9635\u589E\u76CA\u8BE6\u60C5"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UISectFormation.prefab
+        guid: 
+      goPath: UISectFormation/Auto_Attrs
+  - Desc: "32#\u3010\u5B97\u95E8\u5927\u9635\u5F1F\u5B50\u680F\u3011#(Ref-1)"
+    ID: 32
+    Name: "\u5B97\u95E8\u5927\u9635\u5F1F\u5B50\u680F"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UISectFormation.prefab
+        guid: 
+      goPath: UISectFormation/Auto_Disciples
+  - Desc: "33#\u3010\u6E38\u620F\u7A97\u53E3->\u80CC\u5305\u6309\u94AE\u3011#(Ref-1)"
+    ID: 33
+    Name: "\u6E38\u620F\u7A97\u53E3->\u80CC\u5305\u6309\u94AE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIWanderMain.prefab
+        guid: 
+      goPath: UIWanderMain/Down/Auto_Bag
+  - Desc: "34#\u3010\u5F1F\u5B50\u4FE1\u606F\uFF08\u80CC\u5305\uFF09\u7A97\u53E3->\u5171\u9E23\u3011#(Ref-1)"
+    ID: 34
+    Name: "\u5F1F\u5B50\u4FE1\u606F\uFF08\u80CC\u5305\uFF09\u7A97\u53E3->\u5171\u9E23"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIDiscipleInfo.prefab
+        guid: 
+      goPath: UIDiscipleInfo/AbilitySkillRoot/Ability
+  - Desc: "35#\u3010\u5F1F\u5B50\u4FE1\u606F\uFF08\u80CC\u5305\uFF09\u7A97\u53E3->\u80CC\u5305\u3011#(Ref-1)"
+    ID: 35
+    Name: "\u5F1F\u5B50\u4FE1\u606F\uFF08\u80CC\u5305\uFF09\u7A97\u53E3->\u80CC\u5305"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIDiscipleInfo.prefab
+        guid: 
+      goPath: UIDiscipleInfo/Auto_Bag/BagRoot/EquipRoot
+  - Desc: "36#\u3010\u5B97\u95E8\u754C\u9762->\u8FD4\u56DE\u3011#(Ref-1)"
+    ID: 36
+    Name: "\u5B97\u95E8\u754C\u9762->\u8FD4\u56DE"
+    resRefs:
+    - resRef:
+        path: Game/ImmortalFamily/GameResources/Prefabs/UI/UIClan.prefab
+        guid: 
+      goPath: UIClan/xia/auto_Return

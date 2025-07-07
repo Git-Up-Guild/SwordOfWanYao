@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73db6360f6fc04b498cb0ab50e2b66a9, type: 3}
+  m_Name: SymbolTextSettings
+  m_EditorClassIdentifier: 
+  animSpriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+    type: 2}
+  animSpriteDir: 
+  fonts: []
+  sprites: []
+  cartoons:
+  - name: 1
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_1_1
+    sprites:
+    - {fileID: 0}
+  - name: 2
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_2_1
+    sprites:
+    - {fileID: 0}
+  - name: 3
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_3_1
+    sprites:
+    - {fileID: 0}
+  - name: 4
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_4_1
+    sprites:
+    - {fileID: 0}
+  - name: 5
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_5_1
+    sprites:
+    - {fileID: 0}
+  - name: 6
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_6_1
+    sprites:
+    - {fileID: 0}
+  - name: 7
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_7_1
+    sprites:
+    - {fileID: 0}
+  - name: 8
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_8_1
+    sprites:
+    - {fileID: 0}
+  - name: 9
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_9_1
+    sprites:
+    - {fileID: 0}
+  - name: 10
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_10_1
+    sprites:
+    - {fileID: 0}
+  - name: 11
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_11_1
+    sprites:
+    - {fileID: 0}
+  - name: 12
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_12_1
+    sprites:
+    - {fileID: 0}
+  - name: 13
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_13_1
+    sprites:
+    - {fileID: 0}
+  - name: 14
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_14_1
+    sprites:
+    - {fileID: 0}
+  - name: 15
+    fps: 5
+    space: 2
+    width: 50
+    height: 50
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_15_1
+    sprites:
+    - {fileID: 0}
+  - name: 16
+    fps: 5
+    space: 2
+    width: 58
+    height: 53
+    spriteAtlas: {fileID: 4343727234628468602, guid: 6a3d15fb38ab67445b0844a0b24a64d5,
+      type: 2}
+    spriteNames:
+    - anim_16_1
+    sprites:
+    - {fileID: 0}

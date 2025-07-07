@@ -1,0 +1,14 @@
+﻿	
+	partial class #ListName#Item : EffectiveListItem
+	{
+		
+		protected override void OnClear()
+		{
+		}
+		
+		protected override void OnUpdateUI()
+		{
+		}
+		
+		//@<<< #ListName#_ButtonFuncGenerator >>>
+	}

@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2088458689, guid: e83dc2686a984da488703a29d8085258, type: 3}
+  m_Name: LightingEffectHighLevelOptimizeConfig
+  m_EditorClassIdentifier: 
+  SourceFormHero_Config:
+    bOptimized: 1
+    nMaxCount: 100
+    bOptimizedByDistance: 1
+    layersSqrDistance:
+    - 16
+    - 64
+    - 144
+  TargetToHero_Config:
+    bOptimized: 1
+    nMaxCount: 100
+    bOptimizedByDistance: 1
+    layersSqrDistance:
+    - 16
+    - 64
+    - 144
+  OtherPlayer_Config:
+    bOptimized: 1
+    nMaxCount: 100
+    bOptimizedByDistance: 1
+    layersSqrDistance:
+    - 16
+    - 64
+    - 144
+  NonPlayerEntityView_Config:
+    bOptimized: 1
+    nMaxCount: 100
+    bOptimizedByDistance: 1
+    layersSqrDistance:
+    - 16
+    - 64
+    - 144
+  UI_Config:
+    bOptimized: 0
+    nMaxCount: 100
+    bOptimizedByDistance: 0
+    layersSqrDistance:
+    - 16
+    - 64
+    - 144
+  ConstantBind_Config:
+    bOptimized: 1
+    nMaxCount: 100
+    bOptimizedByDistance: 1
+    layersSqrDistance:
+    - 16
+    - 64
+    - 144
+  Total_Config:
+    bOptimized: 1
+    nMaxCount: 100
+    bOptimizedByDistance: 1
+    layersSqrDistance:
+    - 16
+    - 64
+    - 144
+  UnKnown_Config:
+    bOptimized: 1
+    nMaxCount: 100
+    bOptimizedByDistance: 1
+    layersSqrDistance:
+    - 16
+    - 64
+    - 144

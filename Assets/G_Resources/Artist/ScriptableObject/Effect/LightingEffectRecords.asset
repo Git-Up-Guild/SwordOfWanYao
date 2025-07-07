@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 478948915, guid: e83dc2686a984da488703a29d8085258, type: 3}
+  m_Name: LightingEffectRecords
+  m_EditorClassIdentifier: 
+  assetRecords:
+  - id: 1
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1.asset
+    desc: "\u9501\u5B9A\u9009\u4E2D\u5708"
+  - id: 2
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_2.asset
+    desc: "\u5347\u7EA7\u7279\u6548"
+  - id: 14
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_14.asset
+    desc: 
+  - id: 15
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_15.asset
+    desc: 
+  - id: 16
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_16.asset
+    desc: 
+  - id: 17
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_17.asset
+    desc: 
+  - id: 18
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_18.asset
+    desc: 
+  - id: 21
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_21.asset
+    desc: 
+  - id: 22
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_22.asset
+    desc: 
+  - id: 23
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_23.asset
+    desc: 
+  - id: 24
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_24.asset
+    desc: 
+  - id: 25
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_25.asset
+    desc: 
+  - id: 26
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_26.asset
+    desc: 
+  - id: 27
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_UI_27.asset
+    desc: "PVP\u5173\u5361\u80DC\u5229\u754C\u9762\u7279\u6548"
+  - id: 28
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_UI_28.asset
+    desc: "PVP\u5173\u5361\u5931\u8D25\u754C\u9762\u7279\u6548"
+  - id: 500
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_500.asset
+    desc: "PVP\u673A\u5668\u4EBA\u80FD\u91CF\u7F50\u98DE\u51FA\u7279\u6548"
+  - id: 1001
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1001.asset
+    desc: "DEMO\u6218\u58EB\u7279\u6548"
+  - id: 1002
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1002.asset
+    desc: "DEMO\u6218\u58EB\u7279\u6548"
+  - id: 1003
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1003.asset
+    desc: "DEMO\u6218\u58EB\u7279\u6548"
+  - id: 1004
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1004.asset
+    desc: "DEMO\u6218\u58EB\u7279\u6548"
+  - id: 1005
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1005.asset
+    desc: "DEMO\u6218\u58EB\u7279\u6548"
+  - id: 1006
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1006.asset
+    desc: "DEMO\u6218\u58EB\u7279\u6548"
+  - id: 1007
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1007.asset
+    desc: "DEMO\u6218\u58EB\u7279\u6548"
+  - id: 1008
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1008.asset
+    desc: "DEMO\u6218\u58EB\u7279\u6548"
+  - id: 1009
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1009.asset
+    desc: "DEMO\u6218\u58EB\u7279\u6548"
+  - id: 1010
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_1010.asset
+    desc: "DEMO\u6218\u58EB\u7279\u6548"
+  - id: 8001
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_8001.asset
+    desc: "DEMO\u7267\u5E08\u6280\u80FD\u666E\u653B\u53D7\u51FB"
+  - id: 8002
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_8002.asset
+    desc: "DEMO\u7267\u5E08\u6280\u80FD3\u53D7\u51FB"
+  - id: 10001
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10001.asset
+    desc: "buff20001\u62A4\u76FE"
+  - id: 10002
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10002.asset
+    desc: "buff20001\u62A4\u76FE\u7834\u88C2"
+  - id: 10003
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10003.asset
+    desc: "buff20002\u6CD5\u5E08\u51CF\u901F"
+  - id: 10004
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10004.asset
+    desc: "buff20002\u6CD5\u5E08\u51CF\u901F\u7ED3\u675F"
+  - id: 10005
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10005.asset
+    desc: "buff20003\u6CD5\u5E08\u51B0\u51BB"
+  - id: 10006
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10006.asset
+    desc: "buff20003\u6CD5\u5E08\u51B0\u51BB\u7ED3\u675F"
+  - id: 10007
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10007.asset
+    desc: "buff20004\u6CD5\u5E08\u707C\u70E7"
+  - id: 10008
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10008.asset
+    desc: "buff20004\u6CD5\u5E08\u707C\u70E7\u7ED3\u675F"
+  - id: 10009
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10009.asset
+    desc: "buff20005\u7267\u5E08\u7981\u9522"
+  - id: 10010
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10010.asset
+    desc: "buff20005\u7267\u5E08\u7981\u9522\u7ED3\u675F"
+  - id: 10011
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10011.asset
+    desc: "buff20006PVP\u5173\u5361\u52A0\u653B"
+  - id: 10012
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10012.asset
+    desc: "buff20006PVP\u5173\u5361\u52A0\u653B\u7ED3\u675F"
+  - id: 10013
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10013.asset
+    desc: "buff20006PVP\u5173\u5361\u52A0\u901F"
+  - id: 10014
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10014.asset
+    desc: "buff20006PVP\u5173\u5361\u52A0\u901F\u7ED3\u675F"
+  - id: 10015
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10015.asset
+    desc: "buff20006PVP\u5173\u5361\u65E0\u654C"
+  - id: 10016
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_10016.asset
+    desc: "buff20006PVP\u5173\u5361\u65E0\u654C\u7ED3\u675F"
+  - id: 12001
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_12001.asset
+    desc: "buff12001\u7267\u5E08\u52A0\u901F"
+  - id: 12002
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_12002.asset
+    desc: "buff12001\u7267\u5E08\u52A0\u901F\u7ED3\u675F"
+  - id: 12003
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_12003.asset
+    desc: "buff12001\u7267\u5E08\u65BD\u6CD5"
+  - id: 20001
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20001.asset
+    desc: "\u8718\u86DB\u7F51"
+  - id: 20002
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20002.asset
+    desc: "\u8718\u86DB\u7F51\u788E"
+  - id: 20003
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20003.asset
+    desc: "\u8718\u86DB\u56DE\u8840"
+  - id: 20004
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20004.asset
+    desc: "\u8718\u86DB\u722A\u6548\u679C"
+  - id: 20005
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20005.asset
+    desc: "\u8718\u86DB\u722A\u6548\u679C"
+  - id: 20006
+    path: G_Resources/Artist/ScriptableObject/Effect/LightingEffect_bind_20006.asset
+    desc: "\u8718\u86DB\u6BD2\u6548\u679C"

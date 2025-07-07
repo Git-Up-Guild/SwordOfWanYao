@@ -1,0 +1,309 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 349241949, guid: a5d0450b15ab1d444b7430fbedc2e332, type: 3}
+  m_Name: UIFrameworkSettingData
+  m_EditorClassIdentifier: 
+  StateDefines:
+  - ID: 1
+    name: "\u767B\u5F55"
+  - ID: 2
+    name: "\u6E38\u620F"
+  UIReferenceResolution: {x: 720, y: 1560}
+  WndCommonSettings:
+    BackgroundColor: {r: 0, g: 0, b: 0, a: 0.6392157}
+    BackgroundBlurAddColor: {r: 0, g: 0, b: 0, a: 0}
+    PopupAnimTempleteID: 10001
+    FlexManagerVerticalAnimTempleteID: 1002
+    FlexManagerHorizontalAnimTempleteID: 1003
+    FlexManagerGridAnimTempleteID: 1004
+    AnimTempletes: {fileID: 11400000, guid: 39477028fc2d85440b506f0a9ffb12fc, type: 2}
+  WndSettings:
+  - Name: UILogin
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 1002
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.Login.UILogin
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIMain
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 1
+    OccupyStackTopSound: 1003
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.Main.UIMain
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIShop
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 1
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 1
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.Shop.UIShop
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIBag
+    IsOverlayMode: 0
+    IsSupportStack: 0
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 1
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 1
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.Bag.UIBag
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIGoodsTips
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.GoodsTips.UIGoodsTips
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIGM
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.GM.UIGM
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UISelectOne
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.SelectOne.UISelectOne
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIBattleSkill
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.BattleSkill.UIBattleSkill
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UILifeSkill
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.LifeSkill.UILifeSkill
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIHall
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 1002
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.Hall.UIHall
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIBattleResult
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 1
+    OccupyStackTopSound: 0
+    DisplayMode: 1
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 1
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.BattleResult.UIBattleResult
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UICardDetail
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 1
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 1
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.CardDetail.UICardDetail
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIMatch
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.Match.UIMatch
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIFettersTips
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 2
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 1
+    WndType: GameScripts.ImmortalFamily.UI.FettersTips.UIFettersTips
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UICardCounter
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 1
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 1
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.CardCounter.UICardCounter
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIMainNavs
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.MainNavs.UIMainNavs
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIWindowContainerEx
+    IsOverlayMode: 0
+    IsSupportStack: 0
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.UIWindowContainerEx
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UICards
+    IsOverlayMode: 0
+    IsSupportStack: 0
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.Cards.UICards
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UICardGroupDetail
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 1
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 1
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.ImmortalFamily.UI.CardGroupDetail.UICardGroupDetail
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  StateWndSettings:
+  - stateID: 1
+    showWndsOnEnter:
+    - GameScripts.ImmortalFamily.UI.Login.UILogin
+    closeWndsOnLeave:
+    - GameScripts.ImmortalFamily.UI.Login.UILogin
+  - stateID: 2
+    showWndsOnEnter:
+    - GameScripts.ImmortalFamily.UI.MainNavs.UIMainNavs
+    - GameScripts.ImmortalFamily.UI.GM.UIGM
+    closeWndsOnLeave:
+    - GameScripts.ImmortalFamily.UI.GM.UIGM
+    - GameScripts.ImmortalFamily.UI.MainNavs.UIMainNavs
+  PrefabsDir: 

@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 349241949, guid: a5d0450b15ab1d444b7430fbedc2e332, type: 3}
+  m_Name: UIFrameworkSettingData
+  m_EditorClassIdentifier: 
+  StateDefines:
+  - ID: 1
+    name: "\u767B\u5F55"
+  - ID: 2
+    name: "\u6E38\u620F"
+  CanvasScalerAdapterSettings:
+    ScreenMatchMode: 0
+    ScreenMatchValue: 0
+    ReferenceResolution: {x: 720, y: 1560}
+  WndCommonSettings:
+    BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    BackgroundBlurAddColor: {r: 0, g: 0, b: 0, a: 0}
+    PopupAnimTempleteID: 0
+    CloseAnimTempleteID: 0
+    FlexManagerVerticalAnimTempleteID: 0
+    FlexManagerHorizontalAnimTempleteID: 0
+    FlexManagerGridAnimTempleteID: 0
+    AnimTempletes: {fileID: 0}
+  WndSettings:
+  - Name: UILogin
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 1
+    IsCanBeShield: 1
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.CardDemo.UI.Login.UILogin
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIMain
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 1
+    IsCanBeShield: 0
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.CardDemo.UI.Main.UIMain
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIMainNavs
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 0
+    IsCanBeShield: 1
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.CardDemo.UI.MainNavs.UIMainNavs
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  - Name: UIAllDisciple
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 1
+    IsCanBeShield: 1
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.CardDemo.UI.AllDisciple.UIAllDisciple
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
+  StateWndSettings:
+  - stateID: 1
+    showWndsOnEnter:
+    - GameScripts.CardDemo.UI.Login.UILogin
+    closeWndsOnLeave:
+    - GameScripts.CardDemo.UI.Login.UILogin
+  - stateID: 2
+    showWndsOnEnter:
+    - GameScripts.CardDemo.UI.Main.UIMain
+    - GameScripts.CardDemo.UI.MainNavs.UIMainNavs
+    closeWndsOnLeave: []
+  MainWindowTypePath: 
+  PrefabsDir: 

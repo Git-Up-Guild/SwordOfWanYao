@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 203703308, guid: a5d0450b15ab1d444b7430fbedc2e332, type: 3}
+  m_Name: SysSettingOptionConfig
+  m_EditorClassIdentifier: 
+  BoolOptions:
+  - name: EfxMusicSwitch
+    label: 1
+    val: 0
+  - name: 
+    label: 
+    val: 0
+  - name: 
+    label: 
+    val: 0
+  - name: 
+    label: 
+    val: 0
+  - name: MusicSwitch
+    label: 1
+    val: 0
+  - name: 
+    label: 
+    val: 0
+  - name: 
+    label: 
+    val: 0
+  - name: 
+    label: 
+    val: 0
+  - name: 
+    label: 
+    val: 0
+  - name: 
+    label: 
+    val: 0
+  - name: 
+    label: 
+    val: 0
+  - name: 
+    label: 
+    val: 0
+  - name: 
+    label: 
+    val: 0
+  StringOptions: []
+  IntOptions:
+  - name: GraphicQuality
+    label: 
+    val: 3
+  FloatOptions:
+  - name: MusicVolume
+    label: 
+    val: 0.5
+  - name: SFXMusicVolume
+    label: 
+    val: 0.5

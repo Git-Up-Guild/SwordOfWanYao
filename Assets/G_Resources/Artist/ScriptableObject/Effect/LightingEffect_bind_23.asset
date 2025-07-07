@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1691146024, guid: e83dc2686a984da488703a29d8085258, type: 3}
+  m_Name: LightingEffect_bind_23
+  m_EditorClassIdentifier: 
+  nID: 23
+  strDesc: 
+  DelayDestroyTick: 0
+  effectPrefabPath: G_Resources/Game/Prefab/Effect/MonsterSkill/monster_05_02/jiqiren_rest_walk_penshe_fashe_
+    23.prefab
+  effectPrefb: {fileID: 0}
+  scale: 1
+  LightEffectType: Bind
+  effectStartTick: 0
+  effectLiveTick: 1699
+  effectTotalTick: 3000
+  posBindBone: Bone023
+  posOffset: {x: 0, y: 0, z: 0}
+  rotationBindBone: Bone023
+  rotationOffset: {x: 0, y: 0, z: 0}
+  disableRotate: 0
+  faceToCamera: 0
+  faceAganistTarget: 0
+  bindType: 1
+  bindTargetBone: 
+  rebindWhenRootChanged: 1
+  oriPrefabGUIDLow: c1fb7c046593e6f419e158d00b9d8a33
+  OriPrefabGUIDLow: Assets/G_Resources/Artist/Effect/Prefab/MonsterSkill/monster_05_02/jiqiren_rest_walk_penshe_fashe.prefab
+  oriPrefabGUIDMiddle: c1fb7c046593e6f419e158d00b9d8a33
+  OriPrefabGUIDMiddle: Assets/G_Resources/Artist/Effect/Prefab/MonsterSkill/monster_05_02/jiqiren_rest_walk_penshe_fashe.prefab
+  oriPrefabGUIDHigh: c1fb7c046593e6f419e158d00b9d8a33
+  OriPrefabGUIDHigh: Assets/G_Resources/Artist/Effect/Prefab/MonsterSkill/monster_05_02/jiqiren_rest_walk_penshe_fashe.prefab

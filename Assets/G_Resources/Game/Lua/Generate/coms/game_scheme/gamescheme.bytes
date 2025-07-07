@@ -1,0 +1,6 @@
+local g_OrmTmpIndexKey={}
+gamescheme = {}
+function gamescheme:Init(pDataCenter)
+	self.m_pDC = pDataCenter
+end
+gamescheme.FILEID_NUM = 0

@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Login
+  serializedVersion: 2
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 0
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 48
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300000, guid: 0311a5aa4bb80a942865bcea48a649d3, type: 3}
+    - {fileID: 21300000, guid: dae4bda0d7394aa429ab92051ba7bc1e, type: 3}
+    - {fileID: 21300000, guid: 6dabb6f813b3b404ea89a67f2c0fc4d8, type: 3}
+    - {fileID: 21300000, guid: 61c7f05b83d4af542b2037ecd2b8a46b, type: 3}
+    - {fileID: 21300000, guid: 3743f1181e8ea824b8f2f4b2fe44d23b, type: 3}
+    - {fileID: 21300000, guid: 1217a35a0d505724e800f088313a780b, type: 3}
+    - {fileID: 21300000, guid: b405736f5961c214998602aabb537e78, type: 3}
+    - {fileID: 21300000, guid: 8d26bfad01340f046bc128beccd303d5, type: 3}
+    - {fileID: 21300000, guid: 59748923ae7239c42935bb562b03adc5, type: 3}
+    - {fileID: 21300000, guid: fdf68ab7ed7f5fd43ac432cd00d22571, type: 3}
+    - {fileID: 21300000, guid: 8ea36ab58cdf54d4db4ec01dfcdc5d0b, type: 3}
+    - {fileID: 21300000, guid: e43eb00582b375643881827672237601, type: 3}
+    - {fileID: 21300000, guid: e0763867d72ef0847b42ae12fa6308f4, type: 3}
+    - {fileID: 21300000, guid: 52fa13dd8c09fbc47b2fa922748912c7, type: 3}
+    - {fileID: 21300000, guid: cdcb10e104dc24148b5c6642a4cc3439, type: 3}
+    - {fileID: 21300000, guid: b11a0b6153d06b34e9a0c46b27579c90, type: 3}
+    - {fileID: 21300000, guid: ca541ce28b7d66746986f42954028a3d, type: 3}
+    - {fileID: 21300000, guid: 7ac1697cf072177438bda42c44c9b1a7, type: 3}
+    - {fileID: 21300000, guid: ce97d089c32d8b445a8c0a7cf4ddb8f5, type: 3}
+    - {fileID: 21300000, guid: 0db52756a782a4141bb7b472cf58ee1c, type: 3}
+    - {fileID: 21300000, guid: c809cbab698c5e046a211cbba03aebc4, type: 3}
+    - {fileID: 21300000, guid: 3b502535cd2f26642abec44b9384e100, type: 3}
+    - {fileID: 21300000, guid: cd81216f560bb2148a660ddca29bf077, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: dae4bda0d7394aa429ab92051ba7bc1e, type: 3}
+  - {fileID: 21300000, guid: b11a0b6153d06b34e9a0c46b27579c90, type: 3}
+  - {fileID: 21300000, guid: cdcb10e104dc24148b5c6642a4cc3439, type: 3}
+  - {fileID: 21300000, guid: ca541ce28b7d66746986f42954028a3d, type: 3}
+  - {fileID: 21300000, guid: 59748923ae7239c42935bb562b03adc5, type: 3}
+  - {fileID: 21300000, guid: e43eb00582b375643881827672237601, type: 3}
+  - {fileID: 21300000, guid: 3b502535cd2f26642abec44b9384e100, type: 3}
+  - {fileID: 21300000, guid: 8ea36ab58cdf54d4db4ec01dfcdc5d0b, type: 3}
+  - {fileID: 21300000, guid: 0db52756a782a4141bb7b472cf58ee1c, type: 3}
+  - {fileID: 21300000, guid: e0763867d72ef0847b42ae12fa6308f4, type: 3}
+  - {fileID: 21300000, guid: fdf68ab7ed7f5fd43ac432cd00d22571, type: 3}
+  - {fileID: 21300000, guid: 3743f1181e8ea824b8f2f4b2fe44d23b, type: 3}
+  - {fileID: 21300000, guid: 6dabb6f813b3b404ea89a67f2c0fc4d8, type: 3}
+  - {fileID: 21300000, guid: ce97d089c32d8b445a8c0a7cf4ddb8f5, type: 3}
+  - {fileID: 21300000, guid: 1217a35a0d505724e800f088313a780b, type: 3}
+  - {fileID: 21300000, guid: 0311a5aa4bb80a942865bcea48a649d3, type: 3}
+  - {fileID: 21300000, guid: 61c7f05b83d4af542b2037ecd2b8a46b, type: 3}
+  - {fileID: 21300000, guid: c809cbab698c5e046a211cbba03aebc4, type: 3}
+  - {fileID: 21300000, guid: 7ac1697cf072177438bda42c44c9b1a7, type: 3}
+  - {fileID: 21300000, guid: 8d26bfad01340f046bc128beccd303d5, type: 3}
+  - {fileID: 21300000, guid: 52fa13dd8c09fbc47b2fa922748912c7, type: 3}
+  - {fileID: 21300000, guid: cd81216f560bb2148a660ddca29bf077, type: 3}
+  - {fileID: 21300000, guid: b405736f5961c214998602aabb537e78, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 02hong
+  - gonggao
+  - floor_qiandi_xuanz
+  - Icon_denglu
+  - floor2_gonggao
+  - floor_qiandi122
+  - ui_dl004_1
+  - floor_qiandi111
+  - Icon_zhanghao
+  - floor_qiandi3
+  - floor_qiandi00
+  - BG_gonggao
+  - 03cheng
+  - Icon_qufu
+  - biaotidi
+  - 01lv
+  - backGround_001
+  - tuijian
+  - Icon_gonggao
+  - ddi1
+  - floor_qiandi333
+  - youjiandi
+  - ddi
+  m_RenderDataMap: {}
+  m_Tag: Login
+  m_IsVariant: 0
+  m_IsPlaceholder: 0

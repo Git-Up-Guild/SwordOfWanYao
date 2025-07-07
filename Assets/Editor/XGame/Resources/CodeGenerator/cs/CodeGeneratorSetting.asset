@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1403982028, guid: 006aeba06c6f4854895fe0d7ef6c8c82, type: 3}
+  m_Name: CodeGeneratorSetting
+  m_EditorClassIdentifier: 
+  authorName: GUG
+  projectBaseDir: Game
+  projectName: ImmortalRecord
+  codeBaseDir: GameScripts
+  resourceBaseDir: GameResources
+  globalNameSpace: GameScripts
+  projectNameSpace: IR
+  codeTempleteFileDir: cs_templates
+  uiFrameworkSettingData: {fileID: 11400000, guid: df278759c69b2481092d827ff52975eb,
+    type: 2}
+  resolutionWidth: 1080
+  resolutionHeight: 2340
+  setupScenePath: 
+  moduleSettings:
+    declareMsgMatchCode: netMessageRegister.AddHandler(
+    messageSettings:
+    - messageType: 0
+      fullNamePre: gamepol.TCSMessage
+      fullNameFomart: gamepol.TCSMessage.#MessageID#
+      classTypePath: gamepol.TCSMessage
+      setupMessageFomart: "\t\t\tnetMessageRegister.AddHandler(#MessageFullID#, ON_RECEIVE_#MessageID#,
+        desc);"
+      receiveFuncMatchPre: ON_RECEIVE_
+      receiveFuncLineMatch: //@ReceivHandler_TCSMessage
+      sendFuncMatchPre: SEND_
+      sendFuncLineMatch: //@SendHandler_TCSMessage
+    - messageType: 1
+      fullNamePre: minigame.TGameMessage
+      fullNameFomart: minigame.TGameMessage.#MessageID#
+      classTypePath: minigame.TGameMessage
+      setupMessageFomart: "\t\t\tnetMessageRegister.AddHandler(#MessageFullID#, ON_RECEIVE_#MessageID#,
+        desc);"
+      receiveFuncMatchPre: ON_RECEIVE_
+      receiveFuncLineMatch: //@ReceivHandler_TGameMessage
+      sendFuncMatchPre: SEND_
+      sendFuncLineMatch: //@SendHandler_TGameMessage
+    - messageType: 2
+      fullNamePre: RPCNames
+      fullNameFomart: RPCNames.#MessageID#
+      classTypePath: 
+      setupMessageFomart: "\t\t\tnetMessageRegister.AddHandler(#MessageFullID#, ON_RPC_#MessageID#,
+        desc);"
+      receiveFuncMatchPre: ON_RPC_
+      receiveFuncLineMatch: //@ReceivHandler_RPC
+      sendFuncMatchPre: SEND_RPC_
+      sendFuncLineMatch: //@SendHandler_RPC

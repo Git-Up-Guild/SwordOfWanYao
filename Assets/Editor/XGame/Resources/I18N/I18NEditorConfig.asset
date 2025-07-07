@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -859039005, guid: 006aeba06c6f4854895fe0d7ef6c8c82, type: 3}
+  m_Name: I18NEditorConfig
+  m_EditorClassIdentifier: 
+  Config: {fileID: 0}
+  ImageFixedFolderArr:
+  - Fixed
+  I18NBriefExcelPath: ..\..\..\tools\datapresent\excel\I18NBrief.xlsx
+  I18NExcelPath: ..\..\..\tools\datapresent\excel\I18N.xlsx
+  PrefabFolder: Assets\G_Resources\Game\Prefab\LuaUI
+  LuaFolder: Assets\G_Resources\Game\Lua
+  I18NToolBat: ..\..\..\tools\I18NTool\i18ntool.bat
+  SchemeBat: "..\\..\\..\\tools\\datapresent\\\u5BA2\u6237\u7AEF\u6253\u8868.bat"
+  LuaRegex: _i18nText\(\s*"(.+)"\s*\)#_i18nKey\(\s*"(.+)"\s*\)
+  LuaTextExcelPath: ..\..\..\tools\I18NTool\text_excels\text_lua.xls
+  PrefabTextExcelPath: ..\..\..\tools\I18NTool\text_excels\text_prefab.xls
+  TextMatchStrInPrefab: '{fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332,
+    type: 3}'
+  LocalizeTextMatchStrInPrefab: '{fileID: 842763633, guid: 134f23d0f9cc6ee478dad2e6d134278e,
+    type: 3}'
+  TextMeshProMatchStrInPrefab: '{fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5,
+    type: 3}'
+  LocalizeTextMeshProMatchStrInPrefab: '{fileID: 975936369, guid: 134f23d0f9cc6ee478dad2e6d134278e,
+    type: 3}'
+  I18NBaseTMPFontAsset: []
+  StandardTmpFontAsset: {fileID: 0}
+  FontConfig: {fileID: 0}
+  PreivewLang: 1
+  I18NKeyDefineLuaScriptPath: Assets/G_Resources/Game/Lua/Sources/i18n/i18n_res.lua

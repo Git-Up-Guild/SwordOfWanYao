@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AllDisciple
+  serializedVersion: 2
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 0
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 48
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300000, guid: 22e622e7d4f094b4cb15e70b41162c5b, type: 3}
+    - {fileID: 21300000, guid: 7fc857ae2205b684e8468450bd16e509, type: 3}
+    - {fileID: 21300000, guid: 4f4129945f925ff46b29111f74b466bf, type: 3}
+    - {fileID: 21300000, guid: c01997e9bcb86fb4bb3cebffc021effd, type: 3}
+    - {fileID: 21300000, guid: ecea74559c233f64391f57c3abd97588, type: 3}
+    - {fileID: 21300000, guid: 881877a1daebd4045910475d2651a4cd, type: 3}
+    - {fileID: 21300000, guid: 70e319f57ef23ae43b16ef2e0e6bf76f, type: 3}
+    - {fileID: 21300000, guid: b522adc6927e949449b1cacb10337176, type: 3}
+    - {fileID: 21300000, guid: 106326118125a9745b06a74f28ddb80d, type: 3}
+    - {fileID: 21300000, guid: 8ce90a1a6dcdf8f40a69509b01aec9a4, type: 3}
+    - {fileID: 21300000, guid: 6aded54e7d516ef4f80031d48be339d5, type: 3}
+    - {fileID: 21300000, guid: 55f82683c5bbb5040b13aad069dbaf92, type: 3}
+    - {fileID: 21300000, guid: 41d3381325d4e7a498b6ecaf7d9b9bfe, type: 3}
+    - {fileID: 21300000, guid: 30333f11eaf1be14f9a0a5b67bfc365a, type: 3}
+    - {fileID: 21300000, guid: 080036201948a924483befb97f9f4743, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 080036201948a924483befb97f9f4743, type: 3}
+  - {fileID: 21300000, guid: 106326118125a9745b06a74f28ddb80d, type: 3}
+  - {fileID: 21300000, guid: 30333f11eaf1be14f9a0a5b67bfc365a, type: 3}
+  - {fileID: 21300000, guid: 881877a1daebd4045910475d2651a4cd, type: 3}
+  - {fileID: 21300000, guid: 41d3381325d4e7a498b6ecaf7d9b9bfe, type: 3}
+  - {fileID: 21300000, guid: 55f82683c5bbb5040b13aad069dbaf92, type: 3}
+  - {fileID: 21300000, guid: 4f4129945f925ff46b29111f74b466bf, type: 3}
+  - {fileID: 21300000, guid: ecea74559c233f64391f57c3abd97588, type: 3}
+  - {fileID: 21300000, guid: 70e319f57ef23ae43b16ef2e0e6bf76f, type: 3}
+  - {fileID: 21300000, guid: b522adc6927e949449b1cacb10337176, type: 3}
+  - {fileID: 21300000, guid: 22e622e7d4f094b4cb15e70b41162c5b, type: 3}
+  - {fileID: 21300000, guid: c01997e9bcb86fb4bb3cebffc021effd, type: 3}
+  - {fileID: 21300000, guid: 8ce90a1a6dcdf8f40a69509b01aec9a4, type: 3}
+  - {fileID: 21300000, guid: 6aded54e7d516ef4f80031d48be339d5, type: 3}
+  - {fileID: 21300000, guid: 7fc857ae2205b684e8468450bd16e509, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - yuandi
+  - pinzhi_lv
+  - wenzi
+  - pinzhi_chen
+  - ty_xiangqing
+  - "ty_lv \u62F7\u8D1D"
+  - icon_buzhen
+  - pinzhi_cai
+  - pinzhi_hong
+  - pinzhi_lan
+  - bg
+  - kuangti
+  - pinzhi_zi
+  - ty_huang
+  - floor_qiandi2
+  m_RenderDataMap: {}
+  m_Tag: AllDisciple
+  m_IsVariant: 0
+  m_IsPlaceholder: 0

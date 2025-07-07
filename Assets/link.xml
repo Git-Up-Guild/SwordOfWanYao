@@ -1,0 +1,52 @@
+<linker> 
+	<assembly fullname="UnityEngine">
+		<type fullname="UnityEngine.TerrainCollider" preserve="all"/> 
+		<type fullname="UnityEngine.MeshCollider" preserve="all"/>
+		<type fullname="UnityEngine.ParticleSystemRenderer" preserve="all"/>
+		<type fullname="UnityEngine.SphereCollider" preserve="all"/>
+		<type fullname="UnityEngine.SpriteRenderer" preserve="all"/>
+		<type fullname="UnityEngine.ReflectionProbe" preserve="all"/>
+		<type fullname="UnityEngine.PlayerPrefs" preserve="all"/>
+		<type fullname="UnityEngine.PlayerPrefs.*" preserve="all"/>
+		<type fullname="UnityEngine.UI" preserve="all"/>
+		<type fullname="UnityEngine.UI.*" preserve="all"/>
+	</assembly> 
+	
+	<assembly fullname="System">
+		<type fullname="System.Net.*" preserve="all"/>
+		<type fullname="System.*" preserve="all"/>
+	</assembly>
+	
+   <assembly fullname="UnityEngine.CoreModule">
+   	<namespace fullname="UnityEngine.Playables" preserve="all"/> 
+   </assembly>
+   <assembly fullname="UnityEngine.Timeline">
+	<namespace fullname="UnityEngine.Timeline" preserve="all"/>
+   </assembly>
+   
+    <assembly fullname="Spine.Unity.Playables">
+	<namespace fullname="Spine.Unity.Playables" preserve="all"/>
+   </assembly>
+   
+  <assembly fullname="Common">
+    <type fullname="Cgamescheme" preserve="all"/>
+    <type fullname="cgpol" preserve="all"/>
+    <type fullname="cgpol.*" preserve="all"/>
+    <type fullname="gamepol" preserve="all"/>
+    <type fullname="gamepol.*" preserve="all"/>
+	<type fullname="XClient.Common" preserve="all"/>
+	<type fullname="XClient.Common.*" preserve="all"/>
+	<type fullname="XClient.*" preserve="all"/>
+  </assembly>
+    
+  <assembly fullname="UnityAndroidMessage" preserve="all"/>
+  <assembly fullname="UnityAndroidMessage1" preserve="all"/>
+  <assembly fullname="UnityIOSMessage" preserve="all"/>
+  <assembly fullname="UnityMiniGameMessage" preserve="all"/>
+  <assembly fullname="UnityWindowsMessage" preserve="all"/>
+  <assembly fullname="UnityOpenHarmonyMessage" preserve="all"/>
+  <assembly fullname="UnityQ1SDKPBGenerated" preserve="all"/>
+  <assembly fullname="Q1SDK" preserve="all"/>
+
+</linker>
+        

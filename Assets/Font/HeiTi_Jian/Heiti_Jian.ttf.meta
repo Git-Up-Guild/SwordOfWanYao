@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 04dbf9faaa0a3234586c2ea9b88f1bba
+timeCreated: 1461132881
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Heiti SC
+  fontNames:
+  - Heiti_Jian
+  fallbackFontReferences: []
+  customCharacters: "abc\u8303\u5FB7\u8428\u6D4B\u8BD5"
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

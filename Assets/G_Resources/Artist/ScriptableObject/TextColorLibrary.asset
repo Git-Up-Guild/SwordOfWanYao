@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a696b1c00dd27c49a27820202e3bf43, type: 3}
+  m_Name: TextColorLibrary
+  m_EditorClassIdentifier: 
+  assets:
+  - name: C1
+    ID: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+    desc: "\u8D44\u6E90\u6EE1\u8DB3\u989C\u8272"
+  - name: C2
+    ID: 2
+    color: {r: 0.972549, g: 0.19215687, b: 0.23137255, a: 1}
+    desc: "\u7EA2\u8272\uFF1A\u7528\u4E8E\u8D44\u6E90\u4E0D\u8DB3\u989C\u8272\uFF0C\u7279\u6B8A\u63D0\u793A\u7B49"
+  - name: C3
+    ID: 3
+    color: {r: 0.38039216, g: 0.43137255, b: 0.54901963, a: 1}
+    desc: "\u5217\u8868\u7070\u5316\u6587\u5B57\u989C\u8272"
+  - name: C4
+    ID: 4
+    color: {r: 1, g: 1, b: 1, a: 1}
+    desc: "\u767D\u8272"
+  - name: C5
+    ID: 5
+    color: {r: 0.20392157, g: 0.654902, b: 0.30980393, a: 1}
+    desc: "\u5217\u8868\u5C5E\u6027\u6FC0\u6D3B"
+  - name: C6
+    ID: 6
+    color: {r: 0.49411765, g: 0.49411765, b: 0.49411765, a: 1}
+    desc: "\u5217\u8868\u5C5E\u6027\u7070\u8272"
+  - name: C7
+    ID: 7
+    color: {r: 0.3137255, g: 0.36078432, b: 0.5294118, a: 1}
+    desc: "\u4E8C\u7EA7\u5F39\u7A97\u8D44\u6E90\u6EE1\u8DB3\u989C\u8272"
+  - name: C8
+    ID: 8
+    color: {r: 0, g: 0.6313726, b: 0.20784314, a: 1}
+    desc: "\u5C5E\u6027\u63CF\u8FF0\u6FC0\u6D3B\u989C\u8272(\u7EFF\u8272)"
+  - name: C9
+    ID: 9
+    color: {r: 0.49411765, g: 0.49411765, b: 0.49411765, a: 1}
+    desc: "\u5C5E\u6027\u63CF\u8FF0\u672A\u6FC0\u6D3B\u989C\u8272(\u7070\u8272)"
+  - name: C10
+    ID: 10
+    color: {r: 0, g: 0.6313726, b: 0.20784314, a: 1}
+    desc: "\u5C5E\u6027\u53D8\u5316\u503C"
+  - name: C11
+    ID: 11
+    color: {r: 1, g: 1, b: 1, a: 1}
+    desc: "\u82F1\u96C4\u539F\u59CB\u7B49\u7EA7\u989C\u8272"
+  - name: C12
+    ID: 12
+    color: {r: 0.7722672, g: 1, b: 0, a: 1}
+    desc: "\u82F1\u96C4\u52A0\u6210\u7B49\u7EA7\u989C\u8272"
+  - name: C13
+    ID: 13
+    color: {r: 0.9607843, g: 0.9607843, b: 0.85490197, a: 1}
+    desc: "\u89E3\u9501\u6280\u80FD\u63CF\u8FF0\u989C\u8272"
+  - name: C14
+    ID: 14
+    color: {r: 0.61960787, g: 0.61960787, b: 0.61960787, a: 1}
+    desc: "\u672A\u89E3\u9501\u6280\u80FD\u63CF\u8FF0\u989C\u8272"
+  - name: C15
+    ID: 15
+    color: {r: 0.3764706, g: 0.2509804, b: 0.13725491, a: 1}
+    desc: "\u8D44\u6E90\u6EE1\u8DB3\u989C\u8272_2"
+  - name: C65
+    ID: 65
+    color: {r: 0.75686276, g: 0.7647059, b: 0.78039217, a: 1}
+    desc: "\u6211\u65B9\u6218\u529B\u503C\uFF08\u4E0D\u8DB3\u65F6\uFF09"
+  - name: C16
+    ID: 16
+    color: {r: 0.46666667, g: 0.92156863, b: 0.43529412, a: 1}
+    desc: "\u7EFF\u54C1\u8D28\u7269\u54C1\u540D\u79F0\u989C\u8272"
+  - name: C17
+    ID: 17
+    color: {r: 0.21176471, g: 0.6509804, b: 0.9882353, a: 1}
+    desc: "\u84DD\u54C1\u8D28\u7269\u54C1\u540D\u79F0\u989C\u8272"
+  - name: C18
+    ID: 18
+    color: {r: 0.6784314, g: 0.41960785, b: 1, a: 1}
+    desc: "\u7D2B\u54C1\u8D28\u7269\u54C1\u540D\u79F0\u989C\u8272"
+  - name: C19
+    ID: 19
+    color: {r: 0.98039216, g: 0.65882355, b: 0.03529412, a: 1}
+    desc: "\u6A59\u54C1\u8D28\u7269\u54C1\u989C\u8272"
+  - name: C20
+    ID: 20
+    color: {r: 1, g: 0.3254902, b: 0.3254902, a: 1}
+    desc: "\u7EA2\u8272\u54C1\u8D28\u7269\u54C1\u989C\u8272"
+  - name: C21
+    ID: 21
+    color: {r: 0.9647059, g: 0.8745098, b: 0.94509804, a: 1}
+    desc: "\u5F69\u8272\u54C1\u8D28\u7269\u54C1\u989C\u8272"
+  - name: C33
+    ID: 33
+    color: {r: 0.28627452, g: 0.627451, b: 0.7176471, a: 1}
+    desc: "\u7279\u6B8A\u54C1\u8D28\u7269\u54C1\u540D\u79F0\u989C\u8272"
+  - name: C22
+    ID: 22
+    color: {r: 0.44705883, g: 0.22745098, b: 0.03137255, a: 1}
+    desc: "\u9EC4\u8272\u5927\u6309\u94AE\u6B63\u5E38"
+  - name: C23
+    ID: 23
+    color: {r: 0.14509805, g: 0.15686275, b: 0.23137255, a: 1}
+    desc: "\u9EC4\u8272\u5927\u6309\u94AE\u7070\u5316"
+  - name: C24
+    ID: 24
+    color: {r: 0.10980392, g: 0.14117648, b: 0.29411766, a: 1}
+    desc: "\u767D\u8272\u5927\u6309\u94AE\u6B63\u5E38"
+  - name: C25
+    ID: 25
+    color: {r: 0.14509805, g: 0.15686275, b: 0.23137255, a: 1}
+    desc: "\u767D\u8272\u5927\u6309\u94AE\u7070\u5316"
+  - name: C26
+    ID: 26
+    color: {r: 0.2971698, g: 0.79770815, b: 1, a: 1}
+    desc: "\u82F1\u96C4\u56FE\u6807\u5171\u4EAB\u7B49\u7EA7\u989C\u8272"
+  - name: C27
+    ID: 27
+    color: {r: 0, g: 0, b: 0, a: 1}
+    desc: "\u9ED1\u8272"
+  - name: C28
+    ID: 28
+    color: {r: 0.5764706, g: 0.6117647, b: 0.7254902, a: 1}
+    desc: "\u672A\u6FC0\u6D3B\u5C5E\u6027\uFF08\u5171\u9E23\uFF09"
+  - name: C29
+    ID: 29
+    color: {r: 0.3137255, g: 0.36078432, b: 0.5294118, a: 1}
+    desc: "\u6FC0\u6D3B\u5C5E\u6027\u989C\u8272\uFF08\u5171\u9E23\uFF09"
+  - name: C30
+    ID: 30
+    color: {r: 0.9490196, g: 0.21568628, b: 0.21568628, a: 1}
+    desc: "\u672A\u6FC0\u6D3B\u5C5E\u6027\u63D0\u793A\uFF08\u5171\u9E23\uFF09"
+  - name: C31
+    ID: 31
+    color: {r: 0.011764707, g: 0.5647059, b: 0.8431373, a: 1}
+    desc: "\u6FC0\u6D3B\u5C5E\u6027\u6807\u9898\u989C\u8272\uFF08\u5171\u9E23\uFF09"
+  - name: C32
+    ID: 32
+    color: {r: 0.9137255, g: 0.20784314, b: 0.15294118, a: 1}
+    desc: "\u80CC\u5305\u6EE1\u65F6\u5BB9\u91CF\u989C\u8272"
+  - name: C34
+    ID: 34
+    color: {r: 0.3764706, g: 0.27058825, b: 0.15686275, a: 1}
+    desc: "\u7279\u6B8A\u54C1\u8D28\u7269\u54C1\u540D\u79F0\u989C\u8272"
+  - name: C35
+    ID: 35
+    color: {r: 0.49411765, g: 0.49411765, b: 0.49411765, a: 1}
+    desc: "\u7279\u6B8A\u54C1\u8D28\u7269\u54C1\u540D\u79F0\u989C\u8272"
+  - name: C36
+    ID: 36
+    color: {r: 0.8352941, g: 0.5529412, b: 1, a: 1}
+    desc: "\u7D2B\u5361\u82F1\u96C4\u54C1\u8D28\u540D\u79F0\u989C\u8272"
+  - name: C37
+    ID: 37
+    color: {r: 1, g: 0.84313726, b: 0.12156863, a: 1}
+    desc: "\u91D1\u5361\u82F1\u96C4\u54C1\u8D28\u540D\u79F0\u989C\u8272"
+  - name: C38
+    ID: 38
+    color: {r: 1, g: 0.90588236, b: 0.12941177, a: 1}
+    desc: "\u91D1\u5361\u82F1\u96C4\u5C55\u793A\u79F0\u53F7\u989C\u8272"
+  - name: C39
+    ID: 39
+    color: {r: 0.5529412, g: 0.34117648, b: 0.16862746, a: 1}
+    desc: "\u5DF2\u77E5\u4FE1\u53F7\u51B7\u5374\u4EFB\u52A1\u540D\u79F0\u989C\u8272"
+  - name: C40
+    ID: 40
+    color: {r: 0.4, g: 0.36862746, b: 0.34117648, a: 1}
+    desc: "\u5DF2\u77E5\u4FE1\u53F7\u672A\u51B7\u5374\u4EFB\u52A1\u540D\u79F0\u989C\u8272"
+  - name: C41
+    ID: 41
+    color: {r: 0.18039216, g: 0.8980392, b: 0.2, a: 1}
+    desc: "\u82AF\u7247\u5F3A\u5316\u4E3B\u5C5E\u6027\u63D0\u5347\u989C\u8272"
+  - name: C42
+    ID: 42
+    color: {r: 0, g: 1, b: 0.5647059, a: 1}
+    desc: "\u7535\u53F0\u7B49\u7EA7\u63D0\u5347\u5C5E\u6027\u53D8\u5316\u989C\u8272"
+  - name: C43
+    ID: 43
+    color: {r: 0.84705883, g: 0.85882354, b: 0.91764706, a: 1}
+    desc: "\u76EE\u6807\u4EFB\u52A1\u672A\u9009\u4E2D\u5929\u6570\u989C\u8272"
+  - name: C44
+    ID: 44
+    color: {r: 0.52156866, g: 0.53333336, b: 0.6, a: 1}
+    desc: "\u76EE\u6807\u4EFB\u52A1\u672A\u89E3\u9501\u5929\u6570\u989C\u8272"
+  - name: C45
+    ID: 45
+    color: {r: 0.2784314, g: 0.31764707, b: 0.4, a: 1}
+    desc: "\u5957\u88C5\u5206\u7C7B\u5165\u53E3\u672A\u9009\u4E2D\u989C\u8272"
+  - name: C46
+    ID: 46
+    color: {r: 0.49019608, g: 0.56078434, b: 0.7019608, a: 1}
+    desc: "\u5957\u88C5\u9875\u7B7E\u9009\u4E2D\u72B6\u6001\u989C\u8272"
+  - name: C47
+    ID: 47
+    color: {r: 0.14901961, g: 0.2627451, b: 0.5019608, a: 1}
+    desc: "\u589E\u76CA\u54C1\u8D28\u84DD"
+  - name: C48
+    ID: 48
+    color: {r: 0.38431373, g: 0.14901961, b: 0.5019608, a: 1}
+    desc: "\u589E\u76CA\u54C1\u8D28\u7D2B"
+  - name: C49
+    ID: 49
+    color: {r: 0.6, g: 0.34901962, b: 0, a: 1}
+    desc: "\u589E\u76CA\u54C1\u8D28\u91D1"
+  - name: C50
+    ID: 50
+    color: {r: 0, g: 0.6666667, b: 1, a: 1}
+    desc: "\u82AF\u7247\u5C5E\u6027\u52A0\u6210\u2014\u54C1\u8D28\u84DD"
+  - name: C51
+    ID: 51
+    color: {r: 0.58431375, g: 0.27058825, b: 0.9019608, a: 1}
+    desc: "\u82AF\u7247\u5C5E\u6027\u52A0\u6210\u2014\u54C1\u8D28\u7D2B"
+  - name: C52
+    ID: 52
+    color: {r: 0.9019608, g: 0.6, b: 0, a: 1}
+    desc: "\u82AF\u7247\u5C5E\u6027\u52A0\u6210\u2014\u54C1\u8D28\u91D1"
+  - name: C53
+    ID: 53
+    color: {r: 0.9019608, g: 0.27058825, b: 0.3764706, a: 1}
+    desc: "\u82AF\u7247\u5C5E\u6027\u52A0\u6210\u2014\u54C1\u8D28\u7EA2"
+  - name: C54
+    ID: 54
+    color: {r: 0.63529414, g: 0.63529414, b: 0.63529414, a: 1}
+    desc: "\u722C\u5854\u5173\u5361\u8FDB\u5EA6\u2014\u5DF2\u901A\u5173"
+  - name: C55
+    ID: 55
+    color: {r: 0.039215688, g: 0.015686275, b: 0.11764706, a: 1}
+    desc: "\u722C\u5854\u5173\u5361\u8FDB\u5EA6\u2014\u5F53\u524D\u5173\u5361"
+  - name: C56
+    ID: 56
+    color: {r: 0.34117648, g: 0.34117648, b: 0.34117648, a: 1}
+    desc: "\u722C\u5854\u5173\u5361\u8FDB\u5EA6\u2014\u672A\u5F00\u542F"
+  - name: C57
+    ID: 57
+    color: {r: 1, g: 0.627451, b: 0, a: 1}
+    desc: "\u6211\u65B9\u6218\u6597\u529B\uFF08\u91D1\u8272\uFF09"
+  - name: C58
+    ID: 58
+    color: {r: 0.18431373, g: 0.23137255, b: 0.34901962, a: 1}
+    desc: "\u7269\u54C1tips\u62E5\u6709\u6570\u91CF"
+  - name: C59
+    ID: 59
+    color: {r: 0.41960785, g: 0.13333334, b: 0.13333334, a: 1}
+    desc: "\u6B21\u5143\u6218\u7EBF\u5468\u5386\u58541\u540D\u5B57\u989C\u8272"
+  - name: C60
+    ID: 60
+    color: {r: 0.19215687, g: 0.06666667, b: 0.4, a: 1}
+    desc: "\u6B21\u5143\u6218\u7EBF\u5468\u5386\u58542\u540D\u5B57\u989C\u8272"
+  - name: C61
+    ID: 61
+    color: {r: 0.07450981, g: 0.19607843, b: 0.39607844, a: 1}
+    desc: "\u6B21\u5143\u6218\u7EBF\u5468\u5386\u58543\u540D\u5B57\u989C\u8272"
+  - name: C62
+    ID: 62
+    color: {r: 0.39607844, g: 0.48235294, b: 0.59607846, a: 1}
+    desc: "\u8D44\u6E90\u8DB3\u591F(\u767D\u8272\u80CC\u666F\u65F6\u4F7F\u7528)"
+  - name: C63
+    ID: 63
+    color: {r: 0.047058824, g: 0.99215686, b: 0, a: 1}
+    desc: "\u6211\u65B9\u6218\u529B\u503C\uFF08\u8DB3\u591F\u65F6\uFF09"
+  - name: C64
+    ID: 64
+    color: {r: 1, g: 0.29803923, b: 0.29803923, a: 1}
+    desc: "\u6211\u65B9\u6218\u529B\u503C\uFF08\u4E0D\u8DB3\u65F6\uFF09"

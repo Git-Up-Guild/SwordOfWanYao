@@ -1,0 +1,31 @@
+/************* <<< UICodeGenerator Version #Version#.0 >>>  ***********************
+File：#FileName#.cs <FileHead_AutoGenerate>
+Author：#Author#
+Date：#Date#
+Description：#Description#
+***************************************************************************/
+
+using UnityEngine;
+using UnityEngine.UI;
+using XGame.UI.Framework;
+using XGame.UI.Framework.Flex;
+using XGame.UI.Framework.EffList;
+
+#NameSpace#
+{
+    public partial class #WndName# : #BaseWindowName#
+    {
+        protected override void OnUpdateUI()
+        {
+        }
+		
+		//@<<< ExecuteEventHandlerGenerator >>>
+		//@<<< ButtonFuncGenerator >>>
+		
+    }
+	
+	//@<<< EffectiveListGenerator >>>
+	//@<<< FlexItemGenerator >>>
+	
+	
+}

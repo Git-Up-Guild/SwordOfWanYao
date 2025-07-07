@@ -1,0 +1,108 @@
+Keyword#0 _ALPHATEST_ON found in 3 shader(s)
+　　Shader#0 TerrainLit
+　　Shader#1 ParticlesUnlit
+　　Shader#2 SimpleLit
+
+Keyword#1 _ADDITIONAL_LIGHT_SHADOWS found in 2 shader(s)
+　　Shader#0 TerrainLit
+　　Shader#1 SimpleLit
+
+Keyword#2 _EMISSION found in 2 shader(s)
+　　Shader#0 ParticlesUnlit
+　　Shader#1 SimpleLit
+
+Keyword#3 _ALPHAPREMULTIPLY_ON found in 2 shader(s)
+　　Shader#0 ParticlesUnlit
+　　Shader#1 SimpleLit
+
+Keyword#4 _RECEIVE_SHADOWS_OFF found in 2 shader(s)
+　　Shader#0 ParticlesUnlit
+　　Shader#1 SimpleLit
+
+Keyword#5 DIRLIGHTMAP_COMBINED found in 2 shader(s)
+　　Shader#0 TerrainLit
+　　Shader#1 SimpleLit
+
+Keyword#6 _SHADOWS_SOFT found in 2 shader(s)
+　　Shader#0 TerrainLit
+　　Shader#1 SimpleLit
+
+Keyword#7 LIGHTMAP_ON found in 2 shader(s)
+　　Shader#0 TerrainLit
+　　Shader#1 SimpleLit
+
+Keyword#8 _MAIN_LIGHT_SHADOWS_CASCADE found in 2 shader(s)
+　　Shader#0 TerrainLit
+　　Shader#1 SimpleLit
+
+Keyword#9 _MAIN_LIGHT_SHADOWS found in 2 shader(s)
+　　Shader#0 TerrainLit
+　　Shader#1 SimpleLit
+
+Keyword#10 _ADDITIONAL_LIGHTS_VERTEX found in 2 shader(s)
+　　Shader#0 TerrainLit
+　　Shader#1 SimpleLit
+
+Keyword#11 _ADDITIONAL_LIGHTS found in 2 shader(s)
+　　Shader#0 TerrainLit
+　　Shader#1 SimpleLit
+
+Keyword#12 _MIXED_LIGHTING_SUBTRACTIVE found in 2 shader(s)
+　　Shader#0 TerrainLit
+　　Shader#1 SimpleLit
+
+Keyword#13 _NORMALMAP found in 2 shader(s)
+　　Shader#0 ParticlesUnlit
+　　Shader#1 SimpleLit
+
+Keyword#14 USE_SHAPE_LIGHT_TYPE_1 found in 1 shader(s)
+　　Shader#0 Sprite-Lit-Default
+
+Keyword#15 USE_SHAPE_LIGHT_TYPE_0 found in 1 shader(s)
+　　Shader#0 Sprite-Lit-Default
+
+Keyword#16 ETC1_EXTERNAL_ALPHA found in 1 shader(s)
+　　Shader#0 Sprite-Lit-Default
+
+Keyword#17 _GLOSSINESS_FROM_BASE_ALPHA found in 1 shader(s)
+　　Shader#0 SimpleLit
+
+Keyword#18 _SPECULAR_COLOR found in 1 shader(s)
+　　Shader#0 SimpleLit
+
+Keyword#19 _SPECGLOSSMAP found in 1 shader(s)
+　　Shader#0 SimpleLit
+
+Keyword#20 _SOFTPARTICLES_ON found in 1 shader(s)
+　　Shader#0 ParticlesUnlit
+
+Keyword#21 _COLOROVERLAY_ON found in 1 shader(s)
+　　Shader#0 ParticlesUnlit
+
+Keyword#22 _FADING_ON found in 1 shader(s)
+　　Shader#0 ParticlesUnlit
+
+Keyword#23 _DISTORTION_ON found in 1 shader(s)
+　　Shader#0 ParticlesUnlit
+
+Keyword#24 USE_SHAPE_LIGHT_TYPE_2 found in 1 shader(s)
+　　Shader#0 Sprite-Lit-Default
+
+Keyword#25 _COLORCOLOR_ON found in 1 shader(s)
+　　Shader#0 ParticlesUnlit
+
+Keyword#26 _COLORADDSUBDIFF_ON found in 1 shader(s)
+　　Shader#0 ParticlesUnlit
+
+Keyword#27 _ALPHAMODULATE_ON found in 1 shader(s)
+　　Shader#0 ParticlesUnlit
+
+Keyword#28 _TERRAIN_INSTANCED_PERPIXEL_NORMAL found in 1 shader(s)
+　　Shader#0 TerrainLit
+
+Keyword#29 _FLIPBOOKBLENDING_ON found in 1 shader(s)
+　　Shader#0 ParticlesUnlit
+
+Keyword#30 USE_SHAPE_LIGHT_TYPE_3 found in 1 shader(s)
+　　Shader#0 Sprite-Lit-Default
+

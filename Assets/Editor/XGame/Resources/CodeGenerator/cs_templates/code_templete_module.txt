@@ -1,0 +1,82 @@
+/************* <<< ModuleCodeGenerator Version 1.0 >>>  *************************
+File: #ModuleName#Module.cs 
+Module: #ModuleName#
+Author: #Author#
+Date: #Date#
+Description: #Desc#
+***************************************************************************/
+
+using XClient.Common;
+
+namespace #ProjectNameSpace#.#ModuleName#
+{
+    public class #ModuleName#Module : I#ModuleName#Module
+    {
+        public string ModuleName { get; set; }
+        public ModuleState State { get; set; }
+        public float Progress { get; set; }
+        public int ID { get; set; }
+
+        private #ModuleName#ModuleMessageHandler m_MessageHandler;
+
+        public #ModuleName#Module()
+        {
+			ModuleName = "#ModuleName#";
+            ID = #ModuleID#;
+        }
+
+        public bool Create(object context, object config = null)
+        {
+            m_MessageHandler = new #ModuleName#ModuleMessageHandler();
+            m_MessageHandler.Create(this);
+			
+            Progress = 1f;
+            return true;
+        }
+
+        public void FixedUpdate()
+        {
+        }
+
+        public void LateUpdate()
+        {
+        }
+		
+        public void Release()
+        {
+            m_MessageHandler?.Release();
+            m_MessageHandler = null;
+        }
+
+        public bool Start()
+        {
+			m_MessageHandler?.Start();
+		 
+            State = ModuleState.Success;
+            return true;
+        }
+
+        public void Stop()
+        {
+			m_MessageHandler?.Stop();
+        }
+
+        public void Update()
+        {
+        }
+		
+		public void OnGameStateChange(int newStateID, int oldStateID)
+        {
+        }
+
+        //断线重连的时候清理数据调用,注意只需要清理Moudle模块中Create后创建的数据,Create中创建的不要清理了
+        public void Clear(int param)
+        {
+        }
+		
+		//玩家数据准备好后回调
+        public void OnRoleDataReady()
+        {
+        }
+    }
+}
