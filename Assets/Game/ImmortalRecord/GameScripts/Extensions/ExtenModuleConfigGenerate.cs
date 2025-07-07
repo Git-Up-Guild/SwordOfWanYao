@@ -24,7 +24,7 @@ namespace GameScripts.IR
     /// </summary>
     public class GameGlobalEx : GameGlobal
     {
-        public static PlayerMovement.IPlayerMovementModule PlayerMovement = null;
+  
 		//@AppendDeclareModuleInstanceVars
     }
 
@@ -35,13 +35,13 @@ namespace GameScripts.IR
     {
         public static void Setup(IModule[] modules)
         {
-			GameGlobalEx.PlayerMovement = Setup<PlayerMovement.PlayerMovementModule>(DModuleIDEx.MODULE_ID_PLAYERMOVEMENT, modules);
+
 			//@AppendSetupModuleInstanceVar
         }
 
         public static void Clear()
         {
-			GameGlobalEx.PlayerMovement = null;
+
 			//@AppendClearModuleInstanceVar
         }
 
