@@ -4,7 +4,7 @@
 git checkout dev
 
 # 拉取远程 dev 的最新代码
-git pull origin dev
+git pull
 
 # 开发/测试中......
 
@@ -24,7 +24,7 @@ git add .
 git commit -m "feat: 实现功能A"
 
 # 检查无误后，推送至远程仓库，推送之后记录将会永久存在。
-git push origin dev
+git push
 
 
 
