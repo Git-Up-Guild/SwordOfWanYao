@@ -7,10 +7,9 @@ public class EventManager : MonoBehaviour {
     private Dictionary<string, Action<object>> m_eventDictionary;
     private static bool applicationIsQuitting = false;
     
-    //委托映射表 泛型 => 非泛型
-    private Dictionary<(string eventName, Delegate original), Action<object>> m_listenerMap
-    = new Dictionary<(string, Delegate), Action<object>>();
-
+    //委托映射表 泛型 => 非泛型，同时带source过滤
+    private Dictionary<(string eventName, object source, Delegate listener), Action<object>> m_sourceListenerMap
+        = new Dictionary<(string, object, Delegate), Action<object>>();
     public static EventManager Instance
     {
 
@@ -81,12 +80,11 @@ public class EventManager : MonoBehaviour {
 
     }
 
-    //泛型装箱
-    public void Subscribe<T>(string eventName, Action<T> listener) where T : class
+    public void Subscribe<T>(string eventName, object source, Action<T> listener) where T : IEventData
     {
         Action<object> wrapper = e =>
         {
-            if (e is T t)
+            if (e is T t && t.Source == source )
                 listener?.Invoke(t);
         };
 
@@ -94,7 +92,7 @@ public class EventManager : MonoBehaviour {
         Subscribe(eventName, wrapper);
 
         // 保存映射
-        m_listenerMap[(eventName, listener)] = wrapper;
+        m_sourceListenerMap[(eventName, source, listener)] = wrapper;
 
     }
 
@@ -124,17 +122,16 @@ public class EventManager : MonoBehaviour {
         }
 
     }
-
-    //泛型拆箱
-    public void Unsubscribe<T>(string eventName, Action<T> listener) where T : class
+    
+    public void Unsubscribe<T>(string eventName, object source, Action<T> listener) where T : IEventData
     {
 
-        var key = (eventName, (Delegate)listener);
+        var key = (eventName, source, (Delegate)listener);
 
-        if (m_listenerMap.TryGetValue(key, out var wrapper))
+        if (m_sourceListenerMap.TryGetValue(key, out var wrapper))
         {
             Unsubscribe(eventName, wrapper); // 调用原始的非泛型版本
-            m_listenerMap.Remove(key);
+            m_sourceListenerMap.Remove(key);
         }
 
     }
