@@ -29,9 +29,10 @@ public enum SoldierRarity
 
 public enum SoldierCamp
 {
-    Player,
+    Ally,
     Enemy,
     Neutral
+
 }
 #endregion
 
@@ -53,6 +54,8 @@ public class SoldierAttributes
 
     [Header("索敌范围")]
     public float lockOnRange;
+    [Header("攻击范围")]
+    public float attackRange;
 
     [Header("攻击速度")]
     public float attackSpeed;
@@ -100,6 +103,7 @@ public enum SkillCategory
 public class MeleeSkillData : SoldierSkillData
 {
     [Header("近战设置")]
+    public GameObject meleeEffect;
     public int damage;
     public float attackRadius;
 }
@@ -177,6 +181,7 @@ public enum EffectType
     Split,
     Freeze,
     Wind,
+    LightBeamRotation
 
 }
 
