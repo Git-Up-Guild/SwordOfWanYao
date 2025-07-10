@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-class SoldierController : MonoBehaviour
+public class SoldierController : MonoBehaviour
 {
 
     [SerializeField] private SoldierDataBase m_data;
