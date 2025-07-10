@@ -11,6 +11,7 @@ public enum SoldierAttributeType
     MoveSpeed,
     Defense,
     AttackSpeed,
+    AttackRange,
     LockOnRange,
     AttatckFrequency
 
@@ -19,15 +20,24 @@ public enum SoldierAttributeType
 public enum SoldierStateType
 {
     IsInvincible,
-    IsShield,
     IsDead,
-    IsTargetingAtBase,
+    IsTargetingAtOppositeBase,
     IsLockingOn,
     IsAttacking,
     IsStaying,
     IsMoving,
     IsFreezing
 }
+
+public enum SoldierTargtes
+{
+    MoveTargetIndicator,
+    AttackTargetDetector,
+    AttackRangeDetector,
+    AttackTargetObject,
+
+}
+
 public class SoldierModel : MonoBehaviour
 {
     [SerializeField] private int m_id;
@@ -39,10 +49,14 @@ public class SoldierModel : MonoBehaviour
     [SerializeField] private float m_moveSpeed;
     [SerializeField] private float m_defense;
     [SerializeField] private float m_attackSpeed;
+    [SerializeField] private float m_attackRange;
     [SerializeField] private float m_lockOnRange;
     [SerializeField] private float m_attackFrequency;
 
-    [SerializeField] Transform m_targetTransform;
+    [SerializeField] Transform m_moveTargetIndicator;
+    [SerializeField] Transform m_attackTargetDetector;
+    [SerializeField] Transform m_attackRangeDetector;
+    [SerializeField] Transform m_attackTargetObject;
 
     [SerializeField] private float m_currentHealth;
 
@@ -55,13 +69,11 @@ public class SoldierModel : MonoBehaviour
     [SerializeField] private bool m_isStaying;
     [SerializeField] private bool m_isMoving;
     [SerializeField] private bool m_isFreezing;
+    [SerializeField] private SoldierDataBase m_data;
+    [SerializeField] private float m_scaleSize;
 
-    private void Awake()
-    {
-        InitAttributes();
-        InitStates();
-
-    }
+    //初始化完成标志
+    public bool IsInitialized { get; private set; }
 
     //属性访问器
     public int ID
@@ -88,11 +100,10 @@ public class SoldierModel : MonoBehaviour
         set => m_rarity = value;
 
     }
-
-    public Transform MoveTargetIndicator
+    public SoldierCamp Camp
     {
-        get => m_targetTransform;
-        set => m_targetTransform = value;
+        get => m_camp;
+        set => m_camp = value;
 
     }
 
@@ -124,6 +135,13 @@ public class SoldierModel : MonoBehaviour
 
     }
 
+    public float AttackRange
+    {
+        get => m_attackRange;
+        set => m_attackRange = value;
+
+    }
+
     public float LockOnRange
     {
         get => m_lockOnRange;
@@ -138,10 +156,28 @@ public class SoldierModel : MonoBehaviour
 
     }
 
-    public SoldierCamp Camp
+    public Transform MoveTargetIndicator
     {
-        get => m_camp;
-        set => m_camp = value;
+        get => m_moveTargetIndicator;
+        set => m_moveTargetIndicator = value;
+
+    }
+    public Transform AttackTargetDetector
+    {
+        get => m_attackTargetDetector;
+        set => m_attackTargetDetector = value;
+
+    }
+    public Transform AttackRangeDetector
+    {
+        get => m_attackRangeDetector;
+        set => m_attackRangeDetector = value;
+
+    }
+    public Transform AttackTargetObject
+    {
+        get => m_attackTargetObject;
+        set => m_attackTargetObject = value;
 
     }
 
@@ -246,7 +282,7 @@ public class SoldierModel : MonoBehaviour
                 m_isMovingToOppositeBase = value;
                 EventManager.Instance.TriggerEvent(
                     value ? SoldierEventNames.TargetingAtBaseEntered : SoldierEventNames.TargetingAtBaseExited,
-                    new SoldierStateChangeData(this, SoldierStateType.IsTargetingAtBase)
+                    new SoldierStateChangeData(this, SoldierStateType.IsTargetingAtOppositeBase)
 
                 );
 
@@ -370,11 +406,51 @@ public class SoldierModel : MonoBehaviour
         }
 
     }
+    public void InitModel()
+    {
+
+        InitData();
+        InitAttributes();
+        InitStates();
+        InitTargets();
+
+        IsInitialized = true;
+
+    }
+
+    private void InitData()
+    {
+        //基础设置
+        Camp = m_data.camp;
+        MaxHealth = m_data.attributes.maxHealth;
+
+        //核心属性
+        MoveSpeed = m_data.attributes.moveSpeed;
+        Defense = m_data.attributes.defense;
+        AttackSpeed = m_data.attributes.attackSpeed;
+        AttackFrequency = m_data.attributes.attackFrequency;
+        AttackPowerMutiplier = m_data.attributes.attackPowerMutiplier;
+        LockOnRange = m_data.attributes.lockOnRange;
+        AttackRange = m_data.attributes.attackRange;
+
+        //信息
+        ID = m_data.ID;
+        Rarity = m_data.rarity;
+        DisplayName = m_data.displayName;
+
+        //技能与特效 ToDo
+        foreach (var skillData in m_data.skills)
+        {
+
+        }
+
+    }
 
     private void InitAttributes()
     {
 
         m_currentHealth = m_maxHealth;
+        transform.localScale *= m_scaleSize;
 
     }
 
@@ -389,6 +465,14 @@ public class SoldierModel : MonoBehaviour
         m_isAttacking = false;
         m_isStaying = false;
         m_isFreezing = false;
+
+    }
+
+    private void InitTargets()
+    {
+
+        AttackTargetDetector.localScale *= LockOnRange;
+        AttackRangeDetector.localScale *= AttackRange;
 
     }
 
