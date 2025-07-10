@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81d088da3873d483ca08c89da7c07e07, type: 3}
-  m_Name: TestSoldier
+  m_Name: EnemyTestSoldier
   m_EditorClassIdentifier: 
   ID: 1
   displayName: TestSoldier
-  description: 
+  description: Test
   portrait: {fileID: 0}
   rarity: 0
-  camp: 0
+  camp: 1
   attributes:
-    maxHealth: 0
+    maxHealth: 100
     attackPowerMutiplier: 1
-    defense: 0
-    moveSpeed: 0
-    lockOnRange: 0
-    attackSpeed: 0
-    attackFrequency: 0
+    defense: 10
+    moveSpeed: 5
+    lockOnRange: 10
+    attackSpeed: 1
+    attackFrequency: 1
   skills: []
