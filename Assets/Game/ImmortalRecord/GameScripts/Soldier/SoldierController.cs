@@ -4,16 +4,18 @@ using System.Collections;
 public class SoldierController : MonoBehaviour
 {
 
-    [SerializeField] private SoldierDataBase m_data;
     private SoldierModel m_model;
+    private SoldierStateMachine m_soldierStateMachine;
     private Coroutine m_invincibleCoroutine;
 
-
-    private void OnEnable()
+    public void Init()
     {
-
+        
         m_model = GetComponent<SoldierModel>();
-        InitializeModel();
+        m_soldierStateMachine = GetComponent<SoldierStateMachine>();
+
+        m_model.InitModel();
+        m_soldierStateMachine.InitStateMachine();
 
     }
 
@@ -43,30 +45,6 @@ public class SoldierController : MonoBehaviour
 
         }
 
-    }
-
-    void InitializeModel()
-    {
-        //基础设置
-        m_model.Camp = m_data.camp;
-        m_model.MaxHealth = m_data.attributes.maxHealth;
-
-        //核心属性
-        m_model.MoveSpeed = m_data.attributes.moveSpeed;
-        m_model.Defense = m_data.attributes.defense;
-        m_model.AttackSpeed = m_data.attributes.attackSpeed;
-        m_model.AttackFrequency = m_data.attributes.attackFrequency;
-
-        //信息
-        m_model.ID = m_data.ID;
-        m_model.Rarity = m_data.rarity;
-        m_model.DisplayName = m_data.displayName;
-
-        //技能与特效 ToDo
-        foreach (var skillData in m_data.skills)
-        {
-
-        }
     }
 
     //属性设置器
@@ -131,7 +109,7 @@ public class SoldierController : MonoBehaviour
             switch (targetState)
             {
                 // 互斥组 1：IsTargetingAtBase 与 IsLockingOn
-                case SoldierStateType.IsTargetingAtBase:
+                case SoldierStateType.IsTargetingAtOppositeBase:
                     SetIsTargetingAtBase(false);
                     SetIsLockingOn(true);
                     return;
@@ -144,7 +122,7 @@ public class SoldierController : MonoBehaviour
                 // 互斥组 2：IsMoving 与 IsStaying
                 case SoldierStateType.IsMoving:
                     SetIsMoving(false);
-                    SetIsStaying(true); 
+                    SetIsStaying(true);
                     return;
 
                 case SoldierStateType.IsStaying:
@@ -161,7 +139,7 @@ public class SoldierController : MonoBehaviour
         switch (targetState)
         {
             // 互斥组 1：IsTargetingAtBase 与 IsLockingOn
-            case SoldierStateType.IsTargetingAtBase:
+            case SoldierStateType.IsTargetingAtOppositeBase:
                 SetIsLockingOn(false);
                 SetIsTargetingAtBase(true);
                 break;
@@ -199,7 +177,7 @@ public class SoldierController : MonoBehaviour
             case SoldierStateType.IsInvincible:
                 SetIsInvincible(value);
                 break;
-            case SoldierStateType.IsTargetingAtBase:
+            case SoldierStateType.IsTargetingAtOppositeBase:
                 SetIsTargetingAtBase(value);
                 break;
             case SoldierStateType.IsLockingOn:

@@ -6,7 +6,29 @@ public class SoldierSpriter : MonoBehaviour
     private SoldierModel m_Model;
 
     [Header("渲染设置")]
-    [SerializeField] float scaleSize;
+    [SerializeField] float scaleSizeX;
+    [SerializeField] float scaleSizeY;
+
+    private void OnEnable()
+    {
+        m_Model = GetComponentInParent<SoldierModel>();
+        ScaleToConfiguredScale();
+        SubscribeEvents();
+    }
+    private void OnDisable()
+    {
+        if (EventManager.Instance != null)
+        {
+            UnsubscribeEvents();
+        }
+    }
+
+    private void ScaleToConfiguredScale()
+    {
+
+        transform.localScale = new Vector3(scaleSizeX, scaleSizeY, 1);
+
+    }
 
     public void ScaleTo(float targetSizeX, float targetSizeY)
     {
@@ -18,9 +40,9 @@ public class SoldierSpriter : MonoBehaviour
     public void Filp(bool faceRight)
     {
 
-        float sizeX = faceRight ? scaleSize : -scaleSize;
+        float sizeX = faceRight ? scaleSizeX : -scaleSizeX;
 
-        ScaleTo(sizeX, scaleSize);
+        ScaleTo(sizeX, scaleSizeY);
 
     }
 
@@ -32,20 +54,6 @@ public class SoldierSpriter : MonoBehaviour
     private int isDeadHash = Animator.StringToHash("IsDead");
     private int isFreezingHash = Animator.StringToHash("IsFreezing");
 
-    private void OnEnable()
-    {
-        m_Model = GetComponentInParent<SoldierModel>();
-        SubscribeEvents();
-    }
-
-    private void OnDisable()
-    {
-        if (EventManager.Instance != null)
-        {
-            UnsubscribeEvents();
-        }
-    }
-
     private void PlayDeath() => animator.SetBool(isDeadHash, true);
     private void SetInvincible(bool val) => animator.SetBool(isInvincibleHash, val);
     private void SetFreezing(bool val) => animator.SetBool(isFreezingHash, val);
@@ -53,99 +61,44 @@ public class SoldierSpriter : MonoBehaviour
     private void SetStaying(bool val) => animator.SetBool(isStayingHash, val);
 
     private void SubscribeEvents()
-    {
-        EventManager.Instance.Subscribe<IEventData>(
-            SoldierEventNames.Died,
-            HandleDeath);
+{
+    var mgr = EventManager.Instance;
+    var src = m_Model;
 
-        EventManager.Instance.Subscribe<IEventData>(
-            SoldierEventNames.InvincibleEntered,
-            _ => SetInvincible(true)
-        );
+    mgr.Subscribe<IEventData>(SoldierEventNames.Died, src, HandleDeath);
 
-        EventManager.Instance.Subscribe<IEventData>(
-            SoldierEventNames.InvincibleExited,
-            _ => SetInvincible(false)
-        );
+    mgr.Subscribe<IEventData>(SoldierEventNames.InvincibleEntered, src, _ => SetInvincible(true));
+    mgr.Subscribe<IEventData>(SoldierEventNames.InvincibleExited,  src, _ => SetInvincible(false));
 
-        EventManager.Instance.Subscribe<IEventData>(
-            SoldierEventNames.MovingEntered,
-            _ => SetMoving(true)
-        );
+    mgr.Subscribe<IEventData>(SoldierEventNames.MovingEntered,     src, _ => SetMoving(true));
+    mgr.Subscribe<IEventData>(SoldierEventNames.MovingExited,      src, _ => SetMoving(false));
 
-        EventManager.Instance.Subscribe<IEventData>(
-            SoldierEventNames.MovingExited,
-            _ => SetMoving(false)
-        );
+    mgr.Subscribe<IEventData>(SoldierEventNames.StayingEntered,    src, _ => SetStaying(true));
+    mgr.Subscribe<IEventData>(SoldierEventNames.StayingExited,     src, _ => SetStaying(false));
 
-        EventManager.Instance.Subscribe<IEventData>(
-            SoldierEventNames.StayingEntered,
-            _ => SetStaying(true)
-        );
+    mgr.Subscribe<IEventData>(SoldierEventNames.FreezingEntered,   src, _ => SetFreezing(true));
+    mgr.Subscribe<IEventData>(SoldierEventNames.FreezingExited,    src, _ => SetFreezing(false));
+}
 
-        EventManager.Instance.Subscribe<IEventData>(
-            SoldierEventNames.StayingExited,
-            _ => SetStaying(false)
-        );
+private void UnsubscribeEvents()
+{
+    var mgr = EventManager.Instance;
+    var src = m_Model;
 
-        EventManager.Instance.Subscribe<IEventData>(
-            SoldierEventNames.FreezingEntered,
-            _ => SetFreezing(true)
-        );
+    mgr.Unsubscribe<IEventData>(SoldierEventNames.Died, src, HandleDeath);
 
-        EventManager.Instance.Subscribe<IEventData>(
-            SoldierEventNames.StayingExited,
-            _ => SetFreezing(false)
-        );
+    mgr.Unsubscribe<IEventData>(SoldierEventNames.InvincibleEntered, src, _ => SetInvincible(true));
+    mgr.Unsubscribe<IEventData>(SoldierEventNames.InvincibleExited,  src, _ => SetInvincible(false));
 
-    }
+    mgr.Unsubscribe<IEventData>(SoldierEventNames.MovingEntered,     src, _ => SetMoving(true));
+    mgr.Unsubscribe<IEventData>(SoldierEventNames.MovingExited,      src, _ => SetMoving(false));
 
-    private void UnsubscribeEvents()
-    {
-        EventManager.Instance.Unsubscribe<IEventData>(
-            SoldierEventNames.Died,
-            HandleDeath);
+    mgr.Unsubscribe<IEventData>(SoldierEventNames.StayingEntered,    src, _ => SetStaying(true));
+    mgr.Unsubscribe<IEventData>(SoldierEventNames.StayingExited,     src, _ => SetStaying(false));
 
-        EventManager.Instance.Unsubscribe<IEventData>(
-            SoldierEventNames.InvincibleEntered,
-            _ => SetInvincible(true)
-        );
-
-        EventManager.Instance.Unsubscribe<IEventData>(
-            SoldierEventNames.InvincibleExited,
-            _ => SetInvincible(false)
-        );
-
-        EventManager.Instance.Unsubscribe<IEventData>(
-            SoldierEventNames.MovingEntered,
-            _ => SetMoving(true)
-        );
-
-        EventManager.Instance.Unsubscribe<IEventData>(
-            SoldierEventNames.MovingExited,
-            _ => SetMoving(false)
-        );
-
-        EventManager.Instance.Unsubscribe<IEventData>(
-            SoldierEventNames.StayingEntered,
-            _ => SetStaying(true)
-        );
-
-        EventManager.Instance.Unsubscribe<IEventData>(
-            SoldierEventNames.StayingEntered,
-            _ => SetStaying(false)
-        );
-
-        EventManager.Instance.Unsubscribe<IEventData>(
-            SoldierEventNames.FreezingEntered,
-            _ => SetFreezing(true)
-        );
-
-        EventManager.Instance.Unsubscribe<IEventData>(
-            SoldierEventNames.FreezingExited,
-            _ => SetFreezing(false)
-        );
-    }
+    mgr.Unsubscribe<IEventData>(SoldierEventNames.FreezingEntered,   src, _ => SetFreezing(true));
+    mgr.Unsubscribe<IEventData>(SoldierEventNames.FreezingExited,    src, _ => SetFreezing(false));
+}
 
 
     private void HandleDeath(object data) => PlayDeath();

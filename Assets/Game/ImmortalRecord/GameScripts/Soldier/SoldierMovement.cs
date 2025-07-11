@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class SoldierMovement : MonoBehaviour
 {
@@ -18,8 +19,10 @@ public class SoldierMovement : MonoBehaviour
     {
         m_controller.ConvertState(SoldierStateType.IsMoving, true);
 
-        m_model.MoveTargetIndicator.SetParent(null);
-        m_model.MoveTargetIndicator.transform.position = targetPos;
+        if (!m_model.IsInitialized)
+            CustomLogger.LogError("Data isn't initialized");
+
+        m_model.MoveTargetIndicator.position = targetPos;
 
         float speed = m_model.MoveSpeed;
 
@@ -32,6 +35,17 @@ public class SoldierMovement : MonoBehaviour
 
     }
 
+    public void StopMoving()
+    {
+        if (moveCoroutine != null)
+        {
+            StopCoroutine(moveCoroutine);
+            moveCoroutine = null;
+        }
+
+        m_controller.ConvertState(SoldierStateType.IsStaying, true);
+    }
+
     private IEnumerator MoveToCoroutine(Vector2 targetPos, float speed)
     {
 
@@ -41,7 +55,6 @@ public class SoldierMovement : MonoBehaviour
             yield return null;
         }
 
-        m_model.MoveTargetIndicator.SetParent(transform);
         transform.position = targetPos;
         m_controller.ConvertState(SoldierStateType.IsStaying, true);
 
