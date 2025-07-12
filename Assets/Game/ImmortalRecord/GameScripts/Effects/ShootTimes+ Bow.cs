@@ -8,9 +8,9 @@ class ShootTimesBow : EffectBase
     [Header("攻击频率增速（如1为+1次攻击）")]
     public int PlusTime=1;
 
-    public override void ApplyEffect(SoldierModel soldier)
+    public override void ApplyEffect(Soldiercontroller soldierController， soldierModel soldierModel)
     {
-        if (soldier.ID == SoldierTypeID)
+        if (soldierModel.ID == SoldierTypeID)
         {
             soldier.AttackFrequency += PlusTime;
 

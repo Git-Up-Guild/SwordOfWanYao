@@ -26,11 +26,11 @@ public class BuffManager : ScriptableObject
     }
     //应用增益
 
-    public void ApplyAllBuffs(SoldierController soldier)
+    public void ApplyAllBuffs(SoldierController soldierController, SoldierModel soldierModel)
     {
         foreach (var buff in activeBuffs)
         {
-            buff.ApplyEffect(soldier);
+            buff.ApplyEffect(soldierController, soldierModel);
         }
     }
 }

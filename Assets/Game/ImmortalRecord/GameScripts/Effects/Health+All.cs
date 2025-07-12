@@ -3,7 +3,7 @@ class HealthAll : EffectBase
 {
     public int HealthValue;
 
-    public override void ApplyEffect(SoldierModel soldier)
+    public override void ApplyEffect(Soldiercontroller soldierController， soldierModel soldierModel)
     {
         // Apply the health value to the soldier
         soldier.Health *= HealthValue;

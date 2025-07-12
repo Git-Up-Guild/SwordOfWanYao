@@ -8,9 +8,9 @@ class DefLance : EffectBase
     [Header("防御力加成倍率（如1.5为+50%）")]
     public float DefMultiplier=1.6f;
 
-    public override void ApplyEffect(SoldierModel soldier)
+    public override void ApplyEffect(Soldiercontroller soldierController， soldierModel soldierModel)
     {
-        if (soldier.ID == SoldierTypeID)
+        if (soldierModel.ID == SoldierTypeID)
         {
             soldier.AttackPowerMutiplier *= DefMultiplier;
 

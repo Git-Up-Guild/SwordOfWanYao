@@ -6,7 +6,7 @@ public class DefAll : EffectBase
     [Header("全员防御力加成倍率（如1.5为+50%）")]
     public float defMultiplier = 1.1f;
 
-    public override void ApplyEffect(SoldierController soldier)
+    public override void ApplyEffect(Soldiercontroller soldierController， soldierModel soldierModel)
     {
         // 获取当前防御力
         float currentDef = soldier.m_model.Defense;

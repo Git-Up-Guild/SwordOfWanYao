@@ -8,9 +8,9 @@ class AtkLight : EffectBase
     [Header("攻击力加成倍率（如1.5为+50%）")]
     public float AtkValue=1.6f;
 
-    public override void ApplyEffect(SoldierModel soldier)
+    public override void ApplyEffect(Soldiercontroller soldierController， soldierModel soldierModel)
     {
-        if (soldier.ID == SoldierTypeID)
+        if (soldierModel.ID == SoldierTypeID)
         {
             soldier.AttackPowerMutiplier *= AtkValue;
 

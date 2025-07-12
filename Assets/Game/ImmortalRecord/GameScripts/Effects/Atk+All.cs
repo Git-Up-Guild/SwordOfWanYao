@@ -7,7 +7,7 @@ public class AtkAll : EffectBase
     [Header("全员攻击力加成倍率（如1.5为+50%）")]
     public float atkMultiplier = 1.1f;
     
-    public override void ApplyEffect(SoldierModel soldier)
+    public override void ApplyEffect(Soldiercontroller soldierController， soldierModel soldierModel)
     {
         // 乘算攻击力倍率
         soldier.AttackPowerMutiplier *= atkMultiplier;
