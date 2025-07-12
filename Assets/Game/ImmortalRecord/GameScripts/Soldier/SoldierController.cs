@@ -198,6 +198,4 @@ public class SoldierController : MonoBehaviour
                 break;
         }
     }
-
-    public int ID => m_model.ID;
 }
