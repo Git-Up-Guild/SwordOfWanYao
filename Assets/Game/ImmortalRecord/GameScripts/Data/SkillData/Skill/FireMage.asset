@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d32791ddcf4348d5bfc00177526772c, type: 3}
+  m_Name: FireMage
+  m_EditorClassIdentifier: 
+  skillName: FireMage
+  isAutoReleased: 1
+  effects: []
+  category: 2
+  AOEPrefab: {fileID: 8692471453448671097, guid: 354c3f8f326a84c2c8587e757b005090,
+    type: 3}
+  AOEShape: 1
+  scaleMultiplier: 1
+  duration: 5
+  damagePerTick: 3
+  tickInterval: 1
+  isAttachedToFollower: 0
