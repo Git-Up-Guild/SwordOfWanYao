@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using SwordOfWanYao;
+
 [CreateAssetMenu(menuName = "Buffmanager", order = 100)]
 public class BuffManager : ScriptableObject
 {
@@ -26,11 +28,11 @@ public class BuffManager : ScriptableObject
     }
     //应用增益
 
-    public void ApplyAllBuffs(SoldierController soldierController, SoldierModel soldierModel)
+    public void ApplyAllBuffs(SoldierController soldierController,SoldierModel soldierModel)
     {
         foreach (var buff in activeBuffs)
         {
-            buff.ApplyEffect(soldierController, soldierModel);
+            buff.ApplyEffect(soldierController,soldierModel);
         }
     }
 }
