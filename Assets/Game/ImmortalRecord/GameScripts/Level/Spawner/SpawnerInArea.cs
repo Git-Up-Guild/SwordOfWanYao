@@ -1,19 +1,24 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public enum SpawnAreaType { Rectangle, Circle }
 
 public class SpawnerInArea : MonoBehaviour
 {
 
-    [SerializeField] SpawnAreaType m_areaType;
-    [SerializeField] private GameObject m_soldierPrefab;
+    [Header("生成区域配置")]
+    [SerializeField] private SpawnAreaType m_areaType;
     [SerializeField] private BoxCollider2D m_boxArea;
     [SerializeField] private CircleCollider2D m_circleArea;
+
+
+    [Header("生成参数")]
+    [SerializeField] private List<GameObject> m_soldierPrefabs; // 士兵预制体列表
     [SerializeField] private float m_spawnInterval = 0.5f;
     [SerializeField] private float m_spawnMaxCount = 4;
-    [SerializeField] private float m_spawnCurCount = 0;
-    
+    private float m_spawnCurCount = 0;
+
     private Coroutine m_spawnCoroutine;
 
     private void OnEnable()
@@ -57,13 +62,17 @@ public class SpawnerInArea : MonoBehaviour
 
     public void Spawn()
     {
+
+        int index = Random.Range(0, m_soldierPrefabs.Count);
+        GameObject selectedPrefab = m_soldierPrefabs[index];
+
         Vector2 pos = GetRandomPointInArea();
-        InstantiateSoldier(pos);
+        InstantiateSoldier(selectedPrefab, pos);
     }
 
-    private void InstantiateSoldier(Vector2 pos)
+    private void InstantiateSoldier(GameObject prefab, Vector2 pos)
     {
-        GameObject obj = Instantiate(m_soldierPrefab, pos, Quaternion.identity);
+        GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
         SoldierController controller = obj.GetComponent<SoldierController>();
         controller.Init();
         
