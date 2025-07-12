@@ -36,13 +36,11 @@ public class SoldierController : MonoBehaviour
         {
 
             m_model.Health = m_model.MaxHealth;
-
         }
         else
         {
 
             m_model.Health += amount;
-
         }
 
     }
@@ -201,4 +199,5 @@ public class SoldierController : MonoBehaviour
         }
     }
 
+    public int ID => m_model.ID;
 }

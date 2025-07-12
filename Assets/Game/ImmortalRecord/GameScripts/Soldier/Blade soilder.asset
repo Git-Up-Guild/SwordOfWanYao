@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81d088da3873d483ca08c89da7c07e07, type: 3}
-  m_Name: knife soilder
+  m_Name: Blade soilder
   m_EditorClassIdentifier: 
   ID: 0
   displayName: 
@@ -19,11 +19,12 @@ MonoBehaviour:
   rarity: 0
   camp: 0
   attributes:
-    maxHealth: 0
+    maxHealth: 1000
     attackPowerMutiplier: 1
-    defense: 0
-    moveSpeed: 0
+    defense: 10
+    moveSpeed: 10
     lockOnRange: 0
     attackSpeed: 0
     attackFrequency: 0
-  skills: []
+  skills:
+  - {fileID: 0}

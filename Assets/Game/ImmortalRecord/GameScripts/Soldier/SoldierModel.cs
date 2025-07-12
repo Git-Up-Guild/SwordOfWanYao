@@ -14,7 +14,6 @@ public enum SoldierAttributeType
     AttackRange,
     LockOnRange,
     AttatckFrequency
-
 }
 
 public enum SoldierStateType

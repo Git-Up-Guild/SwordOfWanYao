@@ -1,9 +1,9 @@
 using UnityEngine;
-[CreateAssetMenu(menuName = "Buff/ShootTimesFire", order = 103)]
-class ShootTimesFire : EffectBase
+[CreateAssetMenu(menuName = "Buff/ShootTimesBlade", order = 103)]
+class ShootTimesBlade : EffectBase
 {
     [Header("兵种类型ID")]
-    public int SoldierTypeID=4;
+    public int SoldierTypeID=1;
 
     [Header("攻击频率增速（如1为+1次攻击）")]
     public int PlusTime=1;
