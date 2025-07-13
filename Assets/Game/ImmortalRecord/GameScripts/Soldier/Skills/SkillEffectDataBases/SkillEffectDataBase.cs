@@ -11,7 +11,7 @@ public enum EffectType
 {
     Explosion,
     Split,
-    Freeze,
     Wind,
     LightBeamRotation
+
 }
