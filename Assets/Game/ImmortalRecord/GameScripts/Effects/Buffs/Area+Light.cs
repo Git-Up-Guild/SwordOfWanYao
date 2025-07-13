@@ -1,3 +1,11 @@
 using UnityEngine;
-[CreateAssetMenu(menuName = "Buff/AreaFire", order = 102)]
-class AreaFire : EffectBase
+[CreateAssetMenu(menuName = "Buff/AreaLight", order = 102)]
+class AreaLight : EffectBase
+{
+    
+    public override void ApplyEffect(SoldierController soldierController, SoldierModel soldierModel)
+    {
+        
+    }
+
+}

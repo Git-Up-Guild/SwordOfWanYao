@@ -1,9 +1,13 @@
 using UnityEngine;
-[CreateAssetMenu(menuName = "Buff/AreaFire", order = 102)]
-class AreaFire : EffectBase
+[CreateAssetMenu(menuName = "Buff/ArrowPenetrade", order = 102)]
+class ArrowPenetrade : EffectBase
 {
     [Header("兵种类型ID")]
     public int SoldierTypeID = 3;
 
     
+    public override void ApplyEffect(SoldierController soldierController, SoldierModel soldierModel)
+    {
+        
+    }
 }
