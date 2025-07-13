@@ -50,7 +50,8 @@ public class SoldierController : MonoBehaviour
     public void SetMoveSpeed(float speed) => m_model.MoveSpeed = Mathf.Max(0, speed);
     public void SetDefense(float defense) => m_model.Defense = Mathf.Max(0, defense);
     public void SetAttackSpeed(float speed) => m_model.AttackSpeed = Mathf.Max(0, speed);
-    public void SetAttackFrequency(float freq) => m_model.AttackFrequency = Mathf.Max(0, freq);
+    public void SetAttackFrequency(int freq) => m_model.AttackFrequency = Mathf.Max(0, freq);
+    public void SetProjectileCount(int cnt) => m_model.ProjectileCount = Mathf.Max(0, cnt);
     public void SetLockOnRange(float range) => m_model.LockOnRange = Mathf.Max(0, range);
     public void SetAttackPowerMultiplier(float mul) => m_model.AttackPowerMutiplier = Mathf.Max(0, mul);
     public void SetMaxHealth(float max)
@@ -96,7 +97,6 @@ public class SoldierController : MonoBehaviour
     public void SetIsTargetingAtBase(bool val) => m_model.IsTargetingAtBase = val;
     public void SetIsAttacking(bool val) => m_model.IsAttacking = val;
     public void SetIsFreezing(bool val) => m_model.IsFreezing = val;
-
 
     //状态切换
     public void ConvertState(SoldierStateType targetState, bool value)

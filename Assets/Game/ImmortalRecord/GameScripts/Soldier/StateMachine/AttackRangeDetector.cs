@@ -10,7 +10,7 @@ public class AttackRangeDetector : MonoBehaviour
 
     private SoldierModel m_model;
     private string m_enemyTag;
-    private readonly List<Transform> m_targetsInRange = new List<Transform>();
+    private List<Transform> m_targetsInRange;
     // 用来记录已订阅的模型，方便退出时退订
     private readonly Dictionary<SoldierModel, Action<IEventData>> m_deathCallbacks
         = new Dictionary<SoldierModel, Action<IEventData>>();
@@ -23,6 +23,7 @@ public class AttackRangeDetector : MonoBehaviour
     public void Init()
     {
         m_model = GetComponentInParent<SoldierModel>();
+        m_targetsInRange = m_model.AttackTargetObjectInRange;
 
         m_enemyTag = (m_model.Camp == SoldierCamp.Ally) ? "Enemy" : "Ally";
 

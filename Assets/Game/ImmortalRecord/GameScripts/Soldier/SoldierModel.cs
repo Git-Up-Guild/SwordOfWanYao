@@ -14,7 +14,9 @@ public enum SoldierAttributeType
     AttackSpeed,
     AttackRange,
     LockOnRange,
-    AttatckFrequency
+    AttatckFrequency,
+    ProjectileCount,
+
 }
 
 public enum SoldierStateType
@@ -35,6 +37,7 @@ public enum SoldierTargtes
     AttackTargetDetector,
     AttackRangeDetector,
     AttackTargetObject,
+    AttackTargetObjectInRange,
     SkillCastPoint,
 
 }
@@ -53,12 +56,14 @@ public class SoldierModel : MonoBehaviour
     [SerializeField] private float m_attackSpeed;
     [SerializeField] private float m_attackRange;
     [SerializeField] private float m_lockOnRange;
-    [SerializeField] private float m_attackFrequency;
+    [SerializeField] private int m_attackFrequency;
+    [SerializeField] private int m_projectileCount;
 
     [SerializeField] Transform m_moveTargetIndicator;
     [SerializeField] Transform m_attackTargetDetector;
     [SerializeField] Transform m_attackRangeDetector;
     [SerializeField] Transform m_attackTargetObject;
+    [SerializeField] List<Transform> m_attackTargetObjectInRange;
     [SerializeField] Transform m_skillCastPivot;
 
 
@@ -86,132 +91,131 @@ public class SoldierModel : MonoBehaviour
     {
         get => m_id;
         set => m_id = value;
-
     }
+
     public string DisplayName
     {
         get => m_displayName;
         set => m_displayName = value;
-
     }
+
     public float MaxHealth
     {
         get => m_maxHealth;
         set => m_maxHealth = value;
-
     }
+
     public SoldierRarity Rarity
     {
         get => m_rarity;
         set => m_rarity = value;
-
     }
+
     public SoldierCamp Camp
     {
         get => m_camp;
         set => m_camp = value;
-
     }
 
     public SoldierType Type
     {
         get => m_type;
         set => m_type = value;
-
     }
 
     public float MoveSpeed
     {
         get => m_moveSpeed;
         set => m_moveSpeed = value;
-
     }
 
     public float Defense
     {
         get => m_defense;
         set => m_defense = value;
-
     }
 
     public float AttackPowerMutiplier
     {
         get => m_attackPowerMutiplier;
         set => m_attackPowerMutiplier = value;
-
     }
 
     public float AttackSpeed
     {
         get => m_attackSpeed;
         set => m_attackSpeed = value;
-
     }
 
     public float AttackRange
     {
         get => m_attackRange;
         set => m_attackRange = value;
-
     }
 
     public float LockOnRange
     {
         get => m_lockOnRange;
         set => m_lockOnRange = value;
-
     }
 
-    public float AttackFrequency
+    public int AttackFrequency
     {
         get => m_attackFrequency;
         set => m_attackFrequency = value;
+    }
 
+    public int ProjectileCount
+    {
+        get => m_projectileCount;
+        set => m_projectileCount = value;
     }
 
     public Transform MoveTargetIndicator
     {
         get => m_moveTargetIndicator;
         set => m_moveTargetIndicator = value;
-
     }
+
     public Transform AttackTargetDetector
     {
         get => m_attackTargetDetector;
         set => m_attackTargetDetector = value;
-
     }
     public Transform AttackRangeDetector
     {
         get => m_attackRangeDetector;
         set => m_attackRangeDetector = value;
-
     }
+
     public Transform AttackTargetObject
     {
         get => m_attackTargetObject;
         set => m_attackTargetObject = value;
-
     }
+
+    public List<Transform> AttackTargetObjectInRange
+    {
+        get => m_attackTargetObjectInRange;
+        set => m_attackTargetObjectInRange = value;
+    }
+
     public Transform SkillCastPivot
     {
         get => m_skillCastPivot;
         set => m_skillCastPivot = value;
-
     }
 
     public List<SoldierSkillDataBase> LocalSkillDataList
     {
         get => m_localSkillDataList;
         set => m_localSkillDataList = value;
-
     }
 
     public List<SkillBase> RuntimeSkillList
     {
         get => m_runtimeSkillList;
         set => m_runtimeSkillList = value;
-
     }
 
     public float Health
@@ -465,6 +469,7 @@ public class SoldierModel : MonoBehaviour
         AttackPowerMutiplier = m_data.attributes.attackPowerMutiplier;
         LockOnRange = m_data.attributes.lockOnRange;
         AttackRange = m_data.attributes.attackRange;
+        ProjectileCount = m_data.attributes.projectileCount;
 
         //信息
         ID = m_data.ID;
@@ -472,7 +477,7 @@ public class SoldierModel : MonoBehaviour
         DisplayName = m_data.displayName;
         m_type = m_data.soldierType;
 
-        //技能与特效 ToDo
+        //技能
         m_localSkillDataList = new List<SoldierSkillDataBase>(m_data.skills);
 
         m_runtimeSkillList = new List<SkillBase>();
@@ -481,6 +486,9 @@ public class SoldierModel : MonoBehaviour
             var skill = SoldierSkillFactory.Create(this, data);
             m_runtimeSkillList.Add(skill);
         }
+
+        //目标对象
+        AttackTargetObjectInRange = new List<Transform>();
 
     }
 

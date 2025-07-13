@@ -84,6 +84,10 @@ public class SoldierAttributes
     [Header("攻击次数")]
     public int attackFrequency;
 
+    [Header("(远程)弹道数量")]
+    public int projectileCount;
+
+
 }
 #endregion
 
