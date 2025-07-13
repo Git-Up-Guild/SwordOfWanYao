@@ -49,15 +49,8 @@ public class SoldierModel : MonoBehaviour
     [SerializeField] private SoldierRarity m_rarity;
     [SerializeField] private SoldierCamp m_camp;
     [SerializeField] private SoldierType m_type;
-    [SerializeField] private float m_maxHealth;
-    [SerializeField] private float m_attackPowerMutiplier;
-    [SerializeField] private float m_moveSpeed;
-    [SerializeField] private float m_defense;
-    [SerializeField] private float m_attackSpeed;
-    [SerializeField] private float m_attackRange;
-    [SerializeField] private float m_lockOnRange;
-    [SerializeField] private int m_attackFrequency;
-    [SerializeField] private int m_projectileCount;
+
+    private SoldierAttributeSO m_attributes; // 运行士兵属性时共享副本
 
     [SerializeField] Transform m_moveTargetIndicator;
     [SerializeField] Transform m_attackTargetDetector;
@@ -86,7 +79,7 @@ public class SoldierModel : MonoBehaviour
     //初始化完成标志
     public bool IsInitialized { get; private set; }
 
-    //属性访问器
+    // 基本信息字段（不共享）
     public int ID
     {
         get => m_id;
@@ -97,12 +90,6 @@ public class SoldierModel : MonoBehaviour
     {
         get => m_displayName;
         set => m_displayName = value;
-    }
-
-    public float MaxHealth
-    {
-        get => m_maxHealth;
-        set => m_maxHealth = value;
     }
 
     public SoldierRarity Rarity
@@ -123,52 +110,60 @@ public class SoldierModel : MonoBehaviour
         set => m_type = value;
     }
 
-    public float MoveSpeed
-    {
-        get => m_moveSpeed;
-        set => m_moveSpeed = value;
-    }
+    // 运行时属性（共享副本）
 
-    public float Defense
+    public float MaxHealth
     {
-        get => m_defense;
-        set => m_defense = value;
+        get => m_attributes.maxHealth;
+        set => m_attributes.maxHealth = value;
     }
 
     public float AttackPowerMutiplier
     {
-        get => m_attackPowerMutiplier;
-        set => m_attackPowerMutiplier = value;
+        get => m_attributes.attackPowerMutiplier;
+        set => m_attributes.attackPowerMutiplier = value;
+    }
+
+    public float MoveSpeed
+    {
+        get => m_attributes.moveSpeed;
+        set => m_attributes.moveSpeed = value;
+    }
+
+    public float Defense
+    {
+        get => m_attributes.defense;
+        set => m_attributes.defense = value;
     }
 
     public float AttackSpeed
     {
-        get => m_attackSpeed;
-        set => m_attackSpeed = value;
+        get => m_attributes.attackSpeed;
+        set => m_attributes.attackSpeed = value;
     }
 
     public float AttackRange
     {
-        get => m_attackRange;
-        set => m_attackRange = value;
+        get => m_attributes.attackRange;
+        set => m_attributes.attackRange = value;
     }
 
     public float LockOnRange
     {
-        get => m_lockOnRange;
-        set => m_lockOnRange = value;
+        get => m_attributes.lockOnRange;
+        set => m_attributes.lockOnRange = value;
     }
 
     public int AttackFrequency
     {
-        get => m_attackFrequency;
-        set => m_attackFrequency = value;
+        get => m_attributes.attackFrequency;
+        set => m_attributes.attackFrequency = value;
     }
 
     public int ProjectileCount
     {
-        get => m_projectileCount;
-        set => m_projectileCount = value;
+        get => m_attributes.projectileCount;
+        set => m_attributes.projectileCount = value;
     }
 
     public Transform MoveTargetIndicator
@@ -227,7 +222,7 @@ public class SoldierModel : MonoBehaviour
         {
 
             var previous = m_currentHealth;
-            m_currentHealth = Mathf.Clamp(value, 0, m_maxHealth);
+            m_currentHealth = Mathf.Clamp(value, 0, MaxHealth);
 
             EventManager.Instance.TriggerEvent(
                 SoldierEventNames.HealthChanged,
@@ -457,28 +452,19 @@ public class SoldierModel : MonoBehaviour
 
     private void InitData()
     {
-        //基础设置
-        Camp = m_data.camp;
-        MaxHealth = m_data.attributes.maxHealth;
-
-        //核心属性
-        MoveSpeed = m_data.attributes.moveSpeed;
-        Defense = m_data.attributes.defense;
-        AttackSpeed = m_data.attributes.attackSpeed;
-        AttackFrequency = m_data.attributes.attackFrequency;
-        AttackPowerMutiplier = m_data.attributes.attackPowerMutiplier;
-        LockOnRange = m_data.attributes.lockOnRange;
-        AttackRange = m_data.attributes.attackRange;
-        ProjectileCount = m_data.attributes.projectileCount;
-
-        //信息
+    
+        //基础信息
         ID = m_data.ID;
         Rarity = m_data.rarity;
         DisplayName = m_data.displayName;
+        Camp = m_data.camp;
         m_type = m_data.soldierType;
 
-        //技能
-        m_localSkillDataList = new List<SoldierSkillDataBase>(m_data.skills);
+        //运行时士兵属性
+        m_attributes = RuntimeSoldierAttributeHub.Instance.Get(m_data.soldierType);
+
+        // 技能数据：共享副本
+        m_localSkillDataList = RuntimeSoldierSkillHub.Instance.GetSkills(m_type);
 
         m_runtimeSkillList = new List<SkillBase>();
         foreach (var data in m_localSkillDataList)
@@ -495,7 +481,7 @@ public class SoldierModel : MonoBehaviour
     private void InitAttributes()
     {
 
-        m_currentHealth = m_maxHealth;
+        m_currentHealth = MaxHealth;
         transform.localScale *= m_scaleSize;
 
     }
