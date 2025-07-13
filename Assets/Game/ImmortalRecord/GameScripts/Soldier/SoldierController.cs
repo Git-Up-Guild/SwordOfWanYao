@@ -1,5 +1,8 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System;
 
 public class SoldierController : MonoBehaviour
 {
@@ -44,22 +47,7 @@ public class SoldierController : MonoBehaviour
         }
 
     }
-
-    //属性设置器
-
-    public void SetMoveSpeed(float speed) => m_model.MoveSpeed = Mathf.Max(0, speed);
-    public void SetDefense(float defense) => m_model.Defense = Mathf.Max(0, defense);
-    public void SetAttackSpeed(float speed) => m_model.AttackSpeed = Mathf.Max(0, speed);
-    public void SetAttackFrequency(int freq) => m_model.AttackFrequency = Mathf.Max(0, freq);
-    public void SetProjectileCount(int cnt) => m_model.ProjectileCount = Mathf.Max(0, cnt);
-    public void SetLockOnRange(float range) => m_model.LockOnRange = Mathf.Max(0, range);
-    public void SetAttackPowerMultiplier(float mul) => m_model.AttackPowerMutiplier = Mathf.Max(0, mul);
-    public void SetMaxHealth(float max)
-    {
-        m_model.MaxHealth = Mathf.Max(1, max);
-        m_model.Health = Mathf.Min(m_model.Health, m_model.MaxHealth);
-    }
-
+        
     public void EnableInvincibleForDuration(float duration)
     {
 
