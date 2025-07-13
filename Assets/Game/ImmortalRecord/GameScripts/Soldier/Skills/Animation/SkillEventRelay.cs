@@ -11,9 +11,6 @@ public class SkillEventRelay : MonoBehaviour
 
     public void TriggerEvent(string eventName)
     {
-
-        CustomLogger.LogWarning("Shoot");
-
         if (receiver == null) 
             CustomLogger.LogWarning("Can't find receiver");
 
