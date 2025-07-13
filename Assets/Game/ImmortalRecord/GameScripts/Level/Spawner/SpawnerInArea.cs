@@ -3,6 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 
 public enum SpawnAreaType { Rectangle, Circle }
+public enum SpawnMode
+{
+    ByProbabilityAndLimit,  // 原逻辑
+    SpawnAllThenStop        // 刷新所有士兵后停止
+}
 
 public class SpawnerInArea : MonoBehaviour
 {
@@ -11,6 +16,9 @@ public class SpawnerInArea : MonoBehaviour
     [SerializeField] private SpawnAreaType m_areaType;
     [SerializeField] private BoxCollider2D m_boxArea;
     [SerializeField] private CircleCollider2D m_circleArea;
+
+    [Header("生成模式")]
+    [SerializeField] private SpawnMode m_spawnMode = SpawnMode.ByProbabilityAndLimit;
 
 
     [Header("生成参数")]
@@ -50,13 +58,23 @@ public class SpawnerInArea : MonoBehaviour
     }
     private IEnumerator SpawnRoutine()
     {
-        while (m_spawnCurCount < m_spawnMaxCount)
+        if (m_spawnMode == SpawnMode.SpawnAllThenStop)
         {
-            Spawn();
-             m_spawnCurCount++;
-
-            yield return new WaitForSeconds(m_spawnInterval); 
-
+            foreach (var prefab in m_soldierPrefabs)
+            {
+                Vector2 pos = GetRandomPointInArea();
+                InstantiateSoldier(prefab, pos);
+                yield return new WaitForSeconds(m_spawnInterval);
+            }
+        }
+        else
+        {
+            while (m_spawnCurCount < m_spawnMaxCount)
+            {
+                Spawn();
+                m_spawnCurCount++;
+                yield return new WaitForSeconds(m_spawnInterval);
+            }
         }
     }
 
