@@ -13,6 +13,18 @@ public class AreaSkillData : SoldierSkillDataBase
     public int damagePerTick;
     public float tickInterval;
     public bool isAttachedToFollower;
+
+    [Header("风眼效果设置")]
+    public bool canPull;
+    public float pullStrength;
+    public float moveSpeed;
+
+    [Header("光柱旋转效果设置")]
+    public bool canRotate;
+    public float angle;
+    public float rotatingSpeed;
+    public float rotatingInterval;
+
 }
 
 public enum AOEShape
