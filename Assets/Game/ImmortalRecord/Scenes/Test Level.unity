@@ -226,13 +226,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_areaType: 0
-  m_soldierPrefab: {fileID: 8038584652480008810, guid: 531e2afdcb0404fc382764e59ded2598,
-    type: 3}
   m_boxArea: {fileID: 223511777}
   m_circleArea: {fileID: 0}
-  m_spawnInterval: 0.5
-  m_spawnMaxCount: 10
-  m_spawnCurCount: 0
+  m_spawnMode: 1
+  m_soldierPrefabs:
+  - {fileID: 8038584652480008810, guid: 3c3dc8e491bc34fa4a43daa48622993e, type: 3}
+  - {fileID: 8038584652480008810, guid: 5150c090d455d443c955ff27dcac87ce, type: 3}
+  - {fileID: 8038584652480008810, guid: 531e2afdcb0404fc382764e59ded2598, type: 3}
+  - {fileID: 8038584652480008810, guid: f259edc5cd0dc42509e0baa1c0df824d, type: 3}
+  m_spawnInterval: 1
+  m_spawnMaxCount: 5
 --- !u!212 &223511779
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -294,7 +297,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223511776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: -47, z: 5791.0386}
+  m_LocalPosition: {x: -0.3, y: -47, z: 0}
   m_LocalScale: {x: 52.034714, y: 3.952025, z: 1.0265}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -465,13 +468,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_areaType: 0
-  m_soldierPrefab: {fileID: 8038584652480008810, guid: 00fb6624d1c9b47e182548dea36e493e,
-    type: 3}
   m_boxArea: {fileID: 1085245128}
   m_circleArea: {fileID: 0}
-  m_spawnInterval: 0.5
-  m_spawnMaxCount: 10
-  m_spawnCurCount: 0
+  m_spawnMode: 0
+  m_soldierPrefabs:
+  - {fileID: 8038584652480008810, guid: 00fb6624d1c9b47e182548dea36e493e, type: 3}
+  m_spawnInterval: 0.01
+  m_spawnMaxCount: 50
 --- !u!212 &1085245130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -533,7 +536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085245127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 11.4, z: 5791.0386}
+  m_LocalPosition: {x: 0.5, y: 11.4, z: 0}
   m_LocalScale: {x: 52.565678, y: 3.952025, z: 1.0265}
   m_ConstrainProportionsScale: 0
   m_Children: []

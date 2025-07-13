@@ -101,7 +101,7 @@ MonoBehaviour:
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
-  m_text: <sprite name="FlowText_6">-998999
+  m_text: -998999
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05342c26790bd6c4db48c7bbd9b39ea3, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: c35120c1c3d801140ac2ff2f372e4d06, type: 2}

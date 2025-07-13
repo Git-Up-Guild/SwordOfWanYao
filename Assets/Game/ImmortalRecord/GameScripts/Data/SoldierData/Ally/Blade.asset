@@ -22,11 +22,12 @@ MonoBehaviour:
   attributes:
     maxHealth: 100
     attackPowerMutiplier: 1
-    defense: 5
+    defense: 2
     moveSpeed: 5
     lockOnRange: 20
     attackRange: 3
     attackSpeed: 1
-    attackFrequency: 1
+    attackFrequency: 3
+    projectileCount: 0
   skills:
   - {fileID: 11400000, guid: b302b009034364d42ae5debfbbfbfc06, type: 2}

@@ -24,9 +24,10 @@ MonoBehaviour:
     attackPowerMutiplier: 1
     defense: 0
     moveSpeed: 3
-    lockOnRange: 40
-    attackRange: 20
+    lockOnRange: 50
+    attackRange: 30
     attackSpeed: 1
-    attackFrequency: 1
+    attackFrequency: 3
+    projectileCount: 3
   skills:
   - {fileID: 11400000, guid: 7d6170d9b4b0a4ad3b08ce5863ae7c2f, type: 2}

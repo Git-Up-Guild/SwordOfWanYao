@@ -31,13 +31,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.15, y: 1.15, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4125769474047091947}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 237.5, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 237.5, y: -20.699999}
   m_SizeDelta: {x: 720, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8052146046305669482
@@ -63,14 +64,13 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
   m_text: "\u7CFB\u7EDF\u63D0\u793A"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 13ce1973385adeb49896c8af87eed999, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 9a7838025e1708e4e967ffef1a3a8108, type: 2}
+  m_sharedMaterial: {fileID: -4789359954491106346, guid: 13ce1973385adeb49896c8af87eed999,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -182,6 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9fc5ff99d54d2489b507a59d84ad9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSupportCanvasGroupAlpha: 0
+  animNodes: []
   textMeshPro: {fileID: 7595645686499089942}
 --- !u!1 &6623568104927393054
 GameObject:
@@ -211,6 +213,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6992184395955657275}
   m_Father: {fileID: 0}
@@ -254,6 +257,7 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 1
+  m_ReverseArrangement: 0
   m_ContentSizeFiltter:
     m_HorizontalFit: 0
     m_VerticalFit: 2

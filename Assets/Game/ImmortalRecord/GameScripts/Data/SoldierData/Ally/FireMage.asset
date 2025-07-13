@@ -27,6 +27,7 @@ MonoBehaviour:
     lockOnRange: 40
     attackRange: 20
     attackSpeed: 0.2
-    attackFrequency: 1
+    attackFrequency: 3
+    projectileCount: 3
   skills:
   - {fileID: 11400000, guid: 081649364a24b481c8e377c9a55bf6b1, type: 2}
