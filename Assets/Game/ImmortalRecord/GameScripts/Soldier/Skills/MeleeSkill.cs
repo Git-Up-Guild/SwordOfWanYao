@@ -1,28 +1,54 @@
 using UnityEngine;
+using System.Collections;
 
 public class MeleeSkill : SkillBase, IAnimationEventReceiver
 {
-    private Animator animator;
+    private Animator m_animator;
     private SoldierModel m_model;
     private MeleeSkillData m_data;
+    private MonoBehaviour m_coroutineHost;
+
+    private int m_remainingAttacks;
+    private bool m_isPerformingAnimation;
 
     public MeleeSkill(SoldierModel model, MeleeSkillData data) : base(model, data)
     {
         m_model = model;
         m_data = data;
 
-        animator = model.GetComponentInChildren<Animator>();
-        InitRelay(animator);
-    
+        m_animator = model.GetComponentInChildren<Animator>();
+        m_coroutineHost = model.GetComponent<MonoBehaviour>();
+        InitRelay(m_animator);
+
     }
 
     public override void Cast(Transform target = null, Vector3 position = default)
     {
-        if (!m_model.IsAttacking || m_model.IsDead || m_model.IsFreezing)
+        if (!m_model.IsAttacking || m_model.IsDead || m_model.IsFreezing || m_isPerformingAnimation)
             return;
 
-        animator.SetTrigger("TriggerAttack");
+        m_isPerformingAnimation = true;
+        m_remainingAttacks = m_model.AttackFrequency;
+        m_coroutineHost.StartCoroutine(PerformMultiAttack());
 
+        m_isPerformingAnimation = false;
+
+    }
+
+    private IEnumerator PerformMultiAttack()
+    {
+        m_animator.speed = m_model.AttackFrequency;
+
+        while (m_remainingAttacks > 0)
+        {
+            m_animator.SetTrigger("TriggerAttack");
+            yield return new WaitUntil(() => !m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack")); // 等动画退出攻击状态
+            yield return new WaitForSeconds(0.05f);
+            m_remainingAttacks--;
+        }
+
+        m_animator.speed = 1f;
+        m_isPerformingAnimation = false;
     }
 
     // 动画事件中调用
