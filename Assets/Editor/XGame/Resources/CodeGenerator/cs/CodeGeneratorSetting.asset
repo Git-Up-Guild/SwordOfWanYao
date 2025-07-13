@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 1403982028, guid: 006aeba06c6f4854895fe0d7ef6c8c82, type: 3}
   m_Name: CodeGeneratorSetting
   m_EditorClassIdentifier: 
-  authorName: GUG
+  authorName: LIN
   projectBaseDir: Game
-  projectName: ImmortalRecord
+  projectName: UITestDemo
   codeBaseDir: GameScripts
   resourceBaseDir: GameResources
   globalNameSpace: GameScripts
-  projectNameSpace: IR
+  projectNameSpace: UITsetDemo
   codeTempleteFileDir: cs_templates
-  uiFrameworkSettingData: {fileID: 11400000, guid: df278759c69b2481092d827ff52975eb,
+  uiFrameworkSettingData: {fileID: 11400000, guid: a92e9473c50511541a53c72b1622722c,
     type: 2}
   resolutionWidth: 1080
   resolutionHeight: 2340

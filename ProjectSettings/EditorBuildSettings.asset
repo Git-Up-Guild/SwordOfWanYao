@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/RogueLike/GameResources/Scene/RouguleScene.unity
     guid: 257dad39181c43549b26f945f4d4141b
+  - enabled: 1
+    path: Assets/Game/ImmortalRecord/Scenes/UI1.unity
+    guid: 2ac30f5c250730b4ea113a1203133917
   m_configObjects: {}
