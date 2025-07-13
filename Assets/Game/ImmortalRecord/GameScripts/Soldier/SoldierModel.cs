@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public enum SoldierAttributeType
 {
@@ -14,7 +15,6 @@ public enum SoldierAttributeType
     AttackRange,
     LockOnRange,
     AttatckFrequency
-
 }
 
 public enum SoldierStateType
@@ -35,6 +35,7 @@ public enum SoldierTargtes
     AttackTargetDetector,
     AttackRangeDetector,
     AttackTargetObject,
+    SkillCastPoint,
 
 }
 
@@ -44,6 +45,7 @@ public class SoldierModel : MonoBehaviour
     [SerializeField] private string m_displayName;
     [SerializeField] private SoldierRarity m_rarity;
     [SerializeField] private SoldierCamp m_camp;
+    [SerializeField] private SoldierType m_type;
     [SerializeField] private float m_maxHealth;
     [SerializeField] private float m_attackPowerMutiplier;
     [SerializeField] private float m_moveSpeed;
@@ -57,8 +59,12 @@ public class SoldierModel : MonoBehaviour
     [SerializeField] Transform m_attackTargetDetector;
     [SerializeField] Transform m_attackRangeDetector;
     [SerializeField] Transform m_attackTargetObject;
+    [SerializeField] Transform m_skillCastPivot;
+
 
     [SerializeField] private float m_currentHealth;
+    private List<SoldierSkillDataBase> m_localSkillDataList;
+    private List<SkillBase> m_runtimeSkillList;
 
     [SerializeField] private bool m_isDead;
     private bool m_deathEventTriggered;
@@ -104,6 +110,13 @@ public class SoldierModel : MonoBehaviour
     {
         get => m_camp;
         set => m_camp = value;
+
+    }
+
+    public SoldierType Type
+    {
+        get => m_type;
+        set => m_type = value;
 
     }
 
@@ -180,12 +193,32 @@ public class SoldierModel : MonoBehaviour
         set => m_attackTargetObject = value;
 
     }
+    public Transform SkillCastPivot
+    {
+        get => m_skillCastPivot;
+        set => m_skillCastPivot = value;
+
+    }
+
+    public List<SoldierSkillDataBase> LocalSkillDataList
+    {
+        get => m_localSkillDataList;
+        set => m_localSkillDataList = value;
+
+    }
+
+    public List<SkillBase> RuntimeSkillList
+    {
+        get => m_runtimeSkillList;
+        set => m_runtimeSkillList = value;
+
+    }
 
     public float Health
     {
 
         get => m_currentHealth;
-
+        
         set
         {
 
@@ -437,11 +470,16 @@ public class SoldierModel : MonoBehaviour
         ID = m_data.ID;
         Rarity = m_data.rarity;
         DisplayName = m_data.displayName;
+        m_type = m_data.soldierType;
 
         //技能与特效 ToDo
-        foreach (var skillData in m_data.skills)
-        {
+        m_localSkillDataList = new List<SoldierSkillDataBase>(m_data.skills);
 
+        m_runtimeSkillList = new List<SkillBase>();
+        foreach (var data in m_localSkillDataList)
+        {
+            var skill = SoldierSkillFactory.Create(this, data);
+            m_runtimeSkillList.Add(skill);
         }
 
     }

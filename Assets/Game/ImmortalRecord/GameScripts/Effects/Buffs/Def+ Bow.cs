@@ -1,0 +1,22 @@
+using UnityEngine;
+[CreateAssetMenu(menuName = "Buff/DefBow", order = 103)]
+class DefBow : EffectBase
+{
+    [Header("兵种类型ID")]
+    public int SoldierTypeID=3;
+
+    [Header("防御力加成倍率（如1.5为+50%）")]
+    public float DefMultiplier=1.6f;
+
+    public override void ApplyEffect(SoldierController soldierController, SoldierModel soldierModel)
+    {
+        if (soldierModel.ID == SoldierTypeID)
+        {
+            soldierModel.AttackPowerMutiplier *= DefMultiplier;
+
+            Debug.Log($"Applied AtkBlade effect: {DefMultiplier} to {soldierModel.name}");
+        
+        }
+        
+    }
+}

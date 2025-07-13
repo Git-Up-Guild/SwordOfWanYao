@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class SoldierStateMachine : MonoBehaviour
 {
@@ -14,10 +15,6 @@ public class SoldierStateMachine : MonoBehaviour
 
     // 上一次锁定的追踪目标
     private Transform m_lastTrackedTarget;
-
-    //检查间隔
-    private float targetCheckInterval = 0.2f;
-    private float lastCheckTime;
 
     private void Awake()
     {
@@ -45,6 +42,8 @@ public class SoldierStateMachine : MonoBehaviour
         m_attackRangeDetector.OnEnemyEnter += HandleEnterAttackRange;
         m_attackRangeDetector.OnEnemyExit += HandleExitAttackRange;
 
+        EventManager.Instance.Subscribe<IEventData>(SoldierEventNames.Died, m_model, _ => HandleDeath());
+
     }
     private void OnDisable()
     {
@@ -55,24 +54,23 @@ public class SoldierStateMachine : MonoBehaviour
         m_attackDetector.OnEnemyEnter -= HandleEnemyEnterDetection;
         m_attackDetector.OnEnemyExit -= HandleEnemyExitDetection;
 
+        if (EventManager.Instance != null)
+            EventManager.Instance.Unsubscribe<IEventData>(SoldierEventNames.Died, m_model, _ => HandleDeath());
+
     }
 
     private void Update()
     {
         if (m_model.IsDead) return;
 
-        if (Time.time - lastCheckTime > targetCheckInterval)
-        {
-            CheckIfTargetIsNearest();
-            lastCheckTime = Time.time;
-        }
-
+        CheckIfTargetIsNearest();
+        
     }
 
     private void CheckIfTargetIsNearest()
     {
-        
-        if (m_model.IsLockingOnEnemy && !m_model.IsAttacking)
+
+        if ((m_model.IsLockingOnEnemy || m_model.IsTargetingAtBase) && !m_model.IsAttacking)
         {
             Transform currentTarget = m_attackDetector.GetNearestEnemy();
 
@@ -90,7 +88,6 @@ public class SoldierStateMachine : MonoBehaviour
                 }
             }
         }
-
     }
 
     private void HandleMovingToOppositeBase()
@@ -100,6 +97,7 @@ public class SoldierStateMachine : MonoBehaviour
 
         m_controller.ConvertState(SoldierStateType.IsTargetingAtOppositeBase, true);
         m_controller.ConvertState(SoldierStateType.IsMoving, true);
+        m_controller.ConvertState(SoldierStateType.IsAttacking, false);
 
         Vector2 oppositeBasePos = (m_model.Camp == SoldierCamp.Ally)
         ? new Vector2(transform.position.x, m_enemybaseTargetY)
@@ -131,6 +129,9 @@ public class SoldierStateMachine : MonoBehaviour
     private void HandleEnemyLost()
     {
         if (m_model.IsDead) return;
+
+        //m_model.AttackTargetObject = null;
+
         // 重新锁定新的目标
         Transform nextTarget = m_attackDetector.GetNearestEnemy();
         if (nextTarget != null)
@@ -182,6 +183,9 @@ public class SoldierStateMachine : MonoBehaviour
         // 检查离开的是否是当前目标
         if (enemy == m_model.AttackTargetObject)
         {
+
+            //m_model.AttackTargetObject = null;
+
             // 尝试在攻击范围内寻找新目标
             Transform newTarget = m_attackRangeDetector.GetNearestEnemy();
             if (newTarget != null)
@@ -214,7 +218,7 @@ public class SoldierStateMachine : MonoBehaviour
             HandleEnemyDetected(enemy);
         }
     }
-    
+
     private void HandleEnemyExitDetection(Transform enemy)
     {
         if (enemy == m_model.AttackTargetObject)
@@ -222,5 +226,36 @@ public class SoldierStateMachine : MonoBehaviour
             HandleEnemyLost();
         }
     }
+
+    private void HandleDeath()
+    {
+
+        m_mover.StopMoving();
+        m_controller.ConvertState(SoldierStateType.IsAttacking, false);
+        m_controller.ConvertState(SoldierStateType.IsMoving, false);
+        m_controller.ConvertState(SoldierStateType.IsFreezing, false);
+        m_controller.ConvertState(SoldierStateType.IsDead, true);
+
+       var hitBox = transform.Find("HitBox"); 
+        if (hitBox != null)
+        {
+            var col = hitBox.GetComponent<Collider2D>();
+            if (col != null) 
+            {
+                Destroy(col);                 
+            }
+        }
+
+        StartCoroutine(DestroyAfterDelay(2f));
+
+    }
+
+    private IEnumerator DestroyAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        Destroy(m_model.gameObject);
+    }
+
 
 }
