@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d32791ddcf4348d5bfc00177526772c, type: 3}
+  m_Name: WindPriest
+  m_EditorClassIdentifier: 
+  skillName: "\u98CE\u796D\u53F8"
+  isAutoReleased: 1
+  effects: []
+  category: 2
+  AOEPrefab: {fileID: 8692471453448671097, guid: 94a2cabf28502411d968b04b462fcf8c,
+    type: 3}
+  AOEShape: 1
+  scaleMultiplier: 1
+  duration: 5
+  damagePerTick: 4
+  tickInterval: 1
+  isAttachedToFollower: 0
+  canPull: 1
+  pullStrength: 0.5
+  moveSpeed: 3
+  canRotate: 0
+  angle: 0
+  rotatingSpeed: 0
+  rotatingInterval: 0

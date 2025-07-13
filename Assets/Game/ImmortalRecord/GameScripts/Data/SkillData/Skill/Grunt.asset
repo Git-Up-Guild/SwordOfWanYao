@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d6ace1be41aa4521bcf1e5608e00af4, type: 3}
   m_Name: Grunt
   m_EditorClassIdentifier: 
-  skillName: Blade
+  skillName: Grunt
   isAutoReleased: 1
   effects: []
   category: 0

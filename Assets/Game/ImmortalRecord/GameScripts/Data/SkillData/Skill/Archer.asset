@@ -21,3 +21,12 @@ MonoBehaviour:
   moveSpeed: 20
   maxPierce: 2
   damagePerHit: 10
+  canExplode: 1
+  explosionPrefab: {fileID: 8339333594125725689, guid: 49618ae9569f0460f9eb5d3d5ce6c852,
+    type: 3}
+  damage: 10
+  scaleMutiplier: 1
+  splitBulletPrefab: {fileID: 5764619143827306901, guid: fee1b4b5ec36647a99da3667ba53a358,
+    type: 3}
+  canSplit: 1
+  lockOnRange: 30
