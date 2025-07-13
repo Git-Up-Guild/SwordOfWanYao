@@ -24,10 +24,10 @@ public static class DamageApplyer
         // 扣血
         defender.Health -= finalDamage;
 
-        // 发伤害事件（飘字等用途）
+        // 发伤害事件
         EventManager.Instance.TriggerEvent(
-            "SoldierDamaged",
-            new SoldierDamagedEventData(attacker, defender, finalDamage, isCrit)
+            SoldierEventNames.Damaged,
+            new SoldierDamagedEventData(defender, finalDamage, isCrit)
         );
     }
 }

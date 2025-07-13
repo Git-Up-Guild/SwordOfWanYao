@@ -8,6 +8,7 @@ public static class SoldierEventNames
 {
     // 属性变更类事件
     public const string HealthChanged = "Soldier.HealthChanged";
+    public const string Damaged = "Soldier.Damaged";
 
     // 士兵死亡
     public const string Died = "Soldier.State.Died";
