@@ -3,9 +3,20 @@ using UnityEngine;
 
 public class CardSelectionTrigger : MonoBehaviour
 {
-    private int killCount = 0;
+    public static CardSelectionTrigger Instance { get; private set; }
 
     public static event Action OnCardDrawTriggered;
+    
+    public int killCount = 0;
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+        Instance = this;
+    }
 
     // 调用此方法以记录击杀
     public void RegisterKill()
@@ -18,5 +29,4 @@ public class CardSelectionTrigger : MonoBehaviour
             Time.timeScale = 0f;
         }
     }
-
 }
