@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6868687665644831704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.38, z: 0}
-  m_LocalScale: {x: 0.113378085, y: 0.15525, z: 1}
+  m_LocalPosition: {x: 0.035, y: -0.022, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 972602392275320549}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2180954093211724223, guid: 5bab60add6bcec548a78635e88627659,
+  m_Sprite: {fileID: 1687966469845104344, guid: 40a843f111e338d448f9bc87cf4bb268,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -96,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 6868687665644831704}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 4440996486747892087, guid: 5bab60add6bcec548a78635e88627659,
+  m_Controller: {fileID: 8924673002256552542, guid: 40a843f111e338d448f9bc87cf4bb268,
     type: 3}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 3191070822597921034}
   - component: {fileID: 1294451091936199113}
   m_Layer: 0
-  m_Name: FireAOE
+  m_Name: Tornado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,8 +134,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8692471453448671097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.2, y: -21.090904, z: -0.31997687}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: 13.08, y: -21.06, z: -0.31997687}
+  m_LocalScale: {x: 15, y: 15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3158633454950513487}
