@@ -1,4 +1,5 @@
 using UnityEngine;
+[CreateAssetMenu(menuName = "Buff/HealthAll", order = 104)]
 class HealthAll : EffectBase
 {
     public int HealthValue;
