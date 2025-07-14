@@ -7,44 +7,44 @@ public class EquipmentSelectionPanel : MonoBehaviour
 {
     [Header("UI References")]
     [SerializeField] private TextMeshProUGUI titleText;
-    [SerializeField] private Transform contentParent; // Scroll ViewµÄContent
-    [SerializeField] private GameObject selectItemPrefab; // ÁĞ±íÏîµÄÔ¤ÖÆ¼ş
+    [SerializeField] private Transform contentParent; // Scroll Viewçš„Content
+    [SerializeField] private GameObject selectItemPrefab; // åˆ—è¡¨é¡¹çš„é¢„åˆ¶ä»¶
 
     private UIManager uiManager;
 
-    // ÓÉUIManagerÔÚÓÎÏ·¿ªÊ¼Ê±µ÷ÓÃ£¬½øĞĞ³õÊ¼»¯
+    // ç”±UIManageråœ¨æ¸¸æˆå¼€å§‹æ—¶è°ƒç”¨ï¼Œè¿›è¡Œåˆå§‹åŒ–
     public void Initialize(UIManager manager)
     {
         uiManager = manager;
     }
 
-    // ÏÔÊ¾Ãæ°å£¬²¢¸ù¾İÀàĞÍÌî³äÄÚÈİ
+    // æ˜¾ç¤ºé¢æ¿ï¼Œå¹¶æ ¹æ®ç±»å‹å¡«å……å†…å®¹
     public void ShowPanel(EquipmentType type, List<EquipmentData> playerInventory)
     {
         if (uiManager == null || selectItemPrefab == null)
         {
-            Debug.LogError("EquipmentSelectionPanel Î´ÕıÈ·³õÊ¼»¯»òÎ´ÉèÖÃÔ¤ÖÆ¼ş!");
+            Debug.LogError("EquipmentSelectionPanel æœªæ­£ç¡®åˆå§‹åŒ–æˆ–æœªè®¾ç½®é¢„åˆ¶ä»¶!");
             return;
         }
 
         gameObject.SetActive(true);
-        titleText.text = "Ñ¡Ôñ " + GetTypeName(type); // ½«Ã¶¾ÙÃû×ªÎªÖĞÎÄ
+        titleText.text = "é€‰æ‹© " + GetTypeName(type); // å°†æšä¸¾åè½¬ä¸ºä¸­æ–‡
 
-        // 1. ÇåÀíÉÏÒ»´ÎÉú³ÉµÄÁĞ±íÏî£¬·ÀÖ¹ÖØ¸´
+        // 1. æ¸…ç†ä¸Šä¸€æ¬¡ç”Ÿæˆçš„åˆ—è¡¨é¡¹ï¼Œé˜²æ­¢é‡å¤
         foreach (Transform child in contentParent)
         {
             Destroy(child.gameObject);
         }
 
-        // 2. ±éÀúÍæ¼Ò±³°ü£¬É¸Ñ¡³ö¶ÔÓ¦ÀàĞÍµÄ×°±¸²¢ÊµÀı»¯
+        // 2. éå†ç©å®¶èƒŒåŒ…ï¼Œç­›é€‰å‡ºå¯¹åº”ç±»å‹çš„è£…å¤‡å¹¶å®ä¾‹åŒ–
         foreach (EquipmentData equipment in playerInventory)
         {
             if (equipment.type == type)
             {
-                // ÊµÀı»¯ÁĞ±íÏîÔ¤ÖÆ¼ş£¬²¢½«Æä¸¸ÎïÌåÉèÖÃÎªContent
+                // å®ä¾‹åŒ–åˆ—è¡¨é¡¹é¢„åˆ¶ä»¶ï¼Œå¹¶å°†å…¶çˆ¶ç‰©ä½“è®¾ç½®ä¸ºContent
                 GameObject itemGO = Instantiate(selectItemPrefab, contentParent);
 
-                // »ñÈ¡Ô¤ÖÆ¼şÉÏµÄ½Å±¾£¬²¢ÓÃ×°±¸Êı¾İÀ´ÉèÖÃËü
+                // è·å–é¢„åˆ¶ä»¶ä¸Šçš„è„šæœ¬ï¼Œå¹¶ç”¨è£…å¤‡æ•°æ®æ¥è®¾ç½®å®ƒ
                 SelectItemUI itemUI = itemGO.GetComponent<SelectItemUI>();
                 if (itemUI != null)
                 {
@@ -59,18 +59,18 @@ public class EquipmentSelectionPanel : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    // (¿ÉÑ¡) Ò»¸öĞ¡¸¨Öúº¯Êı£¬ÈÃ±êÌâ¸üºÃ¿´
+    // (å¯é€‰) ä¸€ä¸ªå°è¾…åŠ©å‡½æ•°ï¼Œè®©æ ‡é¢˜æ›´å¥½çœ‹
     private string GetTypeName(EquipmentType type)
     {
         switch (type)
         {
-            case EquipmentType.Head: return "Í·²¿×°±¸";
-            case EquipmentType.Armor: return "ÉíÌå×°±¸";
-            case EquipmentType.Weapon: return "ÎäÆ÷";
-            case EquipmentType.Boots: return "×ã²¿×°±¸";
-            case EquipmentType.Gloves: return "ÊÖ²¿×°±¸";
-            case EquipmentType.Accessory: return "ÊÎÆ·";
-            default: return "Î´ÖªÀàĞÍ";
+            case EquipmentType.Head: return "å¤´éƒ¨è£…å¤‡";
+            case EquipmentType.Armor: return "èº«ä½“è£…å¤‡";
+            case EquipmentType.Weapon: return "æ­¦å™¨";
+            case EquipmentType.Boots: return "è¶³éƒ¨è£…å¤‡";
+            case EquipmentType.Gloves: return "æ‰‹éƒ¨è£…å¤‡";
+            case EquipmentType.Accessory: return "é¥°å“";
+            default: return "æœªçŸ¥ç±»å‹";
         }
     }
 }

@@ -27,12 +27,16 @@ public class SpawnManager : MonoBehaviour
     {
         foreach (var (type, attr) in RuntimeSoldierAttributeHub.Instance.GetAllAttributePairs())
         {
+
+            if (type == SoldierType.Spear) continue;
+
             _spawnConfigs[type] = new SpawnData
             {
                 Cap = attr.maxExistCount,
                 NextSpawnTime = Time.time + 10f
             };
             m_aliveAllies[type] = new HashSet<SoldierModel>();
+            
         }
     }
 

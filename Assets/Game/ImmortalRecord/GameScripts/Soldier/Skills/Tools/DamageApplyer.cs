@@ -25,7 +25,8 @@ public static class DamageApplyer
         // 扣血
         defender.Health -= finalDamage;
 
-        ShowFloatText(finalDamage, isCrit, pos);
+        if (defender.Camp != SoldierCamp.Ally)
+            ShowFloatText(finalDamage, isCrit, pos);
 
         // 发伤害事件
         EventManager.Instance.TriggerEvent(
