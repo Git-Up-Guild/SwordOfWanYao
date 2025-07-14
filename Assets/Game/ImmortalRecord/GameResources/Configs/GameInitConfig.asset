@@ -33,6 +33,6 @@ MonoBehaviour:
     isEnable: 0
     camreaFollowMode: 0
     positionOffset: {x: 0, y: 0, z: 0}
-  gameStateBuildinSceneIndex: -1
+  gameStateBuildinSceneIndex: 1
   gameScenePath: 
   projectRootDir: 

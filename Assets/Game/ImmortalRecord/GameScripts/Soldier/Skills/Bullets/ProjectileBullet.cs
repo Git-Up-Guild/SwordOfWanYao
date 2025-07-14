@@ -76,7 +76,7 @@ public class ProjectileBullet : MonoBehaviour
         var targetModel = other.GetComponentInParent<SoldierModel>();
         if (targetModel == null || targetModel.Camp == attacker.Camp || targetModel.IsDead) return;
 
-        DamageApplyer.ApplyDamage(attacker, targetModel, damage);
+        DamageApplyer.ApplyDamage(attacker, targetModel, damage, targetModel.transform.position);
 
         if (canExplode)
             exp.Init(attacker, explosionDamage, explosionScaleMutiplier, explosionPrefab);

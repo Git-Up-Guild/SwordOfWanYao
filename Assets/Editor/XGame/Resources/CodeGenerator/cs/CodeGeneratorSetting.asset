@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 1403982028, guid: 006aeba06c6f4854895fe0d7ef6c8c82, type: 3}
   m_Name: CodeGeneratorSetting
   m_EditorClassIdentifier: 
-  authorName: LIN
+  authorName: "\u90D1\u79C0\u7A0B"
   projectBaseDir: Game
   projectName: ImmortalRecord
   codeBaseDir: GameScripts

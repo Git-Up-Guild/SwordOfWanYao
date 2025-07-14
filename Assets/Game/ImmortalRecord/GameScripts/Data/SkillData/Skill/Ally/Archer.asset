@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ff0c42a4790c4ed99ab69612ec95b9f, type: 3}
+  m_Name: Archer
+  m_EditorClassIdentifier: 
+  skillName: Archer
+  isAutoReleased: 1
+  effects: []
+  category: 1
+  projectilePrefab: {fileID: 5764619143827306901, guid: 025ff3c8353364d1487c5ca7693f32e6,
+    type: 3}
+  moveSpeed: 20
+  maxPierce: 2
+  damagePerHit: 10
+  canExplode: 0
+  explosionPrefab: {fileID: 8339333594125725689, guid: 49618ae9569f0460f9eb5d3d5ce6c852,
+    type: 3}
+  damage: 10
+  scaleMutiplier: 1
+  splitBulletPrefab: {fileID: 5764619143827306901, guid: fee1b4b5ec36647a99da3667ba53a358,
+    type: 3}
+  canSplit: 0
+  lockOnRange: 30

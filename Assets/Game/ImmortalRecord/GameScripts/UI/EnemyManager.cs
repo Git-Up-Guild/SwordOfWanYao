@@ -41,6 +41,7 @@ public class EnemyManager : MonoBehaviour
 
                 // 广播“敌人死亡”事件！
                 OnEnemyDied?.Invoke();
+
             }
         }
     }

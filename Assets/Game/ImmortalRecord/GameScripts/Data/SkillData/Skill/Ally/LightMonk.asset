@@ -21,13 +21,13 @@ MonoBehaviour:
   AOEShape: 0
   scaleMultiplier: 1
   duration: 5
-  damagePerTick: 4
-  tickInterval: 1
+  damagePerTick: 8
+  tickInterval: 3
   isAttachedToFollower: 1
   canPull: 0
   pullStrength: 0
   moveSpeed: 0
-  canRotate: 1
+  canRotate: 0
   angle: 8
   rotatingSpeed: 8
   rotatingInterval: 2

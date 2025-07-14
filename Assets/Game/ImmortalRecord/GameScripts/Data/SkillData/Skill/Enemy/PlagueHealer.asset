@@ -9,18 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d32791ddcf4348d5bfc00177526772c, type: 3}
-  m_Name: FireMage
+  m_Script: {fileID: 11500000, guid: 0ff0c42a4790c4ed99ab69612ec95b9f, type: 3}
+  m_Name: PlagueHealer
   m_EditorClassIdentifier: 
-  skillName: FireMage
+  skillName: DarkArcherSkill
   isAutoReleased: 1
   effects: []
-  category: 2
-  AOEPrefab: {fileID: 8692471453448671097, guid: 354c3f8f326a84c2c8587e757b005090,
+  category: 1
+  projectilePrefab: {fileID: 5764619143827306901, guid: e31f433ff0cee4e13bd71c50b676b648,
     type: 3}
-  AOEShape: 1
-  scaleMultiplier: 1
-  duration: 5
-  damagePerTick: 3
-  tickInterval: 1
-  isAttachedToFollower: 0
+  moveSpeed: 20
+  maxPierce: 2
+  damagePerHit: 10

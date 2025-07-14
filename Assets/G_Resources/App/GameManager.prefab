@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 2519199545905913996}
   - component: {fileID: 6852173208448217114}
   - component: {fileID: 2619446453462892179}
-  - component: {fileID: -8878410444364527303}
-  - component: {fileID: -1149457123888594690}
+  - component: {fileID: -3911224030885071951}
+  - component: {fileID: -5990321149431147667}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -493,7 +493,7 @@ MonoBehaviour:
   dragger: {fileID: 5170703268079724729}
   renderCamera: {fileID: 4135294432270751298}
   holeMask: {fileID: 4197784815715245078}
---- !u!114 &-8878410444364527303
+--- !u!114 &-3911224030885071951
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f041ddf959314f45b10c506c26bc2e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-1149457123888594690
+--- !u!114 &-5990321149431147667
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

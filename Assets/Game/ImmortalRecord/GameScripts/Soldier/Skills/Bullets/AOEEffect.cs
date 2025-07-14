@@ -22,7 +22,7 @@ public class AOEEffect : MonoBehaviour
     private float m_rotatingSpeed;
     private float m_rotatingInterval;
     private float m_baseRotation;
-    private bool   m_isAttached;
+    private bool  m_isAttached;
 
     public void Init(
         SoldierModel attacker,
@@ -81,9 +81,11 @@ public class AOEEffect : MonoBehaviour
         if (m_canPull)
         {
             ApplyPullAndMove();
-            if (!m_attacker.IsAttacking)
-                Destroy(this);
 
+        }
+        if (ShouldDestroy()) 
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -120,7 +122,7 @@ public class AOEEffect : MonoBehaviour
             SoldierModel model = hit.GetComponentInParent<SoldierModel>();
             if (model != null && model.Camp != m_attacker.Camp)
             {
-                DamageApplyer.ApplyDamage(m_attacker, model, m_damage);
+                DamageApplyer.ApplyDamage(m_attacker, model, m_damage, model.transform.position);
             }
         }
     }
@@ -183,7 +185,7 @@ public class AOEEffect : MonoBehaviour
         while (true)
         {
             // 发射者死亡则提前销毁
-            if (m_attacker == null || m_attacker.IsDead || !m_attacker.IsAttacking)
+            if (ShouldDestroy())
             {
                 Destroy(gameObject);
                 yield break;
@@ -193,6 +195,12 @@ public class AOEEffect : MonoBehaviour
             float rotated = 0f;
             while (rotated < m_rotateAngle)
             {
+                if (ShouldDestroy()) 
+                {
+                    Destroy(gameObject);
+                    yield break;
+                }
+
                 float step = m_rotatingSpeed * Time.deltaTime;
                 transform.RotateAround(m_attacker.transform.position, Vector3.forward, step);
                 rotated += step;
@@ -200,12 +208,18 @@ public class AOEEffect : MonoBehaviour
             }
 
             // 等待间隔
-            yield return new WaitForSeconds(m_rotatingInterval);
+            yield return WaitWhileValid(m_rotatingInterval);
 
             // —— 再反向旋转回去 —— 
             float back = 0f;
             while (back < m_rotateAngle)
             {
+                if (ShouldDestroy()) 
+                {
+                    Destroy(gameObject);
+                    yield break;
+                }
+
                 float step = m_rotatingSpeed * Time.deltaTime;
                 transform.RotateAround(m_attacker.transform.position, Vector3.forward, -step);
                 back += step;
@@ -213,7 +227,27 @@ public class AOEEffect : MonoBehaviour
             }
 
             // 等待间隔，准备下一轮
-            yield return new WaitForSeconds(m_rotatingInterval);
+            yield return WaitWhileValid(m_rotatingInterval);
+        }
+    }
+
+    private bool ShouldDestroy()
+    {
+        return m_attacker == null || m_attacker.IsDead || !m_attacker.IsAttacking;
+    }
+
+    private IEnumerator WaitWhileValid(float duration)
+    {
+        float timer = 0;
+        while (timer < duration)
+        {
+            if (ShouldDestroy()) 
+            {
+                Destroy(gameObject);
+                yield break;
+            }
+            timer += Time.deltaTime;
+            yield return null;
         }
     }
 

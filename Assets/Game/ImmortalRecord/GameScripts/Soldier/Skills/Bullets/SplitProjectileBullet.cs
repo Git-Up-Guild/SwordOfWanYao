@@ -37,7 +37,7 @@ public class SplitProjectileBullet : MonoBehaviour
         if (target == null || target.Camp == attacker.Camp || target.IsDead)
             return;
 
-        DamageApplyer.ApplyDamage(attacker, target, damage);
+        DamageApplyer.ApplyDamage(attacker, target, damage, target.transform.position);
 
         Destroy(gameObject);
     }

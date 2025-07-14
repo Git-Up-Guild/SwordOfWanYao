@@ -9,15 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ff0c42a4790c4ed99ab69612ec95b9f, type: 3}
-  m_Name: DarkArcher
+  m_Script: {fileID: 11500000, guid: 0d6ace1be41aa4521bcf1e5608e00af4, type: 3}
+  m_Name: Exploder
   m_EditorClassIdentifier: 
-  skillName: DarkArcherSkill
+  skillName: Exploder
   isAutoReleased: 1
   effects: []
-  category: 1
-  projectilePrefab: {fileID: 5764619143827306901, guid: e31f433ff0cee4e13bd71c50b676b648,
-    type: 3}
-  moveSpeed: 20
-  maxPierce: 2
-  damagePerHit: 10
+  category: 0
+  damage: 10
+  attackRadius: 3

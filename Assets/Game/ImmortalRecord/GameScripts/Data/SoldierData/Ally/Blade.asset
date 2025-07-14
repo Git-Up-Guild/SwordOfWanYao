@@ -17,7 +17,7 @@ MonoBehaviour:
   description: "\u5F13\u7BAD\u624B"
   portrait: {fileID: 0}
   rarity: 0
-  soldierType: 1
+  soldierType: 0
   camp: 0
   attributes:
     maxHealth: 100
@@ -27,7 +27,8 @@ MonoBehaviour:
     lockOnRange: 20
     attackRange: 3
     attackSpeed: 1
-    attackFrequency: 3
+    attackFrequency: 1
     projectileCount: 0
+    maxExistCount: 16
   skills:
   - {fileID: 11400000, guid: b302b009034364d42ae5debfbbfbfc06, type: 2}
