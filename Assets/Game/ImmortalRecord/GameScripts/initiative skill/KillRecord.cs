@@ -1,19 +1,9 @@
 using UnityEngine;
-public interface IKillRecordable
+public class KillRecord : MonoBehaviour
 {
-    // 增加击杀数
-    public void AddKill(int count = 1);
+    public static KillRecord Instance { get; private set; }
 
-    // 获取当前击杀数
-    public int GetKillCount();
-}
-
-
-// 示例：每次击杀敌人后记录击杀数+1
-public class KillRecord : MonoBehaviour, IKillRecordable
-{
-    public int killCount = 0;
-
+    private int killCount = 0;
     public void AddKill(int count = 1)
     {
         killCount += count;
