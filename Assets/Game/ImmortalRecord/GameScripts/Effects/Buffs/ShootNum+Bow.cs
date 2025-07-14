@@ -1,19 +1,14 @@
 using UnityEngine;
-[CreateAssetMenu(menuName = "Buff/ShootNum+Bow", order = 102)]
-class ShootNumBow : EffectBase
-{
-    [Header("射击数量加成")]
-    public int ShootNumValue = 1;
-    
+
+[CreateAssetMenu(menuName = "Buff/ShootNum+Bow", order = 106)]
+public class ShootNumBow : EffectBase
+{   
+    [Header("增加的弹道数量")]
+    public int addCount = 1;
+
     public override void ApplyEffect(SoldierModel soldierModel)
     {
-        RuntimeSoldierSkillHub.Instance.Modify(SoldierType.Archer, skill =>
-        {
-            if (skill is SoldierDataBase pd)
-            {
-                pd.projectileCount += ShootNumValue;
-            }
-        });
-        
+        RuntimeSoldierAttributeHub.Instance.Modify(SoldierType.Archer, attr => attr.projectileCount += addCount);
+        Debug.Log("弓兵弹道数量+1");
     }
 }
