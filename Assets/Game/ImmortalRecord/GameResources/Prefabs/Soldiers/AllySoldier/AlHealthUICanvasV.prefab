@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3387403827083168341, guid: 9b221ce1e14ce4b23a958a98c11c29fc,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3988288882535549029, guid: 9b221ce1e14ce4b23a958a98c11c29fc,
         type: 3}
       propertyPath: m_Pivot.x
@@ -90,12 +95,12 @@ PrefabInstance:
     - target: {fileID: 3988288882535549029, guid: 9b221ce1e14ce4b23a958a98c11c29fc,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.55
+      value: -0.5499878
       objectReference: {fileID: 0}
     - target: {fileID: 3988288882535549029, guid: 9b221ce1e14ce4b23a958a98c11c29fc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 7.9177
+      value: 7.917694
       objectReference: {fileID: 0}
     - target: {fileID: 3988288882535549029, guid: 9b221ce1e14ce4b23a958a98c11c29fc,
         type: 3}
@@ -115,7 +120,7 @@ PrefabInstance:
     - target: {fileID: 6227655257055384566, guid: 9b221ce1e14ce4b23a958a98c11c29fc,
         type: 3}
       propertyPath: m_Name
-      value: AlHealthUICanvas
+      value: AlHealthUICanvasV
       objectReference: {fileID: 0}
     - target: {fileID: 6846315167221797127, guid: 9b221ce1e14ce4b23a958a98c11c29fc,
         type: 3}

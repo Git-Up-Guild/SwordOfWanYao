@@ -11,4 +11,3 @@ class ExplodeArrow : EffectBase
         });
     }
 }
- 
