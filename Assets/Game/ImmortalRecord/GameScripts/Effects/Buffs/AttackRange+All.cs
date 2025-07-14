@@ -7,7 +7,7 @@ public class AttackRangeAll : EffectBase
     [Header("全员攻击范围加成倍率（如1.5为+50%）")]
     public float rangeMultiplier = 1.5f;
 
-    public override void ApplyEffect(SoldierController soldierController, SoldierModel soldierModel)
+    public override void ApplyEffect(SoldierModel soldierModel)
     {
         // 获取当前攻击范围
         float currentRange = soldierModel.AttackRange;
@@ -17,6 +17,6 @@ public class AttackRangeAll : EffectBase
 
         
 
-        Debug.Log($"全员增加攻击范围 Applied AttackRangeAll effect: x{rangeMultiplier} to {soldierController.name}");
+        Debug.Log($"全员增加攻击范围 Applied AttackRangeAll effect: x{rangeMultiplier} to {soldierModel.name}");
     }
 } 

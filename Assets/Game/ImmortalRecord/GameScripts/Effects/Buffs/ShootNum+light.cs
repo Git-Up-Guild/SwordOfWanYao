@@ -6,7 +6,7 @@ class ShootNumlight : EffectBase
     public int SoldierTypeID = 6;
 
     
-    public override void ApplyEffect(SoldierController soldierController, SoldierModel soldierModel)
+    public override void ApplyEffect(SoldierModel soldierModel)
     {
         
     }

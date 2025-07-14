@@ -2,18 +2,20 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Buff/DefBlade", order = 103)]
 class DefBlade : EffectBase
 {
-    [Header("兵种类型ID")]
-    public int SoldierTypeID=1;
+    [Header("兵种类型")]
+    public SoldierType soldierType= SoldierType.Blade;
 
     [Header("防御力加成倍率（如1.5为+50%）")]
-    public float DefMultiplier=1.6f;
+    public int DefValue=10;
 
-    public override void ApplyEffect(SoldierController soldierController,SoldierModel soldierModel)
+    public override void ApplyEffect(SoldierModel soldierModel)
     {
-        if (soldierModel.ID == SoldierTypeID)
-        {
-Debug.Log($"Applied AtkBlade effect: {DefMultiplier} to {soldierModel.name}");
-        }
+        
+        RuntimeSoldierAttributeHub.Instance.Modify
+        (
+            soldierType,
+            def => def.defense += DefValue
+        );        
         
     }
 }

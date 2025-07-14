@@ -8,7 +8,7 @@ public class CardInventory : ScriptableObject
 {
     public List<Items> Items;
 
-    public int Wave;
+    public int levels;
 }
 [Serializable]
 public class Items

@@ -3,25 +3,20 @@ using SwordOfWanYao;
 [CreateAssetMenu(menuName = "Buff/DefWind", order = 103)]
 class DefWind : EffectBase
 {
-    [Header("兵种类型ID")]
-    public int SoldierTypeID=5;
+    [Header("兵种类型")]
+    public SoldierType soldierType= SoldierType.WindPriest;
 
     [Header("防御力加成倍率（如1.5为+50%）")]
-    public float DefMultiplier=1.6f;
+    public int DefValue=10;
 
-    public override void ApplyEffect(SoldierController soldierController,SoldierModel soldierModel)
+    public override void ApplyEffect(SoldierModel soldierModel)
     {
-        if (soldierModel.ID == SoldierTypeID)
-        {
-            float currentDef = soldierModel.Defense;
-            // 计算加成后的防御力  
-            float newDef = currentDef * DefMultiplier;
-            // 设置新防御力
-            //soldierController.SetDefense(newDef);
-            
-            Debug.Log($"Applied AtkBlade effect: {DefMultiplier} to {soldierModel.name}");
         
-        }
+        RuntimeSoldierAttributeHub.Instance.Modify
+        (
+            soldierType,
+            def => def.defense += DefValue
+        );        
         
     }
 }

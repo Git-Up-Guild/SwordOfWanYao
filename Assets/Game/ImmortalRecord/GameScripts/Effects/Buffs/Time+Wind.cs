@@ -6,7 +6,7 @@ class TimeWind : EffectBase
     public int SoldierTypeID = 5;
 
     
-    public override void ApplyEffect(SoldierController soldierController, SoldierModel soldierModel)
+    public override void ApplyEffect(SoldierModel soldierModel)
     {
         
     }
