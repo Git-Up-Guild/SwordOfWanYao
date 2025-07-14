@@ -22,7 +22,7 @@ public class ExplosionDamage : MonoBehaviour
 
         if (target.Camp != m_camp && !target.IsDead)
         {
-            DamageApplyer.ApplyDamage(m_attacker, target, m_damage);
+            DamageApplyer.ApplyDamage(m_attacker, target, m_damage, target.transform.position);
         }
     }
 }

@@ -29,5 +29,6 @@ MonoBehaviour:
     attackSpeed: 0.2
     attackFrequency: 1
     projectileCount: 1
+    maxExistCount: 1
   skills:
   - {fileID: 11400000, guid: c15b93639098b48ba9d34109aa470a2e, type: 2}

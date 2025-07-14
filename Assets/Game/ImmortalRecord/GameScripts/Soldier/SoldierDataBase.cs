@@ -87,6 +87,8 @@ public class SoldierAttributes
     [Header("(远程)弹道数量")]
     public int projectileCount;
 
+    [Header("最大同时存在数量")]
+    public int maxExistCount;
 
 }
 #endregion

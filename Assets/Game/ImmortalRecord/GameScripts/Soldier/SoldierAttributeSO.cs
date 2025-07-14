@@ -12,6 +12,7 @@ public class SoldierAttributeSO : ScriptableObject
     public float attackSpeed;
     public int attackFrequency;
     public int projectileCount;
+    public int maxExistCount;
 
     public void CopyFrom(SoldierAttributes src)
     {
@@ -24,5 +25,7 @@ public class SoldierAttributeSO : ScriptableObject
         attackSpeed = src.attackSpeed;
         attackFrequency = src.attackFrequency;
         projectileCount = src.projectileCount;
+        maxExistCount = src.maxExistCount;
+        
     }
 }

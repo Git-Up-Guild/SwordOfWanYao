@@ -59,7 +59,6 @@ public class SoldierModel : MonoBehaviour
     [SerializeField] List<Transform> m_attackTargetObjectInRange;
     [SerializeField] Transform m_skillCastPivot;
 
-
     [SerializeField] private float m_currentHealth;
     private List<SoldierSkillDataBase> m_localSkillDataList;
     private List<SkillBase> m_runtimeSkillList;

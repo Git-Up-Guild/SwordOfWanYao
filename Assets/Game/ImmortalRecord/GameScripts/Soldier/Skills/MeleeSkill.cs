@@ -71,7 +71,7 @@ public class MeleeSkill : SkillBase, IAnimationEventReceiver
             var targetModel = hit.GetComponentInParent<SoldierModel>();
             if (targetModel == null || targetModel.IsDead) continue;
 
-            DamageApplyer.ApplyDamage(m_model, targetModel, m_data.damage);
+            DamageApplyer.ApplyDamage(m_model, targetModel, m_data.damage, targetModel.transform.position);
         }
     }
 

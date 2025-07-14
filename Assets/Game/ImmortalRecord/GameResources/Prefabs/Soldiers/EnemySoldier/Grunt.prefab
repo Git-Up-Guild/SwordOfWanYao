@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 7324409696347416634}
   - component: {fileID: 39256151730961659}
   - component: {fileID: 2184364442455292495}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackTargetDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 415259288407725869}
   - component: {fileID: 5966420126632297490}
   - component: {fileID: 8823217758884336303}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HitBox
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.12138009, y: -0.28689957}
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 8461856090839950221}
   - component: {fileID: 8298326723924798071}
   - component: {fileID: 3876615686759171483}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackRangeDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}

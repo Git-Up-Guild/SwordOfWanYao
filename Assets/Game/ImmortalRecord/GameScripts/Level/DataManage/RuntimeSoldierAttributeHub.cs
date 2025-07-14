@@ -9,6 +9,14 @@ public class RuntimeSoldierAttributeHub : MonoBehaviour
 
     [SerializeField] private List<SoldierDataBase> m_allSoldierDataBases;
 
+    public List<SoldierType> AllSoldierTypes => new List<SoldierType>(m_runtimeAttributes.Keys);
+
+    public IEnumerable<(SoldierType type, SoldierAttributeSO attr)> GetAllAttributePairs()
+    {
+        foreach (var kv in m_runtimeAttributes)
+            yield return (kv.Key, kv.Value);
+    }
+    
     private void Awake()
     {
         if (Instance != null)
