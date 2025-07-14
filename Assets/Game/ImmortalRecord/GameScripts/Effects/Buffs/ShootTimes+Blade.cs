@@ -2,21 +2,20 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Buff/ShootTimesBlade", order = 103)]
 class ShootTimesBlade : EffectBase
 {
-    [Header("兵种类型ID")]
-    public int SoldierTypeID=1;
+    [Header("兵种类型")]
+    public SoldierType soldierType= SoldierType.Blade;
 
-    [Header("攻击频率增速（如1为+1次攻击）")]
-    public int PlusTime=1;
+    [Header("连发数加成数（如1.5为+50%）")]
+    public int AtkFrequen=1;
 
-    public override void ApplyEffect(SoldierController soldierController, SoldierModel soldierModel)
+    public override void ApplyEffect(SoldierModel soldierModel)
     {
-        if (soldierModel.ID == SoldierTypeID)
-        {
-            soldierModel.AttackFrequency += PlusTime;
-
-            Debug.Log($"Applied ShootTimesBlade effect: {PlusTime} to {soldierModel.name}");
         
-        }
+        RuntimeSoldierAttributeHub.Instance.Modify
+        (
+            soldierType,
+            fre => fre.attackFrequency += AtkFrequen
+        );        
         
     }
 }

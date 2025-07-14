@@ -77,7 +77,7 @@ public class CardSelectionManager : MonoBehaviour
                     toggleGroup,
                     (card, isOn) => OnCardToggled(card, isOn)
                 );
-               // CardUISlots[i].UpdateCount(GetCardCount(randomCardsgit[i]) + "/" + randomCards[i].MaxOwnable);
+                CardUISlots[i].UpdateCount(GetCardCount(randomCards[i]) + "/" + randomCards[i].MaxOwnable);
             }
             else
             {

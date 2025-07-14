@@ -5,7 +5,7 @@ class TimeFire : EffectBase
     [Header("兵种类型ID")]
     public int SoldierTypeID = 4;
 
-    public override void ApplyEffect(SoldierController soldierController, SoldierModel soldierModel)
+    public override void ApplyEffect(SoldierModel soldierModel)
     {
         
     }

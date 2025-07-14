@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class EffectBase : ScriptableObject
 {
-    public abstract void ApplyEffect(SoldierController soldierController,SoldierModel soldierModel);
+    public abstract void ApplyEffect(SoldierModel soldierModel);
 
 
 }

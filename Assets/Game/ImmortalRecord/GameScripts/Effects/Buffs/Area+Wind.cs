@@ -3,7 +3,7 @@ using UnityEngine;
 class AreaWind : EffectBase
 {
     
-    public override void ApplyEffect(SoldierController soldierController, SoldierModel soldierModel)
+    public override void ApplyEffect(SoldierModel soldierModel)
     {
         
     }
