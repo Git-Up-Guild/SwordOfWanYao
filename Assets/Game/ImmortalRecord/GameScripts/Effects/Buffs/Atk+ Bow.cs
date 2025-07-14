@@ -3,7 +3,7 @@ using UnityEngine;
 class AtkBow : EffectBase
 {
     [Header("兵种类型")]
-    public SoldierType soldierType= SoldierType.Archer;
+    public SoldierType soldierType;
 
     [Header("攻击力加成倍率（如1.5为+50%）")]
     public float AtkValue=1.6f;
@@ -16,6 +16,5 @@ class AtkBow : EffectBase
             soldierType,
             attr => attr.attackPowerMutiplier *= AtkValue
         );        
-        
     }
 }
