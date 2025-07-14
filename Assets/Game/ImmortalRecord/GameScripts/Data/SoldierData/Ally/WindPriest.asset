@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d088da3873d483ca08c89da7c07e07, type: 3}
   m_Name: WindPriest
   m_EditorClassIdentifier: 
-  ID: 5
+  ID: 6
   displayName: "\u98CE\u796D\u53F8"
   description: 
   portrait: {fileID: 0}

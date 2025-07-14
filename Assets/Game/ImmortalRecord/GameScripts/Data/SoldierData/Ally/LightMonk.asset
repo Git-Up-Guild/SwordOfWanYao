@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d088da3873d483ca08c89da7c07e07, type: 3}
   m_Name: LightMonk
   m_EditorClassIdentifier: 
-  ID: 6
+  ID: 4
   displayName: "\u5149\u7F57\u6C49"
   description: 
   portrait: {fileID: 0}
@@ -27,7 +27,7 @@ MonoBehaviour:
     lockOnRange: 50
     attackRange: 40
     attackSpeed: 0.2
-    attackFrequency: 3
+    attackFrequency: 1
     projectileCount: 1
   skills:
   - {fileID: 11400000, guid: c15b93639098b48ba9d34109aa470a2e, type: 2}

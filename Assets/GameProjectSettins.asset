@@ -71,4 +71,4 @@ MonoBehaviour:
     resolutionHeight: 1920
     setupScenePath: 
     gameInitConfig: {fileID: 11400000, guid: 5d3fd7d972e86f9428efebee637d0fd6, type: 2}
-  currentProjectName: UITestDemo
+  currentProjectName: ImmortalRecord
