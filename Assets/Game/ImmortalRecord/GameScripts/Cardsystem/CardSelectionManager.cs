@@ -24,6 +24,40 @@ public class CardSelectionManager : MonoBehaviour
 
     public GameObject DeathPanel;
 
+
+
+
+    //LIN新增
+    private void OnEnable()
+    {
+        // 订阅抽卡触发事件
+        CardSelectionTrigger.OnCardDrawTriggered += TriggerCardSelection;
+    }
+
+    private void OnDisable()
+    {
+        // 取消订阅，防止内存泄漏
+        CardSelectionTrigger.OnCardDrawTriggered -= TriggerCardSelection;
+    }
+
+    // 当事件被触发时，调用这个方法
+    private void TriggerCardSelection()
+    {
+        // 调用ShowCards，并定义一个回调函数，告诉它确认选择后该做什么
+        ShowCards(selectedCard => {
+            // 当玩家确认选择后，这里的代码会被执行
+            Debug.Log("玩家选择了卡牌: " + selectedCard.Name);
+            // 在这里，你可以调用BuffManager来添加效果
+            // BuffManager.Instance.AddBuff(selectedCard.Effect);
+        });
+    }
+
+
+
+
+
+
+
     private void Awake()
     {
         Instance = this;
