@@ -6,24 +6,24 @@ using I18N.Common;
 public class ComparisonPanel : MonoBehaviour
 {
     [Header("UI References")]
-    [SerializeField] private EquipmentDisplayUI leftColumn; // µ±Ç°×°±¸À¸
-    [SerializeField] private EquipmentDisplayUI rightColumn; // Ñ¡ÖĞ×°±¸À¸
+    [SerializeField] private EquipmentDisplayUI leftColumn; // å½“å‰è£…å¤‡æ 
+    [SerializeField] private EquipmentDisplayUI rightColumn; // é€‰ä¸­è£…å¤‡æ 
     [SerializeField] private Button equipButton;
     [SerializeField] private Button backButton;
 
     private EquipmentData newEquipmentToEquip;
     private UIManager uiManager;
 
-    // ¸¨ÖúÀà£¬ÓÃÀ´¹ÜÀíÒ»À¸µÄUI
+    // è¾…åŠ©ç±»ï¼Œç”¨æ¥ç®¡ç†ä¸€æ çš„UI
     [System.Serializable]
     public class EquipmentDisplayUI
     {
-        public GameObject container; // Õû¸öÀ¸µÄ¸¸ÎïÌå£¬·½±ãÒ»ÆğÏÔÊ¾/Òş²Ø
+        public GameObject container; // æ•´ä¸ªæ çš„çˆ¶ç‰©ä½“ï¼Œæ–¹ä¾¿ä¸€èµ·æ˜¾ç¤º/éšè—
         public Image itemIcon;
         public TextMeshProUGUI itemNameText;
         public TextMeshProUGUI itemLevelText;
 
-        // 6¸öÊôĞÔÎÄ±¾
+        // 6ä¸ªå±æ€§æ–‡æœ¬
         public TextMeshProUGUI attackText;
         public TextMeshProUGUI defenseText;
         public TextMeshProUGUI healthText;
@@ -31,83 +31,83 @@ public class ComparisonPanel : MonoBehaviour
         public TextMeshProUGUI attackRangeText;
         public TextMeshProUGUI moveSpeedText;
 
-        // ÏÔÊ¾×°±¸Êı¾İ
+        // æ˜¾ç¤ºè£…å¤‡æ•°æ®
         public void Display(EquipmentData data)
         {
             container.SetActive(true);
-            // --- ÔÚÕâÀïÌí¼Ó»òĞŞ¸Ä ---
-            itemIcon.enabled = true; // ¹Ø¼ü£¡È·±£Image×é¼şÊÇ¼¤»îµÄ£¡
-            itemIcon.color = Color.white; // 2. ¹Ø¼ü£¡½«ÑÕÉ«ÖØÖÃÎª²»Í¸Ã÷µÄ°×É« (µÈÍ¬ÓÚ new Color(1, 1, 1, 1))
+            // --- åœ¨è¿™é‡Œæ·»åŠ æˆ–ä¿®æ”¹ ---
+            itemIcon.enabled = true; // å…³é”®ï¼ç¡®ä¿Imageç»„ä»¶æ˜¯æ¿€æ´»çš„ï¼
+            itemIcon.color = Color.white; // 2. å…³é”®ï¼å°†é¢œè‰²é‡ç½®ä¸ºä¸é€æ˜çš„ç™½è‰² (ç­‰åŒäº new Color(1, 1, 1, 1))
 
             // ----------------------
             itemIcon.sprite = data.icon;
             itemNameText.text = data.itemName;
             itemLevelText.text = "Lv." + data.level;
 
-            // Èç¹ûÊôĞÔÖµÎª0£¬ÏÔÊ¾"¡ª"£¬·ñÔòÏÔÊ¾ÊıÖµ
-            attackText.text = "¹¥»÷Á¦: " + (data.attack > 0 ? data.attack.ToString() : "¡ª");
-            defenseText.text = "·ÀÓùÁ¦: " + (data.defense > 0 ? data.defense.ToString() : "¡ª");
-            healthText.text = "ÉúÃüÖµ: " + (data.health > 0 ? data.health.ToString() : "¡ª");
-            attackSpeedText.text = "¹¥»÷ÆµÂÊ: " + (data.attackSpeed > 0 ? data.attackSpeed.ToString("F2") : "¡ª"); // F2±£ÁôÁ½Î»Ğ¡Êı
-            attackRangeText.text = "¹¥»÷·¶Î§: " + (data.attackRange > 0 ? data.attackRange.ToString("F2") : "¡ª");
-            moveSpeedText.text = "ÒÆ¶¯ËÙ¶È: " + (data.moveSpeed > 0 ? data.moveSpeed.ToString("F2") : "¡ª");
+            // å¦‚æœå±æ€§å€¼ä¸º0ï¼Œæ˜¾ç¤º"â€”"ï¼Œå¦åˆ™æ˜¾ç¤ºæ•°å€¼
+            attackText.text = "æ”»å‡»åŠ›: " + (data.attack > 0 ? data.attack.ToString() : "â€”");
+            defenseText.text = "é˜²å¾¡åŠ›: " + (data.defense > 0 ? data.defense.ToString() : "â€”");
+            healthText.text = "ç”Ÿå‘½å€¼: " + (data.health > 0 ? data.health.ToString() : "â€”");
+            attackSpeedText.text = "æ”»å‡»é¢‘ç‡: " + (data.attackSpeed > 0 ? data.attackSpeed.ToString("F2") : "â€”"); // F2ä¿ç•™ä¸¤ä½å°æ•°
+            attackRangeText.text = "æ”»å‡»èŒƒå›´: " + (data.attackRange > 0 ? data.attackRange.ToString("F2") : "â€”");
+            moveSpeedText.text = "ç§»åŠ¨é€Ÿåº¦: " + (data.moveSpeed > 0 ? data.moveSpeed.ToString("F2") : "â€”");
         }
 
-        // ÏÔÊ¾¿Õ×´Ì¬
-        public void DisplayEmpty(string emptyText = "Î´×°±¸")
+        // æ˜¾ç¤ºç©ºçŠ¶æ€
+        public void DisplayEmpty(string emptyText = "æœªè£…å¤‡")
         {
             container.SetActive(true);
             itemNameText.text = emptyText;
             itemLevelText.text = "";
-            // --- ĞŞ¸ÄÕâ²¿·Ö ---
-            itemIcon.enabled = true; // Í¬Ñù±£³Ö¼¤»î
-            itemIcon.sprite = null;  // ½«Í¼Æ¬ÉèÖÃÎª¿Õ£¬¶ø²»ÊÇ½ûÓÃ×é¼ş
+            // --- ä¿®æ”¹è¿™éƒ¨åˆ† ---
+            itemIcon.enabled = true; // åŒæ ·ä¿æŒæ¿€æ´»
+            itemIcon.sprite = null;  // å°†å›¾ç‰‡è®¾ç½®ä¸ºç©ºï¼Œè€Œä¸æ˜¯ç¦ç”¨ç»„ä»¶
             itemIcon.color = new Color(1, 1, 1, 0);
 
-            // ËùÓĞÊôĞÔ¶¼ÏÔÊ¾"¡ª"
-            attackText.text = "¹¥»÷Á¦: ¡ª";
-            defenseText.text = "·ÀÓùÁ¦: ¡ª";
-            healthText.text = "ÉúÃüÖµ: ¡ª";
-            attackSpeedText.text = "¹¥»÷ÆµÂÊ: ¡ª";
-            attackRangeText.text = "¹¥»÷·¶Î§: ¡ª";
-            moveSpeedText.text = "ÒÆ¶¯ËÙ¶È: ¡ª";
+            // æ‰€æœ‰å±æ€§éƒ½æ˜¾ç¤º"â€”"
+            attackText.text = "æ”»å‡»åŠ›: â€”";
+            defenseText.text = "é˜²å¾¡åŠ›: â€”";
+            healthText.text = "ç”Ÿå‘½å€¼: â€”";
+            attackSpeedText.text = "æ”»å‡»é¢‘ç‡: â€”";
+            attackRangeText.text = "æ”»å‡»èŒƒå›´: â€”";
+            moveSpeedText.text = "ç§»åŠ¨é€Ÿåº¦: â€”";
         }
     }
 
-    // ³õÊ¼»¯Ãæ°å
+    // åˆå§‹åŒ–é¢æ¿
     public void Initialize(UIManager manager)
     {
         uiManager = manager;
-        // Îª°´Å¥°ó¶¨ÊÂ¼ş
+        // ä¸ºæŒ‰é’®ç»‘å®šäº‹ä»¶
         equipButton.onClick.AddListener(OnEquipButtonClicked);
         backButton.onClick.AddListener(ClosePanel);
     }
 
-    // ÏÔÊ¾Ãæ°å²¢Ìî³äÊı¾İ
+    // æ˜¾ç¤ºé¢æ¿å¹¶å¡«å……æ•°æ®
     public void ShowPanel(EquipmentData currentEquipped, EquipmentData selected)
     {
         gameObject.SetActive(true);
         newEquipmentToEquip = selected;
 
-        // Èç¹ûµ±Ç°ÓĞ×°±¸£¬ÏÔÊ¾ËüµÄĞÅÏ¢
+        // å¦‚æœå½“å‰æœ‰è£…å¤‡ï¼Œæ˜¾ç¤ºå®ƒçš„ä¿¡æ¯
         if (currentEquipped != null)
         {
             leftColumn.Display(currentEquipped);
         }
-        else // ·ñÔòÏÔÊ¾¿Õ×´Ì¬
+        else // å¦åˆ™æ˜¾ç¤ºç©ºçŠ¶æ€
         {
             leftColumn.DisplayEmpty();
         }
 
-        // ÏÔÊ¾Ñ¡ÖĞ×°±¸µÄĞÅÏ¢
+        // æ˜¾ç¤ºé€‰ä¸­è£…å¤‡çš„ä¿¡æ¯
         rightColumn.Display(selected);
     }
 
-    // "×°±¸"°´Å¥±»µã»÷
+    // "è£…å¤‡"æŒ‰é’®è¢«ç‚¹å‡»
     public void OnEquipButtonClicked()
     {
         uiManager.EquipItem(newEquipmentToEquip);
-        ClosePanel(); // ×°±¸ºó¹Ø±Õ¶Ô±ÈÃæ°å
+        ClosePanel(); // è£…å¤‡åå…³é—­å¯¹æ¯”é¢æ¿
     }
 
     public void ClosePanel()

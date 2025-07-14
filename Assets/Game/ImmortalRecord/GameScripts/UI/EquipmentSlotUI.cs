@@ -2,14 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-// Õâ¸ö½Å±¾ÏÖÔÚÖ»°üº¬Ëü×Ô¼ºµÄÂß¼­£¬·Ç³£¸É¾»£¡
+// è¿™ä¸ªè„šæœ¬ç°åœ¨åªåŒ…å«å®ƒè‡ªå·±çš„é€»è¾‘ï¼Œéå¸¸å¹²å‡€ï¼
 public class EquipmentSlotUI : MonoBehaviour
 {
     public Image itemIcon;
     public TextMeshProUGUI levelText;
     public Sprite defaultIcon;
 
-    public EquipmentType slotType; // ËüÏÖÔÚ¿ÉÒÔÖ±½ÓÊ¹ÓÃÔÚ±ğ´¦¶¨ÒåµÄ EquipmentType
+    public EquipmentType slotType; // å®ƒç°åœ¨å¯ä»¥ç›´æ¥ä½¿ç”¨åœ¨åˆ«å¤„å®šä¹‰çš„ EquipmentType
 
     private EquipmentData currentEquipment;
 
@@ -36,7 +36,7 @@ public class EquipmentSlotUI : MonoBehaviour
     private void ClearSlot()
     {
         itemIcon.sprite = defaultIcon;
-        itemIcon.enabled = true; // È·±£Ä¬ÈÏÍ¼±êÊÇ¿É¼ûµÄ
+        itemIcon.enabled = true; // ç¡®ä¿é»˜è®¤å›¾æ ‡æ˜¯å¯è§çš„
         levelText.enabled = false;
     }
 }
