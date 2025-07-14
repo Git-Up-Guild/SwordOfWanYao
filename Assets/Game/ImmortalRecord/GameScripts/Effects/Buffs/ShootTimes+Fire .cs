@@ -13,7 +13,7 @@ class ShootTimesFire : EffectBase
         if (soldierModel.ID == SoldierTypeID)
         {
             // soldier.AttackFrequency += PlusTime;
-            soldierController.SetAttackFrequency(soldierModel.AttackFrequency + PlusTime);
+            //soldierController.SetAttackFrequency(soldierModel.AttackFrequency + PlusTime);
             // Debug.Log($"Applied ShootTimesBlade effect: {PlusTime} to {soldier.name}");
 
         }

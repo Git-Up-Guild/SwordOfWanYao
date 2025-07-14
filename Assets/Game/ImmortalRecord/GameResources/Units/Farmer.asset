@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 379600227, guid: 74796d639391f92418198613b7565d15, type: 3}
-  m_Name: GameConfig
+  m_Script: {fileID: 11500000, guid: 2b36065df15faf1469f8911ff3cc7035, type: 3}
+  m_Name: Farmer
   m_EditorClassIdentifier: 
-  baseResDir: G_Resources
-  gameResDir: Game/ImmortalRecord/GameResources
-  gameScriptDir: Assets/Game/ImmortalRecord/GameScripts
-  strNamespace: IR
+  unitName: Farmer
+  icon: {fileID: 21300000, guid: 0311a5aa4bb80a942865bcea48a649d3, type: 3}
+  unitPrefab: {fileID: 0}
+  spawnInterval: 10

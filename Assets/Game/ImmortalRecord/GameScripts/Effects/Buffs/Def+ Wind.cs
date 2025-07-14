@@ -17,7 +17,7 @@ class DefWind : EffectBase
             // 计算加成后的防御力  
             float newDef = currentDef * DefMultiplier;
             // 设置新防御力
-            soldierController.SetDefense(newDef);
+            //soldierController.SetDefense(newDef);
             
             Debug.Log($"Applied AtkBlade effect: {DefMultiplier} to {soldierModel.name}");
         

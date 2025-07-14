@@ -14,7 +14,7 @@ public class DefAll : EffectBase
         // 计算加成后的防御力
         float newDef = currentDef * defMultiplier;
         // 设置新防御力
-        soldierController.SetDefense(newDef);
+        //soldierController.SetDefense(newDef);
 
         Debug.Log($"全员增加防御力 Applied DefAll effect: x{defMultiplier} to {soldierModel.name}");
     }
