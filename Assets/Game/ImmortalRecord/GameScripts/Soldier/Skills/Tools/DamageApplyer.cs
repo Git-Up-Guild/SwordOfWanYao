@@ -19,13 +19,13 @@ public static class DamageApplyer
         if (isCrit)
         {
             attackValue *= CRIT_MULTIPLIER;
+            AudioManager.Instance.PlayNormalEffect();
         }
 
         int finalDamage = Mathf.Max(1, Mathf.CeilToInt(attackValue - defender.Defense));
 
         // 扣血
         defender.Health -= finalDamage;
-        AudioManager.Instance.PlayNormalEffect();
 
         if (defender.Camp != SoldierCamp.Ally)
             ShowFloatText(finalDamage, isCrit, pos);

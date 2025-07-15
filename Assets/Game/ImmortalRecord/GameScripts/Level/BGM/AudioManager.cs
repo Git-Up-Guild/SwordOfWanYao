@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour
     {
         if (normalSoundEffect != null)
         {
-            seSource.PlayOneShot(normalSoundEffect);
+            seSource.PlayOneShot(normalSoundEffect, 0.3f);
         }
     }
 
