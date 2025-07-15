@@ -5,9 +5,22 @@ using SwordOfWanYao;
 [CreateAssetMenu(menuName = "Buffmanager", order = 100)]
 public class BuffManager : ScriptableObject
 {
-    //当前生效的所有增益
-    private List<EffectBase> activeBuffs = new List<EffectBase>();
+    // 当前生效的所有增益
+    // 我们把它改成 public 但只在内部 set，方便外部查看但不允许直接修改列表
+    public List<EffectBase> activeBuffs { get; private set; } = new List<EffectBase>();
     //添加新增益
+
+    // --- 这是新的重置方法 ---
+    /// <summary>
+    /// 在新游戏开始时调用，清空所有已激活的Buff。
+    /// </summary>
+    public void ResetBuffs()
+    {
+        activeBuffs.Clear();
+        Debug.Log("[BuffManager] 所有激活的Buff已被重置。");
+    }
+
+
     public void AddBuff(EffectBase buff)
     {
         if (!activeBuffs.Contains(buff))

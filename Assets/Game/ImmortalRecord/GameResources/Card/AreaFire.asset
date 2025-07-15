@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AreaFire
   m_EditorClassIdentifier: 
   ID: 0
-  ICON: {fileID: 21300000, guid: e49207c9686de604db1356a9910136b3, type: 3}
+  ICON: {fileID: 21300000, guid: cd6bc9275cac32b4caac6fd14401b7dd, type: 3}
   Name: "\u589E\u52A0\u8303\u56F4"
   Description: "\u4F7F\u706B\u6CD5\u5E08\u7684\u653B\u51FB\u8303\u56F4\u589E\u52A0100%\n"
   Type: 1

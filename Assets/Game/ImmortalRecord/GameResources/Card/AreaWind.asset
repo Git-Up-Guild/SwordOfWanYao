@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AreaWind
   m_EditorClassIdentifier: 
   ID: 2
-  ICON: {fileID: 0}
+  ICON: {fileID: 21300000, guid: 73d107c574f384a4d804e30379aa84c8, type: 3}
   Name: "\u589E\u52A0\u8303\u56F4"
   Description: "\u4F7F\u5149\u7F57\u6C49\u7684\u653B\u51FB\u8303\u56F4\u589E\u52A0100%"
   Type: 1

@@ -19,7 +19,22 @@ public class GameManagers : MonoBehaviour
         else
         {
             Instance = this;
-            // DontDestroyOnLoad(gameObject); // 如果需要在不同场景间保持，可以取消这行注释
+            // --- 在这里执行所有需要重置的操作 ---
+            InitializeManagers();
         }
+    }
+    private void InitializeManagers()
+    {
+        // 检查BuffManager是否存在，然后调用它的重置方法
+        if (buffManager != null)
+        {
+            buffManager.ResetBuffs();
+        }
+
+        // 以后如果你有其他需要重置的管理器，也在这里调用
+        // if (unlockManager != null)
+        // {
+        //     unlockManager.ResetUnlocks();
+        // }
     }
 }
