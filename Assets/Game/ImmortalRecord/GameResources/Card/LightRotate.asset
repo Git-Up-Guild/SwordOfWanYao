@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52aa6debc8318b1428e2db658f56fe25, type: 3}
+  m_Name: LightRotate
+  m_EditorClassIdentifier: 
+  ID: 21
+  ICON: {fileID: 0}
+  Name: "\u5149\u67F1\u65CB\u8F6C"
+  Description: "\u5149\u7F57\u6C49\u6253\u51FA\u5149\u67F1\u540E\u53EF\u8BA9\u5149\u67F1\u4EE5\u81EA\u8EAB\u4E3A\u4E2D\u5FC3\u8FDB\u884C\u4E00\u5B9A\u89D2\u5EA6\u65CB\u8F6C"
+  Type: 1
+  Effect: {fileID: 11400000, guid: 92f12fbc19287ad4c9e58adc597537e8, type: 2}
+  MaxOwnable: 6
+  RequiredUnlockCards:
+  - {fileID: 11400000, guid: a6cec9e8365f77b4a8d1e82f148bf30d, type: 2}

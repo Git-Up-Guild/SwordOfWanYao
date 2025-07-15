@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13872e19c6c814f43b1b9e1794ce784c, type: 3}
-  m_Name: New Def Lance
+  m_Script: {fileID: 11500000, guid: 5e14494ea071a0b43ac3f7fcea799394, type: 3}
+  m_Name: New Choose Fire
   m_EditorClassIdentifier: 
-  soldierType: 1
-  DefValue: 10

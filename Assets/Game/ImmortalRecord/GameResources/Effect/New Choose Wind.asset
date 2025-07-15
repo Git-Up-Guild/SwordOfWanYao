@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a8eac74ce724e04c8bb04f3313df60d, type: 3}
-  m_Name: New Card Inventory
+  m_Script: {fileID: 11500000, guid: 99f11ff6dba7adf4d92e708f016167ca, type: 3}
+  m_Name: New Choose Wind
   m_EditorClassIdentifier: 
-  Items: []
-  levels: 0

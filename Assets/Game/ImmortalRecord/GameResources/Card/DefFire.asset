@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52aa6debc8318b1428e2db658f56fe25, type: 3}
-  m_Name: NewCard 1
+  m_Name: DefFire
   m_EditorClassIdentifier: 
-  ID: 0
-  ICON: {fileID: 21300000, guid: e49207c9686de604db1356a9910136b3, type: 3}
-  Name: 99999
-  Description: 999999
-  Effect: {fileID: 11400000, guid: c9d82dbddc48daf4ea2527f56e1eb6b4, type: 2}
+  ID: 16
+  ICON: {fileID: 0}
+  Name: "\u653B\u51FB\u529B\u589E\u52A0"
+  Description: "\u706B\u6CD5\u5E08\u653B\u51FB\u529B\u52A050%"
+  Type: 1
+  Effect: {fileID: 11400000, guid: 79e73b5c1542dd0418386434706c1156, type: 2}
   MaxOwnable: 6
+  RequiredUnlockCards:
+  - {fileID: 11400000, guid: 66be1c14b62599246b7abe6778c293e0, type: 2}

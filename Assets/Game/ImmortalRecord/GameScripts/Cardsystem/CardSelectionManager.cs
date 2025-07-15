@@ -192,21 +192,45 @@ public class CardSelectionManager : MonoBehaviour
                 cardInventory[selectedCard]++;
             }
 
+            // --- 在这里添加新的逻辑 ---
+            // 如果这是一张解锁兵种的卡，就通知UnlockManager记录下来
+            if (selectedCard.Type == CardType.UnlockUnit)
+            {
+                if (UnlockManager.Instance != null)
+                {
+                    UnlockManager.Instance.RecordUnlockCardSelected(selectedCard);
+                }
+            }
+
             if (CardPanel != null) CardPanel.SetActive(false);
             Time.timeScale = 1f;
 
             if (toggleGroup != null) toggleGroup.SetAllTogglesOff();
 
             onConfirmedCallback?.Invoke(selectedCard);
+
         }
     }
 
     private List<CardConfig> GetAvailableCards()
     {
         List<CardConfig> available = new List<CardConfig>();
+
+        // 检查UnlockManager是否存在
+        if (UnlockManager.Instance == null)
+        {
+            Debug.LogError("UnlockManager未找到，无法正确筛选卡牌！");
+            return available; // 返回一个空列表，避免后续错误
+        }
+
         foreach (var card in CardPool)
         {
-            if (GetCardCount(card) < card.MaxOwnable)
+            bool canOwnMore = GetCardCount(card) < card.MaxOwnable;
+
+            // --- 使用新的检查方法 ---
+            bool requirementsMet = UnlockManager.Instance.AreRequirementsMetForCard(card);
+
+            if (canOwnMore && requirementsMet)
             {
                 available.Add(card);
             }

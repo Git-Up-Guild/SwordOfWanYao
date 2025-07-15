@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52aa6debc8318b1428e2db658f56fe25, type: 3}
+  m_Name: DefLight
+  m_EditorClassIdentifier: 
+  ID: 17
+  ICON: {fileID: 0}
+  Name: "\u653B\u51FB\u529B\u589E\u52A0"
+  Description: "\u5149\u7F57\u6C49\u653B\u51FB\u529B\u52A050%"
+  Type: 1
+  Effect: {fileID: 11400000, guid: e7c17a08788f3c545ac1ca6e14ae7ccb, type: 2}
+  MaxOwnable: 6
+  RequiredUnlockCards:
+  - {fileID: 11400000, guid: a6cec9e8365f77b4a8d1e82f148bf30d, type: 2}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52aa6debc8318b1428e2db658f56fe25, type: 3}
+  m_Name: TimeFire
+  m_EditorClassIdentifier: 
+  ID: 27
+  ICON: {fileID: 0}
+  Name: "\u589E\u52A0\u6280\u80FD\u6301\u7EED\u65F6\u95F4"
+  Description: "\u4F7F\u706B\u6CD5\u5E08\u7684\u6280\u80FD\u6301\u7EED\u65F6\u95F4\u589E\u52A060%"
+  Type: 1
+  Effect: {fileID: 11400000, guid: eadb80c537cddc44c8fcfb01e0b57928, type: 2}
+  MaxOwnable: 6
+  RequiredUnlockCards:
+  - {fileID: 11400000, guid: 66be1c14b62599246b7abe6778c293e0, type: 2}

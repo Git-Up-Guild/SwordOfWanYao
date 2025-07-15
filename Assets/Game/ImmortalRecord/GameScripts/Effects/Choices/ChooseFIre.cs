@@ -1,18 +1,22 @@
 using UnityEngine;
-
+using SwordOfWanYao;
 [CreateAssetMenu(menuName = "Card/ChooseFire", order = 200)]
 public class ChooseFire : EffectBase
-{
+{ 
+   
+
     public override void ApplyEffect(SoldierModel soldierModel)
     {
         if (SpawnManager.Instance != null)
         {
             SpawnManager.Instance.AddToSpawnList(SoldierType.FireMage);
-            Debug.Log("ç«æ³•å¸ˆå·²åŠ å…¥å¯é€‰å…µç§åˆ—è¡¨");
+            Debug.Log("»ğ·¨Ê¦ÒÑ¼ÓÈë¿ÉÑ¡±øÖÖÁĞ±í");
         }
         else
         {
-            Debug.LogError("SpawnManager.Instance æœªåˆå§‹åŒ–ï¼Œæ— æ³•æ·»åŠ ç«æ³•å¸ˆ");
+            Debug.LogError("SpawnManager.Instance Î´³õÊ¼»¯£¬ÎŞ·¨Ìí¼Ó»ğ·¨Ê¦");
         }
+
+      
     }
 }
