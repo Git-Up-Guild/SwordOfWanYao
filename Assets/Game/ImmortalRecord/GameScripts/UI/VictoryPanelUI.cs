@@ -8,66 +8,59 @@ using TMPro; // 如果使用TextMeshPro
 
 public class VictoryPanelUI : MonoBehaviour
 {
-    // --- 新增：单例模式 ---
+    // --- 单例模式 ---
     public static VictoryPanelUI Instance { get; private set; }
-    private void Awake()
-    {
-        // 设置单例，确保场景中只有一个实例
-        if (Instance != null && Instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            Instance = this;
-        }
 
-        // 默认情况下，面板应该是隐藏的
-        // 这一步也可以在Start()里做，或者直接在编辑器里禁用GameObject
-        gameObject.SetActive(false);
-    }
-    // -------------------------
-
+    // --- UI组件引用 ---
     [Header("主面板与背景")]
-    [SerializeField] private GameObject dimmerBackground; // 半透明背景遮罩
-
+    [SerializeField] private GameObject dimmerBackground;
     [Header("奖励区域")]
-    [SerializeField] private Transform rewardsGrid; // 奖励物品网格的父物体
-    [SerializeField] private GameObject rewardItemPrefab; // 单个奖励物品的预制件
-
+    [SerializeField] private Transform rewardsGrid;
+    [SerializeField] private GameObject rewardItemPrefab;
     [Header("操作按钮")]
     [SerializeField] private Button backButton;
     [SerializeField] private Button doubleRewardButton;
 
-    // --- 为了演示，我们在Start中调用测试 ---
-    // 实际游戏中，这个Show方法应该由你的GameManager在战斗胜利时调用
-    void Start()
+    // --- 新增的数据引用 ---
+    [Header("关卡数据源")]
+    [Tooltip("将本关卡对应的LevelData资源文件拖到这里")]
+    [SerializeField] private LevelData levelData;
+
+
+    private void Awake()
     {
-        // 游戏开始时先隐藏自己
+        if (Instance != null && Instance != this) { Destroy(this.gameObject); }
+        else { Instance = this; }
+
+        // 游戏开始时，确保面板是隐藏的
         gameObject.SetActive(false);
         if (dimmerBackground != null) dimmerBackground.SetActive(false);
     }
 
     private void OnEnable()
     {
-        // 为按钮绑定事件
         if (backButton != null) backButton.onClick.AddListener(OnBackButtonClicked);
         if (doubleRewardButton != null) doubleRewardButton.onClick.AddListener(OnDoubleRewardButtonClicked);
     }
 
     private void OnDisable()
     {
-        // 移除事件监听，好习惯
         if (backButton != null) backButton.onClick.RemoveAllListeners();
         if (doubleRewardButton != null) doubleRewardButton.onClick.RemoveAllListeners();
     }
 
     /// <summary>
-    /// 显示胜利面板并用数据填充UI
+    /// 显示胜利面板。它会自动从配置的levelData中获取奖励信息。
     /// </summary>
-    /// <param name="data">包含所有结算信息的数据包</param>
-    public void Show(VictoryData data)
+    public void Show() // <-- 修改点1：不再需要接收 VictoryData 参数
     {
+        // 安全检查：确认levelData已经被配置
+        if (levelData == null)
+        {
+            Debug.LogError("VictoryPanelUI上的LevelData未配置！无法显示奖励。");
+            return;
+        }
+
         // 激活面板和背景
         if (dimmerBackground != null) dimmerBackground.SetActive(true);
         gameObject.SetActive(true);
@@ -79,40 +72,35 @@ public class VictoryPanelUI : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        // 2. 检查传入的奖励数据是否存在
-        if (data.rewards != null)
+        // 2. 从我们自己持有的 levelData 中获取奖励列表
+        if (levelData.victoryRewards != null)
         {
             // 3. 遍历数据，根据数据生成新的奖励图标
-            foreach (var rewardData in data.rewards)
+            foreach (var rewardData in levelData.victoryRewards)
             {
+                // 实例化预制件，并指定父物体为rewardsGrid
                 GameObject itemGO = Instantiate(rewardItemPrefab, rewardsGrid);
+
+                // 获取预制件上的脚本
                 RewardItemUI itemUI = itemGO.GetComponent<RewardItemUI>();
                 if (itemUI != null)
                 {
-                    // 调用预制件上脚本的Setup方法来设置图标和数量
+                    // 调用Setup方法，把奖励数据传递过去
                     itemUI.Setup(rewardData);
                 }
             }
         }
-
-
     }
 
-    // --- 按钮点击事件处理 ---
     private void OnBackButtonClicked()
     {
         Debug.Log("返回按钮被点击！");
-        // 在这里添加返回主菜单或关卡选择的逻辑
-        // UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        // ...
     }
-
 
     private void OnDoubleRewardButtonClicked()
     {
         Debug.Log("奖励翻倍按钮被点击！");
-        // 在这里添加观看广告并分发双倍奖励的逻辑
+        // ...
     }
-
-
-   
 }
