@@ -33,6 +33,9 @@ public class RuntimeSoldierSkillHub : MonoBehaviour
             var clonedList = new List<SoldierSkillDataBase>();
             foreach (var skill in db.skills)
             {
+                if (skill == null)
+                    CustomLogger.LogError($"{db.name}");
+
                 var copy = Instantiate(skill);
                 clonedList.Add(copy);
             }

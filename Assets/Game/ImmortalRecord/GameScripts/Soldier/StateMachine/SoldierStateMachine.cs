@@ -28,7 +28,6 @@ public class SoldierStateMachine : MonoBehaviour
 
     public void InitStateMachine()
     {
-
         m_attackDetector.Init();
         m_attackRangeDetector.Init();
 

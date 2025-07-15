@@ -17,8 +17,6 @@ public class EnemySpawnManager : MonoBehaviour
 
     private List<IEnemySpawnPoint> _points = new List<IEnemySpawnPoint>();
     private float _gameStartTime;
-    private int m_killCount = 0;
-    private int m_lastLevel = 0;
     private Dictionary<SoldierType, System.Action<SoldierAttributeSO>> m_upgradeActions;
     [SerializeField] private float m_eachLevelAttackPowerMutiplier = 1.1f;
     [SerializeField] private float m_eachLevelHealthPowerMutiplier = 1.3f;
@@ -76,10 +74,12 @@ public class EnemySpawnManager : MonoBehaviour
 
         foreach (var pt in _points)
         {
+
+
             if (now < pt.NextSpawnTime) continue;
 
             // 计算经过了多少个 40s 周期
-            int wavesPassed = Mathf.Max(0, Mathf.FloorToInt((elapsed - pt.SpawnDelay) / 40f));
+            int wavesPassed = Mathf.Max(0, Mathf.FloorToInt((elapsed - pt.SpawnDelay) / 20f));
             int spawnCount = pt.BaseSpawnCount + wavesPassed * pt.SpawnIncrement;
 
             for (int i = 0; i < spawnCount; i++)

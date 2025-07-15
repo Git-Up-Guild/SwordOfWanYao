@@ -20,7 +20,6 @@ public class AllySpawner : MonoBehaviour, IAllySpawnPoint
     private void Start()
     {
         SpawnManager.Instance.RegisterSpawnPoint(this);
-        CustomLogger.LogWarning("Register123");
     }
 
     private void OnDisable()

@@ -31,4 +31,4 @@ MonoBehaviour:
     projectileCount: 0
     maxExistCount: 0
   skills:
-  - {fileID: 11400000, guid: 7d6170d9b4b0a4ad3b08ce5863ae7c2f, type: 2}
+  - {fileID: 11400000, guid: fb54a97090fb143778f2e2251cbe839c, type: 2}
