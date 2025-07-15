@@ -22,7 +22,7 @@ public class AOEEffect : MonoBehaviour
     private float m_rotatingSpeed;
     private float m_rotatingInterval;
     private float m_baseRotation;
-    private bool  m_isAttached;
+    private bool m_isAttached;
 
     public void Init(
         SoldierModel attacker,
@@ -61,6 +61,9 @@ public class AOEEffect : MonoBehaviour
         if (m_canRotate && m_isAttached)
             StartCoroutine(RotateLoop());
 
+        if (m_attacker.Type == SoldierType.LightMonk)
+            AudioManager.Instance.PlayLightMonkSoundEffect();
+
         Destroy(gameObject, m_duration);
     }
 
@@ -78,12 +81,12 @@ public class AOEEffect : MonoBehaviour
 
     private void Update()
     {
-        if (m_canPull)
-        {
-            ApplyPullAndMove();
+        // if (m_canPull)
+        // {
+        //     ApplyPullAndMove();
 
-        }
-        if (ShouldDestroy()) 
+        // }
+        if (ShouldDestroy())
         {
             Destroy(gameObject);
         }
@@ -99,8 +102,11 @@ public class AOEEffect : MonoBehaviour
                 var circle = m_collider as CircleCollider2D;
                 if (circle != null)
                 {
-                    Vector2 center = (Vector2)transform.position + circle.offset;
-                    hits = Physics2D.OverlapCircleAll(center, circle.radius * transform.lossyScale.x);
+                    Vector2 checkPos = (Vector2)transform.position + circle.offset;
+                    hits = Physics2D.OverlapCircleAll(checkPos, circle.radius);
+                    DebugDrawCircle(checkPos, circle.radius, Color.yellow, 1f);
+                    // Vector2 center = (Vector2)transform.position + circle.offset;
+                    // hits = Physics2D.OverlapCircleAll(center, circle.radius);
                 }
                 break;
 
@@ -119,6 +125,7 @@ public class AOEEffect : MonoBehaviour
 
         foreach (var hit in hits)
         {
+            if (hit.isTrigger) continue;
             SoldierModel model = hit.GetComponentInParent<SoldierModel>();
             if (model != null && model.Camp != m_attacker.Camp)
             {
@@ -134,7 +141,7 @@ public class AOEEffect : MonoBehaviour
             }
         }
     }
-    
+
     private Vector2 _currentMoveDir;
     private float _dirChangeTimer;
     public float _dirChangeInterval = 0f; // 每2秒换方向
@@ -149,8 +156,11 @@ public class AOEEffect : MonoBehaviour
                 var circle = m_collider as CircleCollider2D;
                 if (circle != null)
                 {
-                    Vector2 center = (Vector2)transform.position + circle.offset;
-                    hits = Physics2D.OverlapCircleAll(center, circle.radius * transform.lossyScale.x);
+                    Vector2 checkPos = (Vector2)transform.position + circle.offset;
+                    hits = Physics2D.OverlapCircleAll(checkPos, circle.radius);
+                    DebugDrawCircle(checkPos, circle.radius, Color.yellow, 1f);
+                    // hits = Physics2D.OverlapCircleAll(transform.position, circle.radius);
+                    // DebugDrawCircle(transform.position, circle.radius, Color.yellow, 1f);
                 }
                 break;
             case AOEShape.Rectangle:
@@ -202,7 +212,7 @@ public class AOEEffect : MonoBehaviour
             float rotated = 0f;
             while (rotated < m_rotateAngle)
             {
-                if (ShouldDestroy()) 
+                if (ShouldDestroy())
                 {
                     Destroy(gameObject);
                     yield break;
@@ -221,7 +231,7 @@ public class AOEEffect : MonoBehaviour
             float back = 0f;
             while (back < m_rotateAngle)
             {
-                if (ShouldDestroy()) 
+                if (ShouldDestroy())
                 {
                     Destroy(gameObject);
                     yield break;
@@ -248,7 +258,7 @@ public class AOEEffect : MonoBehaviour
         float timer = 0;
         while (timer < duration)
         {
-            if (ShouldDestroy()) 
+            if (ShouldDestroy())
             {
                 Destroy(gameObject);
                 yield break;
@@ -258,8 +268,16 @@ public class AOEEffect : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
+    private void DebugDrawCircle(Vector2 center, float radius, Color color, float duration)
     {
-        Gizmos.color = Color.red;
+        float segments = 36;
+        float anglePerSeg = 360f / segments;
+
+        for (int i = 0; i < segments; i++)
+        {
+            Vector2 start = (Vector3)center + Quaternion.Euler(0, 0, anglePerSeg * i) * Vector2.up * radius;
+            Vector2 end = (Vector3)center + Quaternion.Euler(0, 0, anglePerSeg * (i + 1)) * Vector2.up * radius;
+            Debug.DrawLine(start, end, color, duration);
+        }
     }
 }
