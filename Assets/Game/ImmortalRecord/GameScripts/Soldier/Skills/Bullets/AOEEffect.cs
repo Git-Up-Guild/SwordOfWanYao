@@ -177,6 +177,7 @@ public class AOEEffect : MonoBehaviour
         {
             foreach (var hit in hits)
             {
+                if (hit.isTrigger) continue;
                 var model = hit.GetComponentInParent<SoldierModel>();
                 if (model != null && model.Camp != m_attacker.Camp)
                 {
