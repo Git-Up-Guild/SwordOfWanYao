@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea0e7adc76d5d924aa6aa1d8b756fd28, type: 3}
-  m_Name: IronHelmet1 2
+  m_Name: ARMOR
   m_EditorClassIdentifier: 
-  itemName: "\u786C\u5934"
-  level: 4
-  icon: {fileID: 21300000, guid: 6dabb6f813b3b404ea89a67f2c0fc4d8, type: 3}
-  type: 0
+  itemName: "\u5934\u94C1"
+  level: 5
+  icon: {fileID: 21300000, guid: 1a87a8fda53d846b5b2d73b1e6fff580, type: 3}
+  type: 1
   attack: 5
-  defense: 0
-  health: 0
+  defense: 10
+  health: 10
   attackSpeed: 0
   attackRange: 0
   moveSpeed: 0
