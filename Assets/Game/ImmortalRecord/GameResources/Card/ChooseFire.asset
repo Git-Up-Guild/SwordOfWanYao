@@ -17,6 +17,6 @@ MonoBehaviour:
   Name: "\u9009\u62E9\u706B\u6CD5\u5E08"
   Description: 
   Type: 0
-  Effect: {fileID: 11400000, guid: 4b5e9ca7dc23e084883242d35a1b3dc0, type: 2}
+  Effect: {fileID: 11400000, guid: 17dcd84537e15ce4fab6ff218ad96eda, type: 2}
   MaxOwnable: 1
   RequiredUnlockCards: []

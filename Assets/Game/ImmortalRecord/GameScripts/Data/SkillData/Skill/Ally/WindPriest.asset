@@ -25,7 +25,7 @@ MonoBehaviour:
   tickInterval: 1
   isAttachedToFollower: 0
   canPull: 1
-  pullStrength: 0.5
+  pullStrength: 10
   moveSpeed: 3
   canRotate: 0
   angle: 0
