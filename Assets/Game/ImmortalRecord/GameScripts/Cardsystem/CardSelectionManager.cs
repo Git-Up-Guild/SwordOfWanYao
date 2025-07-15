@@ -23,7 +23,6 @@ public class CardSelectionManager : MonoBehaviour
     public Dictionary<CardConfig, int> cardInventory = new Dictionary<CardConfig, int>();
 
     public GameObject DeathPanel;
-
     private void Awake()
     {
         Instance = this;

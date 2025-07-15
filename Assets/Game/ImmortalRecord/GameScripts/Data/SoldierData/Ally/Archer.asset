@@ -27,7 +27,8 @@ MonoBehaviour:
     lockOnRange: 50
     attackRange: 30
     attackSpeed: 1
-    attackFrequency: 3
-    projectileCount: 3
+    attackFrequency: 1
+    projectileCount: 1
+    maxExistCount: 10
   skills:
   - {fileID: 11400000, guid: 7d6170d9b4b0a4ad3b08ce5863ae7c2f, type: 2}

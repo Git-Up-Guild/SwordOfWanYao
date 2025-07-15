@@ -12,20 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d088da3873d483ca08c89da7c07e07, type: 3}
   m_Name: Swiftbeak
   m_EditorClassIdentifier: 
-  ID: 0
-  displayName: 
+  ID: 6
+  displayName: "\u8FC5\u9E1F\u602A"
   description: 
   portrait: {fileID: 0}
   rarity: 0
-  soldierType: 0
-  camp: 0
+  soldierType: 7
+  camp: 1
   attributes:
-    maxHealth: 0
+    maxHealth: 100
     attackPowerMutiplier: 1
-    defense: 0
-    moveSpeed: 0
-    lockOnRange: 0
-    attackRange: 0
-    attackSpeed: 0
-    attackFrequency: 0
-  skills: []
+    defense: 2
+    moveSpeed: 5
+    lockOnRange: 50
+    attackRange: 3
+    attackSpeed: 1
+    attackFrequency: 1
+    projectileCount: 0
+  skills:
+  - {fileID: 11400000, guid: 408f673ac3af84f1eb169fca5bd36524, type: 2}

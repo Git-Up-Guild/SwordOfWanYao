@@ -80,7 +80,6 @@ public class SpawnerInArea : MonoBehaviour
 
     public void Spawn()
     {
-
         int index = Random.Range(0, m_soldierPrefabs.Count);
         GameObject selectedPrefab = m_soldierPrefabs[index];
 
@@ -93,7 +92,6 @@ public class SpawnerInArea : MonoBehaviour
         GameObject obj = Instantiate(prefab, pos, Quaternion.identity);
         SoldierController controller = obj.GetComponent<SoldierController>();
         controller.Init();
-        
     }
 
     private Vector2 GetRandomPointInArea()
@@ -121,6 +119,5 @@ public class SpawnerInArea : MonoBehaviour
                 return Vector2.zero;
         }
     }
-
 
 }

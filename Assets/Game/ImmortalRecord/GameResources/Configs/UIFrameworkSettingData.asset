@@ -30,11 +30,28 @@ MonoBehaviour:
     FlexManagerHorizontalAnimTempleteID: 0
     FlexManagerGridAnimTempleteID: 0
     AnimTempletes: {fileID: 0}
-  WndSettings: []
+  WndSettings:
+  - Name: UILogin
+    IsOverlayMode: 0
+    IsSupportStack: 1
+    IsShieldBackWnds: 1
+    IsCanBeShield: 1
+    OccupyStackTopSound: 0
+    DisplayMode: 0
+    BackgroundMode: 0
+    IsSupportClickBackgroundClose: 0
+    IsAlignToMousePosition: 0
+    WndType: GameScripts.IR.UI.Login.UILogin
+    IsCloseWhenExitGame: 1
+    IsSupportPopupAnim: 0
+    IsSupportLoadingMask: 0
+    IsLoadingMaskBlockWindowShow: 0
   StateWndSettings:
   - stateID: 1
-    showWndsOnEnter: []
-    closeWndsOnLeave: []
+    showWndsOnEnter:
+    - GameScripts.IR.UI.Login.UILogin
+    closeWndsOnLeave:
+    - GameScripts.IR.UI.Login.UILogin
   - stateID: 2
     showWndsOnEnter: []
     closeWndsOnLeave: []

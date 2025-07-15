@@ -42,19 +42,16 @@ public class SoldierHealthDisplay : MonoBehaviour
 
     private void OnHealthChanged(object data)
     {
-
         var changeData = (SoldierModel.SoldierAttributeChangeData)data;
         healthSlider.maxValue = m_model.MaxHealth;
 
         targetHealth = changeData.CurrentValue;
 
         healthSlider.gameObject.SetActive(changeData.CurrentValue >= 0);
-
     }
 
     private void OnDisable()
     {
-
         if (EventManager.Instance == null) return;
 
         EventManager.Instance.Subscribe<IEventData>(SoldierEventNames.HealthChanged, m_model, OnHealthChanged);

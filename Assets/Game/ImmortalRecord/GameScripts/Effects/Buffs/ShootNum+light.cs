@@ -1,13 +1,14 @@
 using UnityEngine;
-[CreateAssetMenu(menuName = "Buff/ArShootNum+lighteaFire", order = 102)]
-class ShootNumlight : EffectBase
-{
-    [Header("兵种类型ID")]
-    public int SoldierTypeID = 6;
 
-    
+[CreateAssetMenu(menuName = "Buff/ShootNum+Light", order = 106)]
+public class ShootNumLight : EffectBase
+{   
+    [Header("增加的弹道数量")]
+    public int addCount = 1;
+
     public override void ApplyEffect(SoldierModel soldierModel)
     {
-        
+        RuntimeSoldierAttributeHub.Instance.Modify(SoldierType.LightMonk, attr => attr.projectileCount += addCount);
+        Debug.Log("弓兵弹道数量+1");
     }
 }

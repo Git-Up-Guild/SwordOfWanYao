@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DarkArcher
   m_EditorClassIdentifier: 
   ID: 1
-  displayName: DarkArcher
+  displayName: "\u9B54\u5F13\u624B"
   description: Test
   portrait: {fileID: 0}
   rarity: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
     moveSpeed: 3
     lockOnRange: 40
     attackRange: 20
-    attackSpeed: 1
+    attackSpeed: 0.5
     attackFrequency: 1
     projectileCount: 0
   skills:

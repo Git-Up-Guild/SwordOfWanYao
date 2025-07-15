@@ -1,16 +1,16 @@
-// ÎÄ¼şÃû: LevelData.cs
+// æ–‡ä»¶å: LevelData.cs
 using UnityEngine;
 
-// [CreateAssetMenu] ÊôĞÔÈÃÎÒÃÇ¿ÉÒÔ´Ó Assets/Create ²Ëµ¥´´½¨Õâ¸öÀàĞÍµÄ×ÊÔ´ÎÄ¼ş
+// [CreateAssetMenu] å±æ€§è®©æˆ‘ä»¬å¯ä»¥ä» Assets/Create èœå•åˆ›å»ºè¿™ä¸ªç±»å‹çš„èµ„æºæ–‡ä»¶
 [CreateAssetMenu(fileName = "NewLevelData", menuName = "MyGame/Level Data")]
 public class LevelData : ScriptableObject
 {
-    [Header("¹Ø¿¨»ù´¡ĞÅÏ¢")]
-    public int levelNumber;         // ¹Ø¿¨±àºÅ£¬ÀıÈç£º1, 2, 3
-    public string levelName;        // ¹Ø¿¨Ãû³Æ£¬ÀıÈç£º¡°ÖñÁÖÉî´¦¡±
-    public Sprite levelImage;       // ÔÚÑ¡Ôñ½çÃæÏÔÊ¾µÄ¹Ø¿¨´óÍ¼
+    [Header("å…³å¡åŸºç¡€ä¿¡æ¯")]
+    public int levelNumber;         // å…³å¡ç¼–å·ï¼Œä¾‹å¦‚ï¼š1, 2, 3
+    public string levelName;        // å…³å¡åç§°ï¼Œä¾‹å¦‚ï¼šâ€œç«¹æ—æ·±å¤„â€
+    public Sprite levelImage;       // åœ¨é€‰æ‹©ç•Œé¢æ˜¾ç¤ºçš„å…³å¡å¤§å›¾
 
-    [Header("Õ½¶·³¡¾°ĞÅÏ¢")]
-    public string sceneNameToLoad;  // µã»÷¡°Õ½¶·¡±ºóĞèÒª¼ÓÔØµÄ³¡¾°ÎÄ¼şÃû
-                                    // ÖØÒª£ºÕâ¸öÃû×Ö±ØĞëºÍÄãÔÚ Build Settings ÖĞÌí¼ÓµÄ³¡¾°Ãû×ÖÍêÈ«Ò»ÖÂ£¡
+    [Header("æˆ˜æ–—åœºæ™¯ä¿¡æ¯")]
+    public string sceneNameToLoad;  // ç‚¹å‡»â€œæˆ˜æ–—â€åéœ€è¦åŠ è½½çš„åœºæ™¯æ–‡ä»¶å
+                                    // é‡è¦ï¼šè¿™ä¸ªåå­—å¿…é¡»å’Œä½ åœ¨ Build Settings ä¸­æ·»åŠ çš„åœºæ™¯åå­—å®Œå…¨ä¸€è‡´ï¼
 }

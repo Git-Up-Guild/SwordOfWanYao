@@ -11,7 +11,7 @@ public class ProjectileSplit : MonoBehaviour
         GameObject bulletPrefab)
     {
 
-        float baseAngle = Mathf.Atan2(originalDirection.y, originalDirection.x) * Mathf.Rad2Deg;
+        float baseAngle = Mathf.Atan2(originalDirection.y, originalDirection.x) * Mathf.Rad2Deg + 90;
 
         // 计算每支子弹的旋转偏移
         for (int i = 0; i < 3; i++)
