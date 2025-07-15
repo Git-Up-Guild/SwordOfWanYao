@@ -53,20 +53,29 @@ public class VictoryPanelUI : MonoBehaviour
         gameObject.SetActive(true);
 
         // --- 填充奖励UI ---
-        // 1. 清理旧的奖励图标
+        // 1. 清理旧的奖励图标 (防止重玩时UI重复)
         foreach (Transform child in rewardsGrid)
         {
             Destroy(child.gameObject);
         }
-        // 2. 根据数据生成新的奖励图标
-        foreach (var rewardData in data.rewards)
+
+        // 2. 检查传入的奖励数据是否存在
+        if (data.rewards != null)
         {
-            GameObject itemGO = Instantiate(rewardItemPrefab, rewardsGrid);
-            // 这里你需要一个 RewardItemUI.cs 脚本挂在预制件上，用来设置图标和数量
-            // itemGO.GetComponent<RewardItemUI>().Setup(rewardData.itemIcon, rewardData.quantity);
+            // 3. 遍历数据，根据数据生成新的奖励图标
+            foreach (var rewardData in data.rewards)
+            {
+                GameObject itemGO = Instantiate(rewardItemPrefab, rewardsGrid);
+                RewardItemUI itemUI = itemGO.GetComponent<RewardItemUI>();
+                if (itemUI != null)
+                {
+                    // 调用预制件上脚本的Setup方法来设置图标和数量
+                    itemUI.Setup(rewardData);
+                }
+            }
         }
 
-        
+
     }
 
     // --- 按钮点击事件处理 ---
