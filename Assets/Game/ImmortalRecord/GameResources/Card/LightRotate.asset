@@ -18,6 +18,6 @@ MonoBehaviour:
   Description: "\u5149\u7F57\u6C49\u6253\u51FA\u5149\u67F1\u540E\u53EF\u8BA9\u5149\u67F1\u4EE5\u81EA\u8EAB\u4E3A\u4E2D\u5FC3\u8FDB\u884C\u4E00\u5B9A\u89D2\u5EA6\u65CB\u8F6C"
   Type: 1
   Effect: {fileID: 11400000, guid: 92f12fbc19287ad4c9e58adc597537e8, type: 2}
-  MaxOwnable: 6
+  MaxOwnable: 1
   RequiredUnlockCards:
   - {fileID: 11400000, guid: a6cec9e8365f77b4a8d1e82f148bf30d, type: 2}

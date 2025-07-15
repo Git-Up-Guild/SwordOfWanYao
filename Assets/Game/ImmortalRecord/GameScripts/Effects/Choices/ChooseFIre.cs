@@ -8,11 +8,11 @@ public class ChooseFire : EffectBase
         if (SpawnManager.Instance != null)
         {
             SpawnManager.Instance.AddToSpawnList(SoldierType.FireMage);
-            Debug.Log("ç«æ³•å¸ˆ");
+            Debug.Log("»ğ·¨Ê¦");
         }
         else
         {
-            Debug.LogError("SpawnManager.Instance æœªåˆå§‹åŒ–ï¼Œæ— æ³•æ·»åŠ ç«æ³•å¸ˆ");
+            Debug.LogError("SpawnManager.Instance Î´³õÊ¼»¯£¬ÎŞ·¨Ìí¼Ó»ğ·¨Ê¦");
         }
 
 

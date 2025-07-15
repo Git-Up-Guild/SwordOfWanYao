@@ -6,6 +6,8 @@ public class GameManagers : MonoBehaviour
     // 使用单例模式，让其他脚本可以通过 GameManager.Instance 访问它
     public static GameManagers Instance { get; private set; }
 
+    public LevelData currentPlayingLevel; // 这个变量需要在加载关卡时被设置
+
     // 在Inspector中，把我们创建的BuffManager资源文件拖到这里
     [Header("全局管理器引用")]
     public BuffManager buffManager;

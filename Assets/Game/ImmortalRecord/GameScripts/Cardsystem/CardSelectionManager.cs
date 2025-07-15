@@ -11,6 +11,15 @@ using System.Collections; // 引入协程所需的命名空间
 
 public class CardSelectionManager : MonoBehaviour
 {
+    // --- 新增：定义抽卡阶段的枚举 ---
+    private enum DrawPhase
+    {
+        Opening,  // 开局特殊抽卡阶段
+        MidGame   // 游戏中期常规抽卡阶段
+    }
+    // --- 新增：记录当前所处的阶段 ---
+    private DrawPhase currentDrawPhase = DrawPhase.Opening;
+
     // 使用单例模式，方便其他脚本（如触发器）轻松访问
     public static CardSelectionManager Instance { get; private set; }
 
@@ -87,8 +96,13 @@ public class CardSelectionManager : MonoBehaviour
         {
             UnlockManager.Instance.UnlockGlobalAttributeCards();
         }
+        // --- 关键：在这里切换游戏阶段！---
+        currentDrawPhase = DrawPhase.MidGame;
+        Debug.Log("抽卡阶段已切换到：MidGame。现在所有卡牌都可以被抽取。");
+
         // **关键：在所有初始流程都跑完之后，才开始订阅游戏中期的抽卡事件**
         CardSelectionTrigger.OnCardDrawTriggered += TriggerMidGameCardDraw;
+        
         Debug.Log("初始流程结束，已开始监听常规抽卡触发。");
 
     }
@@ -243,6 +257,13 @@ public class CardSelectionManager : MonoBehaviour
         foreach (var card in CardPool)
         {
             // --- 新的筛选逻辑 ---
+            // --- 在这里添加新的筛选逻辑 ---
+            // 1. 如果当前是开局阶段，并且这张卡不是“解锁兵种”类型，则直接跳过
+            if (currentDrawPhase == DrawPhase.Opening && card.Type != CardType.UnlockUnit)
+            {
+                continue;
+            }
+
             // 1. 如果是全局属性卡，但全局卡尚未解锁，则跳过
             if (card.Type == CardType.GlobalAttribute && !globalsUnlocked)
             {
@@ -258,6 +279,8 @@ public class CardSelectionManager : MonoBehaviour
                 available.Add(card);
             }
         }
+        // --- 增加一个日志，方便调试 ---
+        Debug.Log($"当前抽卡阶段: {currentDrawPhase}. 可用卡池数量: {available.Count}");
         return available;
     }
 

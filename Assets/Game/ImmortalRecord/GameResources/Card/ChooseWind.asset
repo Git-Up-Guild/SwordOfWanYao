@@ -18,5 +18,5 @@ MonoBehaviour:
   Description: 
   Type: 0
   Effect: {fileID: 11400000, guid: f3a41a304024f0942ad1d23794f2d009, type: 2}
-  MaxOwnable: 6
+  MaxOwnable: 1
   RequiredUnlockCards: []

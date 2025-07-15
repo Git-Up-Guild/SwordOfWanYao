@@ -15,7 +15,7 @@ MonoBehaviour:
   ID: 2
   ICON: {fileID: 21300000, guid: 73d107c574f384a4d804e30379aa84c8, type: 3}
   Name: "\u589E\u52A0\u8303\u56F4"
-  Description: "\u4F7F\u5149\u7F57\u6C49\u7684\u653B\u51FB\u8303\u56F4\u589E\u52A0100%"
+  Description: "\u4F7F\u98CE\u796D\u53F8\u7684\u653B\u51FB\u8303\u56F4\u589E\u52A0100%"
   Type: 1
   Effect: {fileID: 11400000, guid: eba42a40e3f23ca4781b1bb43c85758f, type: 2}
   MaxOwnable: 6
