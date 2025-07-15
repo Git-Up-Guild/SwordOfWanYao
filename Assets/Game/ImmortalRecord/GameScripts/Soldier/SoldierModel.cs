@@ -466,7 +466,7 @@ public class SoldierModel : MonoBehaviour
 
         // 技能数据：共享副本
         m_localSkillDataList = RuntimeSoldierSkillHub.Instance.GetSkills(m_type);
-
+        
         m_runtimeSkillList = new List<SkillBase>();
         foreach (var data in m_localSkillDataList)
         {

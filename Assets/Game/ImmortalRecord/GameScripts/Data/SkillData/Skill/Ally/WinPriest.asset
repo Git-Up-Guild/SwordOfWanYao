@@ -10,27 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d32791ddcf4348d5bfc00177526772c, type: 3}
-  m_Name: WindPriest
+  m_Name: WinPriest
   m_EditorClassIdentifier: 
-  skillName: "\u98CE\u796D\u53F8"
+  skillName: "\u98CE\u6025\u6B7B"
   isAutoReleased: 1
   effects: []
-  category: 2
+  category: 0
   AOEPrefab: {fileID: 8692471453448671097, guid: 94a2cabf28502411d968b04b462fcf8c,
     type: 3}
   AOEShape: 1
   scaleMultiplier: 1
   duration: 5
-  damagePerTick: 250
+  damagePerTick: 200
   tickInterval: 1
   isAttachedToFollower: 0
   canPull: 1
-<<<<<<< HEAD
-  pullStrength: 1
-=======
-  pullStrength: 10
->>>>>>> e44267f7b4291f4cc34df9dbc74e02b584be5b06
-  moveSpeed: 3
+  pullStrength: 5
+  moveSpeed: 2
   canRotate: 0
   angle: 0
   rotatingSpeed: 0

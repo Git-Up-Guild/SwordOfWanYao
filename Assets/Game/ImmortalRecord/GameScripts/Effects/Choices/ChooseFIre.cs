@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Card/ChooseFire", order = 104)]
+[CreateAssetMenu(menuName = "Card/ChooseFire", order = 200)]
 public class ChooseFire : EffectBase
 {
     public override void ApplyEffect()

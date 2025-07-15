@@ -21,8 +21,8 @@ MonoBehaviour:
   AOEShape: 0
   scaleMultiplier: 1
   duration: 3.5
-  damagePerTick: 180
-  tickInterval: 1
+  damagePerTick: 200
+  tickInterval: 0.75
   isAttachedToFollower: 1
   canPull: 0
   pullStrength: 0

@@ -128,14 +128,16 @@ public class CardSelectionManager : MonoBehaviour
     private void ApplyCardEffect(CardConfig selectedCardConfig)
     {
         // 检查 GameManager 和 BuffManager 是否存在
-        if (GameManagers.Instance == null || GameManagers.Instance.buffManager == null)
+        if (GameManagers.Instance == null)
         {
-            Debug.LogError("GameManager 或 BuffManager 未找到！无法应用卡牌效果。");
+            Debug.LogError("GameManagers未找到！无法应用卡牌效果。");
             return;
-        }
+        } else if (GameManagers.Instance.buffManager == null)
+            Debug.LogError("BuffManager未找到！无法应用卡牌效果。");
+
 
         // 1. 将新选择的卡牌效果添加到全局Buff管理器中
-        GameManagers.Instance.buffManager.AddBuff(selectedCardConfig.Effect);
+            GameManagers.Instance.buffManager.AddBuff(selectedCardConfig.Effect);
 
         // 2. 立即将这个新Buff应用到所有已在场上的士兵身上
         //    (更准确地说，是重新应用所有Buff，以确保状态一致性)

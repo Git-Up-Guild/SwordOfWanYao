@@ -36,7 +36,7 @@ public class EnemySpawner : MonoBehaviour, IEnemySpawnPoint
         }
         else if (GetComponent<BoxCollider2D>() != null)
         {
-            SpawnDelay = 0f;
+            SpawnDelay = 1f;
             BaseSpawnCount = 2;
             SpawnIncrement = 2;
         }

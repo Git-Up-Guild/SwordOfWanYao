@@ -7,7 +7,6 @@ public class EnemyDefenseBaseHealth : MonoBehaviour, IDestructible
     [SerializeField] public int maxHealth = 1000;
     [SerializeField] private SoldierCamp camp;
     [SerializeField] private int currentHealth;
-    public LevelData currentPlayingLevel;
     VictoryData victoryData = new VictoryData(); 
 
     private void Start()
@@ -25,7 +24,7 @@ public class EnemyDefenseBaseHealth : MonoBehaviour, IDestructible
             Time.timeScale = 0;
             //调用结算ui窗口
             //xx.Instance.xx()...
-            //victoryData.rewards = currentPlayingLevel.victoryRewards;
+            VictoryPanelUI.Instance.Show(victoryData);
 
             
             
