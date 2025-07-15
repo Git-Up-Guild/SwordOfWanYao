@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acc3876b1eac54cfda30d7fbce63bff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_checkInterval: 0.2
+  m_checkInterval: 0
 --- !u!1 &2435895455626222427
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9001b4bc30644e4eae11fdbf150578e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_checkInterval: 0.2
+  m_checkInterval: 0
 --- !u!1 &3536007044151858820
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 8038584652480008812}
   - component: {fileID: 8038584652480008813}
   - component: {fileID: -4566383088506838092}
+  - component: {fileID: 8157339651653698626}
   m_Layer: 0
   m_Name: FireMage
   m_TagString: Ally
@@ -365,6 +366,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c4faf7d83224bffbab2fb7aabedb22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8157339651653698626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8038584652480008810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a37ba62cfce4f29bf77a29622664d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8038584652648274133
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +391,7 @@ GameObject:
   - component: {fileID: 8038584652648274134}
   - component: {fileID: 8038584652648274135}
   - component: {fileID: 3072554288525966487}
+  - component: {fileID: 8347106715105979724}
   m_Layer: 0
   m_Name: SpriteLayer
   m_TagString: Untagged
@@ -500,6 +514,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1462128634047f49b8b1ae55805c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8347106715105979724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8038584652648274133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ef4e1c3154d413db3086ce063d36bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
+  duration: 0.1
 --- !u!1 &8038584652864101096
 GameObject:
   m_ObjectHideFlags: 0

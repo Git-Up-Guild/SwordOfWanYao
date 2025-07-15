@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9001b4bc30644e4eae11fdbf150578e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_checkInterval: 0.2
+  m_checkInterval: 0
 --- !u!1 &5303625660039091984
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acc3876b1eac54cfda30d7fbce63bff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_checkInterval: 0.2
+  m_checkInterval: 0
 --- !u!1 &8038584652480008810
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 8038584652480008813}
   - component: {fileID: 7505291404353102433}
   - component: {fileID: 968948911539402744}
+  - component: {fileID: 5885782613068959026}
   m_Layer: 0
   m_Name: Exploder
   m_TagString: Enemy
@@ -382,6 +383,18 @@ MonoBehaviour:
     type: 3}
   explosionScaleMultiplier: 1
   explosionDamage: 20
+--- !u!114 &5885782613068959026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8038584652480008810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a37ba62cfce4f29bf77a29622664d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8038584652648274133
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,6 +408,7 @@ GameObject:
   - component: {fileID: 8038584652648274134}
   - component: {fileID: 8038584652648274135}
   - component: {fileID: 3550825624789313022}
+  - component: {fileID: 5246931249139610516}
   m_Layer: 0
   m_Name: SpriteLayer
   m_TagString: Untagged
@@ -517,6 +531,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1462128634047f49b8b1ae55805c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5246931249139610516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8038584652648274133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ef4e1c3154d413db3086ce063d36bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
+  duration: 0.1
 --- !u!1 &8038584652864101096
 GameObject:
   m_ObjectHideFlags: 0
