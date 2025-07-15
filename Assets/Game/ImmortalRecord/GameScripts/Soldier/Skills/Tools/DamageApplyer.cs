@@ -25,6 +25,7 @@ public static class DamageApplyer
 
         // 扣血
         defender.Health -= finalDamage;
+        AudioManager.Instance.PlayNormalEffect();
 
         if (defender.Camp != SoldierCamp.Ally)
             ShowFloatText(finalDamage, isCrit, pos);
