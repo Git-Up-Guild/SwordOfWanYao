@@ -19,8 +19,8 @@ public class InitiativeSkillManager : MonoBehaviour
     [Header("光柱动画Prefab")]
     public GameObject lightBeamPrefab; // 用Aseprite导出的Prefab
 
-    private Vector2? leftPoint = null;
-    private Vector2? rightPoint = null;
+    private Vector2? firstPoint = null;
+    private Vector2? secondPoint = null;
     private bool isSelecting = false;
 
     void Awake()
@@ -56,28 +56,28 @@ public class InitiativeSkillManager : MonoBehaviour
         if (energy < maxEnergy) return;
         isSelecting = true;
         selectPanel.SetActive(true);
-        leftPoint = null;
-        rightPoint = null;
+        firstPoint = null;
+        secondPoint = null;
     }
 
     public void OnSelectPoint(Vector2 pos)
     {
-        if (!leftPoint.HasValue)
+        if (!firstPoint.HasValue)
         {
-            leftPoint = pos;
+            firstPoint = pos;
         }
-        else if (!rightPoint.HasValue)
+        else if (!secondPoint.HasValue)
         {
-            rightPoint = pos;
+            secondPoint = pos;
             TryCastSkill();
         }
     }
 
     private void TryCastSkill()
     {
-        if (leftPoint.HasValue && rightPoint.HasValue)
+        if (firstPoint.HasValue && secondPoint.HasValue)
         {
-            CastLightBeam(leftPoint.Value, rightPoint.Value);
+            CastLightBeam(firstPoint.Value, secondPoint.Value);
             energy -= maxEnergy;
             UpdateUI();
             ExitSelectMode();
@@ -88,22 +88,16 @@ public class InitiativeSkillManager : MonoBehaviour
     {
         isSelecting = false;
         selectPanel.SetActive(false);
-        leftPoint = null;
-        rightPoint = null;
+        firstPoint = null;
+        secondPoint = null;
     }
 
-    private void CastLightBeam(Vector2 left, Vector2 right)
+    private void CastLightBeam(Vector2 start, Vector2 end)
     {
-        // 实例化光柱动画
-        var go = Instantiate(lightBeamPrefab);
-        go.transform.position = right;
-        var dir = (left - right).normalized;
-        float length = Vector2.Distance(left, right);
-        go.transform.right = dir;
-        go.transform.localScale = new Vector3(length, 1, 1);
-
-        // 检测碰撞并转化
-        StartCoroutine(BeamCoroutine(go, right, left, 0.5f)); 
+        var beam = Instantiate(lightBeamPrefab);
+        beam.transform.position = start; // 以第一个点为起点
+        beam.transform.up = (end - start).normalized; // y轴对准第二点方向
+        StartCoroutine(BeamCoroutine(beam, start, end, 2f));
     }
 
     private System.Collections.IEnumerator BeamCoroutine(GameObject beam, Vector2 from, Vector2 to, float duration)
@@ -120,12 +114,13 @@ public class InitiativeSkillManager : MonoBehaviour
 
     private void CheckBeamHit(Vector2 from, Vector2 to)
     {
+        float beamWidth = 2.5f; // 这里可以调大
         var all = GameObject.FindObjectsOfType<SoldierModel>();
         foreach (var enemy in all)
         {
             if (!IsEnemy(enemy)) continue;
             Vector2 pos = enemy.transform.position;
-            if (IsPointOnBeam(pos, from, to, 1.0f)) // 1.0f为光柱宽度
+            if (IsPointOnBeam(pos, from, to, beamWidth))
             {
                 TryConvertEnemy(enemy);
             }
