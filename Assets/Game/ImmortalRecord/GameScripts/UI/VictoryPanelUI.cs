@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro; // 如果使用TextMeshPro
-
+using UnityEngine.SceneManagement; // <-- 关键！添加这一行
 public class VictoryPanelUI : MonoBehaviour
 {
     // --- 单例模式 ---
@@ -100,7 +100,14 @@ public class VictoryPanelUI : MonoBehaviour
     private void OnBackButtonClicked()
     {
         Debug.Log("返回按钮被点击！");
-        // ...
+        // --- 在这里添加场景跳转的核心逻辑 ---
+
+        // 恢复时间流速，防止主菜单也被暂停
+        Time.timeScale = 1f;
+
+        // 加载你的主界面场景
+        // 重要：将 "MainMenu" 替换成你主界面场景的真实文件名！
+        SceneManager.LoadScene("UI1");
     }
 
     private void OnDoubleRewardButtonClicked()
