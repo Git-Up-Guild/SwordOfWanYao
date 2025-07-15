@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce718b5adafb14b7bb6d0a9ed5219468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 20000
   camp: 1
   AllyDefenseTower: {fileID: 5517733554502893068, guid: e7e69197b3fe748d58c2bc1742dc8a47,
     type: 3}
