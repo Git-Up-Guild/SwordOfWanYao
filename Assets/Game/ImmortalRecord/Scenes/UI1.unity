@@ -2954,7 +2954,7 @@ MonoBehaviour:
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
-  m_Sprite: {fileID: 21300000, guid: e4f4411668f87f14ca5588b6fa496288, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 45bfc93dca640a647a83e09f58a8cee0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

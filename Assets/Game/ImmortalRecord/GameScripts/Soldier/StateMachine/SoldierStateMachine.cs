@@ -131,9 +131,15 @@ public class SoldierStateMachine : MonoBehaviour
     {
         if (m_model.IsDead) return;
 
-        //m_model.AttackTargetObject = null;
+        // 优先检查攻击范围内是否有目标
+        Transform nearestInRange = m_attackRangeDetector.GetNearestEnemy();
+        if (nearestInRange != null)
+        {
+            HandleEnterAttackRange(nearestInRange); // 直接进入攻击状态
+            return;
+        }
 
-        // 重新锁定新的目标
+        // 如果没有攻击范围内的目标，则从探测范围内寻找
         Transform nextTarget = m_attackDetector.GetNearestEnemy();
         if (nextTarget != null)
         {
@@ -141,36 +147,27 @@ public class SoldierStateMachine : MonoBehaviour
         }
         else
         {
-            // 若找不到新目标，则继续进攻敌方基地
-            m_model.AttackTargetObject = null;
             HandleMovingToOppositeBase();
         }
-
     }
 
     // 锁定目标进入攻击范围时调用
     private void HandleEnterAttackRange(Transform enemy)
     {
-        // 停止移动开始攻击
-        // 注意当追踪的敌人消失，但是攻击范围内敌人没有全部消失时，不切换状态，攻击另一个敌人
-
         if (m_model.IsDead) return;
 
-        // 只有当没有当前目标或当前目标无效时才设置新目标
-        if (m_model.AttackTargetObject == null || !m_attackDetector.IsTargetTracked(m_model.AttackTargetObject))
+        // 总是从攻击范围内选择最近的目标（忽略传入的enemy参数）
+        Transform nearestTarget = m_attackRangeDetector.GetNearestEnemy();
+        
+        if (nearestTarget != null)
         {
-            // 但优先选择当前锁定的目标（如果有效）
-            Transform validTarget = m_attackDetector.IsTargetTracked(m_lastTrackedTarget)
-                ? m_lastTrackedTarget
-                : enemy;
-
-            m_model.AttackTargetObject = validTarget;
+            m_model.AttackTargetObject = nearestTarget;
+            m_controller.ConvertState(SoldierStateType.IsLockingOn, true);
+            
+            m_controller.ConvertState(SoldierStateType.IsStaying, true);
+            m_controller.ConvertState(SoldierStateType.IsAttacking, true);
+            m_mover.StopMoving();
         }
-
-        m_controller.ConvertState(SoldierStateType.IsStaying, true);
-        m_controller.ConvertState(SoldierStateType.IsAttacking, true);
-        m_mover.StopMoving();
-
     }
 
     // 锁定目标离开攻击范围时调用
@@ -178,10 +175,15 @@ public class SoldierStateMachine : MonoBehaviour
     {
         if (enemy != m_model.AttackTargetObject) return;
 
-        // 直接在攻击检测器中找新目标
-        m_model.AttackTargetObject = m_attackDetector.GetNearestEnemy() 
-                                ?? m_attackRangeDetector.GetNearestEnemy();
+        // 优先从攻击范围内选择最近目标
+        m_model.AttackTargetObject = m_attackRangeDetector.GetNearestEnemy();
         
+        // 如果攻击范围内没有目标，再从探测范围内寻找
+        if (m_model.AttackTargetObject == null)
+        {
+            m_model.AttackTargetObject = m_attackDetector.GetNearestEnemy();
+        }
+
         if (m_model.AttackTargetObject != null) 
         {
             // 复用动态跟踪逻辑

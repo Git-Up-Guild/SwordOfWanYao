@@ -81,11 +81,11 @@ public class AOEEffect : MonoBehaviour
 
     private void Update()
     {
-        // if (m_canPull)
-        // {
-        //     ApplyPullAndMove();
+         if (m_canPull)
+        {
+            ApplyPullAndMove();
 
-        // }
+        }
         if (ShouldDestroy())
         {
             Destroy(gameObject);
