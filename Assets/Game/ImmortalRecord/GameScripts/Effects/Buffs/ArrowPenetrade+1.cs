@@ -1,6 +1,6 @@
 using UnityEngine;
 [CreateAssetMenu(menuName = "Buff/ArrowPenetrade", order = 102)]
-class ArrowPenetrade : EffectBase
+public class ArrowPenetrade : EffectBase
 {
     
 

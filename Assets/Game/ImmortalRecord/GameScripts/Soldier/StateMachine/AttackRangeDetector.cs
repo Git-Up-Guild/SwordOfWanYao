@@ -16,7 +16,7 @@ public class AttackRangeDetector : MonoBehaviour
         = new Dictionary<SoldierModel, Action<IEventData>>();
 
     [Header("漏检补偿检测间隔（秒）")]
-    [SerializeField] private float m_checkInterval = 0.2f;
+    [SerializeField] private float m_checkInterval = 0f;
     private float m_checkTimer;
     private Collider2D m_collider;
     
@@ -89,9 +89,41 @@ public class AttackRangeDetector : MonoBehaviour
         {
             m_checkTimer -= m_checkInterval;
             CheckForMissedTargets();
+            CleanInvalidTargets();
         }
     }
 
+    private void CleanInvalidTargets()
+    {
+        for (int i = m_targetsInRange.Count - 1; i >= 0; i--)
+        {
+            var t = m_targetsInRange[i];
+
+            if (t == null)
+            {
+                m_targetsInRange.RemoveAt(i);
+                continue;
+            }
+
+            var model = t.GetComponentInParent<SoldierModel>();
+            var destructible = t.GetComponent<IDestructible>();
+
+            if ((destructible == null && model == null) || (model != null && model.IsDead))
+            {
+                m_targetsInRange.RemoveAt(i);
+                OnEnemyExit?.Invoke(t);
+
+                if (model != null && m_deathCallbacks.TryGetValue(model, out var cb))
+                {
+                    EventManager.Instance.Unsubscribe<IEventData>(
+                        SoldierEventNames.Died,
+                        model,
+                        cb);
+                    m_deathCallbacks.Remove(model);
+                }
+            }
+        }
+    }
     private void CheckForMissedTargets()
     {
         // 利用 OverlapCollider 扫描触发器范围内所有碰撞体
@@ -164,7 +196,8 @@ public class AttackRangeDetector : MonoBehaviour
             if (t == null) continue;
 
             var model = t.GetComponentInParent<SoldierModel>();
-            if (model && !model.IsDead)
+            var destructible = t.GetComponent<IDestructible>();
+            if (destructible != null || model && !model.IsDead)
                 return true;
         }
 

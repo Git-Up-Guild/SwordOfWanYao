@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using XGame.FlowText;
 
@@ -27,6 +28,8 @@ public static class DamageApplyer
 
         if (defender.Camp != SoldierCamp.Ally)
             ShowFloatText(finalDamage, isCrit, pos);
+
+        if (finalDamage >= 10) CustomLogger.LogWarning($"{attacker.DisplayName} 对 ${defender.DisplayName} 造成了 {finalDamage} 伤害！");
 
         // 发伤害事件
         EventManager.Instance.TriggerEvent(

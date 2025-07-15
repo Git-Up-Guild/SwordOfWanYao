@@ -18,22 +18,32 @@ public class SoldierMovement : MonoBehaviour
 
     public void MoveTo(Vector2 targetPos)
     {
+        // 保留原逻辑，用于固定目标
+        MoveTo(() => targetPos);
+    }
+
+    public void FollowDynamicTarget(Func<Vector2> dynamicTargetGetter)
+    {
+        // 命名为FollowDynamicTarget以区分用途
+        MoveTo(dynamicTargetGetter);
+    }
+
+    private void MoveTo(Func<Vector2> getTargetPosition)
+    {
         m_controller.ConvertState(SoldierStateType.IsMoving, true);
 
         if (!m_model.IsInitialized)
             CustomLogger.LogError("Data isn't initialized");
 
-        m_model.MoveTargetIndicator.position = targetPos;
-
-        float speed = m_model.MoveSpeed;
+        // 动态更新目标指示器位置
+        m_model.MoveTargetIndicator.position = getTargetPosition();
 
         if (moveCoroutine != null)
         {
             StopCoroutine(moveCoroutine);
         }
 
-        moveCoroutine = StartCoroutine(MoveToCoroutine(targetPos, speed));
-
+        moveCoroutine = StartCoroutine(MoveToCoroutine(getTargetPosition, m_model.MoveSpeed));
     }
 
     public void StopMoving()
@@ -47,13 +57,18 @@ public class SoldierMovement : MonoBehaviour
         m_controller.ConvertState(SoldierStateType.IsStaying, true);
     }
 
-    private IEnumerator MoveToCoroutine(Vector2 targetPos, float speed)
+    private IEnumerator MoveToCoroutine(Func<Vector2> dynamicTarget, float speed)
     {
 
-        while (Vector2.Distance(transform.position, targetPos) > 0.05f && !m_model.IsDead && !m_model.IsFreezing)
+        while (Vector2.Distance(transform.position, dynamicTarget()) > 0.05f && !m_model.IsDead && !m_model.IsFreezing)
         {
             Vector2 currentPos = transform.position;
-            Vector2 nextPos = Vector2.MoveTowards(currentPos, targetPos, speed * Time.deltaTime);
+            m_controller.ConvertState(SoldierStateType.IsMoving, true);
+            Vector2 nextPos = Vector2.MoveTowards(
+                transform.position,
+                dynamicTarget(), // 实时获取目标位置
+                speed * Time.deltaTime
+            );
 
             Vector2 delta = nextPos - currentPos;
 
@@ -65,11 +80,11 @@ public class SoldierMovement : MonoBehaviour
 
             transform.position = nextPos;
 
-                yield return null;
-            }
+            yield return null;
+        }
 
-        transform.position = targetPos;
-        m_controller.ConvertState(SoldierStateType.IsStaying, true);
+        //m_controller.ConvertState(SoldierStateType.IsStaying, true);
 
     }
+
 }

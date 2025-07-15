@@ -74,9 +74,21 @@ public class ProjectileBullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         var targetModel = other.GetComponentInParent<SoldierModel>();
-        if (targetModel == null || targetModel.Camp == attacker.Camp || targetModel.IsDead) return;
+        var destructible = other.GetComponent<IDestructible>() ?? other.GetComponentInParent<IDestructible>();
 
-        DamageApplyer.ApplyDamage(attacker, targetModel, damage, targetModel.transform.position);
+        if (destructible == null) CustomLogger.LogWarning($"{other.name} destructible is null!");
+        if (destructible != null) CustomLogger.LogWarning($"{destructible.GetCamp()}");
+
+        if (targetModel != null && targetModel.Camp != attacker.Camp && !targetModel.IsDead)
+        {
+            DamageApplyer.ApplyDamage(attacker, targetModel, damage, targetModel.transform.position);
+        }
+        else if (destructible != null && destructible.GetCamp() != attacker.Camp)
+        {
+            // 若不是士兵，尝试获取建筑等结构体
+            destructible.TakeDamage(damage, attacker);
+        }
+        else return;
 
         if (canExplode)
             exp.Init(attacker, explosionDamage, explosionScaleMutiplier, explosionPrefab);
