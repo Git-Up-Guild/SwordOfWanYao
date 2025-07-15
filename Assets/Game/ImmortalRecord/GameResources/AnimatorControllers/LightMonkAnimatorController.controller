@@ -21,7 +21,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 781408487374166325, guid: 5b7b50a91e3519c469366b0ebdac870e, type: 3}
+  m_Motion: {fileID: -7934443550241623607, guid: cff1c039937585b4a9dd161576f6ed43,
+    type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -73,7 +74,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 5181979803526577436, guid: e622c0239370ced44a5ad53d04c8b8ff,
+  m_Motion: {fileID: -7934443550241623607, guid: cff1c039937585b4a9dd161576f6ed43,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -111,7 +112,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BladeAnimatorController
+  m_Name: LightMonkAnimatorController
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: IsMoving
@@ -172,7 +173,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 68fd48d0f7af35942abbbaf65083122f, type: 2}
+  m_Motion: {fileID: -7934443550241623607, guid: cff1c039937585b4a9dd161576f6ed43,
+    type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

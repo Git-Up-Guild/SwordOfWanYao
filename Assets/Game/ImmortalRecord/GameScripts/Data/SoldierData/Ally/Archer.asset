@@ -21,7 +21,7 @@ MonoBehaviour:
   camp: 0
   attributes:
     maxHealth: 3000
-    attackPowerMutiplier: 1
+    attackPowerMutiplier: 2
     defense: 0
     moveSpeed: 3
     lockOnRange: 50
