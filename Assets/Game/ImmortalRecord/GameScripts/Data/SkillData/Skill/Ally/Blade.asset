@@ -16,5 +16,5 @@ MonoBehaviour:
   isAutoReleased: 1
   effects: []
   category: 0
-  damage: 200
+  damage: 400
   attackRadius: 3
