@@ -91,7 +91,8 @@ public class CardSelectionManager : MonoBehaviour
     private void TriggerCardSelection()
     {
         // 调用ShowCards，并定义一个回调函数，告诉它确认选择后该做什么
-        ShowCards(selectedCardConfig => {
+        ShowCards(selectedCardConfig =>
+        {
             // 当玩家确认选择后，这里的代码会被执行
             Debug.Log("玩家最终选择了卡牌: " + selectedCardConfig.Name);
 
@@ -106,7 +107,7 @@ public class CardSelectionManager : MonoBehaviour
     private void ApplyCardEffect(CardConfig selectedCardConfig)
     {
         // 检查 GameManager 和 BuffManager 是否存在
-        if (GameManager.Instance == null || GameManagers.Instance.buffManager == null)
+        if (GameManagers.Instance == null || GameManagers.Instance.buffManager == null)
         {
             Debug.LogError("GameManager 或 BuffManager 未找到！无法应用卡牌效果。");
             return;
