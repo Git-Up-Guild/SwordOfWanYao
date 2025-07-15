@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ShootTimesBow
   m_EditorClassIdentifier: 
   ID: 25
-  ICON: {fileID: 0}
+  ICON: {fileID: 21300000, guid: bfa7b467711929840b781bfe3a4a7d35, type: 3}
   Name: "\u589E\u52A0\u8FDE\u53D1\u6570"
   Description: "\u4F7F\u795E\u5F13\u5C06\u6BCF\u6B21\u653B\u51FB\u65F6\u8FDE\u53D1\u6570+1\uFF0C\u4F46\u5355\u6B21\u653B\u51FB\u529B\u964D\u4F4E20%"
   Type: 1

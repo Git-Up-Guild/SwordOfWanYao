@@ -6,7 +6,8 @@ public enum CardType
 {
     UnlockUnit, // 解锁新兵种的卡
     UnitSkill,  // 强化兵种的技能卡
-    GlobalBuff  // 全局增益卡
+    GlobalBuff, // 全局增益卡
+      GlobalAttribute // 新增：全局属性卡，初始锁定
 }
 
 

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: AttackRangeAll
   m_EditorClassIdentifier: 
   ID: 9
-  ICON: {fileID: 0}
+  ICON: {fileID: 21300000, guid: e49207c9686de604db1356a9910136b3, type: 3}
   Name: "\u589E\u52A0\u8303\u56F4"
   Description: "\u5168\u5458\u653B\u51FB\u8303\u56F4\u589E\u52A050%"
-  Type: 2
+  Type: 3
   Effect: {fileID: 11400000, guid: a57215138b72673488f4c0b8ac00bd17, type: 2}
   MaxOwnable: 6
   RequiredUnlockCards: []

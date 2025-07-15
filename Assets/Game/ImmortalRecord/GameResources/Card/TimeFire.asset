@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TimeFire
   m_EditorClassIdentifier: 
   ID: 27
-  ICON: {fileID: 0}
+  ICON: {fileID: 21300000, guid: cd6bc9275cac32b4caac6fd14401b7dd, type: 3}
   Name: "\u589E\u52A0\u6280\u80FD\u6301\u7EED\u65F6\u95F4"
   Description: "\u4F7F\u706B\u6CD5\u5E08\u7684\u6280\u80FD\u6301\u7EED\u65F6\u95F4\u589E\u52A060%"
   Type: 1

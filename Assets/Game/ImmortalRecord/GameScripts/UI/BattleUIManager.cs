@@ -104,19 +104,7 @@ public class BattleUIManager : MonoBehaviour
 
             // 直接调用 CardSelectionManager 的 ShowCards 方法
             // 并为它提供一个确认选择后的回调函数
-            CardSelectionManager.Instance.ShowCards(selectedCard => {
-                // 当玩家在这次初始抽卡中确认选择后，这里的代码会被执行
-                Debug.Log($"初始卡牌选择完成: {selectedCard.Name}");
-
-                // 我们需要在这里手动应用效果，因为这次不是通过Trigger触发的
-                // 所以需要复制一份 ApplyCardEffect 的逻辑
-                if (GameManagers.Instance != null && GameManagers.Instance.buffManager != null)
-                {
-                    GameManagers.Instance.buffManager.AddBuff(selectedCard.Effect);
-
-                    // 刚开始游戏，场上没有单位，所以不需要刷新场上单位
-                }
-            });
+            CardSelectionManager.Instance.ShowCards();
         }
         else
         {

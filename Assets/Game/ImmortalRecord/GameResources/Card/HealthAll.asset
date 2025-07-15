@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: HealthAll
   m_EditorClassIdentifier: 
   ID: 20
-  ICON: {fileID: 0}
+  ICON: {fileID: 21300000, guid: e49207c9686de604db1356a9910136b3, type: 3}
   Name: "\u751F\u547D\u503C\u589E\u52A0"
   Description: "\u5168\u90E8\u5175\u79CD\u589E\u52A050%\u751F\u547D\u503C"
-  Type: 2
+  Type: 3
   Effect: {fileID: 11400000, guid: bf4d474e5c2585641ac91e7aafde9cc7, type: 2}
   MaxOwnable: 6
   RequiredUnlockCards: []

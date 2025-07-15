@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ChooseBow
   m_EditorClassIdentifier: 
   ID: 11
-  ICON: {fileID: 0}
+  ICON: {fileID: 21300000, guid: bfa7b467711929840b781bfe3a4a7d35, type: 3}
   Name: "\u9009\u62E9\u795E\u5F13\u5C06"
   Description: 
   Type: 0

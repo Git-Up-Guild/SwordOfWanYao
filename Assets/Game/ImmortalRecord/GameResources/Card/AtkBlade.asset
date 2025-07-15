@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AtkBlade
   m_EditorClassIdentifier: 
   ID: 6
-  ICON: {fileID: 0}
+  ICON: {fileID: 21300000, guid: d9d98db968c57db4995eeb394441b608, type: 3}
   Name: "\u653B\u51FB\u529B\u589E\u52A0"
   Description: "\u5BF9\u5200\u6218\u5C06\u589E\u52A050%\u653B\u51FB\u529B"
   Type: 1

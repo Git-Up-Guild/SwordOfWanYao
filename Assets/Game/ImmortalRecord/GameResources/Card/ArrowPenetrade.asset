@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ArrowPenetrade
   m_EditorClassIdentifier: 
   ID: 3
-  ICON: {fileID: 21300000, guid: e49207c9686de604db1356a9910136b3, type: 3}
+  ICON: {fileID: 21300000, guid: bfa7b467711929840b781bfe3a4a7d35, type: 3}
   Name: "\u7BAD\u77E2\u7A7F\u900F"
   Description: "\u795E\u529F\u5C06\u5C04\u51FA\u7684\u7BAD\u53EF\u7A7F\u900F\u654C\u4EBA\u6570+1\uFF0C\u4F24\u5BB3-20%"
   Type: 1

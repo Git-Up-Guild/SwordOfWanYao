@@ -5,6 +5,10 @@ using System.Collections.Generic;
 
 public class UnlockManager : MonoBehaviour
 {
+
+    // --- 新增一个状态变量 ---
+    private bool globalAttributeCardsUnlocked = false;
+
     // 使用单例模式，方便全局访问
     public static UnlockManager Instance { get; private set; }
 
@@ -21,8 +25,21 @@ public class UnlockManager : MonoBehaviour
         {
             Instance = this;
         }
+        globalAttributeCardsUnlocked = false;
     }
 
+    // --- 新增一个公共方法来解锁 ---
+    public void UnlockGlobalAttributeCards()
+    {
+        globalAttributeCardsUnlocked = true;
+        Debug.Log("[UnlockManager] 全局属性卡池已解锁！");
+    }
+
+    // --- 新增一个公共方法来查询状态 ---
+    public bool AreGlobalAttributeCardsUnlocked()
+    {
+        return globalAttributeCardsUnlocked;
+    }
     /// <summary>
     /// 记录一张“解锁兵种”的卡牌已经被选择过了
     /// </summary>

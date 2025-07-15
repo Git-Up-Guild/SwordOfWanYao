@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ChooseBlade
   m_EditorClassIdentifier: 
   ID: 10
-  ICON: {fileID: 0}
+  ICON: {fileID: 21300000, guid: d9d98db968c57db4995eeb394441b608, type: 3}
   Name: "\u9009\u62E9\u5200\u6218\u5C06"
   Description: 
   Type: 0

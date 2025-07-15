@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ShootNumLight
   m_EditorClassIdentifier: 
   ID: 23
-  ICON: {fileID: 0}
+  ICON: {fileID: 21300000, guid: 89c1750a124c73045be492d741b16bb1, type: 3}
   Name: "\u589E\u52A0\u5F39\u9053\u6570"
   Description: "\u4F7F\u5149\u7F57\u6C49\u6BCF\u6B21\u653B\u51FB\u65F6\u5F39\u9053\u6570+1\uFF0C\u4F46\u5355\u6B21\u653B\u51FB\u529B\u964D\u4F4E20%"
   Type: 1

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LightRotate
   m_EditorClassIdentifier: 
   ID: 21
-  ICON: {fileID: 0}
+  ICON: {fileID: 21300000, guid: 89c1750a124c73045be492d741b16bb1, type: 3}
   Name: "\u5149\u67F1\u65CB\u8F6C"
   Description: "\u5149\u7F57\u6C49\u6253\u51FA\u5149\u67F1\u540E\u53EF\u8BA9\u5149\u67F1\u4EE5\u81EA\u8EAB\u4E3A\u4E2D\u5FC3\u8FDB\u884C\u4E00\u5B9A\u89D2\u5EA6\u65CB\u8F6C"
   Type: 1

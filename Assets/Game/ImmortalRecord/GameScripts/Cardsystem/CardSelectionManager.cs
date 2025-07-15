@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using TMPro; // 如果你使用 TextMeshPro
 using SwordOfWanYao; // 确保引用了你队友定义的命名空间
+using System.Collections; // 引入协程所需的命名空间
 
 public class CardSelectionManager : MonoBehaviour
 {
@@ -34,9 +35,9 @@ public class CardSelectionManager : MonoBehaviour
 
     // --- 私有变量 ---
     private CardConfig selectedCard;
-    private Action<CardConfig> onConfirmedCallback;
+    
     private Dictionary<CardConfig, int> cardInventory = new Dictionary<CardConfig, int>();
-
+    private bool isAwaitingPlayerChoice = false; // 新增：标记是否正在等待玩家选择
 
     #region Unity 生命周期
 
@@ -63,6 +64,7 @@ public class CardSelectionManager : MonoBehaviour
     {
         // 在对象销毁时取消订阅，防止内存泄漏
         CardSelectionTrigger.OnCardDrawTriggered -= TriggerCardSelection;
+        CardSelectionTrigger.OnCardDrawTriggered -= TriggerMidGameCardDraw;
         Debug.Log("CardSelectionManager 已停止收听抽卡事件。"); // 添加调试日志
     }
 
@@ -80,7 +82,50 @@ public class CardSelectionManager : MonoBehaviour
         if (CardPanel != null) CardPanel.SetActive(false);
         if (MenuButton != null) MenuButton.SetActive(false);
         if (CollectionPanel != null) CollectionPanel.SetActive(false);
+
+        StartCoroutine(OpeningSequenceRoutine());
     }
+
+    /// <summary>
+    /// 核心的开局流程协程
+    /// </summary>
+    private IEnumerator OpeningSequenceRoutine()
+    {
+        // --- 第一次抽卡 ---
+        Debug.Log("--- 开始进行第一次初始抽卡 ---");
+        isAwaitingPlayerChoice = true;
+        ShowCards(); // 直接调用，不再传递回调
+
+        yield return new WaitUntil(() => !isAwaitingPlayerChoice);
+        Debug.Log("--- 第一次初始抽卡选择完成 ---");
+
+        // --- 第二次抽卡 ---
+        Debug.Log("--- 开始进行第二次初始抽卡 ---");
+        isAwaitingPlayerChoice = true;
+        ShowCards(); // 直接调用
+
+        yield return new WaitUntil(() => !isAwaitingPlayerChoice);
+        Debug.Log("--- 第二次初始抽卡选择完成 ---");
+
+        // --- 流程结束，恢复游戏时间 ---
+        Time.timeScale = 1f;
+
+        // --- 解锁全局卡池并进入常规游戏阶段 ---
+        if (UnlockManager.Instance != null)
+        {
+            UnlockManager.Instance.UnlockGlobalAttributeCards();
+        }
+
+        // 现在，才开始监听游戏中期的击杀触发事件
+        CardSelectionTrigger.OnCardDrawTriggered += TriggerMidGameCardDraw;
+        Debug.Log("初始流程结束，已开始监听常规抽卡触发。");
+    }
+    // 当游戏中期击杀达标时，调用此方法
+    private void TriggerMidGameCardDraw()
+    {
+        ShowCards();
+    }
+
 
     #endregion
 
@@ -91,13 +136,8 @@ public class CardSelectionManager : MonoBehaviour
     private void TriggerCardSelection()
     {
         // 调用ShowCards，并定义一个回调函数，告诉它确认选择后该做什么
-        ShowCards(selectedCardConfig => {
-            // 当玩家确认选择后，这里的代码会被执行
-            Debug.Log("玩家最终选择了卡牌: " + selectedCardConfig.Name);
-
-            // --- 核心连接逻辑：在这里应用效果 ---
-            ApplyCardEffect(selectedCardConfig);
-        });
+        ShowCards();
+            
     }
 
     /// <summary>
@@ -130,9 +170,9 @@ public class CardSelectionManager : MonoBehaviour
     /// 显示抽卡界面，提供随机卡牌供玩家选择。
     /// </summary>
     /// <param name="onConfirmed">当玩家点击确认按钮后要执行的回调函数</param>
-    public void ShowCards(Action<CardConfig> onConfirmed)
+    public void ShowCards()
     {
-        this.onConfirmedCallback = onConfirmed;
+        
         selectedCard = null;
         if (confirmButton != null) confirmButton.interactable = false;
 
@@ -185,8 +225,13 @@ public class CardSelectionManager : MonoBehaviour
 
     private void OnConfirmClicked()
     {
+       
+
         if (selectedCard != null)
-        {
+        {// 1. 应用效果
+            ApplyCardEffect(selectedCard);
+
+
             if (cardInventory.ContainsKey(selectedCard))
             {
                 cardInventory[selectedCard]++;
@@ -206,8 +251,9 @@ public class CardSelectionManager : MonoBehaviour
             Time.timeScale = 1f;
 
             if (toggleGroup != null) toggleGroup.SetAllTogglesOff();
+            // 5. 关键！直接打开协程的门闩！
+            isAwaitingPlayerChoice = false;
 
-            onConfirmedCallback?.Invoke(selectedCard);
 
         }
     }
@@ -222,12 +268,21 @@ public class CardSelectionManager : MonoBehaviour
             Debug.LogError("UnlockManager未找到，无法正确筛选卡牌！");
             return available; // 返回一个空列表，避免后续错误
         }
+        // 获取当前全局卡是否解锁的状态
+        bool globalsUnlocked = UnlockManager.Instance.AreGlobalAttributeCardsUnlocked();
+
 
         foreach (var card in CardPool)
         {
-            bool canOwnMore = GetCardCount(card) < card.MaxOwnable;
+            // --- 新的筛选逻辑 ---
+            // 1. 如果是全局属性卡，但全局卡尚未解锁，则跳过
+            if (card.Type == CardType.GlobalAttribute && !globalsUnlocked)
+            {
+                continue;
+            }
 
-            // --- 使用新的检查方法 ---
+            // 2. 检查拥有数量和前置条件（旧逻辑保持不变）
+            bool canOwnMore = GetCardCount(card) < card.MaxOwnable;
             bool requirementsMet = UnlockManager.Instance.AreRequirementsMetForCard(card);
 
             if (canOwnMore && requirementsMet)

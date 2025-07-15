@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AtkBow
   m_EditorClassIdentifier: 
   ID: 7
-  ICON: {fileID: 0}
+  ICON: {fileID: 21300000, guid: bfa7b467711929840b781bfe3a4a7d35, type: 3}
   Name: "\u653B\u51FB\u529B\u589E\u52A0"
   Description: "\u5BF9\u795E\u5F13\u5C06\u589E\u52A050%\u653B\u51FB\u529B"
   Type: 1
