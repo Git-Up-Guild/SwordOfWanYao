@@ -89,6 +89,44 @@ public class BattleUIManager : MonoBehaviour
         InitializeSpawnSlots();
         // 初始化时，我们假设出战队列是空的
         InitializeSpawnPanel();
+
+        // -------------------------------------------------------------------
+        // --- 在这里添加新逻辑：游戏开始时强制进行一次抽卡 ---
+        // -------------------------------------------------------------------
+
+        // 延迟一小段时间再调用，确保所有东西都初始化完毕，避免奇怪的冲突。
+        // 0.1秒的延迟肉眼基本看不出来，但对程序稳定性很有好处。
+        Invoke(nameof(TriggerInitialCardDraw), 0.1f);
+    }
+
+    // --- 在脚本中添加这个新的方法 ---
+    private void TriggerInitialCardDraw()
+    {
+        // 检查CardSelectionManager是否存在
+        if (CardSelectionManager.Instance != null)
+        {
+            Debug.Log("游戏开始，进行初始抽卡！");
+
+            // 直接调用 CardSelectionManager 的 ShowCards 方法
+            // 并为它提供一个确认选择后的回调函数
+            CardSelectionManager.Instance.ShowCards(selectedCard => {
+                // 当玩家在这次初始抽卡中确认选择后，这里的代码会被执行
+                Debug.Log($"初始卡牌选择完成: {selectedCard.Name}");
+
+                // 我们需要在这里手动应用效果，因为这次不是通过Trigger触发的
+                // 所以需要复制一份 ApplyCardEffect 的逻辑
+                if (GameManagers.Instance != null && GameManagers.Instance.buffManager != null)
+                {
+                    GameManagers.Instance.buffManager.AddBuff(selectedCard.Effect);
+
+                    // 刚开始游戏，场上没有单位，所以不需要刷新场上单位
+                }
+            });
+        }
+        else
+        {
+            Debug.LogError("CardSelectionManager 未找到，无法进行初始抽卡！");
+        }
     }
 
     private void InitializeSpawnPanel()
