@@ -81,7 +81,7 @@ public class AOEEffect : MonoBehaviour
 
     private void Update()
     {
-         if (m_canPull)
+        if (m_canPull)
         {
             ApplyPullAndMove();
 
@@ -114,9 +114,18 @@ public class AOEEffect : MonoBehaviour
                 var box = m_collider as BoxCollider2D;
                 if (box != null)
                 {
-                    Vector2 center = (Vector2)transform.position + box.offset;
+                    // 计算矩形的世界尺寸
                     Vector2 size = Vector2.Scale(box.size, transform.lossyScale);
-                    hits = Physics2D.OverlapBoxAll(center, size, transform.eulerAngles.z);
+
+                    // 计算局部偏移：在原有碰撞体偏移的基础上，再向物体前方（X正方向）偏移半个矩形宽度（注意：这里用未缩放的box.size计算，但偏移量会在TransformPoint中自动缩放）
+                    Vector2 localCenterOffset = box.offset;
+                    Vector2 center = transform.TransformPoint(localCenterOffset);
+
+                    // 旋转角度
+                    float rotationAngle = transform.rotation.eulerAngles.z;
+
+                    hits = Physics2D.OverlapBoxAll(center, size, rotationAngle);
+                    DebugDrawRectangle(center, size, rotationAngle, Color.red, 10f);
                 }
                 break;
         }
@@ -281,4 +290,40 @@ public class AOEEffect : MonoBehaviour
             Debug.DrawLine(start, end, color, duration);
         }
     }
+    
+    // 绘制矩形的调试方法
+    private void DebugDrawRectangle(Vector2 center, Vector2 size, float angle, Color color, float duration)
+    {
+        // 计算半尺寸
+        Vector2 halfSize = size * 0.5f;
+        // 计算矩形的四个角点（未旋转前）
+        Vector2[] corners = new Vector2[]
+        {
+            new Vector2(-halfSize.x, -halfSize.y),
+            new Vector2(-halfSize.x, halfSize.y),
+            new Vector2(halfSize.x, halfSize.y),
+            new Vector2(halfSize.x, -halfSize.y)
+        };
+
+        // 创建旋转矩阵（绕Z轴旋转角度angle）
+        float rad = angle * Mathf.Deg2Rad;
+        float cos = Mathf.Cos(rad);
+        float sin = Mathf.Sin(rad);
+        for (int i = 0; i < 4; i++)
+        {
+            // 旋转每个点
+            Vector2 rotatedCorner = new Vector2(
+                corners[i].x * cos - corners[i].y * sin,
+                corners[i].x * sin + corners[i].y * cos
+            );
+            corners[i] = rotatedCorner + center;
+        }
+
+        // 绘制四条边
+        Debug.DrawLine(corners[0], corners[1], color, duration);
+        Debug.DrawLine(corners[1], corners[2], color, duration);
+        Debug.DrawLine(corners[2], corners[3], color, duration);
+        Debug.DrawLine(corners[3], corners[0], color, duration);
+    }
+
 }

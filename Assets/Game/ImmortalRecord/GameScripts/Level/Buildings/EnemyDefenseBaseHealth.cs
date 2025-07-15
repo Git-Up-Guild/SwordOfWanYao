@@ -24,10 +24,8 @@ public class EnemyDefenseBaseHealth : MonoBehaviour, IDestructible
             Time.timeScale = 0;
             //调用结算ui窗口
             //xx.Instance.xx()...
-            VictoryPanelUI.Instance.Show(victoryData);
+            VictoryPanelUI.Instance.Show();
 
-            
-            
             Destroy(gameObject);
         }
     }

@@ -15,7 +15,7 @@ MonoBehaviour:
   skillName: "\u98CE\u6025\u6B7B"
   isAutoReleased: 1
   effects: []
-  category: 0
+  category: 2
   AOEPrefab: {fileID: 8692471453448671097, guid: 94a2cabf28502411d968b04b462fcf8c,
     type: 3}
   AOEShape: 1
