@@ -4098,10 +4098,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1295541356}
     m_Modifications:
+    - target: {fileID: 7614844475399327254, guid: 5c977f6cf4ad7e74cb19308450c478ee,
+        type: 3}
+      propertyPath: m_text
+      value: confirm
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614844475399327254, guid: 5c977f6cf4ad7e74cb19308450c478ee,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 056573a0d63e1f9478232402897da2d4,
+        type: 2}
+    - target: {fileID: 7614844475399327254, guid: 5c977f6cf4ad7e74cb19308450c478ee,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1039853965493941729, guid: 056573a0d63e1f9478232402897da2d4,
+        type: 2}
+    - target: {fileID: 7614844475399327254, guid: 5c977f6cf4ad7e74cb19308450c478ee,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7614844476878647369, guid: 5c977f6cf4ad7e74cb19308450c478ee,
         type: 3}
       propertyPath: m_Name
       value: VictoryPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614844476878647369, guid: 5c977f6cf4ad7e74cb19308450c478ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7614844476878647374, guid: 5c977f6cf4ad7e74cb19308450c478ee,
         type: 3}

@@ -8,6 +8,26 @@ using TMPro; // 如果使用TextMeshPro
 
 public class VictoryPanelUI : MonoBehaviour
 {
+    // --- 新增：单例模式 ---
+    public static VictoryPanelUI Instance { get; private set; }
+    private void Awake()
+    {
+        // 设置单例，确保场景中只有一个实例
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+
+        // 默认情况下，面板应该是隐藏的
+        // 这一步也可以在Start()里做，或者直接在编辑器里禁用GameObject
+        gameObject.SetActive(false);
+    }
+    // -------------------------
+
     [Header("主面板与背景")]
     [SerializeField] private GameObject dimmerBackground; // 半透明背景遮罩
 
