@@ -19,5 +19,12 @@ MonoBehaviour:
   projectilePrefab: {fileID: 5764619143827306901, guid: e31f433ff0cee4e13bd71c50b676b648,
     type: 3}
   moveSpeed: 20
-  maxPierce: 2
-  damagePerHit: 10
+  maxPierce: 1
+  damagePerHit: 250
+  canExplode: 0
+  explosionPrefab: {fileID: 0}
+  damage: 0
+  scaleMutiplier: 0
+  splitBulletPrefab: {fileID: 0}
+  canSplit: 0
+  lockOnRange: 0

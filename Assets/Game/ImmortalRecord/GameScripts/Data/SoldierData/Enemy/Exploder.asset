@@ -20,7 +20,7 @@ MonoBehaviour:
   soldierType: 10
   camp: 1
   attributes:
-    maxHealth: 100
+    maxHealth: 2000
     attackPowerMutiplier: 1
     defense: 0
     moveSpeed: 3
@@ -29,5 +29,6 @@ MonoBehaviour:
     attackSpeed: 1
     attackFrequency: 1
     projectileCount: 0
+    maxExistCount: 0
   skills:
   - {fileID: 11400000, guid: 6c45d6b45bf4a42319724a916439445d, type: 2}
