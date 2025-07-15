@@ -57,22 +57,22 @@ public class MeleeSkill : SkillBase, IAnimationEventReceiver
         var meleeData = m_data;
         if (meleeData == null) return;
 
-        Vector3 center = m_model.SkillCastPivot.position;
-        float radius = meleeData.attackRadius;
-
         string enemyTag = m_model.Camp == SoldierCamp.Ally ? "Enemy" : "Ally";
-
-        Collider2D[] hits = Physics2D.OverlapCircleAll(center, radius);
-
-        foreach (var hit in hits)
+        if (m_model.AttackTargetObject == null) return;
+        var targetModel = m_model.AttackTargetObject.GetComponentInParent<SoldierModel>();
+        if (targetModel != null && targetModel.Camp != m_model.Camp && !targetModel.IsDead)
         {
-            if (!hit.CompareTag(enemyTag)) continue;
-
-            var targetModel = hit.GetComponentInParent<SoldierModel>();
-            if (targetModel == null || targetModel.IsDead) continue;
-
             DamageApplyer.ApplyDamage(m_model, targetModel, m_data.damage, targetModel.transform.position);
         }
+
+        // 检测建筑等可破坏目标
+        if (m_model.AttackTargetObject == null) return;
+        var destructible = m_model.AttackTargetObject.GetComponent<IDestructible>();
+        if (destructible != null && destructible.GetCamp() != m_model.Camp)
+        {
+            destructible.TakeDamage(m_data.damage, m_model);
+        }
+
     }
 
     public override void OnAnimationEvent(string eventName)

@@ -34,11 +34,22 @@ public class SplitProjectileBullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         var target = other.GetComponentInParent<SoldierModel>();
-        if (target == null || target.Camp == attacker.Camp || target.IsDead)
-            return;
+        if (target != null)
+        {
+            if (target.Camp == attacker.Camp || target.IsDead)
+                return;
 
-        DamageApplyer.ApplyDamage(attacker, target, damage, target.transform.position);
+            DamageApplyer.ApplyDamage(attacker, target, damage, target.transform.position);
+        }
+        else
+        {
+            var destructible = other.GetComponent<IDestructible>();
+            if (destructible == null || destructible.GetCamp() == attacker.Camp)
+                return;
 
+            destructible.TakeDamage(damage, attacker);
+        }
+        
         Destroy(gameObject);
     }
 }
