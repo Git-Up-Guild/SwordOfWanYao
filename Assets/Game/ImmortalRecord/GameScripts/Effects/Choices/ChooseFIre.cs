@@ -3,16 +3,16 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Card/ChooseFire", order = 104)]
 public class ChooseFire : EffectBase
 {
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         if (SpawnManager.Instance != null)
         {
             SpawnManager.Instance.AddToSpawnList(SoldierType.FireMage);
-            Debug.Log("»ð·¨Ê¦");
+            Debug.Log("ï¿½ï¿½Ê¦");
         }
         else
         {
-            Debug.LogError("SpawnManager.Instance Î´³õÊ¼»¯£¬ÎÞ·¨Ìí¼Ó»ð·¨Ê¦");
+            Debug.LogError("SpawnManager.Instance Î´ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó»ï¿½Ê¦");
         }
 
 

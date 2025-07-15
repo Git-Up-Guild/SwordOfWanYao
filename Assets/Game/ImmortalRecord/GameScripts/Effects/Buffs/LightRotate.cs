@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Buff/LightRotate", order = 105)]
 public class LightRotate : EffectBase
 {
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         RuntimeSoldierSkillHub.Instance.Modify(SoldierType.LightMonk, skill =>
         {

@@ -8,7 +8,7 @@ public class ShootTimesLance : EffectBase
     [Header("连发数加成数（如1.5为+50%）")]
     public int AtkFrequen=1;
 
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         
         RuntimeSoldierAttributeHub.Instance.Modify

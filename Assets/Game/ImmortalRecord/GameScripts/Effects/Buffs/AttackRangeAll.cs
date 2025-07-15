@@ -9,7 +9,7 @@ public class AttackRangeAll : EffectBase
     [Header("兵种类型")]
     public SoldierType soldierType = SoldierType.Archer;
 
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         // 设置新攻击范围
 
@@ -19,6 +19,6 @@ public class AttackRangeAll : EffectBase
             rang => rang.attackRange *= rangeValue
         );        
 
-        Debug.Log($"弓兵增加攻击范围 Applied AttackRangeAll effect: x{rangeValue} to {soldierModel.name}");
+        //Debug.Log($"弓兵增加攻击范围 Applied AttackRangeAll effect: x{rangeValue} to {soldierModel.name}");
     }
 } 

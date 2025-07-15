@@ -139,13 +139,11 @@ public class CardSelectionManager : MonoBehaviour
 
         // 2. 立即将这个新Buff应用到所有已在场上的士兵身上
         //    (更准确地说，是重新应用所有Buff，以确保状态一致性)
-        SoldierModel[] allSoldiers = FindObjectsOfType<SoldierModel>();
-        foreach (var soldier in allSoldiers)
-        {
-            GameManagers.Instance.buffManager.ApplyAllBuffs(soldier);
-        }
+    
+        GameManagers.Instance.buffManager.ApplyAllBuffs();
+    
 
-        Debug.Log($"已将效果 '{selectedCardConfig.Effect.name}' 应用到 {allSoldiers.Length} 个单位上。");
+        //Debug.Log($"已将效果 '{selectedCardConfig.Effect.name}' 应用到 {allSoldiers.Length} 个单位上。");
     }
 
     /// <summary>

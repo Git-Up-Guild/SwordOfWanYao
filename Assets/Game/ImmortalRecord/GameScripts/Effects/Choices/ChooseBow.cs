@@ -4,7 +4,7 @@ using SwordOfWanYao;
 public class ChooseBow : EffectBase
 {
 
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         if (SpawnManager.Instance != null)
         {

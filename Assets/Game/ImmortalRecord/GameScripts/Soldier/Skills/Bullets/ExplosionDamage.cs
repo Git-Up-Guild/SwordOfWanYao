@@ -16,7 +16,7 @@ public class ExplosionDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other == null) return;
+        if (other == null || m_attacker == null) return;
 
         var model = other.GetComponentInParent<SoldierModel>();
 
@@ -26,6 +26,8 @@ public class ExplosionDamage : MonoBehaviour
             }
         else
         {
+            if (other == null) return;
+
             var destructible = other.GetComponent<IDestructible>();
             if (destructible != null && destructible.GetCamp() != m_attacker.Camp)
             {

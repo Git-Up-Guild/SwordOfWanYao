@@ -5,7 +5,7 @@ public class ArrowPenetrade : EffectBase
     
 
     
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         RuntimeSoldierSkillHub.Instance.Modify(SoldierType.Archer, skill =>
         {

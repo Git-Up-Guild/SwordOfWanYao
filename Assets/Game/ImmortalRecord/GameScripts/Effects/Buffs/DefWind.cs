@@ -9,7 +9,7 @@ class DefWind : EffectBase
     [Header("防御力加成倍率（如1.5为+50%）")]
     public int DefValue=10;
 
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         
         RuntimeSoldierAttributeHub.Instance.Modify

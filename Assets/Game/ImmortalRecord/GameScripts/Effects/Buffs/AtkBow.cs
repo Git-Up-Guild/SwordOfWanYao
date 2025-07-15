@@ -8,7 +8,7 @@ public class AtkBow : EffectBase
     [Header("攻击力加成倍率（如1.5为+50%）")]
     public float AtkValue=1.6f;
 
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         
         RuntimeSoldierAttributeHub.Instance.Modify

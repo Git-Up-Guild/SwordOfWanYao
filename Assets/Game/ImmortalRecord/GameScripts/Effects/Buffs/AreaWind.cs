@@ -4,7 +4,7 @@ public class AreaWind : EffectBase
 {
     [Header("增加范围数量")]
     public float AreaRadius = 1.2f;
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         RuntimeSoldierSkillHub.Instance.Modify(SoldierType.WindPriest, skill =>
         {

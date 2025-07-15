@@ -5,7 +5,7 @@ public class TimeLight : EffectBase
     [Header("兵种技能持续时间加成数（秒）")]
     public int PlusSec = 2;
 
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect( )
     {
         RuntimeSoldierSkillHub.Instance.Modify(SoldierType.LightMonk, skill =>
         {

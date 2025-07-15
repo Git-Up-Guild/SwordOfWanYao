@@ -4,7 +4,7 @@ using SwordOfWanYao;
 [CreateAssetMenu(menuName = "Card/ChooseLight", order = 200)]
 public class ChooseLight : EffectBase
 {
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         if (SpawnManager.Instance != null)
         {

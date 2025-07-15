@@ -50,7 +50,8 @@ public class SoldierModel : MonoBehaviour
     [SerializeField] private SoldierCamp m_camp;
     [SerializeField] private SoldierType m_type;
 
-    private SoldierAttributeSO m_attributes; // 运行士兵属性时共享副本
+    [SerializeField] private SoldierAttributeSO m_attributes; // 运行士兵属性时共享副本
+    [SerializeField] private int attackFrequency;
 
     [SerializeField] Transform m_moveTargetIndicator;
     [SerializeField] Transform m_attackTargetDetector;
@@ -461,6 +462,7 @@ public class SoldierModel : MonoBehaviour
 
         //运行时士兵属性
         m_attributes = RuntimeSoldierAttributeHub.Instance.Get(m_data.soldierType);
+        attackFrequency = m_attributes.attackFrequency;
 
         // 技能数据：共享副本
         m_localSkillDataList = RuntimeSoldierSkillHub.Instance.GetSkills(m_type);
@@ -476,6 +478,14 @@ public class SoldierModel : MonoBehaviour
         AttackTargetObjectInRange = new List<Transform>();
 
     }
+
+    private void Update()
+    {
+        
+        attackFrequency = m_attributes.attackFrequency;
+
+    }
+
 
     private void InitAttributes()
     {

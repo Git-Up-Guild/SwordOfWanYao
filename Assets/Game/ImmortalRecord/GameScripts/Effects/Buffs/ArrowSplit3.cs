@@ -6,7 +6,7 @@ public  class ArrowSplit3 : EffectBase
     public bool IsSplit = true;
 
     
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         if(IsSplit)
         {

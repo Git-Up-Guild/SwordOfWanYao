@@ -2,10 +2,10 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Buff/AreaLight", order = 102)]
 public class AreaLights : EffectBase
 {
-    [Header("Ôö¼Ó·¶Î§±ÈÀý")]
+    [Header("ï¿½ï¿½ï¿½Ó·ï¿½Î§ï¿½ï¿½ï¿½ï¿½")]
     public float AreaRadius = 1.2f;
 
-    public override void ApplyEffect(SoldierModel soldierModel)
+    public override void ApplyEffect()
     {
         RuntimeSoldierSkillHub.Instance.Modify(SoldierType.LightMonk, skill =>
         {
