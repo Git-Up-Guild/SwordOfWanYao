@@ -1,6 +1,6 @@
 using UnityEngine;
 [CreateAssetMenu(menuName = "Buff/ArrowSplit3", order = 102)]
-class ArrowSplit3 : EffectBase
+public  class ArrowSplit3 : EffectBase
 {
     [Header("箭矢是否可以分裂")]
     public bool IsSplit = true;

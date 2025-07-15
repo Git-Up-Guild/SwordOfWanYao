@@ -29,4 +29,10 @@ public class CardSelectionTrigger : MonoBehaviour
             Time.timeScale = 0f;
         }
     }
+    public void TestTriggerDraw()
+    {
+        Debug.Log("测试按钮被点击，强制触发抽卡！");
+        OnCardDrawTriggered?.Invoke();
+        Time.timeScale = 0f;
+    }
 }
