@@ -24,7 +24,7 @@ MonoBehaviour:
   canExplode: 0
   explosionPrefab: {fileID: 8339333594125725689, guid: 49618ae9569f0460f9eb5d3d5ce6c852,
     type: 3}
-  damage: 10
+  damage: 160
   scaleMutiplier: 1
   splitBulletPrefab: {fileID: 5764619143827306901, guid: fee1b4b5ec36647a99da3667ba53a358,
     type: 3}

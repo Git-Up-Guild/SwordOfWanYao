@@ -20,9 +20,9 @@ MonoBehaviour:
   soldierType: 6
   camp: 1
   attributes:
-    maxHealth: 100
+    maxHealth: 3500
     attackPowerMutiplier: 1
-    defense: 2
+    defense: 40
     moveSpeed: 2
     lockOnRange: 20
     attackRange: 3
