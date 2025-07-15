@@ -26,6 +26,8 @@ public class VictoryPanelUI : MonoBehaviour
     [Tooltip("将本关卡对应的LevelData资源文件拖到这里")]
     [SerializeField] private LevelData levelData;
 
+    [SerializeField] private GameObject gameObjects;
+
 
     private void Awake()
     {
@@ -41,6 +43,9 @@ public class VictoryPanelUI : MonoBehaviour
     {
         if (backButton != null) backButton.onClick.AddListener(OnBackButtonClicked);
         if (doubleRewardButton != null) doubleRewardButton.onClick.AddListener(OnDoubleRewardButtonClicked);
+        gameObjects.SetActive(false);
+
+
     }
 
     private void OnDisable()
@@ -63,7 +68,7 @@ public class VictoryPanelUI : MonoBehaviour
 
         // 激活面板和背景
         if (dimmerBackground != null) dimmerBackground.SetActive(true);
-        gameObject.SetActive(true);
+        gameObjects.SetActive(true);
 
         // --- 填充奖励UI ---
         // 1. 清理旧的奖励图标 (防止重玩时UI重复)
