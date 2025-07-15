@@ -124,13 +124,20 @@ public class AOEEffect : MonoBehaviour
             {
                 DamageApplyer.ApplyDamage(m_attacker, model, m_damage, model.transform.position);
             }
+            else
+            {
+                var destructible = hit.GetComponent<IDestructible>();
+                if (destructible != null)
+                {
+                    destructible.TakeDamage(m_damage, m_attacker);
+                }
+            }
         }
     }
     
     private Vector2 _currentMoveDir;
     private float _dirChangeTimer;
     public float _dirChangeInterval = 0f; // 每2秒换方向
-
 
     private void ApplyPullAndMove()
     {
