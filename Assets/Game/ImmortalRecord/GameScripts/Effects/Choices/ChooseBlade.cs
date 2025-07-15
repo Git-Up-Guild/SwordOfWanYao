@@ -1,4 +1,5 @@
 using UnityEngine;
+using SwordOfWanYao;
 
 [CreateAssetMenu(menuName = "Card/ChooseBlade", order = 200)]
 public class ChooseBlade : EffectBase

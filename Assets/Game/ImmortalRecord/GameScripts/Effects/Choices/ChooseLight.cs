@@ -1,4 +1,5 @@
 using UnityEngine;
+using SwordOfWanYao;
 
 [CreateAssetMenu(menuName = "Card/ChooseLight", order = 200)]
 public class ChooseLight : EffectBase
@@ -14,5 +15,7 @@ public class ChooseLight : EffectBase
         {
             Debug.LogError("SpawnManager.Instance 未初始化，无法添加光罗汉");
         }
+
+      
     }
 }

@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91ed471a098c31f44a5689bf32b317d9, type: 3}
-  m_Name: New Atk All
+  m_Script: {fileID: 11500000, guid: 81bc6f5e830f6f241b16088d573a70f7, type: 3}
+  m_Name: New Choose Light
   m_EditorClassIdentifier: 
-  atkMultiplier: 1.5

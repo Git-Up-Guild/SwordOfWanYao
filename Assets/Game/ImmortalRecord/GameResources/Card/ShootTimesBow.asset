@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52aa6debc8318b1428e2db658f56fe25, type: 3}
+  m_Name: ShootTimesBow
+  m_EditorClassIdentifier: 
+  ID: 25
+  ICON: {fileID: 0}
+  Name: "\u589E\u52A0\u8FDE\u53D1\u6570"
+  Description: "\u4F7F\u795E\u5F13\u5C06\u6BCF\u6B21\u653B\u51FB\u65F6\u8FDE\u53D1\u6570+1\uFF0C\u4F46\u5355\u6B21\u653B\u51FB\u529B\u964D\u4F4E20%"
+  Type: 1
+  Effect: {fileID: 11400000, guid: d01b176760ceacc4e9883be438979136, type: 2}
+  MaxOwnable: 6
+  RequiredUnlockCards:
+  - {fileID: 11400000, guid: 3ccb69878ba61dd45a3c4cc2f50d941e, type: 2}

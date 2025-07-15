@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52aa6debc8318b1428e2db658f56fe25, type: 3}
+  m_Name: ArrowPenetrade
+  m_EditorClassIdentifier: 
+  ID: 3
+  ICON: {fileID: 21300000, guid: e49207c9686de604db1356a9910136b3, type: 3}
+  Name: "\u7BAD\u77E2\u7A7F\u900F"
+  Description: "\u795E\u529F\u5C06\u5C04\u51FA\u7684\u7BAD\u53EF\u7A7F\u900F\u654C\u4EBA\u6570+1\uFF0C\u4F24\u5BB3-20%"
+  Type: 1
+  Effect: {fileID: 11400000, guid: 432fc5f218550f54eb5cc870fa49c43e, type: 2}
+  MaxOwnable: 6
+  RequiredUnlockCards:
+  - {fileID: 11400000, guid: 3ccb69878ba61dd45a3c4cc2f50d941e, type: 2}

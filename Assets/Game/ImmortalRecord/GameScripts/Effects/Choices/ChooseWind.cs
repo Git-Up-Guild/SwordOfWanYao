@@ -1,4 +1,5 @@
 using UnityEngine;
+using SwordOfWanYao;
 
 [CreateAssetMenu(menuName = "Card/ChooseWind", order = 200)]
 public class ChooseWind : EffectBase
@@ -14,5 +15,6 @@ public class ChooseWind : EffectBase
         {
             Debug.LogError("SpawnManager.Instance 未初始化，无法添加风祭司");
         }
+        
     }
 }

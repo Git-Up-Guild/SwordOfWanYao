@@ -1,8 +1,9 @@
 using UnityEngine;
-
+using SwordOfWanYao;
 [CreateAssetMenu(menuName = "Card/ChooseBow", order = 200)]
 public class ChooseBow : EffectBase
 {
+
     public override void ApplyEffect(SoldierModel soldierModel)
     {
         if (SpawnManager.Instance != null)
@@ -14,5 +15,6 @@ public class ChooseBow : EffectBase
         {
             Debug.LogError("SpawnManager.Instance 未初始化，无法添加弓兵");
         }
+    
     }
 }

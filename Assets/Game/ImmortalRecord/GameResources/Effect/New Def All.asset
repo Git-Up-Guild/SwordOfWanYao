@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 657ebb7d0862e504fae6aec2fac87a30, type: 3}
   m_Name: New Def All
   m_EditorClassIdentifier: 
-  DefValue: 10
+  DefValue: 1.5

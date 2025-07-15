@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91ed471a098c31f44a5689bf32b317d9, type: 3}
-  m_Name: New Atk All
+  m_Script: {fileID: 11500000, guid: 911bf404370e90d4fb4b67173518b27f, type: 3}
+  m_Name: New Choose Bow
   m_EditorClassIdentifier: 
-  atkMultiplier: 1.5
