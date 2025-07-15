@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea0e7adc76d5d924aa6aa1d8b756fd28, type: 3}
-  m_Name: IronHelmet1 4
+  m_Name: GLOVES
   m_EditorClassIdentifier: 
-  itemName: "\u65B0\u88C5\u5907"
+  itemName: "\u8170\u5E26"
   level: 1
-  icon: {fileID: 0}
-  type: 0
+  icon: {fileID: 21300000, guid: 444982f3dcc1349a3ad926db0ac82be0, type: 3}
+  type: 4
   attack: 0
-  defense: 0
-  health: 0
+  defense: 5
+  health: 12
   attackSpeed: 0
   attackRange: 0
   moveSpeed: 0

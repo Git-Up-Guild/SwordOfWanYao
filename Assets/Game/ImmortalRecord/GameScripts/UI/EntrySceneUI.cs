@@ -1,19 +1,21 @@
-// ÎÄ¼şÃû: EntrySceneUI.cs
+// ï¿½Ä¼ï¿½ï¿½ï¿½: EntrySceneUI.cs
+using GameScripts.IR.UI.Login;
 using UnityEngine;
-using UnityEngine.SceneManagement; // ±ØĞëÒıÈë³¡¾°¹ÜÀíÃüÃû¿Õ¼ä
+using UnityEngine.SceneManagement; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë³¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½
 using UnityEngine.UI;
+using XGame.UI.Framework;
 
 public class EntrySceneUI : MonoBehaviour
 {
-    // ÔÚInspectorÖĞ°ÑÄãÒªµã»÷µÄ°´Å¥ÍÏµ½ÕâÀï
+    // ï¿½ï¿½Inspectorï¿½Ğ°ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ä°ï¿½Å¥ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½
     public Button startButton;
 
-    // ÔÚInspectorÖĞÊäÈëÄãÒªÌø×ªµÄ³¡¾°Ãû
+    // ï¿½ï¿½Inspectorï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½×ªï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½
     public string sceneToLoad;
 
     void Start()
     {
-        // Îª°´Å¥¶¯Ì¬Ìí¼Óµã»÷ÊÂ¼ş¼àÌı
+        // Îªï¿½ï¿½Å¥ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
         if (startButton != null)
         {
             startButton.onClick.AddListener(LoadNextScene);
@@ -22,16 +24,21 @@ public class EntrySceneUI : MonoBehaviour
 
     public void LoadNextScene()
     {
-        // ¼ì²é³¡¾°ÃûÊÇ·ñÎª¿Õ
+        // ï¿½ï¿½é³¡ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½
         if (string.IsNullOrEmpty(sceneToLoad))
         {
-            Debug.LogError("Òª¼ÓÔØµÄ³¡¾°ÃûÎª¿Õ£¡ÇëÔÚInspectorÖĞÉèÖÃ¡£");
+            Debug.LogError("Òªï¿½ï¿½ï¿½ØµÄ³ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½Inspectorï¿½ï¿½ï¿½ï¿½ï¿½Ã¡ï¿½");
             return;
         }
 
-        Debug.Log($"ÕıÔÚ¼ÓÔØ³¡¾°: {sceneToLoad}");
+        Debug.Log($"ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½Ø³ï¿½ï¿½ï¿½: {sceneToLoad}");
 
-        // Ê¹ÓÃSceneManager¼ÓÔØÖ¸¶¨µÄ³¡¾°
+
+        UIWindowManager.Instance.CloseWindow<UILogin>();
+
+
+        // Ê¹ï¿½ï¿½SceneManagerï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½
         SceneManager.LoadScene(sceneToLoad);
+
     }
 }
