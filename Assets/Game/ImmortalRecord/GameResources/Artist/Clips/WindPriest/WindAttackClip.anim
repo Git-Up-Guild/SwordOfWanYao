@@ -80,8 +80,32 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: 3847871031903221551, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: 8916083649078605341, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: 4000237640198416222, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: 7400476526419863985, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: 9116171718910328311, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: -45146098336033053, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: -1253888666133066990, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: -8721157654147979160, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: -2295205267500985006, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: -3809706610944871394, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: -2117095018828222239, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: -1802899436242795910, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: 4141354724885490890, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: 6713674741306296349, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: 1346627149792986651, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: -3552178314806197449, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
+    - {fileID: -3552178314806197449, guid: c8bba0afb012b7e4eb62c04143eb4914, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -106,4 +130,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.6
+    functionName: TriggerEvent
+    data: OnShootFrame
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
