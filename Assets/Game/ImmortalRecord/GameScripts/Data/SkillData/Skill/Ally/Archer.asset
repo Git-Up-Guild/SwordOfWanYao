@@ -20,7 +20,7 @@ MonoBehaviour:
     type: 3}
   moveSpeed: 20
   maxPierce: 0
-  damagePerHit: 10
+  damagePerHit: 300
   canExplode: 0
   explosionPrefab: {fileID: 8339333594125725689, guid: 49618ae9569f0460f9eb5d3d5ce6c852,
     type: 3}
