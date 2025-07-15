@@ -19,7 +19,9 @@ public class EnemyDefenseTowerHealth : MonoBehaviour, IDestructible
         if (currentHealth <= 0)
         {
             Instantiate(AllyDefenseTower, transform.position, Quaternion.identity);
+            EnemySpawnManager.Instance.UnregisterSpawnPoint(GetComponent<IEnemySpawnPoint>());
             Destroy(gameObject);
+
         }
     }
 

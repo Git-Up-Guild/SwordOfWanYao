@@ -19,6 +19,7 @@ public static class DamageApplyer
         if (isCrit)
         {
             attackValue *= CRIT_MULTIPLIER;
+            AudioManager.Instance.PlayNormalEffect();
         }
 
         int finalDamage = Mathf.Max(1, Mathf.CeilToInt(attackValue - defender.Defense));

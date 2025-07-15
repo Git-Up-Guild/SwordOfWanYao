@@ -22,6 +22,9 @@ public class InitiativeSkillManager : MonoBehaviour
     private Vector2? firstPoint = null;
     private Vector2? secondPoint = null;
     private bool isSelecting = false;
+    private int skillCost = 15; // 新增技能消耗
+
+    private int lastKillCount = 0;
 
     void Awake()
     {
@@ -31,6 +34,20 @@ public class InitiativeSkillManager : MonoBehaviour
             backButton.onClick.AddListener(ExitSelectMode);
         selectPanel.SetActive(false);
         UpdateUI();
+    }
+
+    void Update()
+    {
+        if (KillRecord.Instance != null)
+        {
+            int currentKill = KillRecord.Instance.GetKillCount();
+            if (currentKill != lastKillCount)
+            {
+                energy = currentKill;
+                lastKillCount = currentKill;
+                UpdateUI();
+            }
+        }
     }
 
     public void AddEnergy(int value)
@@ -48,12 +65,12 @@ public class InitiativeSkillManager : MonoBehaviour
     {
         if (energySlider != null)
             energySlider.value = (float)energy / maxEnergy;
-        skillButton.interactable = (energy >= maxEnergy);
+        skillButton.interactable = (energy >= skillCost); // 改为消耗所需能量
     }
 
     private void OnSkillButtonClick()
     {
-        if (energy < maxEnergy) return;
+        if (energy < skillCost) return;
         isSelecting = true;
         selectPanel.SetActive(true);
         firstPoint = null;
@@ -78,7 +95,7 @@ public class InitiativeSkillManager : MonoBehaviour
         if (firstPoint.HasValue && secondPoint.HasValue)
         {
             CastLightBeam(firstPoint.Value, secondPoint.Value);
-            energy -= maxEnergy;
+            energy -= skillCost;
             UpdateUI();
             ExitSelectMode();
         }

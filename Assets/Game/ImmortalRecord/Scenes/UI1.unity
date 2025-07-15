@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3730807, g: 0.380755, b: 0.35876408, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8357,6 +8357,7 @@ GameObject:
   - component: {fileID: 1492382837}
   - component: {fileID: 1492382836}
   - component: {fileID: 1492382835}
+  - component: {fileID: 1492382839}
   m_Layer: 5
   m_Name: BattleButton
   m_TagString: Untagged
@@ -8464,6 +8465,20 @@ RectTransform:
   m_AnchoredPosition: {x: -0, y: -292}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1492382839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492382834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6801835e99d3c7f4da43fb12f4f48acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startButton: {fileID: 1492382835}
+  sceneToLoad: Test Level
 --- !u!1 &1499452070
 GameObject:
   m_ObjectHideFlags: 0

@@ -52,11 +52,21 @@ public class EnemySpawnManager : MonoBehaviour
         if (!_points.Contains(pt))
             _points.Add(pt);
     }
-    
+
     public void UnregisterSpawnPoint(IEnemySpawnPoint pt)
     {
+
+        if (pt == null) return;
+
         if (_points.Contains(pt))
             _points.Remove(pt);
+
+        // 强化所有敌人类型
+        foreach (var type in DifficultyGradient)
+        {
+            if (RuntimeSoldierAttributeHub.Instance != null && m_upgradeActions != null && m_upgradeActions[type] != null)
+                RuntimeSoldierAttributeHub.Instance.Modify(type, m_upgradeActions[type]);
+        }
     }
 
     private void Update()
@@ -114,27 +124,15 @@ public class EnemySpawnManager : MonoBehaviour
 
     private void OnEnemyDied(SoldierModel enemy)
     {
-
-        Debug.Log($"敌人死亡: {enemy.DisplayName}");
+        
+        //Debug.Log($"敌人死亡: {enemy.DisplayName}");
         if (CardSelectionTrigger.Instance != null)
         {
             CardSelectionTrigger.Instance.RegisterKill();
+            InitiativeSkillManager.Instance.OnEnemyKilled();
         }
 
-        int level = m_killCount / 10;
-        if (level > m_lastLevel)
-        {
-            m_lastLevel = level;
-            Debug.Log($"敌人强化至第 {level} 层！");
-
-            // 强化所有敌人类型
-            /* foreach (var type in DifficultyGradient)
-            {
-                RuntimeSoldierAttributeHub.Instance.Modify(type, m_upgradeActions[type]);
-            } */
-        }
     }
-    
 
     private void UnregisterEnemy(SoldierModel dead)
     {
