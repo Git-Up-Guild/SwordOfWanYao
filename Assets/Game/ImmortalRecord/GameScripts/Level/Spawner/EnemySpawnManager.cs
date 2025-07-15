@@ -17,6 +17,12 @@ public class EnemySpawnManager : MonoBehaviour
 
     private List<IEnemySpawnPoint> _points = new List<IEnemySpawnPoint>();
     private float _gameStartTime;
+    private int m_killCount = 0;
+    private int m_lastLevel = 0;
+    private Dictionary<SoldierType, System.Action<SoldierAttributeSO>> m_upgradeActions;
+    [SerializeField] private float m_eachLevelAttackPowerMutiplier = 1.1f;
+    [SerializeField] private float m_eachLevelHealthPowerMutiplier = 1.3f;
+
 
     private void Awake()
     {
@@ -30,6 +36,15 @@ public class EnemySpawnManager : MonoBehaviour
         // 初始化每个点的 NextSpawnTime
         foreach (var pt in _points)
             pt.NextSpawnTime = _gameStartTime + pt.SpawnDelay;
+        m_upgradeActions = new Dictionary<SoldierType, System.Action<SoldierAttributeSO>>();
+        foreach (SoldierType type in DifficultyGradient)
+        {
+            m_upgradeActions[type] = attr =>
+            {
+                attr.attackPowerMutiplier *= m_eachLevelAttackPowerMutiplier;
+                attr.maxHealth = Mathf.RoundToInt(attr.maxHealth * m_eachLevelHealthPowerMutiplier);
+            };
+        }
     }
 
     public void RegisterSpawnPoint(IEnemySpawnPoint pt)
@@ -82,13 +97,44 @@ public class EnemySpawnManager : MonoBehaviour
 
     private void RegisterEnemy(SoldierModel enemy)
     {
-        // 和之前的 RegisterAlly 类似，监听 Died 事件
         EventManager.Instance.Subscribe<IEventData>(
             SoldierEventNames.Died,
             enemy,
             _ => UnregisterEnemy(enemy)
         );
+
+        EventManager.Instance.Subscribe<IEventData>(
+        SoldierEventNames.Died,
+        enemy,
+        data =>
+        {
+            OnEnemyDied(enemy);
+        });
     }
+
+    private void OnEnemyDied(SoldierModel enemy)
+    {
+
+        Debug.Log($"敌人死亡: {enemy.DisplayName}");
+        if (CardSelectionTrigger.Instance != null)
+        {
+            CardSelectionTrigger.Instance.RegisterKill();
+        }
+
+        int level = m_killCount / 10;
+        if (level > m_lastLevel)
+        {
+            m_lastLevel = level;
+            Debug.Log($"敌人强化至第 {level} 层！");
+
+            // 强化所有敌人类型
+            /* foreach (var type in DifficultyGradient)
+            {
+                RuntimeSoldierAttributeHub.Instance.Modify(type, m_upgradeActions[type]);
+            } */
+        }
+    }
+    
 
     private void UnregisterEnemy(SoldierModel dead)
     {

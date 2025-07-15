@@ -25,9 +25,10 @@ MonoBehaviour:
     defense: 3
     moveSpeed: 2
     lockOnRange: 30
-    attackRange: 5
+    attackRange: 3
     attackSpeed: 0.5
     attackFrequency: 1
     projectileCount: 0
+    maxExistCount: 0
   skills:
   - {fileID: 11400000, guid: 13b008fd5ec9c428ea4eaa7ed0fa82c2, type: 2}

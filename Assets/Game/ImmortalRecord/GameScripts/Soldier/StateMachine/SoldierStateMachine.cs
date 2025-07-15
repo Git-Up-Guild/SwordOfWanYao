@@ -63,8 +63,14 @@ public class SoldierStateMachine : MonoBehaviour
     {
         if (m_model.IsDead) return;
 
-        CheckIfTargetIsNearest();
-        
+        //CheckIfTargetIsNearest();
+
+        // 只需处理目标丢失情况
+        if (m_model.AttackTargetObject == null && m_model.IsLockingOnEnemy)
+        {
+            HandleEnemyLost();
+        }
+
     }
 
     private void CheckIfTargetIsNearest()
@@ -95,34 +101,29 @@ public class SoldierStateMachine : MonoBehaviour
 
         if (m_model.IsDead) return;
 
+         m_mover.MoveTo(GetFallbackPosition());
+
         m_controller.ConvertState(SoldierStateType.IsTargetingAtOppositeBase, true);
         m_controller.ConvertState(SoldierStateType.IsMoving, true);
         m_controller.ConvertState(SoldierStateType.IsAttacking, false);
-
-        Vector2 oppositeBasePos = (m_model.Camp == SoldierCamp.Ally)
-        ? new Vector2(transform.position.x, m_enemybaseTargetY)
-        : new Vector2(transform.position.x, m_allybaseTargetY);
-
-        m_mover.MoveTo(oppositeBasePos);
 
     }
 
     // 索敌器探测到敌人时调用
     private void HandleEnemyDetected(Transform enemy)
     {
-        // 切换到追踪敌人模式
-        // 注意当追踪的敌人消失，但是索敌器内敌人没有全部消失时，不切换状态，追踪另一个敌人
-
         if (m_model.IsDead) return;
 
-        if (m_model.AttackTargetObject == null || !m_attackDetector.IsTargetTracked(m_model.AttackTargetObject))
-            m_model.AttackTargetObject = enemy;
-
+        // 设置新的锁定目标
+        m_model.AttackTargetObject = enemy;
         m_controller.ConvertState(SoldierStateType.IsLockingOn, true);
-        m_controller.ConvertState(SoldierStateType.IsMoving, true);
 
-        m_mover.MoveTo(m_model.AttackTargetObject.position);
-
+        // 使用动态目标追踪
+        m_mover.FollowDynamicTarget(() => 
+            m_model.AttackTargetObject != null 
+                ? m_model.AttackTargetObject.position 
+                : GetFallbackPosition()  // 备用位置
+        );
     }
 
     // 索敌器内所有敌人消失或死亡时,或锁定的敌人不再是最近敌人时调用
@@ -175,41 +176,23 @@ public class SoldierStateMachine : MonoBehaviour
     // 锁定目标离开攻击范围时调用
     private void HandleExitAttackRange(Transform enemy)
     {
-        // 如果继续处于IsLockingOn状态（索敌器里还有敌人），就切换并锁定索敌器里的另一个最近敌人
-        // 如果索敌器内没有敌人，就朝敌方基地移动
+        if (enemy != m_model.AttackTargetObject) return;
 
-        if (m_model.IsDead) return;
-
-        // 检查离开的是否是当前目标
-        if (enemy == m_model.AttackTargetObject)
+        // 直接在攻击检测器中找新目标
+        m_model.AttackTargetObject = m_attackDetector.GetNearestEnemy() 
+                                ?? m_attackRangeDetector.GetNearestEnemy();
+        
+        if (m_model.AttackTargetObject != null) 
         {
-
-            //m_model.AttackTargetObject = null;
-
-            // 尝试在攻击范围内寻找新目标
-            Transform newTarget = m_attackRangeDetector.GetNearestEnemy();
-            if (newTarget != null)
-            {
-                m_model.AttackTargetObject = newTarget;
-                return; // 保持攻击状态
-            }
-
-            // 没有可攻击目标时停止攻击
-            m_controller.ConvertState(SoldierStateType.IsAttacking, false);
-
-            // 寻找新追踪目标
-            if (m_attackDetector.HasAnyEnemy())
-            {
-                Transform nextTarget = m_attackDetector.GetNearestEnemy();
-                HandleEnemyDetected(nextTarget);
-            }
-            else
-            {
-                HandleMovingToOppositeBase();
-            }
+            // 复用动态跟踪逻辑
+            HandleEnemyDetected(m_model.AttackTargetObject);
         }
-
+        else 
+        {
+            HandleMovingToOppositeBase();
+        }
     }
+
 
     private void HandleEnemyEnterDetection(Transform enemy)
     {
@@ -236,26 +219,36 @@ public class SoldierStateMachine : MonoBehaviour
         m_controller.ConvertState(SoldierStateType.IsFreezing, false);
         m_controller.ConvertState(SoldierStateType.IsDead, true);
 
-       var hitBox = transform.Find("HitBox"); 
+        var hitBox = transform.Find("HitBox");
         if (hitBox != null)
         {
             var col = hitBox.GetComponent<Collider2D>();
-            if (col != null) 
+            if (col != null)
             {
-                Destroy(col);                 
+                Destroy(col);
             }
         }
 
         StartCoroutine(DestroyAfterDelay(2f));
 
     }
-
+    private Vector2 GetFallbackPosition()
+    {
+        // 根据阵营返回对应的基地位置
+        return m_model.Camp switch
+        {
+            SoldierCamp.Ally => new Vector2(transform.position.x, m_enemybaseTargetY),
+            SoldierCamp.Enemy => new Vector2(transform.position.x, m_allybaseTargetY),
+            _ => new Vector2(transform.position.x, m_enemybaseTargetY) // 默认
+        };
+    }
     private IEnumerator DestroyAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
 
         Destroy(m_model.gameObject);
     }
+    
 
 
 }

@@ -109,9 +109,12 @@ public class ProjectileSkill : SkillBase, IAnimationEventReceiver
 
         // 2. 从范围内列表筛掉主目标和死亡目标
         var pool = m_model.AttackTargetObjectInRange
-            .Where(t => t != null && t != primary &&
-                        !t.GetComponentInParent<SoldierModel>().IsDead)
-            .ToList();
+        .Where(t =>
+            t != null &&
+            t != primary &&
+            t.GetComponentInParent<SoldierModel>() != null &&
+            !t.GetComponentInParent<SoldierModel>().IsDead)
+        .ToList();
 
         // Fisher–Yates 随机洗牌
         for (int i = pool.Count - 1; i > 0; i--)

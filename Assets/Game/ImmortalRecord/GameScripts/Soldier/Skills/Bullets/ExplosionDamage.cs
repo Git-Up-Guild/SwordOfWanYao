@@ -16,13 +16,19 @@ public class ExplosionDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        var target = other.GetComponentInParent<SoldierModel>();
+        var model = other.GetComponentInParent<SoldierModel>();
 
-        if (target == null) return;
-
-        if (target.Camp != m_camp && !target.IsDead)
-        {
-            DamageApplyer.ApplyDamage(m_attacker, target, m_damage, target.transform.position);
-        }
+        if (model != null && model.Camp != m_attacker.Camp)
+            {
+                DamageApplyer.ApplyDamage(m_attacker, model, m_damage, model.transform.position);
+            }
+            else
+            {
+                var destructible = other.GetComponent<IDestructible>();
+                if (destructible != null && destructible.GetCamp() != m_attacker.Camp)
+                {
+                    destructible.TakeDamage(m_damage, m_attacker);
+                }
+            }
     }
 }

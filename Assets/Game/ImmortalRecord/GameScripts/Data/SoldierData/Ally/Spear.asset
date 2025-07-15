@@ -26,7 +26,7 @@ MonoBehaviour:
     moveSpeed: 5
     lockOnRange: 20
     attackRange: 4
-    attackSpeed: 2
+    attackSpeed: 0.5
     attackFrequency: 1
     projectileCount: 0
     maxExistCount: 10

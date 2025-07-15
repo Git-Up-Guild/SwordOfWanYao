@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Grunt
   m_EditorClassIdentifier: 
   ID: 1
-  displayName: Grunt
+  displayName: "\u666E\u901A\u5C0F\u602A"
   description: Test
   portrait: {fileID: 0}
   rarity: 0
@@ -29,5 +29,6 @@ MonoBehaviour:
     attackSpeed: 1
     attackFrequency: 1
     projectileCount: 0
+    maxExistCount: 0
   skills:
   - {fileID: 11400000, guid: f3a80f8d0497f4bc5a417073b7193001, type: 2}
