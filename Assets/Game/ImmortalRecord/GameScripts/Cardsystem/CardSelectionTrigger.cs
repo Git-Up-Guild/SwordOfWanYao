@@ -18,6 +18,8 @@ public class CardSelectionTrigger : MonoBehaviour
     private int killsSinceLastDraw = 0; // 自上次抽卡以来的击杀计数
     private int nextKillTarget; // 下一个触发抽卡的目标击杀数
     public int killCount = 0;
+    private bool isActive = false; // 新增：一个开关，控制它是否开始计数
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -32,10 +34,6 @@ public class CardSelectionTrigger : MonoBehaviour
     {
         // 初始化第一次的目标
         nextKillTarget = initialKillsToTrigger;
-
-        // --- 游戏一开始就进行一次抽卡 ---
-        // 使用一个微小的延迟来确保所有系统都已准备好
-        Invoke(nameof(TriggerFirstDraw), 0.2f);
     }
 
     /// <summary>

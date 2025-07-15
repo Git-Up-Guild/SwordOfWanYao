@@ -15,22 +15,13 @@ public class CardSelectionManager : MonoBehaviour
     public static CardSelectionManager Instance { get; private set; }
 
     [Header("UI 组件引用")]
-    [Tooltip("抽卡时弹出的主面板")]
     public GameObject CardPanel;
-    [Tooltip("3个用于显示卡牌选项的UI槽位")]
     public CardUI[] CardUISlots;
-    [Tooltip("确认选择的按钮")]
     public Button confirmButton;
-    [Tooltip("管理卡牌选项单选的ToggleGroup")]
     public ToggleGroup toggleGroup;
 
-    [Header("预留功能面板 (暂不配置)")]
-    public GameObject CollectionPanel;
-    public GameObject MenuButton;
-    public GameObject DeathPanel;
 
     [Header("卡牌数据配置")]
-    [Tooltip("所有可能被抽到的卡牌都在这里配置")]
     public List<CardConfig> CardPool;
 
     // --- 私有变量 ---
@@ -53,21 +44,9 @@ public class CardSelectionManager : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        // 订阅抽卡触发事件
-        CardSelectionTrigger.OnCardDrawTriggered += TriggerCardSelection;
-        Debug.Log("CardSelectionManager 已开始收听抽卡事件。"); // 添加调试日志
-    }
+   
 
-    private void OnDisable()
-    {
-        // 在对象销毁时取消订阅，防止内存泄漏
-        CardSelectionTrigger.OnCardDrawTriggered -= TriggerCardSelection;
-        CardSelectionTrigger.OnCardDrawTriggered -= TriggerMidGameCardDraw;
-        Debug.Log("CardSelectionManager 已停止收听抽卡事件。"); // 添加调试日志
-    }
-
+    
     void Start()
     {
         InitializeInventory();
@@ -80,9 +59,7 @@ public class CardSelectionManager : MonoBehaviour
         }
 
         if (CardPanel != null) CardPanel.SetActive(false);
-        if (MenuButton != null) MenuButton.SetActive(false);
-        if (CollectionPanel != null) CollectionPanel.SetActive(false);
-
+        
         StartCoroutine(OpeningSequenceRoutine());
     }
 
@@ -91,38 +68,34 @@ public class CardSelectionManager : MonoBehaviour
     /// </summary>
     private IEnumerator OpeningSequenceRoutine()
     {
-        // --- 第一次抽卡 ---
+        // --- 第一次初始抽卡 ---
         Debug.Log("--- 开始进行第一次初始抽卡 ---");
         isAwaitingPlayerChoice = true;
-        ShowCards(); // 直接调用，不再传递回调
-
+        ShowCards();
         yield return new WaitUntil(() => !isAwaitingPlayerChoice);
         Debug.Log("--- 第一次初始抽卡选择完成 ---");
 
-        // --- 第二次抽卡 ---
+        // --- 第二次初始抽卡 ---
         Debug.Log("--- 开始进行第二次初始抽卡 ---");
         isAwaitingPlayerChoice = true;
-        ShowCards(); // 直接调用
-
+        ShowCards();
         yield return new WaitUntil(() => !isAwaitingPlayerChoice);
         Debug.Log("--- 第二次初始抽卡选择完成 ---");
 
-        // --- 流程结束，恢复游戏时间 ---
-        Time.timeScale = 1f;
-
-        // --- 解锁全局卡池并进入常规游戏阶段 ---
+        // --- 流程结束，解锁全局卡池并进入常规游戏阶段 ---
         if (UnlockManager.Instance != null)
         {
             UnlockManager.Instance.UnlockGlobalAttributeCards();
         }
-
-        // 现在，才开始监听游戏中期的击杀触发事件
+        // **关键：在所有初始流程都跑完之后，才开始订阅游戏中期的抽卡事件**
         CardSelectionTrigger.OnCardDrawTriggered += TriggerMidGameCardDraw;
         Debug.Log("初始流程结束，已开始监听常规抽卡触发。");
+
     }
     // 当游戏中期击杀达标时，调用此方法
     private void TriggerMidGameCardDraw()
     {
+        Debug.Log("--- 游戏中期抽卡被触发 ---");
         ShowCards();
     }
 
@@ -133,12 +106,7 @@ public class CardSelectionManager : MonoBehaviour
     #region 核心抽卡与逻辑连接
 
     // 当收到抽卡信号时，执行此方法
-    private void TriggerCardSelection()
-    {
-        // 调用ShowCards，并定义一个回调函数，告诉它确认选择后该做什么
-        ShowCards();
-            
-    }
+
 
     /// <summary>
     /// 将选中的卡牌效果应用到游戏中
@@ -146,7 +114,7 @@ public class CardSelectionManager : MonoBehaviour
     private void ApplyCardEffect(CardConfig selectedCardConfig)
     {
         // 检查 GameManager 和 BuffManager 是否存在
-        if (GameManager.Instance == null || GameManagers.Instance.buffManager == null)
+        if (GameManagers.Instance == null || GameManagers.Instance.buffManager == null)
         {
             Debug.LogError("GameManager 或 BuffManager 未找到！无法应用卡牌效果。");
             return;
@@ -172,7 +140,7 @@ public class CardSelectionManager : MonoBehaviour
     /// <param name="onConfirmed">当玩家点击确认按钮后要执行的回调函数</param>
     public void ShowCards()
     {
-        
+        if (CardPanel == null || CardUISlots == null) return;
         selectedCard = null;
         if (confirmButton != null) confirmButton.interactable = false;
 
@@ -193,7 +161,7 @@ public class CardSelectionManager : MonoBehaviour
             }
         }
 
-        if (CardPanel != null) CardPanel.SetActive(true);
+        CardPanel.SetActive(true);
         Time.timeScale = 0f;
     }
 
@@ -247,9 +215,9 @@ public class CardSelectionManager : MonoBehaviour
                 }
             }
 
-            if (CardPanel != null) CardPanel.SetActive(false);
+           
             Time.timeScale = 1f;
-
+            if (CardPanel != null) CardPanel.SetActive(false);
             if (toggleGroup != null) toggleGroup.SetAllTogglesOff();
             // 5. 关键！直接打开协程的门闩！
             isAwaitingPlayerChoice = false;
