@@ -16,7 +16,7 @@ public class AttackTargetDetector : MonoBehaviour
         = new Dictionary<SoldierModel, Action<IEventData>>();
 
     [Header("漏检补偿检测间隔（秒）")]
-    [SerializeField] private float m_checkInterval = 0.2f;
+    [SerializeField] private float m_checkInterval = 0f;
     private float m_checkTimer;
     private Collider2D m_collider;
 
@@ -44,8 +44,6 @@ public class AttackTargetDetector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
-        Debug.Log(other.name);
         if (!other.CompareTag(m_enemyTag)) return;
 
         var t = other.transform;
@@ -75,7 +73,6 @@ public class AttackTargetDetector : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-
         if (!other.CompareTag(m_enemyTag)) return;
 
         var t = other.transform;
@@ -102,6 +99,38 @@ public class AttackTargetDetector : MonoBehaviour
         {
             m_checkTimer -= m_checkInterval;
             CheckForMissedTargets();
+            CleanInvalidTargets();
+        }
+    }
+    private void CleanInvalidTargets()
+    {
+        for (int i = m_targets.Count - 1; i >= 0; i--)
+        {
+            var t = m_targets[i];
+
+            if (t == null)
+            {
+                m_targets.RemoveAt(i);
+                continue;
+            }
+
+            var model = t.GetComponentInParent<SoldierModel>();
+            var destructible = t.GetComponent<IDestructible>();
+            if ((destructible == null && model == null) || (model != null && model.IsDead))
+            {
+                m_targets.RemoveAt(i);
+                OnEnemyExit?.Invoke(t);
+
+                // 退订死亡事件（防止 memory leak）
+                if (model != null && m_deathCallbacks.TryGetValue(model, out var cb))
+                {
+                    EventManager.Instance.Unsubscribe<IEventData>(
+                        SoldierEventNames.Died,
+                        model,
+                        cb);
+                    m_deathCallbacks.Remove(model);
+                }
+            }
         }
     }
 
@@ -151,7 +180,8 @@ public class AttackTargetDetector : MonoBehaviour
             if (t == null) continue;
 
             var model = t.GetComponentInParent<SoldierModel>();
-            if (model != null && !model.IsDead)
+            var destructible = t.GetComponent<IDestructible>();
+            if (destructible != null || model && !model.IsDead)
                 return true;
         }
 
@@ -175,7 +205,6 @@ public class AttackTargetDetector : MonoBehaviour
 
             if (model && !model.IsDead)
             {
-
                 float sqr = ((Vector2)t.position - selfPos).sqrMagnitude;
                 if (sqr < minSqr)
                 {
