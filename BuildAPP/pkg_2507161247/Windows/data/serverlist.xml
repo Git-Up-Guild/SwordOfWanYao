@@ -1,0 +1,60 @@
+<Root>
+	<ChannelGroup>
+		<Channel id="1" name="公共" ver="0" openchannel="0,1,114,95,117,92,87,103,115,118,140,90,124,137,153,150,127,34,116,100,93,91,88,129,119,143,149,146,152,141,156,157,155,2107172,2107168,162,2107187,2107217,2107218,2107219,2107220,2107221,2107222,2107223,2107224,2107225,2107226,2107236,2117141,2117001"/>
+	</ChannelGroup>
+	<Services>
+		<Group id="5000" showname="测试" openchannel="1">
+			<Server sid="1" zid="2015" name="外网测试服" id="103540" f="103540" ip="119.147.71.237" port="29002" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="2" zid="2002" name="内网测试服" id="103540" f="103540" ip="172.16.127.118" port="9001" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="3" zid="2004" name="兆丰服" id="103540" f="103540" ip="172.16.127.118" port="19001" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="4" zid="2005" name="加创服" id="103540" f="103540" ip="172.16.127.118" port="19002" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="5" zid="2006" name="冉东服" id="103540" f="103540" ip="172.16.130.227" port="9001" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="6" zid="2007" name="李倜服" id="103540" f="103540" ip="172.16.127.118" port="19003" mainten="正常运行中" recommend="0" state="0"></Server>
+            			<Server sid="7" zid="2008" name="德兴服" id="103540" f="103540" ip="172.16.130.99" port="9001" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="8" zid="2009" name="新宇服" id="103540" f="103540" ip="172.16.130.226" port="9001" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="9" zid="2010" name="兆丰服(win)" id="103540" f="103540" ip="172.16.130.145" port="9001" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="10" zid="2011" name="稳定测试服(废弃)" id="103540" f="103540" ip="119.147.71.237" port="29001" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="11" zid="2012" name="win加创服" id="103540" f="103540" ip="172.16.130.59" port="9001" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="12" zid="2013" name="win卫华服" id="103540" f="103540" ip="172.16.130.78" port="9001" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="13" zid="2014" name="win国龙服" id="103540" f="103540" ip="172.16.130.103" port="9001" mainten="正常运行中" recommend="0" state="0"></Server>			
+			<Server sid="14" zid="2015" name="外网稳定服" id="103540" f="103540" ip="119.147.71.237" port="29002" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="15" zid="2016" name="石沐服" id="103540" f="103540" ip="172.16.130.225" port="9001" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="19" zid="2019" name="国龙l服" id="103540" f="103540" ip="192.168.146.128" port="9001" mainten="正常运行中" recommend="0" state="0"></Server>
+		</Group>
+		<Group id="4000" showname="通用" openchannel="1">
+			<Server sid="6" zid="2" name="118公用服" id="103540" f="103540" ip="172.16.126.185" port="6925" mainten="正常运行中" recommend="0" state="0"></Server>
+
+			<Server sid="7" zid="4" name="lzf私服" id="103540" f="103540" ip="192.168.114.128" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+
+
+		</Group>
+		<Group id="1000" showname="不生效" openchannel="1">
+
+			<Server sid="8" zid="1001" name="居然不生效" id="103540" f="103540" ip="192.168.2.144" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+		</Group>
+		<Group id="3001" showname="S1~S10" openchannel="1">
+
+			<Server sid="9" zid="3010" name="S10" id="103540" f="103540" ip="192.168.2.90" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="10" zid="3009" name="S9" id="103540" f="103540" ip="192.168.2.90" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="11" zid="3008" name="S8" id="103540" f="103540" ip="192.168.2.90" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="12" zid="3007" name="S7" id="103540" f="103540" ip="192.168.2.90" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+
+
+		</Group>
+		<Group id="3002" showname="S11~S20" openchannel="1">
+
+			<Server sid="13" zid="3020" name="S20" id="103540" f="103540" ip="192.168.2.90" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="14" zid="3019" name="S19" id="103540" f="103540" ip="192.168.2.90" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="15" zid="3018" name="S18" id="103540" f="103540" ip="192.168.2.90" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+
+
+		</Group>
+		<Group id="3003" showname="S21~S30" openchannel="1">
+
+			<Server sid="16" zid="3030" name="S30" id="103540" f="103540" ip="192.168.2.90" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+			<Server sid="17" zid="3029" name="S29" id="103540" f="103540" ip="192.168.2.90" port="9000" mainten="正常运行中" recommend="0" state="0"></Server>
+
+		</Group>
+
+	</Services>
+</Root>

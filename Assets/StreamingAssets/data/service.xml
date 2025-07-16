@@ -1,0 +1,11 @@
+<Root>
+<ServiceEntry>
+<Service name="serverlist" value="file:///./Service/server_list.xml"/>
+<Service name="notice" value="file:///./Service/notice.json"/>
+<Service name="billboard" value="http://172.16.70.24/getway/Dhd_Board/2117BillboardList.js"/>
+<Service name="createactor" value="https://appapi.q1.com/api/GetActorCount"/>
+<Service name="subscribe" value="https://yzsy.ssl.q1.com/h5/xfyy.html?uid="/>
+<Service name="actorlist" value="http://appapi.szg1a.net/api/Game/GetActors"/>
+<Service name="faceurl" value="http://appapi.wxm.dev.q1.com/api/pic/uphead"/>
+</ServiceEntry>
+</Root>
