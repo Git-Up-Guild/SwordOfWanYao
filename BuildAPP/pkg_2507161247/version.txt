@@ -1,0 +1,3 @@
+appVersion = 1.0
+bundleVersionCode = 1
+resVersion = 2507161247

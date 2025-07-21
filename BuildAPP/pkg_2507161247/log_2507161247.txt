@@ -1,0 +1,2 @@
+【【[12:48:52][Error]打AB包异常： System.Exception: 生成AB包失败！
+  at XGameEditor.BuildAPPWindow.BuildNewABRes (System.Collections.Generic.HashSet`1[T] targetABSet) [0x004b7] in C:\Users\c1333\project\Sword-Of-Wan-Yao\SwordOfWanYao\Assets\Editor\AssetsTool\NewLoad\BuildAPPWindow.cs:1063 】】

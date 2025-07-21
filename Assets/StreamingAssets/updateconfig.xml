@@ -4,7 +4,7 @@
     <!--完整包下载链接,更新失败时提示玩家跳转到此链接，重新下载游戏-->
     <remote_version url="https://down.hnlz168.cn/xxsjz/tapregengxin.apk" />
     <!--本地版本号-->
-    <local_version ver="2505141537" />
+    <local_version ver="2507161247" />
     <!--是否有固件要下载，1为有固件，0为没固件-->
     <is_has_fixed_item value="0" />
     <!--是否开启HybridCLR，1为开启，0为未开启-->
